@@ -24,7 +24,7 @@ export async function heroiconsGenerator(
   const iconsDestinationPath = 'libs/heroicons';
 
   //1
-  const solid16IconsSourcePath = 'icons/heroicons/16/solid';
+  const solid16IconsSourcePath = 'node_modules/heroicons/16/solid';
   const solid16IconsDestinationPath = path.join(
     iconsDestinationPath,
     '16',
@@ -41,7 +41,7 @@ export async function heroiconsGenerator(
   );
 
   //2
-  const solid20IconsSourcePath = 'icons/heroicons/20/solid';
+  const solid20IconsSourcePath = 'node_modules/heroicons/20/solid';
   const solid20IconsDestinationPath = path.join(
     iconsDestinationPath,
     '20',
@@ -58,7 +58,7 @@ export async function heroiconsGenerator(
   );
 
   //3
-  const outline24IconsSourcePath = 'icons/heroicons/24/outline';
+  const outline24IconsSourcePath = 'node_modules/heroicons/24/outline';
   const outline24IconsDestinationPath = path.join(
     iconsDestinationPath,
     '24',
@@ -75,7 +75,7 @@ export async function heroiconsGenerator(
   );
 
   //4
-  const solid24IconsSourcePath = 'icons/heroicons/24/solid';
+  const solid24IconsSourcePath = 'node_modules/heroicons/24/solid';
   const solid24IconsDestinationPath = path.join(
     iconsDestinationPath,
     '24',
