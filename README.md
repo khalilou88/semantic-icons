@@ -1,5 +1,9 @@
 # Semantic Icons
 
-npx nx generate @semantic-icons/nx-generators:heroicons
-npx nx generate @semantic-icons/nx-generators:tabler-icons
-npx nx generate @semantic-icons/nx-generators:flowbite-icons
+A collection of free and open source icon ready to be used in your angular project.
+
+### Angular libraries
+
+[`@semantic-icons/flowbite-icons`](libs/flowbite-icons)
+[`@semantic-icons/heroicons`](libs/heroicons)
+[`@semantic-icons/tabler-icons`](libs/tabler-icons)

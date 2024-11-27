@@ -15,10 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@semantic-components/flowbite-icons/outline": [
+      "@semantic-icons/flowbite-icons/outline": [
         "libs/flowbite-icons/outline/src/index.ts"
       ],
-      "@semantic-components/flowbite-icons/solid": [
+      "@semantic-icons/flowbite-icons/solid": [
         "libs/flowbite-icons/solid/src/index.ts"
       ],
       "@semantic-icons/heroicons/16/solid": [
