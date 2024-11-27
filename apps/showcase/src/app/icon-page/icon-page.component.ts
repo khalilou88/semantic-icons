@@ -4,12 +4,14 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
+import { SvgBellIcon } from '@semantic-icons/flowbite-icons/solid';
+
 @Component({
   selector: 'app-icon-page',
   standalone: true,
-  imports: [],
+  imports: [SvgBellIcon],
   template: `
-    <p>icon-page works!</p>
+    <svg-bell-icon class="size-6 text-blue-500" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

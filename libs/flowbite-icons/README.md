@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgNotificationBellIcon } from '@semantic-icons/flowbite-icons/solid';
+import { SvgBellIcon } from '@semantic-icons/flowbite-icons/solid';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgNotificationBellIcon],
+  imports: [SvgBellIcon],
   template: `
-    <svg-notification-bell-icon class="size-6 text-blue-500" />
+    <svg-bell-icon class="size-6 text-blue-500" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
