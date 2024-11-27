@@ -21,7 +21,7 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgCakeIcon } from '@semantic-icons/tabler-icons/filled';
+import { SvgCakeIcon } from '@semantic-icons/tabler-icons/outline';
 
 @Component({
   selector: 'app-home-page',
