@@ -18,6 +18,12 @@
       "@semantic-components/flowbite-icons": [
         "libs/flowbite-icons/src/index.ts"
       ],
+      "@semantic-components/flowbite-icons/outline": [
+        "libs/flowbite-icons/outline/src/index.ts"
+      ],
+      "@semantic-components/flowbite-icons/solid": [
+        "libs/flowbite-icons/solid/src/index.ts"
+      ],
       "@semantic-icons/heroicons/16/solid": [
         "libs/heroicons/16/solid/src/index.ts"
       ],
