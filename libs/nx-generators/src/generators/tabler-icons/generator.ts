@@ -3,15 +3,15 @@ import * as path from 'path';
 
 import { TablerIconsGeneratorSchema } from './schema';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function tablerIconsGenerator(
   tree: Tree,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   options: TablerIconsGeneratorSchema,
 ) {
   const iconsDestinationPath = 'libs/tabler-icons';
 
   //1
-  const filledIconsSourcePath = 'icons/tabler-icons/filled';
+  const filledIconsSourcePath = 'node_modules/@tabler/icons/icons/filled';
   const filledIconsDestinationPath = path.join(
     iconsDestinationPath,
     'filled',
@@ -25,7 +25,7 @@ export async function tablerIconsGenerator(
   );
 
   //2
-  const outlineIconsSourcePath = 'icons/tabler-icons/outline';
+  const outlineIconsSourcePath = 'node_modules/@tabler/icons/icons/outline';
   const outlineIconsDestinationPath = path.join(
     iconsDestinationPath,
     'outline',
