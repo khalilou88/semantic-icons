@@ -1,0 +1,14 @@
+{
+  "generators": {
+    "heroicons": {
+      "factory": "./src/generators/heroicons/generator",
+      "schema": "./src/generators/heroicons/schema.json",
+      "description": "heroicons generator"
+    },
+    "tabler-icons": {
+      "factory": "./src/generators/tabler-icons/generator",
+      "schema": "./src/generators/tabler-icons/schema.json",
+      "description": "tabler-icons generator"
+    }
+  }
+}
