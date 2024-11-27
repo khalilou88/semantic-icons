@@ -42,12 +42,12 @@ jobs:
         run: npx nx report
         shell: bash
 
-      - name: Version
-        run: npx nx release version patch --projects ${{ github.event.inputs.project_option }}
-        shell: bash
-
       - name: Build project
         run: npx nx build ${{ github.event.inputs.project_option }}
+        shell: bash
+
+      - name: Version
+        run: npx nx release version minor --projects=${{ github.event.inputs.project_option }} --first-release
         shell: bash
 
       - name: Publish packages
