@@ -1,19 +1,19 @@
-# @semantic-components/heroicons
+# @semantic-icons/heroicons
 
-`@semantic-components/heroicons` helps developers to use [Heroicons icons](https://heroicons.com) inside [Angular](https://angular.dev) projects.
+`@semantic-icons/heroicons` helps developers to use [Heroicons icons](https://heroicons.com) inside [Angular](https://angular.dev) projects.
 
 ## Supported versions
 
-| @semantic-components/heroicons | Angular   | heroicons |
+| @semantic-icons/heroicons | Angular   | Heroicons |
 | ------------------------------ | --------- | --------- |
 | 0.x.x                          | >= 17.1.0 | 2.2.0     |
 
 ## Usage
 
-First, install `@semantic-components/heroicons` from npm:
+First, install `@semantic-icons/heroicons` from npm:
 
 ```sh
-npm install @semantic-components/heroicons
+npm install @semantic-icons/heroicons
 ```
 
 Now each icon can be imported individually as an Angular component:
@@ -21,7 +21,7 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgBeakerIcon } from '@semantic-components/heroicons/24/solid';
+import { SvgBeakerIcon } from '@semantic-icons/heroicons/24/solid';
 
 @Component({
   selector: 'app-home-page',
@@ -37,7 +37,7 @@ import { SvgBeakerIcon } from '@semantic-components/heroicons/24/solid';
 export class HomePageComponent {}
 ```
 
-The 24x24 outline icons can be imported from `@semantic-components/heroicons/24/outline`, the 24x24 solid icons can be imported from `@semantic-components/heroicons/24/solid`, the 20x20 solid icons can be imported from `@semantic-components/heroicons/20/solid`, and 16x16 solid icons can be imported from `@semantic-components/heroicons/16/solid`.
+The 24x24 outline icons can be imported from `@semantic-icons/heroicons/24/outline`, the 24x24 solid icons can be imported from `@semantic-icons/heroicons/24/solid`, the 20x20 solid icons can be imported from `@semantic-icons/heroicons/20/solid`, and 16x16 solid icons can be imported from `@semantic-icons/heroicons/16/solid`.
 
 Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the word `icon`.
 

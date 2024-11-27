@@ -1,6 +1,6 @@
 {
-  "name": "@semantic-components/nx-generators",
-  "version": "0.0.17",
+  "name": "@semantic-icons/nx-generators",
+  "version": "0.0.1",
   "dependencies": {
     "@nx/devkit": "^20.1.2",
     "tslib": "^2.3.0"
@@ -15,7 +15,7 @@
   "generators": "./generators.json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khalilou88/semantic-components",
+    "url": "https://github.com/khalilou88/semantic-icons",
     "directory": "libs/nx-generators"
   }
 }
