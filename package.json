@@ -55,7 +55,6 @@
     "eslint-plugin-playwright": "^1.6.2",
     "heroicons": "^2.2.0",
     "husky": "^9.1.7",
-    "i": "^0.3.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-preset-angular": "~14.1.0",
