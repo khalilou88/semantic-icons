@@ -6,12 +6,12 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+    "@angular/common": ">=17.1.0",
+    "@angular/core": ">=17.1.0"
   },
   "sideEffects": false,
   "keywords": [
-    "heroicons",
+    "tabler-icons",
     "angular",
     "icons",
     "svg"
