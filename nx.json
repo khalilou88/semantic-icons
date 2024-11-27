@@ -15,7 +15,22 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
+  "release": {
+    "projects": ["libs/*"],
+    "projectsRelationship": "independent",
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "{projectRoot}"
+      }
+    }
+  },
   "targetDefaults": {
+    "nx-release-publish": {
+      "dependsOn": ["build"],
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
     "@angular-devkit/build-angular:application": {
       "cache": true,
       "dependsOn": ["^build"],
