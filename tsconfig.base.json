@@ -15,9 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@semantic-components/flowbite-icons": [
-        "libs/flowbite-icons/src/index.ts"
-      ],
       "@semantic-components/flowbite-icons/outline": [
         "libs/flowbite-icons/outline/src/index.ts"
       ],

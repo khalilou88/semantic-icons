@@ -1,6 +1,6 @@
 # @semantic-icons/flowbite-icons
 
-`@semantic-icons/flowbite-icons` helps developers to use [Tabler icons](https://flowbite.com/icons) inside [Angular](https://angular.dev) projects.
+`@semantic-icons/flowbite-icons` helps developers to use [Flowbite icons](https://flowbite.com/icons) inside [Angular](https://angular.dev) projects.
 
 ## Supported versions
 
