@@ -4,20 +4,39 @@ import * as path from 'path';
 import { TablerIconsGeneratorSchema } from './schema';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export async function tablerIconsGenerator(tree: Tree, options: TablerIconsGeneratorSchema) {
+export async function tablerIconsGenerator(
+  tree: Tree,
+  options: TablerIconsGeneratorSchema,
+) {
   const iconsDestinationPath = 'libs/tabler-icons';
 
   //1
   const filledIconsSourcePath = 'icons/tabler-icons/filled';
-  const filledIconsDestinationPath = path.join(iconsDestinationPath, 'filled', 'src');
+  const filledIconsDestinationPath = path.join(
+    iconsDestinationPath,
+    'filled',
+    'src',
+  );
 
-  generateIconsComponents(tree, filledIconsSourcePath, filledIconsDestinationPath);
+  generateIconsComponents(
+    tree,
+    filledIconsSourcePath,
+    filledIconsDestinationPath,
+  );
 
   //2
   const outlineIconsSourcePath = 'icons/tabler-icons/outline';
-  const outlineIconsDestinationPath = path.join(iconsDestinationPath, 'outline', 'src');
+  const outlineIconsDestinationPath = path.join(
+    iconsDestinationPath,
+    'outline',
+    'src',
+  );
 
-  generateIconsComponents(tree, outlineIconsSourcePath, outlineIconsDestinationPath);
+  generateIconsComponents(
+    tree,
+    outlineIconsSourcePath,
+    outlineIconsDestinationPath,
+  );
 
   await formatFiles(tree);
 }
@@ -31,7 +50,10 @@ function generateIconsComponents(
   tree.children(iconsSourcePath).forEach((fileName) => {
     const name = path.parse(fileName).name;
 
-    const svgContent1 = tree.read(path.join(iconsSourcePath, fileName), 'utf-8');
+    const svgContent1 = tree.read(
+      path.join(iconsSourcePath, fileName),
+      'utf-8',
+    );
 
     const re = /(<svg)/;
     const svgContent = svgContent1.replace(re, '$1 [ngClass]="class()"');

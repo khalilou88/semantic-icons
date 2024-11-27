@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-circle-dashed-number-2-icon',
@@ -28,7 +33,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
       <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
       <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
-      <path d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3" />
+      <path
+        d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3"
+      />
     </svg>
   `,
   styles: `

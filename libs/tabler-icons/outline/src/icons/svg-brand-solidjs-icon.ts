@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-brand-solidjs-icon',
@@ -26,7 +31,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path
         d="M5 13.5c4.667 -1.667 8 -2.5 10 -2.5c2.5 0 4 1.5 4 3.5c0 .738 -.204 1.408 -.588 1.96l-2.883 3.825"
       />
-      <path d="M22 6.5c-4 -3 -8 -4.5 -10 -4.5c-2.04 0 -2.618 .463 -3.419 1.545" />
+      <path
+        d="M22 6.5c-4 -3 -8 -4.5 -10 -4.5c-2.04 0 -2.618 .463 -3.419 1.545"
+      />
       <path d="M2 17.5l3 -4" />
       <path d="M22 6.5l-3 4" />
       <path d="M8.581 3.545l-2.953 3.711" />

@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-satellite-off-icon',
@@ -27,7 +32,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path d="M10 6l3 -3l3 3l-3 3" />
       <path d="M12 12l1.5 1.5" />
       <path d="M14.5 17c.69 0 1.316 -.28 1.769 -.733" />
-      <path d="M15 21c1.654 0 3.151 -.67 4.237 -1.752m1.507 -2.507a6 6 0 0 0 .256 -1.741" />
+      <path
+        d="M15 21c1.654 0 3.151 -.67 4.237 -1.752m1.507 -2.507a6 6 0 0 0 .256 -1.741"
+      />
       <path d="M3 3l18 18" />
     </svg>
   `,

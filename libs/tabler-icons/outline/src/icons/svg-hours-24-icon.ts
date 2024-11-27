@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-hours-24-icon',
@@ -23,7 +28,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path d="M4 13c.325 2.532 1.881 4.781 4 6" />
       <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2" />
       <path d="M4 5v4h4" />
-      <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+      <path
+        d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2"
+      />
       <path d="M18 15v2a1 1 0 0 0 1 1h1" />
       <path d="M21 15v6" />
     </svg>

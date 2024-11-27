@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-equals-icon',
@@ -16,7 +21,11 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       aria-hidden="true"
       data-slot="icon"
     >
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4.499 8.248h15m-15 7.501h15" />
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4.499 8.248h15m-15 7.501h15"
+      />
     </svg>
   `,
   styles: `

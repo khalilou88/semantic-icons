@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-rectangle-vertical-icon',
@@ -16,7 +21,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       fill="currentColor"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M17 2h-10a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3z" />
+      <path
+        d="M17 2h-10a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3z"
+      />
     </svg>
   `,
   styles: `

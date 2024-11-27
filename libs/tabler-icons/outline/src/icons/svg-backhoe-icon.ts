@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-backhoe-icon',
@@ -27,7 +32,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path d="M8 12v-5h2a3 3 0 0 1 3 3v5" />
       <path d="M5 15v-2a1 1 0 0 1 1 -1h7" />
       <path d="M21.12 9.88l-3.12 -4.88l-5 5" />
-      <path d="M21.12 9.88a3 3 0 0 1 -2.12 5.12a3 3 0 0 1 -2.12 -.88l4.24 -4.24z" />
+      <path
+        d="M21.12 9.88a3 3 0 0 1 -2.12 5.12a3 3 0 0 1 -2.12 -.88l4.24 -4.24z"
+      />
     </svg>
   `,
   styles: `

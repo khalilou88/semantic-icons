@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-biohazard-off-icon',
@@ -21,7 +26,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10.586 10.586a2 2 0 1 0 2.836 2.82" />
-      <path d="M11.939 14c0 .173 .048 .351 .056 .533v.217a4.75 4.75 0 0 1 -4.533 4.745h-.217" />
+      <path
+        d="M11.939 14c0 .173 .048 .351 .056 .533v.217a4.75 4.75 0 0 1 -4.533 4.745h-.217"
+      />
       <path d="M2.495 14.745a4.75 4.75 0 0 1 7.737 -3.693" />
       <path d="M16.745 19.495a4.75 4.75 0 0 1 -4.69 -5.503h-.06" />
       <path d="M14.533 10.538a4.75 4.75 0 0 1 6.957 3.987v.217" />

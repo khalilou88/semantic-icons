@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-adjustments-question-icon',
@@ -26,7 +31,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path d="M13.577 14.77a2 2 0 1 0 .117 2.295" />
       <path d="M12 4v10" />
       <path d="M19 22v.01" />
-      <path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+      <path
+        d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"
+      />
       <path d="M12 18v2" />
       <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
       <path d="M18 4v1" />

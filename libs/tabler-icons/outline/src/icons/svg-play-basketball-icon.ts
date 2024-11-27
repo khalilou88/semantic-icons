@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-play-basketball-icon',
@@ -24,7 +29,10 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path d="M5 21l3 -3l.75 -1.5" />
       <path d="M14 21v-4l-4 -3l.5 -6" />
       <path d="M5 12l1 -3l4.5 -1l3.5 3l4 1" />
-      <path d="M18.5 16a.5 .5 0 1 0 0 -1a.5 .5 0 0 0 0 1z" fill="currentColor" />
+      <path
+        d="M18.5 16a.5 .5 0 1 0 0 -1a.5 .5 0 0 0 0 1z"
+        fill="currentColor"
+      />
     </svg>
   `,
   styles: `

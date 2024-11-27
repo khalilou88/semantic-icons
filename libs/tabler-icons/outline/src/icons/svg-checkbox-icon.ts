@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-checkbox-icon',
@@ -21,7 +26,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 11l3 3l8 -8" />
-      <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+      <path
+        d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
+      />
     </svg>
   `,
   styles: `

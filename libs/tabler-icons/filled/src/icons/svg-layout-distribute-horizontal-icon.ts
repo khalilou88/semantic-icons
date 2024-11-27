@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-layout-distribute-horizontal-icon',
@@ -18,7 +23,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20 3a1 1 0 0 1 0 2h-16a1 1 0 1 1 0 -2z" />
       <path d="M20 19a1 1 0 0 1 0 2h-16a1 1 0 0 1 0 -2z" />
-      <path d="M16 8a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3z" />
+      <path
+        d="M16 8a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3z"
+      />
     </svg>
   `,
   styles: `

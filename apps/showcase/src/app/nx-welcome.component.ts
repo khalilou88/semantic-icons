@@ -1,5 +1,5 @@
-import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-nx-welcome',
@@ -16,9 +16,20 @@ import { CommonModule } from '@angular/common';
     <style>
       html {
         -webkit-text-size-adjust: 100%;
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-          'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          'Noto Sans',
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
           'Noto Color Emoji';
         line-height: 1.5;
         tab-size: 4;
@@ -74,7 +85,10 @@ import { CommonModule } from '@angular/common';
         padding: 0.5rem 0.75rem;
       }
       .shadow {
-        box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        box-shadow:
+          0 0 #0000,
+          0 0 #0000,
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
           0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
       .rounded {
@@ -186,8 +200,17 @@ import { CommonModule } from '@angular/common';
         display: flex;
         margin-top: 1rem;
         padding: 1rem;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -196,8 +219,17 @@ import { CommonModule } from '@angular/common';
       .list-item-link svg:first-child {
         margin-right: 1rem;
         height: 1.5rem;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -206,8 +238,17 @@ import { CommonModule } from '@angular/common';
       .list-item-link > span {
         flex-grow: 1;
         font-weight: 400;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -218,8 +259,17 @@ import { CommonModule } from '@angular/common';
         font-size: 0.75rem;
         font-weight: 300;
         line-height: 1rem;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -246,16 +296,34 @@ import { CommonModule } from '@angular/common';
         padding: 1.5rem 2rem;
         margin-bottom: 2rem;
         transition-duration: 300ms;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         align-items: center;
         display: flex;
       }
       .button-pill svg {
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -385,8 +453,17 @@ import { CommonModule } from '@angular/common';
         font-weight: 400;
         padding: 0.5rem;
         cursor: pointer;
-        transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
+        transition-property:
+          background-color,
+          border-color,
+          color,
+          fill,
+          stroke,
+          opacity,
+          box-shadow,
+          transform,
+          filter,
+          backdrop-filter,
           -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
@@ -432,12 +509,12 @@ import { CommonModule } from '@angular/common';
         <!--  WELCOME  -->
         <div id="welcome">
           <h1>
-            <span> Hello there, </span>
+            <span>Hello there,</span>
             Welcome showcase 👋
           </h1>
         </div>
         <!--  HERO  -->
-        <div id="hero" class="rounded">
+        <div class="rounded" id="hero">
           <div class="text-container">
             <h2>
               <svg
@@ -455,7 +532,7 @@ import { CommonModule } from '@angular/common';
               </svg>
               <span>You&apos;re up and running</span>
             </h2>
-            <a href="#commands"> What&apos;s next? </a>
+            <a href="#commands">What&apos;s next?</a>
           </div>
           <div class="logo-container">
             <svg
@@ -473,13 +550,13 @@ import { CommonModule } from '@angular/common';
         <!--  MIDDLE CONTENT  -->
         <div id="middle-content">
           <div id="middle-left-content">
-            <div id="learning-materials" class="rounded shadow">
+            <div class="rounded shadow" id="learning-materials">
               <h2>Learning materials</h2>
               <a
+                class="list-item-link"
                 href="https://nx.dev/getting-started/intro?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
-                class="list-item-link"
               >
                 <svg
                   fill="none"
@@ -496,7 +573,7 @@ import { CommonModule } from '@angular/common';
                 </svg>
                 <span>
                   Documentation
-                  <span> Everything is in there </span>
+                  <span>Everything is in there</span>
                 </span>
                 <svg
                   fill="none"
@@ -513,10 +590,10 @@ import { CommonModule } from '@angular/common';
                 </svg>
               </a>
               <a
+                class="list-item-link"
                 href="https://nx.dev/blog?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
-                class="list-item-link"
               >
                 <svg
                   fill="none"
@@ -533,7 +610,7 @@ import { CommonModule } from '@angular/common';
                 </svg>
                 <span>
                   Blog
-                  <span> Changelog, features & events </span>
+                  <span>Changelog, features & events</span>
                 </span>
                 <svg
                   fill="none"
@@ -550,10 +627,10 @@ import { CommonModule } from '@angular/common';
                 </svg>
               </a>
               <a
+                class="list-item-link"
                 href="https://www.youtube.com/@NxDevtools/videos?utm_source=nx-project&sub_confirmation=1"
                 target="_blank"
                 rel="noreferrer"
-                class="list-item-link"
               >
                 <svg
                   role="img"
@@ -568,7 +645,7 @@ import { CommonModule } from '@angular/common';
                 </svg>
                 <span>
                   YouTube channel
-                  <span> Nx Show, talks & tutorials </span>
+                  <span>Nx Show, talks & tutorials</span>
                 </span>
                 <svg
                   fill="none"
@@ -585,10 +662,10 @@ import { CommonModule } from '@angular/common';
                 </svg>
               </a>
               <a
+                class="list-item-link"
                 href="https://nx.dev/getting-started/tutorials/angular-standalone-tutorial?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
-                class="list-item-link"
               >
                 <svg
                   fill="none"
@@ -605,7 +682,7 @@ import { CommonModule } from '@angular/common';
                 </svg>
                 <span>
                   Interactive tutorials
-                  <span> Create an app, step-by-step </span>
+                  <span>Create an app, step-by-step</span>
                 </span>
                 <svg
                   fill="none"
@@ -623,8 +700,8 @@ import { CommonModule } from '@angular/common';
               </a>
             </div>
             <a
-              id="nx-repo"
               class="button-pill rounded shadow"
+              id="nx-repo"
               href="https://github.com/nrwl/nx?utm_source=nx-project"
               target="_blank"
               rel="noreferrer"
@@ -641,7 +718,7 @@ import { CommonModule } from '@angular/common';
               </svg>
               <span>
                 Nx is open source
-                <span> Love Nx? Give us a star! </span>
+                <span>Love Nx? Give us a star!</span>
               </span>
             </a>
           </div>
@@ -710,13 +787,12 @@ import { CommonModule } from '@angular/common';
               </svg>
               <span>
                 Install Nx Console for JetBrains
-                <span
-                  >Available for WebStorm, Intellij IDEA Ultimate and
-                  more!</span
-                >
+                <span>
+                  Available for WebStorm, Intellij IDEA Ultimate and more!
+                </span>
               </span>
             </a>
-            <div id="nx-cloud" class="rounded shadow">
+            <div class="rounded shadow" id="nx-cloud">
               <div>
                 <svg
                   id="nx-cloud-logo"
@@ -737,7 +813,7 @@ import { CommonModule } from '@angular/common';
                 </svg>
                 <h2>
                   Nx Cloud
-                  <span> Enable faster CI & better DX </span>
+                  <span>Enable faster CI & better DX</span>
                 </h2>
               </div>
               <p>Your Nx Cloud remote cache setup is almost complete.</p>
@@ -753,7 +829,7 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
         <!--  COMMANDS  -->
-        <div id="commands" class="rounded shadow">
+        <div class="rounded shadow" id="commands">
           <h2>Next steps</h2>
           <p>Here are some things you can do with Nx:</p>
           <details>

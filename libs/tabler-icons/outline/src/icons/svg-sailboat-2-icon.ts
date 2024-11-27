@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-sailboat-2-icon',
@@ -25,7 +30,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       />
       <path d="M4 18l-1 -3h18l-1 3" />
       <path d="M12 11v4" />
-      <path d="M7 3c1.333 2.667 1.333 5.333 0 8h10c1.333 -2.667 1.333 -5.333 0 -8" />
+      <path
+        d="M7 3c1.333 2.667 1.333 5.333 0 8h10c1.333 -2.667 1.333 -5.333 0 -8"
+      />
       <path d="M6 3h12" />
     </svg>
   `,

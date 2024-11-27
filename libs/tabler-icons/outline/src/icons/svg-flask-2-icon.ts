@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-flask-2-icon',
@@ -21,7 +26,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6.1 15h11.8" />
-      <path d="M14 3v7.342a6 6 0 0 1 1.318 10.658h-6.635a6 6 0 0 1 1.317 -10.66v-7.34h4z" />
+      <path
+        d="M14 3v7.342a6 6 0 0 1 1.318 10.658h-6.635a6 6 0 0 1 1.317 -10.66v-7.34h4z"
+      />
       <path d="M9 3h6" />
     </svg>
   `,

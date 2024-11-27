@@ -19,7 +19,7 @@ interface HeroIcon {
 export async function heroiconsGenerator(
   tree: Tree,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  options: HeroiconsGeneratorSchema
+  options: HeroiconsGeneratorSchema,
 ) {
   const iconsDestinationPath = 'libs/heroicons';
 
@@ -29,7 +29,7 @@ export async function heroiconsGenerator(
     iconsDestinationPath,
     '16',
     'solid',
-    'src'
+    'src',
   );
 
   generateIconsComponents(
@@ -37,7 +37,7 @@ export async function heroiconsGenerator(
     solid16IconsSourcePath,
     solid16IconsDestinationPath,
     16,
-    'solid'
+    'solid',
   );
 
   //2
@@ -46,7 +46,7 @@ export async function heroiconsGenerator(
     iconsDestinationPath,
     '20',
     'solid',
-    'src'
+    'src',
   );
 
   generateIconsComponents(
@@ -54,7 +54,7 @@ export async function heroiconsGenerator(
     solid20IconsSourcePath,
     solid20IconsDestinationPath,
     20,
-    'solid'
+    'solid',
   );
 
   //3
@@ -63,7 +63,7 @@ export async function heroiconsGenerator(
     iconsDestinationPath,
     '24',
     'outline',
-    'src'
+    'src',
   );
 
   generateIconsComponents(
@@ -71,7 +71,7 @@ export async function heroiconsGenerator(
     outline24IconsSourcePath,
     outline24IconsDestinationPath,
     24,
-    'outline'
+    'outline',
   );
 
   //4
@@ -80,7 +80,7 @@ export async function heroiconsGenerator(
     iconsDestinationPath,
     '24',
     'solid',
-    'src'
+    'src',
   );
 
   generateIconsComponents(
@@ -88,7 +88,7 @@ export async function heroiconsGenerator(
     solid24IconsSourcePath,
     solid24IconsDestinationPath,
     24,
-    'solid'
+    'solid',
   );
 
   await formatFiles(tree);
@@ -101,7 +101,7 @@ function generateIconsComponents(
   iconsSourcePath: string,
   iconsDestinationPath: string,
   iconSize: 16 | 20 | 24,
-  iconType: 'solid' | 'outline'
+  iconType: 'solid' | 'outline',
 ) {
   const exports = [];
   tree.children(iconsSourcePath).forEach((fileName) => {
@@ -109,7 +109,7 @@ function generateIconsComponents(
 
     const svgContent1 = tree.read(
       path.join(iconsSourcePath, fileName),
-      'utf-8'
+      'utf-8',
     );
 
     const re = /(<svg)/;
@@ -133,7 +133,7 @@ function generateIconsComponents(
       tree,
       path.join(__dirname, 'files', 'component'),
       path.join(iconsDestinationPath, 'icons'),
-      o
+      o,
     );
   });
 
@@ -141,7 +141,7 @@ function generateIconsComponents(
 
   writeJsonFile(
     path.join(workspaceRoot, 'apps', 'showcase', 'public', 'heroicons.json'),
-    icons
+    icons,
   );
 }
 

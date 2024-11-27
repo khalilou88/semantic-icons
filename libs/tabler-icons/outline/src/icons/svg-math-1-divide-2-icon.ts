@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-math-1-divide-2-icon',
@@ -21,7 +26,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 12h14" />
-      <path d="M10 15h3a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h3" />
+      <path
+        d="M10 15h3a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h3"
+      />
       <path d="M10 5l2 -2v6" />
     </svg>
   `,

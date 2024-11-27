@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
 
 @Component({
   selector: 'svg-password-fingerprint-icon',
@@ -23,7 +28,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
       <path d="M17 8c.788 1 1 2 1 3v1" />
       <path d="M9 11c0 -1.578 1.343 -3 3 -3s3 1.422 3 3v2" />
       <path d="M12 11v2" />
-      <path d="M6 12v-1.397c-.006 -1.999 1.136 -3.849 2.993 -4.85a6.385 6.385 0 0 1 6.007 -.005" />
+      <path
+        d="M6 12v-1.397c-.006 -1.999 1.136 -3.849 2.993 -4.85a6.385 6.385 0 0 1 6.007 -.005"
+      />
       <path d="M12 17v4" />
       <path d="M10 20l4 -2" />
       <path d="M10 18l4 2" />

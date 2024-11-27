@@ -15,13 +15,25 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@semantic-icons/heroicons/16/solid": ["libs/heroicons/16/solid/src/index.ts"],
-      "@semantic-icons/heroicons/20/solid": ["libs/heroicons/20/solid/src/index.ts"],
-      "@semantic-icons/heroicons/24/outline": ["libs/heroicons/24/outline/src/index.ts"],
-      "@semantic-icons/heroicons/24/solid": ["libs/heroicons/24/solid/src/index.ts"],
+      "@semantic-icons/heroicons/16/solid": [
+        "libs/heroicons/16/solid/src/index.ts"
+      ],
+      "@semantic-icons/heroicons/20/solid": [
+        "libs/heroicons/20/solid/src/index.ts"
+      ],
+      "@semantic-icons/heroicons/24/outline": [
+        "libs/heroicons/24/outline/src/index.ts"
+      ],
+      "@semantic-icons/heroicons/24/solid": [
+        "libs/heroicons/24/solid/src/index.ts"
+      ],
       "@semantic-icons/nx-generators": ["libs/nx-generators/src/index.ts"],
-      "@semantic-icons/tabler-icons/filled": ["libs/tabler-icons/filled/src/index.ts"],
-      "@semantic-icons/tabler-icons/outline": ["libs/tabler-icons/outline/src/index.ts"]
+      "@semantic-icons/tabler-icons/filled": [
+        "libs/tabler-icons/filled/src/index.ts"
+      ],
+      "@semantic-icons/tabler-icons/outline": [
+        "libs/tabler-icons/outline/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
