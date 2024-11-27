@@ -20,8 +20,9 @@
     "projectsRelationship": "independent",
     "releaseTagPattern": "release/{projectName}/{version}",
     "version": {
+      "preVersionCommand": "npx nx run-many -t build",
       "generatorOptions": {
-        "packageRoot": "{projectRoot}"
+        "packageRoot": "dist/{projectRoot}"
       }
     }
   },
