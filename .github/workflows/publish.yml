@@ -10,6 +10,7 @@ on:
           - nx-generators
           - heroicons
           - tabler-icons
+          - flowbite-icons
   push:
     tags:
       - v*.*.*
