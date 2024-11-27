@@ -1,0 +1,29 @@
+{
+  "name": "flowbite-icons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/flowbite-icons/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/flowbite-icons/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/flowbite-icons/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/flowbite-icons/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

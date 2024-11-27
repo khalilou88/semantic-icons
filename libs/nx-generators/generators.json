@@ -9,6 +9,11 @@
       "factory": "./src/generators/tabler-icons/generator",
       "schema": "./src/generators/tabler-icons/schema.json",
       "description": "tabler-icons generator"
+    },
+    "flowbite-icons": {
+      "factory": "./src/generators/flowbite-icons/generator",
+      "schema": "./src/generators/flowbite-icons/schema.json",
+      "description": "flowbite-icons generator"
     }
   }
 }

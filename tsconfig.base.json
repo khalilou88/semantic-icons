@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@semantic-components/flowbite-icons": [
+        "libs/flowbite-icons/src/index.ts"
+      ],
       "@semantic-icons/heroicons/16/solid": [
         "libs/heroicons/16/solid/src/index.ts"
       ],
