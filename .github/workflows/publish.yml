@@ -48,7 +48,7 @@ jobs:
         shell: bash
 
       - name: Version
-        run: npx nx release version minor --projects=${{ github.event.inputs.project_option }} --first-release
+        run: npx nx release version minor --projects=${{ github.event.inputs.project_option }}
         shell: bash
 
       - name: Publish packages
