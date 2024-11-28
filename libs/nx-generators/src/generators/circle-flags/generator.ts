@@ -11,7 +11,7 @@ export async function circleFlagsGenerator(
   const iconsLibPath = 'libs/circle-flags';
 
   //1
-  const iconsSourcePath = 'node_modules/circle-flags/flags/';
+  const iconsSourcePath = 'node_modules/circle-flags/flags';
   const iconsDestinationPath = path.join(iconsLibPath, 'src');
 
   generateIconsComponents(tree, iconsSourcePath, iconsDestinationPath);
