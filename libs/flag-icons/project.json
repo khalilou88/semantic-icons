@@ -2,7 +2,7 @@
   "name": "flag-icons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/flag-icons/src",
-  "prefix": "lib",
+  "prefix": "svg",
   "projectType": "library",
   "tags": [],
   "targets": {
