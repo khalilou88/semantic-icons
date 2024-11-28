@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgMaIcon } from '@semantic-icons/flag-icons/square';
+import { SvgMaFlagIcon } from '@semantic-icons/flag-icons/square';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgMaIcon],
+  imports: [SvgMaFlagIcon],
   template: `
-    <svg-ma-icon class="size-36" />
+    <svg-ma-flag-icon class="size-36" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
