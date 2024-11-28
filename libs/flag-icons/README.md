@@ -39,7 +39,7 @@ export class HomePageComponent {}
 
 The square shaped icons can be imported from `@semantic-icons/flag-icons/square`, the rectangle shaped icons can be imported from `@semantic-icons/flag-icons/rectangle`.
 
-Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the word `icon`.
+Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the words `flag icon`.
 
 ## License
 
