@@ -1,6 +1,6 @@
 # Semantic Icons
 
-A collection of free and open source icons ready to be used in your angular project.
+A collection of free and open source icons ready for use in your angular projects.
 
 ### Angular libraries
 
