@@ -50,30 +50,31 @@ function generateIconsComponents(
 ) {
   const exports = [];
   tree.children(iconsSourcePath).forEach((fileName) => {
-    const name = path.parse(fileName).name;
+    const filePath = path.join(iconsSourcePath, fileName);
 
-    const svgContent1 = tree.read(
-      path.join(iconsSourcePath, fileName),
-      'utf-8',
-    );
+    if (tree.isFile(filePath)) {
+      const name = path.parse(fileName).name;
 
-    const re = /(<svg)/;
-    const svgContent = svgContent1.replace(re, '$1 [ngClass]="class()"');
+      const svgContent1 = tree.read(filePath, 'utf-8');
 
-    const svgClassName = `Svg${names(name).className}CircleFlagIcon`;
-    const svgFileName = `svg-${names(name).fileName}-circle-flag-icon`;
-    const svgSelector = `svg-${names(name).fileName}-circle-flag-icon`;
+      const re = /(<svg)/;
+      const svgContent = svgContent1.replace(re, '$1 [ngClass]="class()"');
 
-    exports.push(`export * from './icons/${svgFileName}';`);
+      const svgClassName = `Svg${names(name).className}CircleFlagIcon`;
+      const svgFileName = `svg-${names(name).fileName}-circle-flag-icon`;
+      const svgSelector = `svg-${names(name).fileName}-circle-flag-icon`;
 
-    const o = { svgContent, svgClassName, svgFileName, svgSelector };
+      exports.push(`export * from './icons/${svgFileName}';`);
 
-    generateFiles(
-      tree,
-      path.join(__dirname, '..', 'heroicons', 'files', 'component'),
-      path.join(iconsDestinationPath, 'icons'),
-      o,
-    );
+      const o = { svgContent, svgClassName, svgFileName, svgSelector };
+
+      generateFiles(
+        tree,
+        path.join(__dirname, '..', 'heroicons', 'files', 'component'),
+        path.join(iconsDestinationPath, 'icons'),
+        o,
+      );
+    }
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
