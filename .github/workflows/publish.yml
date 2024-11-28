@@ -16,6 +16,7 @@ on:
           - tabler-icons
           - flowbite-icons
           - flag-icons
+          - lucide-icons
   push:
     tags:
       - v*.*.*
