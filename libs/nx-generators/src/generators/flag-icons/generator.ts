@@ -58,9 +58,9 @@ function generateIconsComponents(
     const re = /(<svg)/;
     const svgContent = svgContent1.replace(re, '$1 [ngClass]="class()"');
 
-    const svgClassName = `Svg${names(name).className}Icon`;
-    const svgFileName = `svg-${names(name).fileName}-icon`;
-    const svgSelector = `svg-${names(name).fileName}-icon`;
+    const svgClassName = `Svg${names(name).className}FlagIcon`;
+    const svgFileName = `svg-${names(name).fileName}-flag-icon`;
+    const svgSelector = `svg-${names(name).fileName}-flag-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
