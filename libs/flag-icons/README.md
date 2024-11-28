@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgBellIcon } from '@semantic-icons/flag-icons/solid';
+import { SvgMaIcon } from '@semantic-icons/flag-icons/square';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgBellIcon],
+  imports: [SvgMaIcon],
   template: `
-    <svg-bell-icon class="size-6" />
+    <svg-ma-icon class="size-36" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -37,7 +37,7 @@ import { SvgBellIcon } from '@semantic-icons/flag-icons/solid';
 export class HomePageComponent {}
 ```
 
-The outline icons can be imported from `@semantic-icons/flag-icons/outline`, the filled icons can be imported from `@semantic-icons/flag-icons/solid`.
+The square shaped icons can be imported from `@semantic-icons/flag-icons/square`, the rectangle shaped icons can be imported from `@semantic-icons/flag-icons/rectangle`.
 
 Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the word `icon`.
 
