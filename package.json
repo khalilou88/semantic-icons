@@ -66,6 +66,7 @@
     "jest-preset-angular": "~14.1.0",
     "jsonc-eslint-parser": "^2.1.0",
     "lint-staged": "^15.2.10",
+    "lucide-static": "^0.462.0",
     "ng-packagr": "~18.2.0",
     "npm": "^10.9.1",
     "nx": "20.1.3",

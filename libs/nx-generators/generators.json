@@ -19,6 +19,11 @@
       "factory": "./src/generators/flag-icons/generator",
       "schema": "./src/generators/flag-icons/schema.json",
       "description": "flag-icons generator"
+    },
+    "lucide-icons": {
+      "factory": "./src/generators/lucide-icons/generator",
+      "schema": "./src/generators/lucide-icons/schema.json",
+      "description": "lucide-icons generator"
     }
   }
 }
