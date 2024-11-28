@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@semantic-icons/circle-flags": ["libs/circle-flags/src/index.ts"],
+      "@semantic-icons/circle-flags/other": [
+        "libs/circle-flags/other/src/index.ts"
+      ],
       "@semantic-icons/flag-icons/rectangle": [
         "libs/flag-icons/rectangle/src/index.ts"
       ],

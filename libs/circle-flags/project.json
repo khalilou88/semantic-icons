@@ -1,0 +1,29 @@
+{
+  "name": "circle-flags",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/circle-flags/src",
+  "prefix": "svg",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/circle-flags/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/circle-flags/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/circle-flags/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
