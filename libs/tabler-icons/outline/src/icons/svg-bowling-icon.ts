@@ -7,12 +7,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-browser-plus-icon',
+  selector: 'svg-bowling-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-browser-plus"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-bowling"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -25,13 +25,14 @@ import {
       stroke-linejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 8h16" />
+      <path d="M7 11v.01" />
+      <path d="M11 10v.01" />
+      <path d="M10 14v.01" />
+      <path d="M11.059 6.07a8 8 0 1 0 .32 15.81" />
+      <path d="M15.969 9h4" />
       <path
-        d="M12 20h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6"
+        d="M14.969 5c0 1.5 1 2 1 4c0 2.5 -2 4.5 -2 7c0 2.6 1.9 6 1.9 6h4.1s2 -3.4 2 -6c0 -2.5 -2 -4.5 -2 -7c0 -2 1 -2.5 1 -4a3 3 0 1 0 -6 0"
       />
-      <path d="M8 4v4" />
-      <path d="M16 19h6" />
-      <path d="M19 16v6" />
     </svg>
   `,
   styles: `
@@ -42,6 +43,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgBrowserPlusIcon {
+export class SvgBowlingIcon {
   readonly class = input('');
 }

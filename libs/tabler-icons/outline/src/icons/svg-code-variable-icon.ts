@@ -7,12 +7,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-browser-plus-icon',
+  selector: 'svg-code-variable-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-browser-plus"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-code-variable"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -25,13 +25,9 @@ import {
       stroke-linejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 8h16" />
       <path
-        d="M12 20h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6"
+        d="M4 8m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
       />
-      <path d="M8 4v4" />
-      <path d="M16 19h6" />
-      <path d="M19 16v6" />
     </svg>
   `,
   styles: `
@@ -42,6 +38,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgBrowserPlusIcon {
+export class SvgCodeVariableIcon {
   readonly class = input('');
 }
