@@ -26,6 +26,20 @@ export async function circleFlagsGenerator(
     otherIconsDestinationPath,
   );
 
+  //3
+  const languagesIconsSourcePath = 'node_modules/circle-flags/flags/language';
+  const languagesIconsDestinationPath = path.join(
+    iconsLibPath,
+    'languages',
+    'src',
+  );
+
+  generateIconsComponents(
+    tree,
+    languagesIconsSourcePath,
+    languagesIconsDestinationPath,
+  );
+
   await formatFiles(tree);
 }
 

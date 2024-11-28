@@ -18,3 +18,4 @@ nx g @nx/angular:library libs/lucide-icons --publishable --import-path=@semantic
 nx generate @nx/plugin:generator libs/nx-generators/src/generators/circle-flags
 nx g @nx/angular:library libs/circle-flags --publishable --import-path=@semantic-icons/circle-flags
 nx g @nx/angular:library-secondary-entry-point --library=circle-flags --name=other
+nx g @nx/angular:library-secondary-entry-point --library=circle-flags --name=languages
