@@ -1,6 +1,6 @@
 # @semantic-icons/lucide-icons
 
-`@semantic-icons/lucide-icons` helps developers to use [Tabler icons](https://lucide.dev/icons) inside [Angular](https://angular.dev) projects.
+`@semantic-icons/lucide-icons` helps developers to use [Lucide icons](https://lucide.dev/icons) inside [Angular](https://angular.dev) projects.
 
 ## Supported versions
 
