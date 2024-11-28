@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgHouseIcon } from '@semantic-icons/lucide-icons';
+import { SvgBirdIcon } from '@semantic-icons/lucide-icons';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgHouseIcon],
+  imports: [SvgBirdIcon],
   template: `
-    <svg-house-icon class="text-blue-500 size-6" />
+    <svg-bird-icon class="text-blue-500 size-6" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
