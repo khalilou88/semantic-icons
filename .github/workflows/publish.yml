@@ -17,6 +17,7 @@ on:
           - flowbite-icons
           - flag-icons
           - lucide-icons
+          - circle-flags
   push:
     tags:
       - v*.*.*
