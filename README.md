@@ -6,5 +6,5 @@ A collection of free and open source icons ready to be used in your angular proj
 
 [`@semantic-icons/flowbite-icons`](libs/flowbite-icons)\
 [`@semantic-icons/heroicons`](libs/heroicons)\
-[`@semantic-icons/tabler-icons`](libs/tabler-icons)
+[`@semantic-icons/tabler-icons`](libs/tabler-icons)\
 [`@semantic-icons/flag-icons`](libs/flag-icons)
