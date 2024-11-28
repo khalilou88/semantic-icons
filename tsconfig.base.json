@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@semantic-icons/flag-icons": ["libs/flag-icons/src/index.ts"],
       "@semantic-icons/flag-icons/rectangle": [
         "libs/flag-icons/rectangle/src/index.ts"
       ],
