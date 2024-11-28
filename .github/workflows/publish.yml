@@ -15,6 +15,7 @@ on:
           - heroicons
           - tabler-icons
           - flowbite-icons
+          - flag-icons
   push:
     tags:
       - v*.*.*

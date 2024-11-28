@@ -14,6 +14,11 @@
       "factory": "./src/generators/flowbite-icons/generator",
       "schema": "./src/generators/flowbite-icons/schema.json",
       "description": "flowbite-icons generator"
+    },
+    "flag-icons": {
+      "factory": "./src/generators/flag-icons/generator",
+      "schema": "./src/generators/flag-icons/schema.json",
+      "description": "flag-icons generator"
     }
   }
 }
