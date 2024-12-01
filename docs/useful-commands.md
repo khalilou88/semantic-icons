@@ -8,6 +8,7 @@ npx nx generate @semantic-icons/nx-generators:flag-icons
 npx nx generate @semantic-icons/nx-generators:lucide-icons
 npx nx generate @semantic-icons/nx-generators:circle-flags
 npx nx generate @semantic-icons/nx-generators:bootstrap-icons
+npx nx generate @semantic-icons/nx-generators:lineicons
 
 nx generate @nx/plugin:generator libs/nx-generators/src/generators/flag-icons
 nx g @nx/angular:library libs/flag-icons --publishable --import-path=@semantic-icons/flag-icons
@@ -24,3 +25,6 @@ nx g @nx/angular:library-secondary-entry-point --library=circle-flags --name=lan
 
 nx generate @nx/plugin:generator libs/nx-generators/src/generators/bootstrap-icons
 nx g @nx/angular:library libs/bootstrap-icons --publishable --import-path=@semantic-icons/bootstrap-icons
+
+nx generate @nx/plugin:generator libs/nx-generators/src/generators/lineicons
+nx g @nx/angular:library libs/lineicons --publishable --import-path=@semantic-icons/lineicons

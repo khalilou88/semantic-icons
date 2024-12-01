@@ -47,6 +47,7 @@
       "@semantic-icons/heroicons/24/solid": [
         "libs/heroicons/24/solid/src/index.ts"
       ],
+      "@semantic-icons/lineicons": ["libs/lineicons/src/index.ts"],
       "@semantic-icons/lucide-icons": ["libs/lucide-icons/src/index.ts"],
       "@semantic-icons/nx-generators": ["libs/nx-generators/src/index.ts"],
       "@semantic-icons/tabler-icons/filled": [
