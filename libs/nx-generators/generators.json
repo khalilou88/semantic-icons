@@ -29,6 +29,11 @@
       "factory": "./src/generators/circle-flags/generator",
       "schema": "./src/generators/circle-flags/schema.json",
       "description": "circle-flags generator"
+    },
+    "bootstrap-icons": {
+      "factory": "./src/generators/bootstrap-icons/generator",
+      "schema": "./src/generators/bootstrap-icons/schema.json",
+      "description": "bootstrap-icons generator"
     }
   }
 }
