@@ -9,5 +9,6 @@ A collection of free and open source icons ready for use in your angular project
 [`@semantic-icons/lucide-icons`](libs/lucide-icons)\
 [`@semantic-icons/bootstrap-icons`](libs/bootstrap-icons)\
 [`@semantic-icons/flowbite-icons`](libs/flowbite-icons)\
+[`@semantic-icons/lineicons`](libs/lineicons)\
 [`@semantic-icons/flag-icons`](libs/flag-icons)\
 [`@semantic-icons/circle-flags`](libs/circle-flags)
