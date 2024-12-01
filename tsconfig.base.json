@@ -16,8 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@semantic-icons/circle-flags": ["libs/circle-flags/src/index.ts"],
-      "@semantic-icons/circle-flags/languages": [
-        "libs/circle-flags/languages/src/index.ts"
+      "@semantic-icons/circle-flags/language": [
+        "libs/circle-flags/language/src/index.ts"
       ],
       "@semantic-icons/circle-flags/other": [
         "libs/circle-flags/other/src/index.ts"
