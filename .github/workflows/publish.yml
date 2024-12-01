@@ -18,6 +18,7 @@ on:
           - flag-icons
           - lucide-icons
           - circle-flags
+          - bootstrap-icons
   push:
     tags:
       - v*.*.*
