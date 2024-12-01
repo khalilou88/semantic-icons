@@ -6,7 +6,7 @@
 
 | @semantic-icons/tabler-icons | Angular   | Tabler-icons |
 | ---------------------------- | --------- | ------------ |
-| 0.x.x                        | >= 17.1.0 | 3.22.0       |
+| 0.x.x                        | >= 17.1.0 | 3.23.0       |
 
 ## Usage
 
@@ -28,7 +28,7 @@ import { SvgCakeIcon } from '@semantic-icons/tabler-icons/outline';
   standalone: true,
   imports: [SvgCakeIcon],
   template: `
-    <svg-cake-icon class="size-6 text-blue-500" />
+    <svg-cake-icon class="text-blue-500 size-6" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
