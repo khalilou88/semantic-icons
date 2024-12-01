@@ -24,5 +24,3 @@ nx g @nx/angular:library-secondary-entry-point --library=circle-flags --name=lan
 
 nx generate @nx/plugin:generator libs/nx-generators/src/generators/bootstrap-icons
 nx g @nx/angular:library libs/bootstrap-icons --publishable --import-path=@semantic-icons/bootstrap-icons
-nx g @nx/angular:library-secondary-entry-point --library=bootstrap-icons --name=square
-nx g @nx/angular:library-secondary-entry-point --library=bootstrap-icons --name=rectangle
