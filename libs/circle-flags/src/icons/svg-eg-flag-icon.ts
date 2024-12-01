@@ -1,0 +1,43 @@
+import { NgClass } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  input,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg-eg-flag-icon',
+  standalone: true,
+  imports: [NgClass],
+  template: `
+    <svg
+      [ngClass]="class()"
+      xmlns="http://www.w3.org/2000/svg"
+      width="512"
+      height="512"
+      viewBox="0 0 512 512"
+    >
+      <mask id="a"><circle cx="256" cy="256" r="256" fill="#fff" /></mask>
+      <g mask="url(#a)">
+        <path fill="#eee" d="m0 144 256-32 256 32v224l-256 32L0 368Z" />
+        <path fill="#d80027" d="M0 0h512v144H0Z" />
+        <path fill="#333" d="M0 368h512v144H0Z" />
+        <path
+          fill="#ff9811"
+          d="M250 191c-8 0-17 4-22 14 5-3 16-1 16 13 0 4-2 8-5 10-8 0-14-14-29-14-10 0-19 7-19 17v69l46-7-14 27h66l-14-27 46 7v-69c0-10-9-17-19-17-15 0-21 14-29 14 8-23-7-37-23-37z"
+        />
+      </g>
+    </svg>
+  `,
+  styles: `
+    :host {
+      display: contents;
+    }
+  `,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SvgEgFlagIcon {
+  readonly class = input('');
+}
