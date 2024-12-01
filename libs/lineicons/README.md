@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgBirdIcon } from '@semantic-icons/lineicons';
+import { SvgTrophy1Icon } from '@semantic-icons/lineicons';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgBirdIcon],
+  imports: [SvgTrophy1Icon],
   template: `
-    <svg-bird-icon class="text-blue-500 size-6" />
+    <svg-trophy-1-icon class="text-blue-500 size-6" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
