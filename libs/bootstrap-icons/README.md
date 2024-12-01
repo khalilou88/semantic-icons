@@ -6,7 +6,7 @@
 
 | @semantic-icons/bootstrap-icons | Angular   | Bootstrap-icons |
 | ------------------------------- | --------- | --------------- |
-| 0.x.x                           | >= 17.1.0 | 1.11.0          |
+| 0.x.x                           | >= 17.1.0 | 1.11.3          |
 
 ## Usage
 
