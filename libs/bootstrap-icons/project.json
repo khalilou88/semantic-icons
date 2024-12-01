@@ -2,7 +2,7 @@
   "name": "bootstrap-icons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/bootstrap-icons/src",
-  "prefix": "lib",
+  "prefix": "svg",
   "projectType": "library",
   "tags": [],
   "targets": {
