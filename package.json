@@ -53,6 +53,7 @@
     "@typescript-eslint/utils": "^8.0.0",
     "angular-eslint": "^18.3.0",
     "autoprefixer": "^10.4.0",
+    "bootstrap-icons": "^1.11.3",
     "circle-flags": "^1.0.0",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.0.0",
