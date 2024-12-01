@@ -19,6 +19,7 @@ on:
           - lucide-icons
           - circle-flags
           - bootstrap-icons
+          - lineicons
   push:
     tags:
       - v*.*.*
