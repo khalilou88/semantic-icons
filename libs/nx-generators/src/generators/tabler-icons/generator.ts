@@ -1,6 +1,7 @@
 import { Tree, formatFiles, generateFiles, names } from '@nx/devkit';
 import * as path from 'path';
 
+import { version } from '../../utils';
 import { TablerIconsGeneratorSchema } from './schema';
 
 export async function tablerIconsGenerator(
@@ -76,20 +77,7 @@ function generateIconsComponents(
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
 
-  version(tree);
-}
-
-function version(tree: Tree) {
-  const version = JSON.parse(
-    tree.read('node_modules/@tabler/package.json').toString(),
-  ).version;
-
-  const packageJson = JSON.parse(
-    tree.read('libs/tabler-icons/package.json').toString(),
-  );
-  packageJson.version = `0.5.0-${version}`;
-
-  tree.write(path.join('libs/tabler-icons/package.json'), packageJson);
+  version(tree, 'node_modules/@tabler', iconsDestinationPath);
 }
 
 export default tablerIconsGenerator;
