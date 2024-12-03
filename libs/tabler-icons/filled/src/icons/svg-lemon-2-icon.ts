@@ -7,26 +7,22 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-flame-icon',
+  selector: 'svg-lemon-2-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-flame"
+      class="icon icon-tabler icons-tabler-filled icon-tabler-lemon-2"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      fill="currentColor"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
-        d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.621 -2.333 5.588c0 3.704 3.134 6.706 7 6.706s7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235"
+        d="M18 3a3 3 0 0 1 2.443 4.742l-.06 .076l.037 .087c1.269 3.187 .428 7.084 -2.203 9.872l-.217 .223c-2.8 2.8 -6.823 3.723 -10.095 2.42l-.087 -.036l-.133 .098a3 3 0 0 1 -2.11 .488l-.205 -.036a3 3 0 0 1 -1.852 -4.62l.098 -.134l-.036 -.085c-1.269 -3.187 -.428 -7.084 2.203 -9.872l.217 -.223c2.8 -2.8 6.823 -3.723 10.095 -2.42l.085 .037l.124 -.091a3 3 0 0 1 1.493 -.52z"
       />
     </svg>
   `,
@@ -38,6 +34,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgFlameIcon {
+export class SvgLemon2Icon {
   readonly class = input('');
 }

@@ -7,12 +7,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-flame-icon',
+  selector: 'svg-matrix-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-flame"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-matrix"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -25,9 +25,17 @@ import {
       stroke-linejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path
-        d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.621 -2.333 5.588c0 3.704 3.134 6.706 7 6.706s7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235"
-      />
+      <path d="M8 16h.013" />
+      <path d="M12.01 16h.005" />
+      <path d="M16.015 16h.005" />
+      <path d="M16.015 12h.005" />
+      <path d="M8.01 12h.005" />
+      <path d="M12.01 12h.005" />
+      <path d="M16.02 8h.005" />
+      <path d="M8.015 8h.005" />
+      <path d="M12.015 8h.005" />
+      <path d="M7 4h-1a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h1" />
+      <path d="M17 4h1a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-1" />
     </svg>
   `,
   styles: `
@@ -38,6 +46,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgFlameIcon {
+export class SvgMatrixIcon {
   readonly class = input('');
 }

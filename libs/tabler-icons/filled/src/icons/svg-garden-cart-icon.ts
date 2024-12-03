@@ -7,26 +7,22 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-flame-icon',
+  selector: 'svg-garden-cart-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-flame"
+      class="icon icon-tabler icons-tabler-filled icon-tabler-garden-cart"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      fill="currentColor"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
-        d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.621 -2.333 5.588c0 3.704 3.134 6.706 7 6.706s7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235"
+        d="M3.324 3a2 2 0 0 1 1.855 1.258l1.097 2.742h14.724a1 1 0 0 1 .94 1.341l-.046 .106l-2.934 5.871a3.5 3.5 0 1 1 -4.96 3.182l.005 -.192a3.5 3.5 0 0 1 .499 -1.618l-2.446 -.258l-3.446 4.75a2 2 0 0 1 -2.08 .762l-.154 -.044a2 2 0 0 1 -1.378 -1.9v-9.804l-1.679 -4.196h-1.321a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 1 -1zm14.176 13a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0 -3m-10.5 -2.498l-.002 5.498l2.783 -3.833a5 5 0 0 1 -2.614 -1.474z"
       />
     </svg>
   `,
@@ -38,6 +34,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgFlameIcon {
+export class SvgGardenCartIcon {
   readonly class = input('');
 }

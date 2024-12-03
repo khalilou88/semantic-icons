@@ -7,26 +7,22 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-flame-icon',
+  selector: 'svg-brand-bitbucket-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-flame"
+      class="icon icon-tabler icons-tabler-filled icon-tabler-brand-bitbucket"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      fill="currentColor"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
-        d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.621 -2.333 5.588c0 3.704 3.134 6.706 7 6.706s7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235"
+        d="M3.661 3l16.68 .007c.484 -.005 .946 .203 1.262 .57c.316 .368 .454 .856 .364 1.396l-3.338 14.651a1.64 1.64 0 0 1 -1.629 1.376h-10.01c-.906 -.009 -1.678 -.668 -1.82 -1.517l-3.148 -14.576a1.64 1.64 0 0 1 1.639 -1.907m11.339 5h-6a1 1 0 0 0 -.986 1.164l1 6a1 1 0 0 0 .986 .836h4a1 1 0 0 0 .986 -.836l1 -6a1 1 0 0 0 -.986 -1.164"
       />
     </svg>
   `,
@@ -38,6 +34,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgFlameIcon {
+export class SvgBrandBitbucketIcon {
   readonly class = input('');
 }

@@ -7,26 +7,22 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-flame-icon',
+  selector: 'svg-flare-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-flame"
+      class="icon icon-tabler icons-tabler-filled icon-tabler-flare"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      fill="currentColor"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
-        d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.621 -2.333 5.588c0 3.704 3.134 6.706 7 6.706s7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235"
+        d="M11.106 2.553a1 1 0 0 1 1.788 0l2.851 5.701l5.702 2.852a1 1 0 0 1 .11 1.725l-.11 .063l-5.702 2.851l-2.85 5.702a1 1 0 0 1 -1.726 .11l-.063 -.11l-2.852 -5.702l-5.701 -2.85a1 1 0 0 1 -.11 -1.726l.11 -.063l5.701 -2.852z"
       />
     </svg>
   `,
@@ -38,6 +34,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgFlameIcon {
+export class SvgFlareIcon {
   readonly class = input('');
 }

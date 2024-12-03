@@ -7,12 +7,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-flame-icon',
+  selector: 'svg-cake-roll-icon',
   standalone: true,
   imports: [NgClass],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-flame"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-cake-roll"
       [ngClass]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -26,7 +26,13 @@ import {
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
-        d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.621 -2.333 5.588c0 3.704 3.134 6.706 7 6.706s7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235"
+        d="M12 15c-4.97 0 -9 -2.462 -9 -5.5s4.03 -5.5 9 -5.5s9 2.462 9 5.5s-4.03 5.5 -9 5.5"
+      />
+      <path
+        d="M12 6.97c3 0 4 1.036 4 1.979c0 2.805 -8 2.969 -8 -.99c0 -2.11 1.5 -3.959 4 -3.959"
+      />
+      <path
+        d="M21 9.333v5.334c0 2.945 -4.03 5.333 -9 5.333s-9 -2.388 -9 -5.333v-5.334"
       />
     </svg>
   `,
@@ -38,6 +44,6 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgFlameIcon {
+export class SvgCakeRollIcon {
   readonly class = input('');
 }
