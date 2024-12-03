@@ -11,7 +11,7 @@ export function version(
     tree.read(`${sourceLibPath}/package.json`).toString(),
   ).version;
 
-  const packageJson = JSON.parse(tree.read(a).toString());
+  const packageJson = JSON.parse(tree.read(packageJsonPath).toString());
   packageJson.version = version;
 
   tree.write(packageJsonPath, packageJson);
