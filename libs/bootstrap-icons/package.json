@@ -6,7 +6,6 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": ">=17.1.0",
     "@angular/core": ">=17.1.0"
   },
   "sideEffects": false,
