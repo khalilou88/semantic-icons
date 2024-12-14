@@ -30,16 +30,12 @@ import {
   host: {
     '[class]': 'hostClass()',
   },
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgCheckIcon {
   readonly class = input('');
 
-  readonly hostClass = input('');
+  readonly hostClass = input('contents');
 }
