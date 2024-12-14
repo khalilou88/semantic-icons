@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,10 +8,10 @@ import {
 @Component({
   selector: 'svg-diners-club-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
-      [ngClass]="class()"
+      [class]="class()"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -173,14 +172,15 @@ import {
       />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgDinersClubIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

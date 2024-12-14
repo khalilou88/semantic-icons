@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,10 +8,10 @@ import {
 @Component({
   selector: 'svg-arrow-left-circle-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
-      [ngClass]="class()"
+      [class]="class()"
       width="25"
       height="25"
       viewBox="0 0 25 25"
@@ -31,14 +30,15 @@ import {
       />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgArrowLeftCircleIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

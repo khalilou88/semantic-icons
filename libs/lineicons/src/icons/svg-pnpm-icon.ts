@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,10 +8,10 @@ import {
 @Component({
   selector: 'svg-pnpm-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
-      [ngClass]="class()"
+      [class]="class()"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -35,14 +34,15 @@ import {
       <path d="M8.62467 21H3V15.3753H8.62467V21Z" fill="#323544" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgPnpmIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

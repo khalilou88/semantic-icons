@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,10 +8,10 @@ import {
 @Component({
   selector: 'svg-unsplash-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
-      [ngClass]="class()"
+      [class]="class()"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -26,14 +25,15 @@ import {
       <path d="M15.7416 2H8.25775V7.58065H15.6771V2H15.7416Z" fill="#323544" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgUnsplashIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }
