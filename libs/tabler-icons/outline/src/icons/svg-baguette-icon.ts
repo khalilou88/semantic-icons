@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,11 +8,11 @@ import {
 @Component({
   selector: 'svg-baguette-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
       class="icon icon-tabler icons-tabler-outline icon-tabler-baguette"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -33,14 +32,15 @@ import {
       <path d="M12.5 4.5l1.5 3.5" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgBaguetteIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

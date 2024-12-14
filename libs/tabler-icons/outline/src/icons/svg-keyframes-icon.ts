@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,11 +8,11 @@ import {
 @Component({
   selector: 'svg-keyframes-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
       class="icon icon-tabler icons-tabler-outline icon-tabler-keyframes"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -32,14 +31,15 @@ import {
       <path d="M13 5l4.586 5.836a1.844 1.844 0 0 1 0 2.328l-4.586 5.836" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgKeyframesIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

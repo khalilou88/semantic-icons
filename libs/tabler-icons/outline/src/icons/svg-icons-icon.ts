@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,11 +8,11 @@ import {
 @Component({
   selector: 'svg-icons-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
       class="icon icon-tabler icons-tabler-outline icon-tabler-icons"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -32,14 +31,15 @@ import {
       <path d="M14 14h7v7h-7z" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgIconsIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,11 +8,11 @@ import {
 @Component({
   selector: 'svg-database-smile-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
       class="icon icon-tabler icons-tabler-outline icon-tabler-database-smile"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -34,14 +33,15 @@ import {
       <path d="M4 6v12c0 1.657 3.582 3 8 3s8 -1.343 8 -3v-12" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgDatabaseSmileIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

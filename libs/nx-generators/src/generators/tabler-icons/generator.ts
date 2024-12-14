@@ -77,7 +77,8 @@ function generateIconsComponents(
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
 
-  version(tree, 'node_modules/@tabler', iconsDestinationPath);
+  //TODO not working yet
+  // version(tree, 'node_modules/@tabler/icons', iconsDestinationPath);
 }
 
 export default tablerIconsGenerator;
