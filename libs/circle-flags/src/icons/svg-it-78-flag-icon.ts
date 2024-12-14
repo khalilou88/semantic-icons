@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,10 +8,10 @@ import {
 @Component({
   selector: 'svg-it-78-flag-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
     <svg
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="512"
       height="512"
@@ -50,14 +49,15 @@ import {
       </g>
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgIt78FlagIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }
