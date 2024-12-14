@@ -17,11 +17,10 @@
   },
   "release": {
     "projects": ["libs/*"],
-    "projectsRelationship": "independent",
     "releaseTagPattern": "release/{projectName}/{version}",
     "version": {
       "generatorOptions": {
-        "packageRoot": "dist/{projectRoot}"
+        "packageRoot": "{projectRoot}"
       }
     }
   },

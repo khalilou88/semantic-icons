@@ -2,24 +2,7 @@ name: Publish
 
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version to publish'
-        required: true
-        default: '0.0.1'
-      project_option:
-        type: choice
-        description: project to publish
-        options:
-          - nx-generators
-          - heroicons
-          - tabler-icons
-          - flowbite-icons
-          - flag-icons
-          - lucide-icons
-          - circle-flags
-          - bootstrap-icons
-          - lineicons
+
   push:
     tags:
       - v*.*.*
@@ -52,16 +35,12 @@ jobs:
         run: npx nx report
         shell: bash
 
-      - name: Build project
-        run: npx nx build ${{ github.event.inputs.project_option }}
-        shell: bash
-
       - name: Version
-        run: npx nx release version ${{ github.event.inputs.version }} --projects=${{ github.event.inputs.project_option }}
+        run: npx nx release version minor
         shell: bash
 
       - name: Publish packages
-        run: npx nx release publish --projects=${{ github.event.inputs.project_option }}
+        run: npx nx release publish
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
