@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,12 +8,12 @@ import {
 @Component({
   selector: 'svg-grid-2x2-check-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
-    <!-- @license lucide-static v0.462.0 - ISC -->
+    <!-- @license lucide-static v0.468.0 - ISC -->
     <svg
       class="lucide lucide-grid-2x2-check"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -31,14 +30,15 @@ import {
       <path d="m16 19 2 2 4-4" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgGrid2x2CheckIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

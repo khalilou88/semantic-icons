@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,12 +8,12 @@ import {
 @Component({
   selector: 'svg-link-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
-    <!-- @license lucide-static v0.462.0 - ISC -->
+    <!-- @license lucide-static v0.468.0 - ISC -->
     <svg
       class="lucide lucide-link"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -29,14 +28,15 @@ import {
       <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgLinkIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

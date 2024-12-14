@@ -10,7 +10,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <!-- @license lucide-static v0.462.0 - ISC -->
+    <!-- @license lucide-static v0.468.0 - ISC -->
     <svg
       class="lucide lucide-check"
       [class]="class()"

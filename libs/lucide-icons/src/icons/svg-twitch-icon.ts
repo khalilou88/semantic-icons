@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,12 +8,12 @@ import {
 @Component({
   selector: 'svg-twitch-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
-    <!-- @license lucide-static v0.462.0 - ISC -->
+    <!-- @license lucide-static v0.468.0 - ISC -->
     <svg
       class="lucide lucide-twitch"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -28,14 +27,15 @@ import {
       <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgTwitchIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }

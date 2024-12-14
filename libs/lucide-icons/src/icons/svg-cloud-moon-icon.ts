@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,12 +8,12 @@ import {
 @Component({
   selector: 'svg-cloud-moon-icon',
   standalone: true,
-  imports: [NgClass],
+  imports: [],
   template: `
-    <!-- @license lucide-static v0.462.0 - ISC -->
+    <!-- @license lucide-static v0.468.0 - ISC -->
     <svg
       class="lucide lucide-cloud-moon"
-      [ngClass]="class()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -29,14 +28,15 @@ import {
       <path d="M13 16a3 3 0 1 1 0 6H7a5 5 0 1 1 4.9-6Z" />
     </svg>
   `,
-  styles: `
-    :host {
-      display: contents;
-    }
-  `,
+  host: {
+    '[class]': 'hostClass()',
+  },
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgCloudMoonIcon {
   readonly class = input('');
+
+  readonly hostClass = input('contents');
 }
