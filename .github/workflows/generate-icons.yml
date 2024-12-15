@@ -33,6 +33,7 @@ jobs:
       - run: npx nx generate @semantic-icons/nx-generators:circle-flags
       - run: npx nx generate @semantic-icons/nx-generators:bootstrap-icons
       - run: npx nx generate @semantic-icons/nx-generators:lineicons
+      - run: npx nx generate @semantic-icons/nx-generators:simple-icons
 
       - name: Setup Git
         run: |
