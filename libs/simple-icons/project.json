@@ -2,7 +2,7 @@
   "name": "simple-icons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/simple-icons/src",
-  "prefix": "lib",
+  "prefix": "svg",
   "projectType": "library",
   "tags": [],
   "targets": {
