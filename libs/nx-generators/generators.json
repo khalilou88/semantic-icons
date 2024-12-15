@@ -35,6 +35,11 @@
       "schema": "./src/generators/bootstrap-icons/schema.json",
       "description": "bootstrap-icons generator"
     },
+    "simple-icons": {
+      "factory": "./src/generators/simple-icons/generator",
+      "schema": "./src/generators/simple-icons/schema.json",
+      "description": "simple-icons generator"
+    },
     "lineicons": {
       "factory": "./src/generators/lineicons/generator",
       "schema": "./src/generators/lineicons/schema.json",

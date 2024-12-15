@@ -27,3 +27,6 @@ nx g @nx/angular:library libs/bootstrap-icons --publishable --import-path=@seman
 
 nx generate @nx/plugin:generator libs/nx-generators/src/generators/lineicons
 nx g @nx/angular:library libs/lineicons --publishable --import-path=@semantic-icons/lineicons
+
+nx generate @nx/plugin:generator libs/nx-generators/src/generators/simple-icons
+nx g @nx/angular:library libs/simple-icons --publishable --import-path=@semantic-icons/simple-icons
