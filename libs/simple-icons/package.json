@@ -1,0 +1,23 @@
+{
+  "name": "@semantic-icons/simple-icons",
+  "version": "0.0.1",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=17.1.0"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "simple-icons",
+    "angular",
+    "icons",
+    "svg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khalilou88/semantic-icons",
+    "directory": "libs/simple-icons"
+  }
+}
