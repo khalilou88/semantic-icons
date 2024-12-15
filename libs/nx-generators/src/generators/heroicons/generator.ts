@@ -6,6 +6,7 @@ import {
   workspaceRoot,
   writeJsonFile,
 } from '@nx/devkit';
+import * as fs from 'fs';
 import * as path from 'path';
 
 import { HeroiconsGeneratorSchema } from './schema';
@@ -103,6 +104,12 @@ function generateIconsComponents(
   iconSize: 16 | 20 | 24,
   iconType: 'solid' | 'outline',
 ) {
+  //remove icons
+  fs.rmSync(path.join(workspaceRoot, iconsDestinationPath, 'icons'), {
+    recursive: true,
+    force: true,
+  });
+
   const exports = [];
   tree.children(iconsSourcePath).forEach((fileName) => {
     const name = path.parse(fileName).name;

@@ -1,4 +1,11 @@
-import { Tree, formatFiles, generateFiles, names } from '@nx/devkit';
+import {
+  Tree,
+  formatFiles,
+  generateFiles,
+  names,
+  workspaceRoot,
+} from '@nx/devkit';
+import * as fs from 'fs';
 import * as path from 'path';
 
 import { LineiconsGeneratorSchema } from './schema';
@@ -23,6 +30,12 @@ function generateIconsComponents(
   iconsSourcePath: string,
   iconsDestinationPath: string,
 ) {
+  //remove icons
+  fs.rmSync(path.join(workspaceRoot, iconsDestinationPath, 'icons'), {
+    recursive: true,
+    force: true,
+  });
+
   const exports = [];
   tree.children(iconsSourcePath).forEach((fileName) => {
     const name = path.parse(fileName).name;
