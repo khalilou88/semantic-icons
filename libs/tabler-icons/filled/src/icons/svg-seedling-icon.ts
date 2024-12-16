@@ -6,28 +6,23 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-http-delete-icon',
+  selector: 'svg-seedling-icon',
   standalone: true,
   imports: [],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-http-delete"
+      class="icon icon-tabler icons-tabler-filled icon-tabler-seedling"
       [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      fill="currentColor"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M3 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" />
-      <path d="M14 8h-4v8h4" />
-      <path d="M10 12h2.5" />
-      <path d="M17 8v8h4" />
+      <path
+        d="M6 3a7 7 0 0 1 6.95 6.155a6.97 6.97 0 0 1 5.05 -2.155h3a1 1 0 0 1 1 1v1a7 7 0 0 1 -7 7h-2v4a1 1 0 0 1 -2 0v-7h-2a7 7 0 0 1 -7 -7v-2a1 1 0 0 1 1 -1z"
+      />
     </svg>
   `,
   host: {
@@ -37,7 +32,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgHttpDeleteIcon {
+export class SvgSeedlingIcon {
   readonly class = input('');
 
   readonly hostClass = input('contents');

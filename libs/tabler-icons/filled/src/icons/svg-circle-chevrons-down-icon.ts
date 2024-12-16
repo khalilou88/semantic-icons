@@ -6,12 +6,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-seeding-icon',
+  selector: 'svg-circle-chevrons-down-icon',
   standalone: true,
   imports: [],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-filled icon-tabler-seeding"
+      class="icon icon-tabler icons-tabler-filled icon-tabler-circle-chevrons-down"
       [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -21,7 +21,7 @@ import {
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
-        d="M6 3a7 7 0 0 1 6.95 6.155a6.97 6.97 0 0 1 5.05 -2.155h3a1 1 0 0 1 1 1v1a7 7 0 0 1 -7 7h-2v4a1 1 0 0 1 -2 0v-7h-2a7 7 0 0 1 -7 -7v-2a1 1 0 0 1 1 -1z"
+        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10 -10 10a10 10 0 1 1 0 -20m-2.293 10.293a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 0 0 1.414 0l3 -3a1 1 0 0 0 0 -1.414l-.094 -.083a1 1 0 0 0 -1.32 .083l-2.294 2.292zm0 -4a1 1 0 0 0 -1.414 1.414l3 3a1 1 0 0 0 1.414 0l3 -3a1 1 0 0 0 0 -1.414l-.094 -.083a1 1 0 0 0 -1.32 .083l-2.294 2.292z"
       />
     </svg>
   `,
@@ -32,7 +32,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgSeedingIcon {
+export class SvgCircleChevronsDownIcon {
   readonly class = input('');
 
   readonly hostClass = input('contents');

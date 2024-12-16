@@ -6,12 +6,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-http-delete-icon',
+  selector: 'svg-seedling-off-icon',
   standalone: true,
   imports: [],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-http-delete"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-seedling-off"
       [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -24,10 +24,14 @@ import {
       stroke-linejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M3 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" />
-      <path d="M14 8h-4v8h4" />
-      <path d="M10 12h2.5" />
-      <path d="M17 8v8h4" />
+      <path
+        d="M11.412 7.407a6.025 6.025 0 0 0 -2.82 -2.82m-4.592 -.587h-1v2a6 6 0 0 0 6 6h3"
+      />
+      <path
+        d="M12 14a6 6 0 0 1 .255 -1.736m1.51 -2.514a5.981 5.981 0 0 1 4.235 -1.75h3v1c0 2.158 -1.14 4.05 -2.85 5.107m-3.15 .893h-3"
+      />
+      <path d="M12 20v-8" />
+      <path d="M3 3l18 18" />
     </svg>
   `,
   host: {
@@ -37,7 +41,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgHttpDeleteIcon {
+export class SvgSeedlingOffIcon {
   readonly class = input('');
 
   readonly hostClass = input('contents');

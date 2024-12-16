@@ -6,12 +6,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-http-delete-icon',
+  selector: 'svg-http-options-off-icon',
   standalone: true,
   imports: [],
   template: `
     <svg
-      class="icon icon-tabler icons-tabler-outline icon-tabler-http-delete"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-http-options-off"
       [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -24,10 +24,11 @@ import {
       stroke-linejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M3 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" />
-      <path d="M14 8h-4v8h4" />
-      <path d="M10 12h2.5" />
-      <path d="M17 8v8h4" />
+      <path d="M5 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2" />
+      <path d="M10 12h2m2 -2a2 2 0 0 0 -2 -2m-2 2v6" />
+      <path d="M17 8h4" />
+      <path d="M19 8v7" />
+      <path d="M3 3l18 18" />
     </svg>
   `,
   host: {
@@ -37,7 +38,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SvgHttpDeleteIcon {
+export class SvgHttpOptionsOffIcon {
   readonly class = input('');
 
   readonly hostClass = input('contents');
