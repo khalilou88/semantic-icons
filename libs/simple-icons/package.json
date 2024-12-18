@@ -1,6 +1,6 @@
 {
   "name": "@semantic-icons/simple-icons",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "private": false,
   "publishConfig": {
     "access": "public"
