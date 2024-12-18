@@ -11,6 +11,10 @@ jobs:
   test:
     name: Publish
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write # needed for provenance data generation
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
