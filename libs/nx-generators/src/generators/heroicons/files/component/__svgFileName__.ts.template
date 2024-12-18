@@ -16,7 +16,7 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class <%= svgClassName %> {
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _hostClass = input('', { alias: 'class' });
 
   readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }
