@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-by"
-      [class]="class()"
+      [class]="_class()"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve"
@@ -48,14 +48,15 @@ import {
     </svg>
   `,
   host: {
-    '[class]': 'hostClass()',
+    '[class.svg]': 'true',
+    '[class]': '_hostClass()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgByFlagIcon {
-  readonly class = input('');
+  readonly _class = input('', { alias: 'class' });
 
-  readonly hostClass = input('contents');
+  readonly _hostClass = input('', { alias: 'hostClass' });
 }

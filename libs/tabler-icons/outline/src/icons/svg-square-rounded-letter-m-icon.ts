@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       class="icon icon-tabler icons-tabler-outline icon-tabler-square-rounded-letter-m"
-      [class]="class()"
+      [class]="_class()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -29,14 +29,15 @@ import {
     </svg>
   `,
   host: {
-    '[class]': 'hostClass()',
+    '[class.svg]': 'true',
+    '[class]': '_hostClass()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgSquareRoundedLetterMIcon {
-  readonly class = input('');
+  readonly _class = input('', { alias: 'class' });
 
-  readonly hostClass = input('contents');
+  readonly _hostClass = input('', { alias: 'hostClass' });
 }

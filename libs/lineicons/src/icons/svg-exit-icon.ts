@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="class()"
+      [class]="_class()"
       width="25"
       height="25"
       viewBox="0 0 25 25"
@@ -29,14 +29,15 @@ import {
     </svg>
   `,
   host: {
-    '[class]': 'hostClass()',
+    '[class.svg]': 'true',
+    '[class]': '_hostClass()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgExitIcon {
-  readonly class = input('');
+  readonly _class = input('', { alias: 'class' });
 
-  readonly hostClass = input('contents');
+  readonly _hostClass = input('', { alias: 'hostClass' });
 }

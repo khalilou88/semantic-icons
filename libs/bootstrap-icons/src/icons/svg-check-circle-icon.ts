@@ -28,14 +28,15 @@ import {
     </svg>
   `,
   host: {
-    '[class]': 'hostClass()',
+    '[class.svg]': 'true',
+    '[class]': '_hostClass()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgCheckCircleIcon {
-  readonly class = input('');
+  readonly _class = input('', { alias: 'class' });
 
-  readonly hostClass = input('contents');
+  readonly _hostClass = input('', { alias: 'hostClass' });
 }

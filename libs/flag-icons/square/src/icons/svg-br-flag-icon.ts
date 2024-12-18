@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-br"
-      [class]="class()"
+      [class]="_class()"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -140,14 +140,15 @@ import {
     </svg>
   `,
   host: {
-    '[class]': 'hostClass()',
+    '[class.svg]': 'true',
+    '[class]': '_hostClass()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgBrFlagIcon {
-  readonly class = input('');
+  readonly _class = input('', { alias: 'class' });
 
-  readonly hostClass = input('contents');
+  readonly _hostClass = input('', { alias: 'hostClass' });
 }
