@@ -41,12 +41,12 @@ jobs:
 
       - run: npx nx run-many -t build
 
-      - name: Publish packages
-        run: npx nx release publish
-        shell: bash
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-          NPM_CONFIG_PROVENANCE: true
+      # - name: Publish packages
+      #   run: npx nx release publish
+      #   shell: bash
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+      #     NPM_CONFIG_PROVENANCE: true
 
       - name: Setup Git
         run: |
