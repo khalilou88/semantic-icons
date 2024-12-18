@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       class="bi bi-arrow-up-right-square-fill"
-      [class]="class()"
+      [class]="_class()"
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
