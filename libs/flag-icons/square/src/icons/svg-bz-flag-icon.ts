@@ -476,7 +476,7 @@ import {
   `,
   host: {
     '[class.svg]': 'true',
-    '[class]': '_hostClass()',
+    '[class]': '_computedHostClass()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -484,6 +484,8 @@ import {
 })
 export class SvgBzFlagIcon {
   readonly _hostClass = input('', { alias: 'class' });
+
+  _computedHostClass = computed(() => 'block'.concat(' ', this._hostClass()));
 
   readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }
