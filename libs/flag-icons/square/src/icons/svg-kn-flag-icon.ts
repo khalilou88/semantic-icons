@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-kn"
-      [class]="_class()"
+      [class]="_svgClass()"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -49,7 +49,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgKnFlagIcon {
-  readonly _class = input('', { alias: 'class' });
+  readonly _hostClass = input('', { alias: 'class' });
 
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }

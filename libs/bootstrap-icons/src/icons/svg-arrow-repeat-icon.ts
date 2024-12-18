@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       class="bi bi-arrow-repeat"
-      [class]="_class()"
+      [class]="_svgClass()"
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
@@ -37,7 +37,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgArrowRepeatIcon {
-  readonly _class = input('', { alias: 'class' });
+  readonly _hostClass = input('', { alias: 'class' });
 
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }

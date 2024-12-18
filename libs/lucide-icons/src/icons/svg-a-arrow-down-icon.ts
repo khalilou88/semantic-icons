@@ -39,7 +39,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgAArrowDownIcon {
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _hostClass = input('', { alias: 'class' });
 
   readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }

@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="_class()"
+      [class]="_svgClass()"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgHiveBlockchainIcon {
-  readonly _class = input('', { alias: 'class' });
+  readonly _hostClass = input('', { alias: 'class' });
 
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }

@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-pt"
-      [class]="_class()"
+      [class]="_svgClass()"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 640 480"
@@ -162,7 +162,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgPtFlagIcon {
-  readonly _class = input('', { alias: 'class' });
+  readonly _hostClass = input('', { alias: 'class' });
 
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }

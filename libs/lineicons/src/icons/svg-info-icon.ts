@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="_class()"
+      [class]="_svgClass()"
       width="25"
       height="25"
       viewBox="0 0 25 25"
@@ -37,7 +37,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgInfoIcon {
-  readonly _class = input('', { alias: 'class' });
+  readonly _hostClass = input('', { alias: 'class' });
 
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }

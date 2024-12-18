@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       class="icon icon-tabler icons-tabler-filled icon-tabler-layout-align-bottom"
-      [class]="_class()"
+      [class]="_svgClass()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -35,7 +35,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgLayoutAlignBottomIcon {
-  readonly _class = input('', { alias: 'class' });
+  readonly _hostClass = input('', { alias: 'class' });
 
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }

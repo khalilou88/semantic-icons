@@ -13,7 +13,7 @@ import {
     <!-- @license lucide-static v0.468.0 - ISC -->
     <svg
       class="lucide lucide-clock-10"
-      [class]="_class()"
+      [class]="_svgClass()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -37,7 +37,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgClock10Icon {
-  readonly _class = input('', { alias: 'class' });
+  readonly _hostClass = input('', { alias: 'class' });
 
-  readonly _hostClass = input('', { alias: 'hostClass' });
+  readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }
