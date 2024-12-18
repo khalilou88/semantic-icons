@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
   `,
   host: {
     '[class.svg]': 'true',
-    '[class]': '_hostClass()',
+    '[class]': '_computedHostClass()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -17,6 +17,8 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input } from '@a
 })
 export class <%= svgClassName %> {
   readonly _hostClass = input('', { alias: 'class' });
+
+  _computedHostClass = computed(() => 'block'.concat(' ', this._hostClass()));
 
   readonly _svgClass = input('size-full', { alias: 'svgClass' });
 }
