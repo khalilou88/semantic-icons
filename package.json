@@ -71,7 +71,7 @@
     "jsonc-eslint-parser": "^2.4.0",
     "lineicons": "^1.3.2",
     "lint-staged": "^15.2.11",
-    "lucide-static": "^0.468.0",
+    "lucide-static": "^0.469.0",
     "ng-packagr": "19.0.1",
     "nx": "20.3.0",
     "postcss": "^8.4.49",
