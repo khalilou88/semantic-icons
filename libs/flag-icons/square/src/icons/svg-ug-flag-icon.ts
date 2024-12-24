@@ -6,6 +6,8 @@ import {
   input,
 } from '@angular/core';
 
+import { cn } from '@semantic-components/utils';
+
 @Component({
   selector: 'svg-ug-flag-icon',
   standalone: true,
@@ -147,16 +149,18 @@ import {
   `,
   host: {
     '[class.svg]': 'true',
-    '[class]': '_computedHostClass()',
+    '[class]': '_class()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgUgFlagIcon {
-  readonly _hostClass = input('', { alias: 'class' });
+  class = input<string>('');
 
-  _computedHostClass = computed(() => 'block'.concat(' ', this._hostClass()));
+  _class = computed(() => cn('block', this.class()));
 
-  readonly _svgClass = input('size-full', { alias: 'svgClass' });
+  svgClass = input<string>('');
+
+  _svgClass = computed(() => cn('size-full', this.svgClass()));
 }

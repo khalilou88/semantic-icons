@@ -6,12 +6,14 @@ import {
   input,
 } from '@angular/core';
 
+import { cn } from '@semantic-components/utils';
+
 @Component({
   selector: 'svg-snowflake-icon',
   standalone: true,
   imports: [],
   template: `
-    <!-- @license lucide-static v0.468.0 - ISC -->
+    <!-- @license lucide-static v0.469.0 - ISC -->
     <svg
       class="lucide lucide-snowflake"
       [class]="_svgClass()"
@@ -25,26 +27,34 @@ import {
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <line x1="2" x2="22" y1="12" y2="12" />
-      <line x1="12" x2="12" y1="2" y2="22" />
-      <path d="m20 16-4-4 4-4" />
-      <path d="m4 8 4 4-4 4" />
-      <path d="m16 4-4 4-4-4" />
-      <path d="m8 20 4-4 4 4" />
+      <path d="m10 20-1.25-2.5L6 18" />
+      <path d="M10 4 8.75 6.5 6 6" />
+      <path d="m14 20 1.25-2.5L18 18" />
+      <path d="m14 4 1.25 2.5L18 6" />
+      <path d="m17 21-3-6h-4" />
+      <path d="m17 3-3 6 1.5 3" />
+      <path d="M2 12h6.5L10 9" />
+      <path d="m20 10-1.5 2 1.5 2" />
+      <path d="M22 12h-6.5L14 15" />
+      <path d="m4 10 1.5 2L4 14" />
+      <path d="m7 21 3-6-1.5-3" />
+      <path d="m7 3 3 6h4" />
     </svg>
   `,
   host: {
     '[class.svg]': 'true',
-    '[class]': '_computedHostClass()',
+    '[class]': '_class()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgSnowflakeIcon {
-  readonly _hostClass = input('', { alias: 'class' });
+  class = input<string>('');
 
-  _computedHostClass = computed(() => 'block'.concat(' ', this._hostClass()));
+  _class = computed(() => cn('block', this.class()));
 
-  readonly _svgClass = input('size-full', { alias: 'svgClass' });
+  svgClass = input<string>('');
+
+  _svgClass = computed(() => cn('size-full', this.svgClass()));
 }

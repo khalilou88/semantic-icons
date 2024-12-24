@@ -6,12 +6,14 @@ import {
   input,
 } from '@angular/core';
 
+import { cn } from '@semantic-components/utils';
+
 @Component({
   selector: 'svg-text-cursor-input-icon',
   standalone: true,
   imports: [],
   template: `
-    <!-- @license lucide-static v0.468.0 - ISC -->
+    <!-- @license lucide-static v0.469.0 - ISC -->
     <svg
       class="lucide lucide-text-cursor-input"
       [class]="_svgClass()"
@@ -34,16 +36,18 @@ import {
   `,
   host: {
     '[class.svg]': 'true',
-    '[class]': '_computedHostClass()',
+    '[class]': '_class()',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgTextCursorInputIcon {
-  readonly _hostClass = input('', { alias: 'class' });
+  class = input<string>('');
 
-  _computedHostClass = computed(() => 'block'.concat(' ', this._hostClass()));
+  _class = computed(() => cn('block', this.class()));
 
-  readonly _svgClass = input('size-full', { alias: 'svgClass' });
+  svgClass = input<string>('');
+
+  _svgClass = computed(() => cn('size-full', this.svgClass()));
 }

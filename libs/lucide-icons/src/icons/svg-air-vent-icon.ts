@@ -13,7 +13,7 @@ import { cn } from '@semantic-components/utils';
   standalone: true,
   imports: [],
   template: `
-    <!-- @license lucide-static v0.468.0 - ISC -->
+    <!-- @license lucide-static v0.469.0 - ISC -->
     <svg
       class="lucide lucide-air-vent"
       [class]="_svgClass()"
