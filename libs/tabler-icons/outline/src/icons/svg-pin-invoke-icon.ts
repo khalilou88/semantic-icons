@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-pin-invoke-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

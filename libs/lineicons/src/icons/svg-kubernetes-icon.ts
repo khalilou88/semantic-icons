@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-kubernetes-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

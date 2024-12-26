@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-grid-2x2-check-icon',
-  standalone: true,
   imports: [],
   template: `
     <!-- @license lucide-static v0.469.0 - ISC -->

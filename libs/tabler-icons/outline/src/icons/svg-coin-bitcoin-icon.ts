@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-coin-bitcoin-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

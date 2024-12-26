@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-calendar2-date-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

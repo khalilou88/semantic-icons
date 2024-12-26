@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-bag-dash-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

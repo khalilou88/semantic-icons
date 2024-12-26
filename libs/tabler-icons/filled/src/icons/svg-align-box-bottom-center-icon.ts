@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-align-box-bottom-center-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

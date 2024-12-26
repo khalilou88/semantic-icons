@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-life-guard-tube-1-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

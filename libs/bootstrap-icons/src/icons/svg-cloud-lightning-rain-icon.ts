@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-cloud-lightning-rain-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

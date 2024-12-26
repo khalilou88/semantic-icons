@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-trash2-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

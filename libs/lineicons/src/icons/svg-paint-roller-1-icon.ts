@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-paint-roller-1-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

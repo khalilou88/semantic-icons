@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-bezier-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-ease-out-control-point-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

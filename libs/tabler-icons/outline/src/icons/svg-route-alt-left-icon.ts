@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-route-alt-left-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

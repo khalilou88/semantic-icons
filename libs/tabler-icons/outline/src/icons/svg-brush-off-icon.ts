@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-brush-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

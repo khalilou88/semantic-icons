@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-podman-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

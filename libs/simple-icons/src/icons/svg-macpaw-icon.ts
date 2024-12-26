@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-macpaw-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-moneybag-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

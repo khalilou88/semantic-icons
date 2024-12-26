@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-arrow-bar-to-left-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

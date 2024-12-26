@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-grid-3x2-gap-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-database-fill-gear-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

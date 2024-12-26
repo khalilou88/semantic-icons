@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-vuetify-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

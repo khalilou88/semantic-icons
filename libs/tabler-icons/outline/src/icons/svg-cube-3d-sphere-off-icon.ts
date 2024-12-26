@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-cube-3d-sphere-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

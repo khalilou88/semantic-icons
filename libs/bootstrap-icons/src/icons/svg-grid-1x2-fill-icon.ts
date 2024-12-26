@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-grid-1x2-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

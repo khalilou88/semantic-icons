@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-deepgram-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

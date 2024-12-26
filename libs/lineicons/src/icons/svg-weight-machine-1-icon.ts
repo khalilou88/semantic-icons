@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-weight-machine-1-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

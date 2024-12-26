@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-box2-heart-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

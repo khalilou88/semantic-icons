@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-camera-heart-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

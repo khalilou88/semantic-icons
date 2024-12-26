@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-trend-down-1-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

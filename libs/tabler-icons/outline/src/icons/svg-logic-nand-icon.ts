@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-logic-nand-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

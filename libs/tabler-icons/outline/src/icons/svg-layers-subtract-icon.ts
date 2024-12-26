@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-layers-subtract-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

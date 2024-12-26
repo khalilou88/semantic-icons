@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-timeline-event-plus-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

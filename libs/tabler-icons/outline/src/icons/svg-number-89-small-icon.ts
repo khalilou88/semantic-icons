@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-number-89-small-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

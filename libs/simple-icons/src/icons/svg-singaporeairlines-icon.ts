@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-singaporeairlines-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

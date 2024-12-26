@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-lock-up-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

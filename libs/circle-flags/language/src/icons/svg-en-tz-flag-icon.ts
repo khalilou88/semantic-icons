@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-en-tz-flag-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

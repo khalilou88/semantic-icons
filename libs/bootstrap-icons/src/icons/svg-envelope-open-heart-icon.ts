@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-envelope-open-heart-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-snowpack-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

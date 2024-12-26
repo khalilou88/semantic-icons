@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-abbott-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

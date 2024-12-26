@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-googledatastudio-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

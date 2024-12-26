@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-riseup-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

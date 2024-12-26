@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-transform-point-bottom-left-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

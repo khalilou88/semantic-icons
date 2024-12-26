@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-groupme-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

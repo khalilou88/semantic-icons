@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-text-scan-2-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

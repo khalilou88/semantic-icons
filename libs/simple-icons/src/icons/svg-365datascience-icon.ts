@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-365datascience-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-signal-4g-plus-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

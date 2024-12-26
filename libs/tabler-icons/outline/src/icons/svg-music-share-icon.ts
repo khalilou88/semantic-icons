@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-music-share-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

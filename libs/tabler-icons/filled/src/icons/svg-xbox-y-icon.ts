@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-xbox-y-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

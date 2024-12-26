@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-solar-panel-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

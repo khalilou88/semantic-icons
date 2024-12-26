@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-lock-open-icon',
-  standalone: true,
   imports: [],
   template: `
     <!-- @license lucide-static v0.469.0 - ISC -->

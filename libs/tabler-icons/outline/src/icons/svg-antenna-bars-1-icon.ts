@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-antenna-bars-1-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

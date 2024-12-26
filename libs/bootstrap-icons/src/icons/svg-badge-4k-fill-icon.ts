@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-badge-4k-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

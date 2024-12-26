@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-elasticsearch-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

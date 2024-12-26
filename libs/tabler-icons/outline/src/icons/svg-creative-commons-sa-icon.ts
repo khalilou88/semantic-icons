@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-creative-commons-sa-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

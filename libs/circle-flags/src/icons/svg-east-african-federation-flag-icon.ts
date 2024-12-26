@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-east-african-federation-flag-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

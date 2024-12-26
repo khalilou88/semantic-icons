@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-rewind-forward-40-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

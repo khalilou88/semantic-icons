@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-tasmota-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

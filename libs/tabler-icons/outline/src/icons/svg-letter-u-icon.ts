@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-letter-u-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

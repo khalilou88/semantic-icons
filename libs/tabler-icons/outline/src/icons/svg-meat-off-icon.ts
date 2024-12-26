@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-meat-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

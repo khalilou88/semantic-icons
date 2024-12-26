@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-pointer-share-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

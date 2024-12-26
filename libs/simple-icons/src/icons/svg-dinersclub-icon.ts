@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-dinersclub-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

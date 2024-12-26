@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-nokia-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

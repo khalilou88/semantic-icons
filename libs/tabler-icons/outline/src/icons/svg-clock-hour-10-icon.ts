@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-clock-hour-10-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

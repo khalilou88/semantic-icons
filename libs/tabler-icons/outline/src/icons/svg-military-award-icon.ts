@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-military-award-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

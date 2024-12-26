@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-scan-eye-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-arrow-wave-left-down-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

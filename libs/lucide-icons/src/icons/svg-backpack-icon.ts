@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-backpack-icon',
-  standalone: true,
   imports: [],
   template: `
     <!-- @license lucide-static v0.469.0 - ISC -->

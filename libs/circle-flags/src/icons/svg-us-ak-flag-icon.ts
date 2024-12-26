@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-us-ak-flag-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

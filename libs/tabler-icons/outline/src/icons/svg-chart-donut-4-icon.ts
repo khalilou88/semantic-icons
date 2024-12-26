@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-chart-donut-4-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

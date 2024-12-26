@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-air-conditioning-disabled-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

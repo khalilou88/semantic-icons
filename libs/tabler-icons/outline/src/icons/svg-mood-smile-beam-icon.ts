@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-mood-smile-beam-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

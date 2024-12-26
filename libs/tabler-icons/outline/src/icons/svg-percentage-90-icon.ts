@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-percentage-90-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

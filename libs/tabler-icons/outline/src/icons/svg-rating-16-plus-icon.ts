@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-rating-16-plus-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-journal-bookmark-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

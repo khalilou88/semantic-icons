@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-dash-square-dotted-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

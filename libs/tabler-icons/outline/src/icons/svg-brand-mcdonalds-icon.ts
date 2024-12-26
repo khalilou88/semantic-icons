@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-brand-mcdonalds-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

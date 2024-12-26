@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-pencil-pin-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

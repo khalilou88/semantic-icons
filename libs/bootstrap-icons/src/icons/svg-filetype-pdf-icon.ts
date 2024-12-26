@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-filetype-pdf-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-sort-descending-small-big-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

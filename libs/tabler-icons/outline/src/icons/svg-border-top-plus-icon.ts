@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-border-top-plus-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

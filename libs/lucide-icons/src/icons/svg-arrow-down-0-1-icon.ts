@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-arrow-down-0-1-icon',
-  standalone: true,
   imports: [],
   template: `
     <!-- @license lucide-static v0.469.0 - ISC -->

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-user-square-rounded-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

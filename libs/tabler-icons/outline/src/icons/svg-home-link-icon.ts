@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-home-link-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

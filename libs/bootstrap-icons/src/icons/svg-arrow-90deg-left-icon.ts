@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-arrow-90deg-left-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-radioactive-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

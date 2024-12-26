@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-map-pin-alt-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

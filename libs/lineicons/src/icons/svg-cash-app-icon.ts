@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-cash-app-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

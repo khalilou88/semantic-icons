@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-lifebuoy-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

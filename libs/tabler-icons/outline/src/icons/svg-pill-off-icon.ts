@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-pill-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

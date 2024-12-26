@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-time-duration-15-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

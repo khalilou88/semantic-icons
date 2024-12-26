@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-picture-in-picture-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

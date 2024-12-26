@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-openlayers-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

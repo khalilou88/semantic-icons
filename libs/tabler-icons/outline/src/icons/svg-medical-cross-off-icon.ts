@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-medical-cross-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

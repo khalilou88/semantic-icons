@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-optical-audio-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

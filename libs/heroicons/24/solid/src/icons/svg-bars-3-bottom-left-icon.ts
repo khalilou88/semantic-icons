@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-bars-3-bottom-left-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

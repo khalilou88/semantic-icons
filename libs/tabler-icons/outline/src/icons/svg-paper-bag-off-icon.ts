@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-paper-bag-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-refresh-circle-1-clockwise-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

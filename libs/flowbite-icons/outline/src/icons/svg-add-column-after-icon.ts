@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-add-column-after-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-alphabet-bangla-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-michelin-star-green-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

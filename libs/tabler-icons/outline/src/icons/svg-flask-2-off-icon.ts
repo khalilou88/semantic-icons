@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-flask-2-off-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

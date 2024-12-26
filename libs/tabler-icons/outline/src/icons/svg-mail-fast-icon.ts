@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-mail-fast-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

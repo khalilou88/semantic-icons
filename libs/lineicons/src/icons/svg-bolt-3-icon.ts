@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-bolt-3-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

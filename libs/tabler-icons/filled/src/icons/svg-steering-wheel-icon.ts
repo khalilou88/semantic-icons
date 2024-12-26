@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-steering-wheel-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-multiplier-1-5x-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

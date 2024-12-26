@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-clipboard2-heart-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

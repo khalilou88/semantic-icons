@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-sign-turn-slight-left-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

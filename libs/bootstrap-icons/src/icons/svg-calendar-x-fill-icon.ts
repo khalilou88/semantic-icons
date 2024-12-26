@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-calendar-x-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

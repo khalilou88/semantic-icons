@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-sign-intersection-t-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

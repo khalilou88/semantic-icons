@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-chat-left-quote-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

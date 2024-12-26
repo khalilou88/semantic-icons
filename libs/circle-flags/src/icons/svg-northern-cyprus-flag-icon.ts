@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-northern-cyprus-flag-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

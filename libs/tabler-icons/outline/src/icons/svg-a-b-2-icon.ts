@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-a-b-2-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

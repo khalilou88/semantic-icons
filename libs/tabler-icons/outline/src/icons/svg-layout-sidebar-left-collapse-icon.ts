@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-layout-sidebar-left-collapse-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

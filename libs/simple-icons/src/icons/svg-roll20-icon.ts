@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-roll20-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

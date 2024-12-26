@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-smrt-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

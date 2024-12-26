@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-brand-metabrainz-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-chat-square-heart-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

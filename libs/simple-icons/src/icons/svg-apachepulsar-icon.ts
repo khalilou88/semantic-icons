@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-apachepulsar-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

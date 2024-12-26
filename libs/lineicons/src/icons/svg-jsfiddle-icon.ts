@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-jsfiddle-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

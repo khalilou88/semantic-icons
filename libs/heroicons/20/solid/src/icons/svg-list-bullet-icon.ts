@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-list-bullet-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

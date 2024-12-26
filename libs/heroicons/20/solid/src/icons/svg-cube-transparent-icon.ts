@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-cube-transparent-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

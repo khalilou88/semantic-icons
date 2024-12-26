@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-sonarcloud-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

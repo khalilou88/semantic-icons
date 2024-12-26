@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-armchair-2-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

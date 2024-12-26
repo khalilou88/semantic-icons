@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-bitdefender-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

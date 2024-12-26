@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-zoom-cancel-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

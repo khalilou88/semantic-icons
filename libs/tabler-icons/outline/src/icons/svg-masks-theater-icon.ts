@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-masks-theater-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

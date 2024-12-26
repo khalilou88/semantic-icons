@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-retroarch-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

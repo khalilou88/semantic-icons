@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-segmented-nav-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

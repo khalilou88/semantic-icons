@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-temperature-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

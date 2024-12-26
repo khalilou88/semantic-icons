@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-unlink-2-angular-eft-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

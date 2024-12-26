@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-usb-c-fill-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

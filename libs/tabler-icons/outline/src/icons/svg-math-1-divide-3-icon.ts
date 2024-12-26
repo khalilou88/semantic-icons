@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-math-1-divide-3-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

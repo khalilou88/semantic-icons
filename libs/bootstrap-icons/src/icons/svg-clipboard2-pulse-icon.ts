@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-clipboard2-pulse-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

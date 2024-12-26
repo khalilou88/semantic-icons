@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-browser-edge-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

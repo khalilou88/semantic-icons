@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-go-to-prev-cell-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

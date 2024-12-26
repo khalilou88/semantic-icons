@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-garden-cart-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

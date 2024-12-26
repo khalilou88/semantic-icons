@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-corner-up-left-double-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

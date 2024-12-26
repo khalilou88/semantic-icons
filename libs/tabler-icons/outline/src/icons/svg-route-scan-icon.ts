@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-route-scan-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-table-export-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

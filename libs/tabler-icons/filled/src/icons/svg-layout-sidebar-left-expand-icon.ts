@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-layout-sidebar-left-expand-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-file-earmark-break-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

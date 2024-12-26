@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-player-eject-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

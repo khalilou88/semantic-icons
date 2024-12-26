@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-alpinelinux-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

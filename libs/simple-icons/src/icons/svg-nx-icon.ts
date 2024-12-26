@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-nx-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

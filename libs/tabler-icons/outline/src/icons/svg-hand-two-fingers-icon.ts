@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-hand-two-fingers-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

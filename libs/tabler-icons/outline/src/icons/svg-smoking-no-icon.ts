@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-smoking-no-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

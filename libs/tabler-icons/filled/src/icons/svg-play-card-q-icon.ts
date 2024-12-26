@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-play-card-q-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

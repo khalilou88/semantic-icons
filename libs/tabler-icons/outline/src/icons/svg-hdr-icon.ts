@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-hdr-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

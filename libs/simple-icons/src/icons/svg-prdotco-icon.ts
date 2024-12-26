@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-prdotco-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

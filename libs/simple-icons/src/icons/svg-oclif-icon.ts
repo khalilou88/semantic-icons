@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-oclif-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-arrows-collapse-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

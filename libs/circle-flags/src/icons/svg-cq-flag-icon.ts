@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-cq-flag-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

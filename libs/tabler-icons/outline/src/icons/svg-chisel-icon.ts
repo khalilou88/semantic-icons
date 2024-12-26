@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-chisel-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

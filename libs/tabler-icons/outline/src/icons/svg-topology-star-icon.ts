@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-topology-star-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg

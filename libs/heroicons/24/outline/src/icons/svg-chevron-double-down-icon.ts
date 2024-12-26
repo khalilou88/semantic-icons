@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: 'svg-chevron-double-down-icon',
-  standalone: true,
   imports: [],
   template: `
     <svg
