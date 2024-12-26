@@ -10,7 +10,6 @@ import { cn } from '@semantic-components/utils';
 
 @Component({
   selector: '<%= svgSelector %>',
-  standalone: true,
   imports: [],
   template: `
     <%- svgContent %>
