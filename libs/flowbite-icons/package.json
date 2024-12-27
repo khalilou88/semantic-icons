@@ -6,8 +6,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/core": ">=19.0.0",
-    "@semantic-components/utils": ">=0.1.0"
+    "@angular/core": ">=17.1.0"
   },
   "sideEffects": false,
   "keywords": [
