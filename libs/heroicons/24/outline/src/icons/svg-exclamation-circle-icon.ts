@@ -6,14 +6,13 @@ import {
   input,
 } from '@angular/core';
 
-import { cn } from '@semantic-components/utils';
-
 @Component({
   selector: 'svg-exclamation-circle-icon',
+  standalone: true,
   imports: [],
   template: `
     <svg
-      [class]="_svgClass()"
+      [class]="svgClass()"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
@@ -31,20 +30,23 @@ import { cn } from '@semantic-components/utils';
   `,
   host: {
     '[class.svg]': 'true',
-    '[class]': '_class()',
+    '[class]': 'class()',
   },
-  styles: ``,
+  styles: `
+    .svg {
+      display: block;
+    }
+
+    .svg svg {
+      width: 100%;
+      height: 100%;
+    }
+  `,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgExclamationCircleIcon {
   readonly class = input<string>('');
 
-  protected readonly _class = computed(() => cn('block', this.class()));
-
   readonly svgClass = input<string>('');
-
-  protected readonly _svgClass = computed(() =>
-    cn('size-full', this.svgClass()),
-  );
 }
