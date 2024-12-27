@@ -32,7 +32,7 @@ import {
   `,
   host: {
     '[class.svg]': 'true',
-    '[class]': 'class()',
+    '[class]': 'classInternal()',
   },
   styles: `
     .svg {
@@ -51,4 +51,6 @@ export class SvgAArrowUpIcon {
   readonly class = input<string>('');
 
   readonly svgClass = input<string>('');
+
+  protected readonly classInternal = computed(() => this.class() + ' gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0');
 }
