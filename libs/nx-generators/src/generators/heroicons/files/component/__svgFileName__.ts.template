@@ -2,8 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ViewEncapsulation,
-  computed,
-  input,
+  input
 } from '@angular/core';
 
 @Component({
