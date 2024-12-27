@@ -225,6 +225,8 @@ import {
     .svg svg {
       width: 100%;
       height: 100%;
+      fill: currentColor;
+      color: currentColor;
     }
   `,
   encapsulation: ViewEncapsulation.None,
