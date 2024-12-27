@@ -40,11 +40,13 @@ import { cn } from '@semantic-components/utils';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgCircleLetterFIcon {
-  class = input<string>('');
+  readonly class = input<string>('');
 
-  _class = computed(() => cn('block', this.class()));
+  protected readonly _class = computed(() => cn('block', this.class()));
 
-  svgClass = input<string>('');
+  readonly svgClass = input<string>('');
 
-  _svgClass = computed(() => cn('size-full', this.svgClass()));
+  protected readonly _svgClass = computed(() =>
+    cn('size-full', this.svgClass()),
+  );
 }
