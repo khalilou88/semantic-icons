@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       class="bi bi-align-bottom"
-      [class]="svgClass()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
@@ -24,17 +24,11 @@ import {
     </svg>
   `,
   host: {
-    '[class.svg]': 'true',
-    '[class]': 'class()',
+    '[class.svg-host]': 'true',
   },
   styles: `
-    .svg {
+    .svg-host {
       display: block;
-    }
-
-    .svg svg {
-      width: 100%;
-      height: 100%;
     }
   `,
   encapsulation: ViewEncapsulation.None,
@@ -42,6 +36,4 @@ import {
 })
 export class SvgAlignBottomIcon {
   readonly class = input<string>('');
-
-  readonly svgClass = input<string>('');
 }

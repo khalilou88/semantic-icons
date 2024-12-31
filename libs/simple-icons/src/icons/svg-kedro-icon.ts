@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="svgClass()"
+      [class]="class()"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,17 +21,11 @@ import {
     </svg>
   `,
   host: {
-    '[class.svg]': 'true',
-    '[class]': 'class()',
+    '[class.svg-host]': 'true',
   },
   styles: `
-    .svg {
+    .svg-host {
       display: block;
-    }
-
-    .svg svg {
-      width: 100%;
-      height: 100%;
     }
   `,
   encapsulation: ViewEncapsulation.None,
@@ -39,6 +33,4 @@ import {
 })
 export class SvgKedroIcon {
   readonly class = input<string>('');
-
-  readonly svgClass = input<string>('');
 }

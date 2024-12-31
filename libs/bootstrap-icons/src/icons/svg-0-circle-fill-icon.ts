@@ -32,7 +32,7 @@ import {
   },
   styles: `
     .svg-host {
-      display: contents;
+      display: block;
     }
   `,
   encapsulation: ViewEncapsulation.None,

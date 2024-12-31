@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="svgClass()"
+      [class]="class()"
       width="25"
       height="24"
       viewBox="0 0 25 24"
@@ -33,17 +33,11 @@ import {
     </svg>
   `,
   host: {
-    '[class.svg]': 'true',
-    '[class]': 'class()',
+    '[class.svg-host]': 'true',
   },
   styles: `
-    .svg {
+    .svg-host {
       display: block;
-    }
-
-    .svg svg {
-      width: 100%;
-      height: 100%;
     }
   `,
   encapsulation: ViewEncapsulation.None,
@@ -51,6 +45,4 @@ import {
 })
 export class SvgEyeIcon {
   readonly class = input<string>('');
-
-  readonly svgClass = input<string>('');
 }

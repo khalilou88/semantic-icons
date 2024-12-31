@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-by"
-      [class]="svgClass()"
+      [class]="class()"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve"
@@ -48,17 +48,11 @@ import {
     </svg>
   `,
   host: {
-    '[class.svg]': 'true',
-    '[class]': 'class()',
+    '[class.svg-host]': 'true',
   },
   styles: `
-    .svg {
+    .svg-host {
       display: block;
-    }
-
-    .svg svg {
-      width: 100%;
-      height: 100%;
     }
   `,
   encapsulation: ViewEncapsulation.None,
@@ -66,6 +60,4 @@ import {
 })
 export class SvgByFlagIcon {
   readonly class = input<string>('');
-
-  readonly svgClass = input<string>('');
 }
