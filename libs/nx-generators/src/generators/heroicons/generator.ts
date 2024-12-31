@@ -120,7 +120,7 @@ function generateIconsComponents(
     );
 
     const re = /(<svg)/;
-    const svgContent = svgContent1.replace(re, '$1 [class]="class()"');
+    const svgContent = svgContent1.replace(re, '$1 [class]="classInput()"');
 
     const svgClassName = `Svg${names(name).className}Icon`;
     const svgFileName = `svg-${names(name).fileName}-icon`;
