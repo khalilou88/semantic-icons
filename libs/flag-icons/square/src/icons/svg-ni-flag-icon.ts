@@ -507,7 +507,7 @@ import {
   },
   styles: `
     .svg-host {
-      display: block;
+      display: contents;
     }
   `,
   encapsulation: ViewEncapsulation.None,
