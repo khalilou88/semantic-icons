@@ -39,5 +39,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgHospitalIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

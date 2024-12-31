@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="class()"
+      [class]="classInput()"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -64,5 +64,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgStripeIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

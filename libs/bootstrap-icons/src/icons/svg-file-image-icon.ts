@@ -37,5 +37,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgFileImageIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

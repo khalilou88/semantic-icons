@@ -39,5 +39,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgPlayBtnIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

@@ -36,5 +36,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgFileDiffFillIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

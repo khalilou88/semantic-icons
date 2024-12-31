@@ -41,5 +41,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgCloudUploadIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

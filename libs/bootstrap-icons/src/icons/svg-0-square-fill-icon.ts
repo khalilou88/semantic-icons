@@ -39,5 +39,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Svg0SquareFillIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

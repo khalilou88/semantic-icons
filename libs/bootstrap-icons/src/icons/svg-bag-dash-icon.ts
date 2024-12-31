@@ -40,5 +40,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgBagDashIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

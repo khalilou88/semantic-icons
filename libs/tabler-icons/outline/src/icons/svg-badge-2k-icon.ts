@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       class="icon icon-tabler icons-tabler-outline icon-tabler-badge-2k"
-      [class]="class()"
+      [class]="classInput()"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -47,5 +47,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgBadge2kIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

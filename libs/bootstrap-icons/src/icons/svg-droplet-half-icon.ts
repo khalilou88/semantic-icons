@@ -41,5 +41,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgDropletHalfIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

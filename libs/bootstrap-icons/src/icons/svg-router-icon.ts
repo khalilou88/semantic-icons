@@ -43,5 +43,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgRouterIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

@@ -40,5 +40,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgToggles2Icon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

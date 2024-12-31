@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="class()"
+      [class]="classInput()"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -34,5 +34,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgSharexIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

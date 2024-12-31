@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-jm"
-      [class]="class()"
+      [class]="classInput()"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -36,5 +36,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgJmFlagIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

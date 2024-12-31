@@ -42,5 +42,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgVolumeUpFillIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

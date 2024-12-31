@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-by"
-      [class]="class()"
+      [class]="classInput()"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve"
@@ -63,5 +63,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgByFlagIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="class()"
+      [class]="classInput()"
       width="24"
       height="25"
       viewBox="0 0 24 25"
@@ -36,5 +36,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgFacebookIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

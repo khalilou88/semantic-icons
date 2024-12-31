@@ -11,7 +11,7 @@ import {
   imports: [],
   template: `
     <svg
-      [class]="class()"
+      [class]="classInput()"
       width="25"
       height="25"
       viewBox="0 0 25 25"
@@ -42,5 +42,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgShare1CircleIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

@@ -47,5 +47,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgMarkdownIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

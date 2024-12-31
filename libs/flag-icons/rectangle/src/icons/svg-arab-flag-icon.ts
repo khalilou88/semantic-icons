@@ -12,7 +12,7 @@ import {
   template: `
     <svg
       id="flag-icons-arab"
-      [class]="class()"
+      [class]="classInput()"
       xmlns="http://www.w3.org/2000/svg"
       xml:space="preserve"
       version="1.0"
@@ -494,5 +494,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgArabFlagIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

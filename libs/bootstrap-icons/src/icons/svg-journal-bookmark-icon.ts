@@ -43,5 +43,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgJournalBookmarkIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }

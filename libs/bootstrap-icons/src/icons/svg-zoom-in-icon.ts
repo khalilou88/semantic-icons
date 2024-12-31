@@ -44,5 +44,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SvgZoomInIcon {
-  readonly class = input<string>('');
+  readonly classInput = input<string>('', {
+    alias: 'class',
+  });
 }
