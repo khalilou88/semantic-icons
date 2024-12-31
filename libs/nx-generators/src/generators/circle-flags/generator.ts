@@ -71,7 +71,7 @@ function generateIconsComponents(
       const svgContent1 = tree.read(filePath, 'utf-8');
 
       const re = /(<svg)/;
-      const svgContent = svgContent1.replace(re, '$1 [class]="svgClass()"');
+      const svgContent = svgContent1.replace(re, '$1 [class]="class()"');
 
       const svgClassName = `Svg${names(name).className}FlagIcon`;
       const svgFileName = `svg-${names(name).fileName}-flag-icon`;
