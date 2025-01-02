@@ -8,6 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { getSvgContent } from '../../utils';
 import { FlowbiteIconsGeneratorSchema } from './schema';
 
 export async function flowbiteIconsGenerator(
@@ -29,6 +30,7 @@ export async function flowbiteIconsGenerator(
     tree,
     filledIconsSourcePath,
     filledIconsDestinationPath,
+    'currentColor',
   );
 
   //2
@@ -43,6 +45,7 @@ export async function flowbiteIconsGenerator(
     tree,
     outlineIconsSourcePath,
     outlineIconsDestinationPath,
+    'none',
   );
 
   await formatFiles(tree);
@@ -52,6 +55,7 @@ function generateIconsComponents(
   tree: Tree,
   iconsSourcePath: string,
   iconsDestinationPath: string,
+  fill: string,
 ) {
   //remove icons
   fs.rmSync(path.join(workspaceRoot, iconsDestinationPath, 'icons'), {
@@ -61,7 +65,14 @@ function generateIconsComponents(
 
   const exports = [];
 
-  visitAllSvgFiles(tree, iconsSourcePath, iconsDestinationPath, exports, a);
+  visitAllSvgFiles(
+    tree,
+    iconsSourcePath,
+    iconsDestinationPath,
+    exports,
+    fill,
+    a,
+  );
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
 }
@@ -74,19 +85,28 @@ function visitAllSvgFiles(
   path: string,
   iconsDestinationPath: string,
   exports: string[],
+  fill: string,
   callback: (
     tree: Tree,
     filePath: string,
     iconsDestinationPath: string,
     exports: string[],
+    fill: string,
   ) => void,
 ) {
   tree.children(path).forEach((fileName) => {
     const filePath = `${path}/${fileName}`;
     if (!tree.isFile(filePath)) {
-      visitAllSvgFiles(tree, filePath, iconsDestinationPath, exports, callback);
+      visitAllSvgFiles(
+        tree,
+        filePath,
+        iconsDestinationPath,
+        exports,
+        fill,
+        callback,
+      );
     } else {
-      callback(tree, filePath, iconsDestinationPath, exports);
+      callback(tree, filePath, iconsDestinationPath, exports, fill);
     }
   });
 }
@@ -96,25 +116,25 @@ const a = function f(
   filePath: string,
   iconsDestinationPath: string,
   exports: string[],
+  fill: string,
 ) {
   const name = path.parse(filePath).name;
 
-  const svgContent1 = tree.read(path.join(filePath), 'utf-8');
+  const svgFileContent = tree.read(path.join(filePath), 'utf-8');
 
-  const re = /(<svg)/;
-  const svgContent = svgContent1.replace(re, '$1 [class]="classInput()"');
+  const svgContent = getSvgContent(svgFileContent);
 
-  const svgClassName = `Svg${names(name).className}Icon`;
-  const svgFileName = `svg-${names(name).fileName}-icon`;
-  const svgSelector = `svg-${names(name).fileName}-icon`;
+  const svgFileName = `${names(name).fileName}-icon`;
+  const svgClassName = `Si${names(name).className}Icon`;
+  const svgSelector = `si-${names(name).fileName}-icon`;
 
   exports.push(`export * from './icons/${svgFileName}';`);
 
-  const o = { svgContent, svgClassName, svgFileName, svgSelector };
+  const o = { svgContent, svgFileName, svgClassName, svgSelector, fill };
 
   generateFiles(
     tree,
-    path.join(__dirname, '..', 'heroicons', 'files', 'component'),
+    path.join(__dirname, 'files', 'component'),
     path.join(iconsDestinationPath, 'icons'),
     o,
   );
