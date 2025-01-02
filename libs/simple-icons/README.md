@@ -25,16 +25,15 @@ import { SiAcmIcon } from '@semantic-icons/simple-icons';
 
 @Component({
   selector: 'app-home-page',
-  standalone: true,
   imports: [SiAcmIcon],
   template: `
-    <svg class="text-blue-500 size-6" si-acm-icon></svg>
+    <svg class="size-36" si-acm-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export default class HomePage {}
 ```
 
 The icons can be imported from `@semantic-icons/simple-icons`.

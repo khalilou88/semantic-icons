@@ -4,13 +4,13 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
-import { SiCakeIcon } from '@semantic-icons/tabler-icons/outline';
+import { SiAcmIcon } from '@semantic-icons/simple-icons';
 
 @Component({
   selector: 'app-home-page',
-  imports: [SiCakeIcon],
+  imports: [SiAcmIcon],
   template: `
-    <svg class="text-blue-500 size-6" si-cake-icon></svg>
+    <svg class="size-36" si-acm-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
