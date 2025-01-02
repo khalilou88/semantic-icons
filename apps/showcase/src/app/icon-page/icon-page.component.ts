@@ -8,14 +8,15 @@ import {
 // import { SvgFrFlagIcon } from '@semantic-icons/circle-flags';
 // import { SvgMaFlagIcon } from '@semantic-icons/flag-icons/square';
 import { SvgBellIcon } from '@semantic-icons/flowbite-icons/solid';
+import { SiBirdIcon } from '@semantic-icons/lucide-icons';
+
 // import { SvgTrophy1Icon } from '@semantic-icons/lineicons';
-import { SvgBirdIcon } from '@semantic-icons/lucide-icons';
 
 @Component({
   selector: 'app-icon-page',
   standalone: true,
   imports: [
-    SvgBirdIcon,
+    SiBirdIcon,
     SvgBellIcon,
     // SvgMaFlagIcon,
     // SvgBalloonIcon,
@@ -24,7 +25,7 @@ import { SvgBirdIcon } from '@semantic-icons/lucide-icons';
   ],
   template: `
     <div class="m-10">
-      <svg class="size-6 text-blue-500" svg-bird-icon></svg>
+      <svg class="size-6 text-blue-500" si-bird-icon></svg>
       <svg-bell-icon class="size-6 text-blue-500" />
     </div>
 
