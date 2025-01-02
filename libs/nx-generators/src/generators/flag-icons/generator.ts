@@ -8,6 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { getSvgContent } from '../../utils';
 import { FlagIconsGeneratorSchema } from './schema';
 
 export async function flagIconsGenerator(
@@ -29,6 +30,8 @@ export async function flagIconsGenerator(
     tree,
     squareIconsSourcePath,
     squareIconsDestinationPath,
+    '512',
+    '512',
   );
 
   //2
@@ -43,6 +46,8 @@ export async function flagIconsGenerator(
     tree,
     rectangleIconsSourcePath,
     rectangleIconsDestinationPath,
+    '640',
+    '480',
   );
 
   await formatFiles(tree);
@@ -52,6 +57,8 @@ function generateIconsComponents(
   tree: Tree,
   iconsSourcePath: string,
   iconsDestinationPath: string,
+  width: string,
+  height: string,
 ) {
   //remove icons
   fs.rmSync(path.join(workspaceRoot, iconsDestinationPath, 'icons'), {
@@ -63,25 +70,31 @@ function generateIconsComponents(
   tree.children(iconsSourcePath).forEach((fileName) => {
     const name = path.parse(fileName).name;
 
-    const svgContent1 = tree.read(
+    const svgFileContent = tree.read(
       path.join(iconsSourcePath, fileName),
       'utf-8',
     );
 
-    const re = /(<svg)/;
-    const svgContent = svgContent1.replace(re, '$1 [class]="classInput()"');
+    const svgContent = getSvgContent(svgFileContent);
 
-    const svgClassName = `Svg${names(name).className}FlagIcon`;
-    const svgFileName = `svg-${names(name).fileName}-flag-icon`;
-    const svgSelector = `svg-${names(name).fileName}-flag-icon`;
+    const svgFileName = `${names(name).fileName}-flag-icon`;
+    const svgClassName = `Si${names(name).className}FlagIcon`;
+    const svgSelector = `si-${names(name).fileName}-flag-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
-    const o = { svgContent, svgClassName, svgFileName, svgSelector };
+    const o = {
+      svgContent,
+      svgFileName,
+      svgClassName,
+      svgSelector,
+      width,
+      height,
+    };
 
     generateFiles(
       tree,
-      path.join(__dirname, '..', 'heroicons', 'files', 'component'),
+      path.join(__dirname, 'files', 'component'),
       path.join(iconsDestinationPath, 'icons'),
       o,
     );
