@@ -8,6 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { getSvgContent } from '../../utils';
 import { CircleFlagsGeneratorSchema } from './schema';
 
 export async function circleFlagsGenerator(
@@ -68,22 +69,24 @@ function generateIconsComponents(
     if (tree.isFile(filePath)) {
       const name = path.parse(fileName).name;
 
-      const svgContent1 = tree.read(filePath, 'utf-8');
+      const svgFileContent = tree.read(
+        path.join(iconsSourcePath, fileName),
+        'utf-8',
+      );
 
-      const re = /(<svg)/;
-      const svgContent = svgContent1.replace(re, '$1 [class]="classInput()"');
+      const svgContent = getSvgContent(svgFileContent);
 
-      const svgClassName = `Svg${names(name).className}FlagIcon`;
-      const svgFileName = `svg-${names(name).fileName}-flag-icon`;
-      const svgSelector = `svg-${names(name).fileName}-flag-icon`;
+      const svgFileName = `${names(name).fileName}-flag-icon`;
+      const svgClassName = `Si${names(name).className}FlagIcon`;
+      const svgSelector = `si-${names(name).fileName}-flag-icon`;
 
       exports.push(`export * from './icons/${svgFileName}';`);
 
-      const o = { svgContent, svgClassName, svgFileName, svgSelector };
+      const o = { svgContent, svgFileName, svgClassName, svgSelector };
 
       generateFiles(
         tree,
-        path.join(__dirname, '..', 'heroicons', 'files', 'component'),
+        path.join(__dirname, 'files', 'component'),
         path.join(iconsDestinationPath, 'icons'),
         o,
       );
