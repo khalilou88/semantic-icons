@@ -9,6 +9,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { getSvgContent } from '../../utils';
 import { HeroiconsGeneratorSchema } from './schema';
 
 interface HeroIcon {
@@ -114,17 +115,16 @@ function generateIconsComponents(
   tree.children(iconsSourcePath).forEach((fileName) => {
     const name = path.parse(fileName).name;
 
-    const svgContent1 = tree.read(
+    const svgFileContent = tree.read(
       path.join(iconsSourcePath, fileName),
       'utf-8',
     );
 
-    const re = /(<svg)/;
-    const svgContent = svgContent1.replace(re, '$1 [class]="classInput()"');
+    const svgContent = getSvgContent(svgFileContent);
 
-    const svgClassName = `Svg${names(name).className}Icon`;
-    const svgFileName = `svg-${names(name).fileName}-icon`;
-    const svgSelector = `svg-${names(name).fileName}-icon`;
+    const svgFileName = `${names(name).fileName}-icon`;
+    const svgClassName = `Si${names(name).className}Icon`;
+    const svgSelector = `si-${names(name).fileName}-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
@@ -134,7 +134,49 @@ function generateIconsComponents(
       type: iconType,
     });
 
-    const o = { svgContent, svgClassName, svgFileName, svgSelector };
+    let width = '';
+    let height = '';
+
+    if (iconSize === 16) {
+      width = '16';
+      height = '16';
+    }
+
+    if (iconSize === 20) {
+      width = '20';
+      height = '20';
+    }
+
+    if (iconSize === 24) {
+      width = '24';
+      height = '24';
+    }
+
+    let fill = '';
+    let stroke = '';
+    let strokeWidth = '';
+
+    if (iconType === 'solid') {
+      fill = 'currentColor';
+    }
+
+    if (iconType === 'outline') {
+      fill = 'none';
+      stroke = 'currentColor';
+      strokeWidth = '1.5';
+    }
+
+    const o = {
+      svgContent,
+      svgFileName,
+      svgClassName,
+      svgSelector,
+      width,
+      height,
+      fill,
+      stroke,
+      strokeWidth,
+    };
 
     generateFiles(
       tree,

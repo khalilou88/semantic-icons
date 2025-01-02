@@ -1,30 +1,43 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  ElementRef,
+  NO_ERRORS_SCHEMA,
+  OnInit,
+  Renderer2,
   ViewEncapsulation,
-  input
+  inject,
 } from '@angular/core';
 
 @Component({
-  selector: '<%= svgSelector %>',
+  selector: 'svg[<%= svgSelector %>]',
   standalone: true,
   imports: [],
   template: `
     <%- svgContent %>
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  schemas: [NO_ERRORS_SCHEMA],
 })
-export class <%= svgClassName %> {
-  readonly classInput = input<string>('', {
-    alias: 'class',
-  });
+export class <%= svgClassName %> implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'viewBox', '0 0 <%= width %> <%= height %>');
+    this.render.setAttribute(svg, 'fill', '<%= fill %>');
+    this.render.setAttribute(svg, 'aria-hidden', 'true');
+    this.render.setAttribute(svg, 'data-slot', 'icon');
+    <% if(stroke) { -%>
+        this.render.setAttribute(svg, 'stroke', '<%= stroke %>');
+    <% } -%>
+
+    <% if(strokeWidth) { -%>
+        this.render.setAttribute(svg, 'stroke-width', '<%= strokeWidth %>');
+    <% } -%>
+  }
 }
