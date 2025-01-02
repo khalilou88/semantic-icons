@@ -13,12 +13,12 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <path d="M16 7h.01" />
-    <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" />
-    <path d="m20 7 2 .5-2 .5" />
-    <path d="M10 18v3" />
-    <path d="M14 17.75V21" />
-    <path d="M7 18a6 6 0 0 0 3.84-10.61" />
+    <svg:path d="M16 7h.01" />
+    <svg:path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" />
+    <svg:path d="m20 7 2 .5-2 .5" />
+    <svg:path d="M10 18v3" />
+    <svg:path d="M14 17.75V21" />
+    <svg:path d="M7 18a6 6 0 0 0 3.84-10.61" />
   `,
   host: {},
   styles: ``,
@@ -38,6 +38,7 @@ export class SvgBirdIcon implements OnInit {
     this.render.setAttribute(svg, 'width', '24');
     this.render.setAttribute(svg, 'height', '24');
     this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+    this.render.setAttribute(svg, 'fill', 'none');
     this.render.setAttribute(svg, 'stroke', 'currentColor');
     this.render.setAttribute(svg, 'stroke-width', '2');
     this.render.setAttribute(svg, 'stroke-linecap', 'round');
