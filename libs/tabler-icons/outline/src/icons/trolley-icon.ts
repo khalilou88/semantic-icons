@@ -1,0 +1,47 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  NO_ERRORS_SCHEMA,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-trolley-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <svg:path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <svg:path d="M11 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+    <svg:path d="M6 16l3 2" />
+    <svg:path d="M12 17l8 -12" />
+    <svg:path d="M17 10l2 1" />
+    <svg:path
+      d="M9.592 4.695l3.306 2.104a1.3 1.3 0 0 1 .396 1.8l-3.094 4.811a1.3 1.3 0 0 1 -1.792 .394l-3.306 -2.104a1.3 1.3 0 0 1 -.396 -1.8l3.094 -4.81a1.3 1.3 0 0 1 1.792 -.394z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  schemas: [NO_ERRORS_SCHEMA],
+})
+export class SiTrolleyIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'width', '24');
+    this.render.setAttribute(svg, 'height', '24');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+    this.render.setAttribute(svg, 'fill', 'none');
+    this.render.setAttribute(svg, 'stroke', 'currentColor');
+    this.render.setAttribute(svg, 'stroke-width', '2');
+    this.render.setAttribute(svg, 'stroke-linecap', 'round');
+    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
+  }
+}

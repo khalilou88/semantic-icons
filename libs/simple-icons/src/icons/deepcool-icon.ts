@@ -1,0 +1,37 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  NO_ERRORS_SCHEMA,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-deepcool-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <title>DeepCool</title>
+    <svg:path
+      d="M12 12v3.046H3.046V6h6V0H12v9.046H6.092V12H12Zm8.954 3.046V18h-5.908v6H12v-8.954h8.954Z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  schemas: [NO_ERRORS_SCHEMA],
+})
+export class SiDeepcoolIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'role', 'img');
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+  }
+}
