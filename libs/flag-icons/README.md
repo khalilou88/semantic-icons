@@ -34,7 +34,7 @@ import { SiMaFlagIcon } from '@semantic-icons/flag-icons/square';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export default class HomePage {}
 ```
 
 The square shaped icons can be imported from `@semantic-icons/flag-icons/square`, the rectangle shaped icons can be imported from `@semantic-icons/flag-icons/rectangle`.

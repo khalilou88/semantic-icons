@@ -34,7 +34,7 @@ import { SiFrFlagIcon } from '@semantic-icons/circle-flags';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export default class HomePage {}
 ```
 
 The regular icons can be imported from `@semantic-icons/circle-flags`, the other icons can be imported from `@semantic-icons/circle-flags/other`, the language icons can be imported from `@semantic-icons/circle-flags/language`.

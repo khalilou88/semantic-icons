@@ -34,7 +34,7 @@ import { SiBeakerIcon } from '@semantic-icons/heroicons/24/solid';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export default class HomePage {}
 ```
 
 The 24x24 outline icons can be imported from `@semantic-icons/heroicons/24/outline`, the 24x24 solid icons can be imported from `@semantic-icons/heroicons/24/solid`, the 20x20 solid icons can be imported from `@semantic-icons/heroicons/20/solid`, and 16x16 solid icons can be imported from `@semantic-icons/heroicons/16/solid`.

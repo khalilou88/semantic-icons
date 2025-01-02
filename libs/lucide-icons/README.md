@@ -34,7 +34,7 @@ import { SiBirdIcon } from '@semantic-icons/lucide-icons';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export default class HomePage {}
 ```
 
 The icons can be imported from `@semantic-icons/lucide-icons`.

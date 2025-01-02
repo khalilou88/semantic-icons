@@ -34,7 +34,7 @@ import { SiTrophy1Icon } from '@semantic-icons/lineicons';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export default class HomePage {}
 ```
 
 The icons can be imported from `@semantic-icons/lineicons`.

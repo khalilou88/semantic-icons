@@ -34,7 +34,7 @@ import { SiCakeIcon } from '@semantic-icons/tabler-icons/outline';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export default class HomePage {}
 ```
 
 The outline icons can be imported from `@semantic-icons/tabler-icons/outline`, the filled icons can be imported from `@semantic-icons/tabler-icons/filled`.
