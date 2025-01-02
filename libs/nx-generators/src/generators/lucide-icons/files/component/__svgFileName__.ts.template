@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
+  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -10,25 +11,26 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[svg-bird-icon]',
+  selector: 'svg[<%= svgSelector %>]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M16 7h.01" />
-    <svg:path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" />
-    <svg:path d="m20 7 2 .5-2 .5" />
-    <svg:path d="M10 18v3" />
-    <svg:path d="M14 17.75V21" />
-    <svg:path d="M7 18a6 6 0 0 0 3.84-10.61" />
+    <%- svgContent %>
   `,
-  host: {},
-  styles: ``,
+  host: {
+    '[class.svg-host]': 'true',
+  },
+  styles: `
+    .svg-host {
+      display: contents;
+    }
+  `,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],
 })
-export class SvgBirdIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
+export class <%= svgClassName %> implements OnInit {
+  private readonly elementRef = Inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {
