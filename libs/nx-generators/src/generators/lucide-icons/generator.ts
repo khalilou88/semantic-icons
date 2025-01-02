@@ -47,7 +47,9 @@ function generateIconsComponents(
 
     const regex = /<svg[^>]*>([\s\S]*)<\/svg>/;
     const matches = regex.exec(svgFileContent) ?? [];
-    const svgContent = matches[1].replace(/<path/g, '<svg:path');
+    const svgContent = matches[1]
+      .replace(/<path/g, '<svg:path')
+      .replace(/<rect/g, '<svg:rect');
 
     const svgFileName = `${names(name).fileName}-icon`;
     const svgClassName = `Si${names(name).className}Icon`;
