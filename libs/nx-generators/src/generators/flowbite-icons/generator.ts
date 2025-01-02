@@ -114,6 +114,7 @@ const a = function f(
 
   const width = svgAttributes.width;
   const height = svgAttributes.height;
+  const viewBox = svgAttributes.viewBox;
   const fill = svgAttributes.fill;
   const stroke = svgAttributes.stroke;
   const strokeWidth = svgAttributes.strokeWidth;
@@ -127,6 +128,7 @@ const a = function f(
     svgSelector,
     width,
     height,
+    viewBox,
     fill,
     stroke,
     strokeWidth,

@@ -28,9 +28,15 @@ export class <%= svgClassName %> implements OnInit {
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '<%= width %>');
-    this.render.setAttribute(svg, 'height', '<%= height %>');
-    this.render.setAttribute(svg, 'viewBox', '0 0 <%= width %> <%= height %>');
+    <% if(width) { -%>
+      this.render.setAttribute(svg, 'width', '<%= width %>');
+    <% } -%>
+    <% if(height) { -%>
+      this.render.setAttribute(svg, 'height', '<%= height %>');
+    <% } -%>
+    <% if(viewBox) { -%>
+      this.render.setAttribute(svg, 'viewBox', '<%= viewBox %>');
+    <% } -%>
     <% if(fill) { -%>
       this.render.setAttribute(svg, 'fill', '<%= fill %>');
     <% } -%>

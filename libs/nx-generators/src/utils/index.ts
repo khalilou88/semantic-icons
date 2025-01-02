@@ -20,6 +20,7 @@ export function getSvgContent(svgFileContent: string) {
 export interface SvgAttributes {
   width: string | null;
   height: string | null;
+  viewBox: string | null;
   fill: string | null;
   stroke: string | null;
   strokeWidth: string | null;
@@ -32,6 +33,7 @@ export function getSvgAttributes(svgContent: string) {
   const svgAttributes: SvgAttributes = {
     width: null,
     height: null,
+    viewBox: null,
     fill: null,
     stroke: null,
     strokeWidth: null,
@@ -52,6 +54,13 @@ export function getSvgAttributes(svgContent: string) {
 
   // If a match is found, return the 'height' value; otherwise, return null
   svgAttributes.height = svgHeightMatches ? svgHeightMatches[1] : null;
+
+  // Regular expression to match the 'viewBox' attribute in the <svg> tag
+  const svgViewBoxRegex = /<svg[^>]*\sviewBox\s*=\s*["']([^"']+)["'][^>]*>/;
+  const svgViewBoxMatches = svgViewBoxRegex.exec(svgContent);
+
+  // If a match is found, return the 'viewBox' value; otherwise, return null
+  svgAttributes.viewBox = svgViewBoxMatches ? svgViewBoxMatches[1] : null;
 
   // Regular expression to match the 'fill' attribute in the <svg> tag
   const svgFillRegex = /<svg[^>]*\sfill\s*=\s*["']([^"']+)["'][^>]*>/;

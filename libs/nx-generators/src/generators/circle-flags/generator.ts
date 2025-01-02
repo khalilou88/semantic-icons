@@ -86,6 +86,7 @@ function generateIconsComponents(
 
       const width = svgAttributes.width;
       const height = svgAttributes.height;
+      const viewBox = svgAttributes.viewBox;
       const fill = svgAttributes.fill;
       const stroke = svgAttributes.stroke;
       const strokeWidth = svgAttributes.strokeWidth;
@@ -99,6 +100,7 @@ function generateIconsComponents(
         svgSelector,
         width,
         height,
+        viewBox,
         fill,
         stroke,
         strokeWidth,
