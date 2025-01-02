@@ -14,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <line x1="19" x2="5" y1="5" y2="19" />
-    <circle cx="6.5" cy="6.5" r="2.5" />
-    <circle cx="17.5" cy="17.5" r="2.5" />
+    <svg:line x1="19" x2="5" y1="5" y2="19" />
+    <svg:circle cx="6.5" cy="6.5" r="2.5" />
+    <svg:circle cx="17.5" cy="17.5" r="2.5" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

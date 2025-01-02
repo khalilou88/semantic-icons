@@ -20,7 +20,7 @@ import {
     <svg:path
       d="M16.5 21.174C15.5 20.5 14.372 20 13 20c-2.058 0-3.928 2.356-6 2-2.072-.356-2.775-3.369-1.5-4.5"
     />
-    <circle cx="16" cy="7" r="5" />
+    <svg:circle cx="16" cy="7" r="5" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

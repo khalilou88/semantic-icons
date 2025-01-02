@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <ellipse cx="12" cy="5" rx="9" ry="3" />
+    <svg:ellipse cx="12" cy="5" rx="9" ry="3" />
     <svg:path d="M3 5V19A9 3 0 0 0 15 21.84" />
     <svg:path d="M21 5V8" />
     <svg:path d="M21 12L18 17H22L19 22" />

@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <circle cx="12" cy="12" r="8" />
+    <svg:circle cx="12" cy="12" r="8" />
     <svg:path d="M12 2v7.5" />
     <svg:path d="m19 5-5.23 5.23" />
     <svg:path d="M22 12h-7.5" />
@@ -23,7 +23,7 @@ import {
     <svg:path d="M10.23 13.77 5 19" />
     <svg:path d="M9.5 12H2" />
     <svg:path d="M10.23 10.23 5 5" />
-    <circle cx="12" cy="12" r="2.5" />
+    <svg:circle cx="12" cy="12" r="2.5" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

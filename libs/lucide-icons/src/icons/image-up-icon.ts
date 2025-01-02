@@ -19,7 +19,7 @@ import {
     />
     <svg:path d="m14 19.5 3-3 3 3" />
     <svg:path d="M17 22v-5.5" />
-    <circle cx="9" cy="9" r="2" />
+    <svg:circle cx="9" cy="9" r="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

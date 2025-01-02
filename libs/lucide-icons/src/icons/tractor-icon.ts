@@ -23,8 +23,8 @@ import {
     <svg:path d="M4 11V4" />
     <svg:path d="M7 15h.01" />
     <svg:path d="M8 10.1V4" />
-    <circle cx="18" cy="18" r="2" />
-    <circle cx="7" cy="15" r="5" />
+    <svg:circle cx="18" cy="18" r="2" />
+    <svg:circle cx="7" cy="15" r="5" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

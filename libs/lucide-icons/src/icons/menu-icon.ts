@@ -14,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <line x1="4" x2="20" y1="12" y2="12" />
-    <line x1="4" x2="20" y1="6" y2="6" />
-    <line x1="4" x2="20" y1="18" y2="18" />
+    <svg:line x1="4" x2="20" y1="12" y2="12" />
+    <svg:line x1="4" x2="20" y1="6" y2="6" />
+    <svg:line x1="4" x2="20" y1="18" y2="18" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

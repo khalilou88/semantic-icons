@@ -25,10 +25,10 @@ import {
     <svg:path d="M12 18h6a2 2 0 0 1 2 2v1" />
     <svg:path d="M12 8h8" />
     <svg:path d="M16 8V5a2 2 0 0 1 2-2" />
-    <circle cx="16" cy="13" r=".5" />
-    <circle cx="18" cy="3" r=".5" />
-    <circle cx="20" cy="21" r=".5" />
-    <circle cx="20" cy="8" r=".5" />
+    <svg:circle cx="16" cy="13" r=".5" />
+    <svg:circle cx="18" cy="3" r=".5" />
+    <svg:circle cx="20" cy="21" r=".5" />
+    <svg:circle cx="20" cy="8" r=".5" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

@@ -15,7 +15,7 @@ import {
   imports: [],
   template: `
     <svg:path d="M12 3v6" />
-    <circle cx="12" cy="12" r="3" />
+    <svg:circle cx="12" cy="12" r="3" />
     <svg:path d="M12 15v6" />
   `,
   styles: ``,

@@ -21,7 +21,7 @@ import {
     <svg:path
       d="M5.341 10.62a4 4 0 0 0 6.487 1.208M10.62 5.341a4.015 4.015 0 0 1 2.039 2.04"
     />
-    <line x1="2" x2="22" y1="2" y2="22" />
+    <svg:line x1="2" x2="22" y1="2" y2="22" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

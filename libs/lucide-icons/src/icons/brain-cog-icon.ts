@@ -23,7 +23,7 @@ import {
     <svg:path d="M19.938 10.5a4 4 0 0 1 .585.396" />
     <svg:path d="M6 18a4 4 0 0 1-1.967-.516" />
     <svg:path d="M19.967 17.484A4 4 0 0 1 18 18" />
-    <circle cx="12" cy="12" r="3" />
+    <svg:circle cx="12" cy="12" r="3" />
     <svg:path d="m15.7 10.4-.9.4" />
     <svg:path d="m9.2 13.2-.9.4" />
     <svg:path d="m13.6 15.7-.4-.9" />

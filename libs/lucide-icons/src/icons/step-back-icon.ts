@@ -14,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <line x1="18" x2="18" y1="20" y2="4" />
-    <polygon points="14,20 4,12 14,4" />
+    <svg:line x1="18" x2="18" y1="20" y2="4" />
+    <svg:polygon points="14,20 4,12 14,4" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

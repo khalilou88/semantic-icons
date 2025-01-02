@@ -14,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
-    <polyline points="16 17 22 17 22 11" />
+    <svg:polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
+    <svg:polyline points="16 17 22 17 22 11" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

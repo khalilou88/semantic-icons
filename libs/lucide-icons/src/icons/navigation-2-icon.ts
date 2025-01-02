@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <polygon points="12 2 19 21 12 17 5 21 12 2" />
+    <svg:polygon points="12 2 19 21 12 17 5 21 12 2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

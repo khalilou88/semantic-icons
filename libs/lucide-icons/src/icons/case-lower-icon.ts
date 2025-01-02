@@ -14,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <circle cx="7" cy="12" r="3" />
+    <svg:circle cx="7" cy="12" r="3" />
     <svg:path d="M10 9v6" />
-    <circle cx="17" cy="12" r="3" />
+    <svg:circle cx="17" cy="12" r="3" />
     <svg:path d="M14 7v8" />
   `,
   styles: ``,

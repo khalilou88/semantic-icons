@@ -19,10 +19,10 @@ import {
     />
     <svg:path d="M10 22H8" />
     <svg:path d="M16 22h-2" />
-    <circle cx="8" cy="8" r="2" />
+    <svg:circle cx="8" cy="8" r="2" />
     <svg:path d="M9.414 9.414 12 12" />
     <svg:path d="M14.8 14.8 18 18" />
-    <circle cx="8" cy="16" r="2" />
+    <svg:circle cx="8" cy="16" r="2" />
     <svg:path d="m18 6-8.586 8.586" />
   `,
   styles: ``,

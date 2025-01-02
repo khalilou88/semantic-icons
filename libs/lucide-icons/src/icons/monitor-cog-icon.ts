@@ -25,7 +25,7 @@ import {
     <svg:path d="m21.7 7.5-.9-.4" />
     <svg:path d="M22 13v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7" />
     <svg:path d="M8 21h8" />
-    <circle cx="18" cy="6" r="3" />
+    <svg:circle cx="18" cy="6" r="3" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

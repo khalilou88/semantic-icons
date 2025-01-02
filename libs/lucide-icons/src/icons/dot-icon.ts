@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <circle cx="12.1" cy="12.1" r="1" />
+    <svg:circle cx="12.1" cy="12.1" r="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

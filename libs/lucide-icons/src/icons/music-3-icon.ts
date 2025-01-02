@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <circle cx="12" cy="18" r="4" />
+    <svg:circle cx="12" cy="18" r="4" />
     <svg:path d="M16 18V2" />
   `,
   styles: ``,

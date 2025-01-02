@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <line x1="2" y1="2" x2="22" y2="22" />
+    <svg:line x1="2" y1="2" x2="22" y2="22" />
     <svg:path
       d="M16.5 16.5 12 21l-7-7c-1.5-1.45-3-3.2-3-5.5a5.5 5.5 0 0 1 2.14-4.35"
     />

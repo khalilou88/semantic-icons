@@ -19,7 +19,7 @@ import {
     />
     <svg:path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
     <svg:path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-    <circle cx="18" cy="18" r="3" />
+    <svg:circle cx="18" cy="18" r="3" />
     <svg:path d="m22 22-1.5-1.5" />
   `,
   styles: ``,

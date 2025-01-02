@@ -21,7 +21,7 @@ import {
       d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"
     />
     <svg:path d="m2.3 2.3 7.286 7.286" />
-    <circle cx="11" cy="11" r="2" />
+    <svg:circle cx="11" cy="11" r="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

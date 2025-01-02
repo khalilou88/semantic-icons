@@ -15,7 +15,7 @@ import {
   imports: [],
   template: `
     <svg:path d="M4 10c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8H4" />
-    <polyline points="8 22 4 18 8 14" />
+    <svg:polyline points="8 22 4 18 8 14" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

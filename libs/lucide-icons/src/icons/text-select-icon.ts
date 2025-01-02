@@ -26,9 +26,9 @@ import {
     <svg:path d="M21 9v1" />
     <svg:path d="M3 14v1" />
     <svg:path d="M21 14v1" />
-    <line x1="7" x2="15" y1="8" y2="8" />
-    <line x1="7" x2="17" y1="12" y2="12" />
-    <line x1="7" x2="13" y1="16" y2="16" />
+    <svg:line x1="7" x2="15" y1="8" y2="8" />
+    <svg:line x1="7" x2="17" y1="12" y2="12" />
+    <svg:line x1="7" x2="13" y1="16" y2="16" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

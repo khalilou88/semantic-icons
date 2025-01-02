@@ -14,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <circle cx="12" cy="12" r="10" />
-    <polyline points="12 6 12 12" />
+    <svg:circle cx="12" cy="12" r="10" />
+    <svg:polyline points="12 6 12 12" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
