@@ -2,7 +2,7 @@
   "name": "lineicons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/lineicons/src",
-  "prefix": "svg",
+  "prefix": "si",
   "projectType": "library",
   "tags": [],
   "targets": {

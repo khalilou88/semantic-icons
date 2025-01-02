@@ -2,7 +2,7 @@
   "name": "tabler-icons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/tabler-icons/src",
-  "prefix": "svg",
+  "prefix": "si",
   "projectType": "library",
   "tags": [],
   "targets": {

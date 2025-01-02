@@ -2,7 +2,7 @@
   "name": "circle-flags",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/circle-flags/src",
-  "prefix": "svg",
+  "prefix": "si",
   "projectType": "library",
   "tags": [],
   "targets": {
