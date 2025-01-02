@@ -8,6 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { getSvgAttributes, getSvgContent } from '../../utils';
 import { TablerIconsGeneratorSchema } from './schema';
 
 export async function tablerIconsGenerator(
@@ -63,21 +64,42 @@ function generateIconsComponents(
   tree.children(iconsSourcePath).forEach((fileName) => {
     const name = path.parse(fileName).name;
 
-    const svgContent1 = tree.read(
+    const svgFileContent = tree.read(
       path.join(iconsSourcePath, fileName),
       'utf-8',
     );
 
-    const re = /(<svg)/;
-    const svgContent = svgContent1.replace(re, '$1 [class]="classInput()"');
+    const svgContent = getSvgContent(svgFileContent);
 
-    const svgClassName = `Svg${names(name).className}Icon`;
-    const svgFileName = `svg-${names(name).fileName}-icon`;
-    const svgSelector = `svg-${names(name).fileName}-icon`;
+    const svgFileName = `${names(name).fileName}-icon`;
+    const svgClassName = `Si${names(name).className}Icon`;
+    const svgSelector = `si-${names(name).fileName}-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
-    const o = { svgContent, svgClassName, svgFileName, svgSelector };
+    const svgAttributes = getSvgAttributes(svgFileContent);
+
+    const width = svgAttributes.width;
+    const height = svgAttributes.height;
+    const fill = svgAttributes.fill;
+    const stroke = svgAttributes.stroke;
+    const strokeWidth = svgAttributes.strokeWidth;
+    const strokeLinecap = svgAttributes.strokeLinecap;
+    const strokeLinejoin = svgAttributes.strokeLinejoin;
+
+    const o = {
+      svgContent,
+      svgFileName,
+      svgClassName,
+      svgSelector,
+      width,
+      height,
+      fill,
+      stroke,
+      strokeWidth,
+      strokeLinecap,
+      strokeLinejoin,
+    };
 
     generateFiles(
       tree,
@@ -88,9 +110,6 @@ function generateIconsComponents(
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
-
-  //TODO not working yet
-  // version(tree, 'node_modules/@tabler/icons', iconsDestinationPath);
 }
 
 export default tablerIconsGenerator;

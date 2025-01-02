@@ -21,6 +21,10 @@ export interface SvgAttributes {
   width: string | null;
   height: string | null;
   fill: string | null;
+  stroke: string | null;
+  strokeWidth: string | null;
+  strokeLinecap: string | null;
+  strokeLinejoin: string | null;
 }
 
 export function getSvgAttributes(svgContent: string) {
@@ -29,6 +33,10 @@ export function getSvgAttributes(svgContent: string) {
     width: null,
     height: null,
     fill: null,
+    stroke: null,
+    strokeWidth: null,
+    strokeLinecap: null,
+    strokeLinejoin: null,
   };
 
   // Regular expression to match the 'width' attribute in the <svg> tag
@@ -51,6 +59,43 @@ export function getSvgAttributes(svgContent: string) {
 
   // If a match is found, return the 'fill' value; otherwise, return null
   svgAttributes.fill = svgFillMatches ? svgFillMatches[1] : null;
+
+  // Regular expression to match the 'stroke' attribute in the <svg> tag
+  const svgStrokeRegex = /<svg[^>]*\sstroke\s*=\s*["']([^"']+)["'][^>]*>/;
+  const svgStrokeMatches = svgStrokeRegex.exec(svgContent);
+
+  // If a match is found, return the 'stroke' value; otherwise, return null
+  svgAttributes.stroke = svgStrokeMatches ? svgStrokeMatches[1] : null;
+
+  // Regular expression to match the 'stroke-width' attribute in the <svg> tag
+  const svgStrokeWidthRegex =
+    /<svg[^>]*\sstroke-width\s*=\s*["']([^"']+)["'][^>]*>/;
+  const svgStrokeWidthMatches = svgStrokeWidthRegex.exec(svgContent);
+
+  // If a match is found, return the 'stroke-width' value; otherwise, return null
+  svgAttributes.strokeWidth = svgStrokeWidthMatches
+    ? svgStrokeWidthMatches[1]
+    : null;
+
+  // Regular expression to match the 'stroke-linecap' attribute in the <svg> tag
+  const svgStrokeLinecapRegex =
+    /<svg[^>]*\sstroke-linecap\s*=\s*["']([^"']+)["'][^>]*>/;
+  const svgStrokeLinecapMatches = svgStrokeLinecapRegex.exec(svgContent);
+
+  // If a match is found, return the 'stroke-linecap' value; otherwise, return null
+  svgAttributes.strokeLinecap = svgStrokeLinecapMatches
+    ? svgStrokeLinecapMatches[1]
+    : null;
+
+  // Regular expression to match the 'stroke-linejoin' attribute in the <svg> tag
+  const svgStrokeLinejoinRegex =
+    /<svg[^>]*\sstroke-linejoin\s*=\s*["']([^"']+)["'][^>]*>/;
+  const svgStrokeLinejoinMatches = svgStrokeLinejoinRegex.exec(svgContent);
+
+  // If a match is found, return the 'stroke-linejoin' value; otherwise, return null
+  svgAttributes.strokeLinejoin = svgStrokeLinejoinMatches
+    ? svgStrokeLinejoinMatches[1]
+    : null;
 
   return svgAttributes;
 }
