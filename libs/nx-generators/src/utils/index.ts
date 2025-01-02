@@ -1,19 +1,18 @@
-import { Tree } from '@nx/devkit';
-import * as path from 'path';
+export function getSvgContent(svgFileContent: string) {
+  const regex = /<svg[^>]*>([\s\S]*)<\/svg>/;
+  const matches = regex.exec(svgFileContent) ?? [];
+  let svgContent = matches.length > 1 ? matches[1] : '';
 
-export function version(
-  tree: Tree,
-  sourceLibPath: string,
-  destinationLibPath: string,
-) {
-  const packageJsonPath = path.join(destinationLibPath, 'package.json');
+  // Define the prefix
+  const prefix = 'svg:';
 
-  const version = JSON.parse(
-    tree.read(path.join(sourceLibPath, 'package.json'), 'utf-8'),
-  ).version;
+  // Add prefix to all SVG tags (like <circle>, <rect>, <path>, etc.)
+  svgContent = svgContent.replace(
+    /<(\/?)(circle|rect|path|line|polygon|polyline|ellipse|text)([^>]*)>/gi,
+    (match, closing, tagName, attributes) => {
+      return `<${closing}${prefix}${tagName}${attributes}>`;
+    },
+  );
 
-  const packageJson = JSON.parse(tree.read(packageJsonPath).toString());
-  packageJson.version = version;
-
-  tree.write(packageJsonPath, packageJson);
+  return svgContent;
 }

@@ -8,6 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { getSvgContent } from '../../utils';
 import { LucideIconsGeneratorSchema } from './schema';
 
 export async function lucideIconsGenerator(
@@ -45,20 +46,7 @@ function generateIconsComponents(
       'utf-8',
     );
 
-    const regex = /<svg[^>]*>([\s\S]*)<\/svg>/;
-    const matches = regex.exec(svgFileContent) ?? [];
-    let svgContent = matches.length > 1 ? matches[1] : '';
-
-    // Define the prefix
-    const prefix = 'svg:';
-
-    // Add prefix to all SVG tags (like <circle>, <rect>, <path>, etc.)
-    svgContent = svgContent.replace(
-      /<(\/?)(circle|rect|path|line|polygon|polyline|ellipse|text)([^>]*)>/gi,
-      (match, closing, tagName, attributes) => {
-        return `<${closing}${prefix}${tagName}${attributes}>`;
-      },
-    );
+    const svgContent = getSvgContent(svgFileContent);
 
     const svgFileName = `${names(name).fileName}-icon`;
     const svgClassName = `Si${names(name).className}Icon`;
