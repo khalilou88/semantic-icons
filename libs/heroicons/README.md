@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgBeakerIcon } from '@semantic-icons/heroicons/24/solid';
+import { SiBeakerIcon } from '@semantic-icons/heroicons/24/solid';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgBeakerIcon],
+  imports: [SiBeakerIcon],
   template: `
-    <svg-beaker-icon class="size-6 text-blue-500" />
+    <svg class="size-6 text-blue-500" si-beaker-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -39,8 +39,8 @@ export class HomePageComponent {}
 
 The 24x24 outline icons can be imported from `@semantic-icons/heroicons/24/outline`, the 24x24 solid icons can be imported from `@semantic-icons/heroicons/24/solid`, the 20x20 solid icons can be imported from `@semantic-icons/heroicons/20/solid`, and 16x16 solid icons can be imported from `@semantic-icons/heroicons/16/solid`.
 
-Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the word `icon`.
+Icons use the Angular naming convention and are always prefixed with the word `si` and suffixed with the word `icon`.
 
 ## License
 
-MIT © 2024-2024 Khalil LAGRIDA
+MIT © 2024-2025 Khalil LAGRIDA

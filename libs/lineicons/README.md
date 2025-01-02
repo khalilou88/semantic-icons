@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgTrophy1Icon } from '@semantic-icons/lineicons';
+import { SiTrophy1Icon } from '@semantic-icons/lineicons';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgTrophy1Icon],
+  imports: [SiTrophy1Icon],
   template: `
-    <svg-trophy-1-icon class="text-blue-500 size-6" />
+    <svg class="text-blue-500 size-6" si-trophy-1-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -39,8 +39,8 @@ export class HomePageComponent {}
 
 The icons can be imported from `@semantic-icons/lineicons`.
 
-Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the word `icon`.
+Icons use the Angular naming convention and are always prefixed with the word `si` and suffixed with the word `icon`.
 
 ## License
 
-MIT © 2024-2024 Khalil LAGRIDA
+MIT © 2024-2025 Khalil LAGRIDA

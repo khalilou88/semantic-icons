@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgFrFlagIcon } from '@semantic-icons/circle-flags';
+import { SiFrFlagIcon } from '@semantic-icons/circle-flags';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgFrFlagIcon],
+  imports: [SiFrFlagIcon],
   template: `
-    <svg-fr-flag-icon class="size-36" />
+    <svg class="size-36" si-fr-flag-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -39,8 +39,8 @@ export class HomePageComponent {}
 
 The regular icons can be imported from `@semantic-icons/circle-flags`, the other icons can be imported from `@semantic-icons/circle-flags/other`, the language icons can be imported from `@semantic-icons/circle-flags/language`.
 
-Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the words `flag icon`.
+Icons use the Angular naming convention and are always prefixed with the word `si` and suffixed with the words `flag icon`.
 
 ## License
 
-MIT © 2024-2024 Khalil LAGRIDA
+MIT © 2024-2025 Khalil LAGRIDA

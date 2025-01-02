@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgCakeIcon } from '@semantic-icons/tabler-icons/outline';
+import { SiCakeIcon } from '@semantic-icons/tabler-icons/outline';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgCakeIcon],
+  imports: [SiCakeIcon],
   template: `
-    <svg-cake-icon class="text-blue-500 size-6" />
+    <svg class="text-blue-500 size-6" si-cake-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -39,8 +39,8 @@ export class HomePageComponent {}
 
 The outline icons can be imported from `@semantic-icons/tabler-icons/outline`, the filled icons can be imported from `@semantic-icons/tabler-icons/filled`.
 
-Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the word `icon`.
+Icons use the Angular naming convention and are always prefixed with the word `si` and suffixed with the word `icon`.
 
 ## License
 
-MIT © 2024-2024 Khalil LAGRIDA
+MIT © 2024-2025 Khalil LAGRIDA

@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgMaFlagIcon } from '@semantic-icons/flag-icons/square';
+import { SiMaFlagIcon } from '@semantic-icons/flag-icons/square';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgMaFlagIcon],
+  imports: [SiMaFlagIcon],
   template: `
-    <svg-ma-flag-icon class="size-36" />
+    <svg class="size-36" si-ma-flag-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -39,8 +39,8 @@ export class HomePageComponent {}
 
 The square shaped icons can be imported from `@semantic-icons/flag-icons/square`, the rectangle shaped icons can be imported from `@semantic-icons/flag-icons/rectangle`.
 
-Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the words `flag icon`.
+Icons use the Angular naming convention and are always prefixed with the word `si` and suffixed with the words `flag icon`.
 
 ## License
 
-MIT © 2024-2024 Khalil LAGRIDA
+MIT © 2024-2025 Khalil LAGRIDA

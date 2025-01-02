@@ -21,14 +21,14 @@ Now each icon can be imported individually as an Angular component:
 ```js
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { SvgBalloonIcon } from '@semantic-icons/bootstrap-icons';
+import { SiBalloonIcon } from '@semantic-icons/bootstrap-icons';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SvgBalloonIcon],
+  imports: [SiBalloonIcon],
   template: `
-    <svg-balloon-icon class="text-blue-500 size-6" />
+    <svg class="text-blue-500 size-6" si-balloon-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -39,8 +39,8 @@ export class HomePageComponent {}
 
 The icons can be imported from `@semantic-icons/bootstrap-icons`.
 
-Icons use the Angular naming convention and are always prefixed with the word `svg` and suffixed with the word `icon`.
+Icons use the Angular naming convention and are always prefixed with the word `si` and suffixed with the word `icon`.
 
 ## License
 
-MIT © 2024-2024 Khalil LAGRIDA
+MIT © 2024-2025 Khalil LAGRIDA
