@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M19 15v-2a2 2 0 1 0-4 0v2" />
     <svg:path d="M9 17H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3.5" />
-    <rect x="13" y="15" width="8" height="5" rx="1" />
+    <svg:rect x="13" y="15" width="8" height="5" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiMessageSquareLockIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

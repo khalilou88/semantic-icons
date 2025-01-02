@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,10 +14,10 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="7" height="9" x="3" y="3" rx="1" />
-    <rect width="7" height="5" x="14" y="3" rx="1" />
-    <rect width="7" height="9" x="14" y="12" rx="1" />
-    <rect width="7" height="5" x="3" y="16" rx="1" />
+    <svg:rect width="7" height="9" x="3" y="3" rx="1" />
+    <svg:rect width="7" height="5" x="14" y="3" rx="1" />
+    <svg:rect width="7" height="9" x="14" y="12" rx="1" />
+    <svg:rect width="7" height="5" x="3" y="16" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiLayoutDashboardIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

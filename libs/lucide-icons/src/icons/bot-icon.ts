@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -16,7 +15,7 @@ import {
   imports: [],
   template: `
     <svg:path d="M12 8V4H8" />
-    <rect width="16" height="12" x="4" y="8" rx="2" />
+    <svg:rect width="16" height="12" x="4" y="8" rx="2" />
     <svg:path d="M2 14h2" />
     <svg:path d="M20 14h2" />
     <svg:path d="M15 13v2" />
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiBotIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

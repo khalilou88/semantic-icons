@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -16,7 +15,7 @@ import {
   imports: [],
   template: `
     <svg:path d="M21 9V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h4" />
-    <rect width="10" height="7" x="12" y="13" rx="2" />
+    <svg:rect width="10" height="7" x="12" y="13" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -24,7 +23,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiPictureInPicture2Icon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

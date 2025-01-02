@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -21,7 +20,7 @@ import {
     />
     <svg:path d="M7 14h.01" />
     <svg:path d="M17 14h.01" />
-    <rect width="18" height="8" x="3" y="10" rx="2" />
+    <svg:rect width="18" height="8" x="3" y="10" rx="2" />
     <svg:path d="M5 18v2" />
     <svg:path d="M19 18v2" />
   `,
@@ -31,7 +30,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiCarTaxiFrontIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
+    <svg:rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
     <line x1="12" x2="12.01" y1="18" y2="18" />
   `,
   styles: ``,
@@ -24,7 +23,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiTabletIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

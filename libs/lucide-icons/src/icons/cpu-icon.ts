@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="16" height="16" x="4" y="4" rx="2" />
-    <rect width="6" height="6" x="9" y="9" rx="1" />
+    <svg:rect width="16" height="16" x="4" y="4" rx="2" />
+    <svg:rect width="6" height="6" x="9" y="9" rx="1" />
     <svg:path d="M15 2v2" />
     <svg:path d="M15 20v2" />
     <svg:path d="M2 15h2" />
@@ -32,7 +31,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiCpuIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

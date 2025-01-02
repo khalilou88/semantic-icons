@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M7 2h10" />
     <svg:path d="M5 6h14" />
-    <rect width="18" height="12" x="3" y="10" rx="2" />
+    <svg:rect width="18" height="12" x="3" y="10" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiGalleryVerticalEndIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

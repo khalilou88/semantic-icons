@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -23,7 +22,7 @@ import {
     <svg:path d="M6 8h.01" />
     <svg:path d="M7 16h10" />
     <svg:path d="M8 12h.01" />
-    <rect width="20" height="16" x="2" y="4" rx="2" />
+    <svg:rect width="20" height="16" x="2" y="4" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -31,7 +30,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiKeyboardIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

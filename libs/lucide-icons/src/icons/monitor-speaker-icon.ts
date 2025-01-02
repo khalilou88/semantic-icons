@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M5.5 20H8" />
     <svg:path d="M17 9h.01" />
-    <rect width="10" height="16" x="12" y="4" rx="2" />
+    <svg:rect width="10" height="16" x="12" y="4" rx="2" />
     <svg:path d="M8 6H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4" />
     <circle cx="17" cy="15" r="1" />
   `,
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiMonitorSpeakerIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

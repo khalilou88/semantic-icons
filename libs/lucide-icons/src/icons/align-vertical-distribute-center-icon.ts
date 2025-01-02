@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,8 +18,8 @@ import {
     <svg:path d="M22 7h-5" />
     <svg:path d="M5 17H2" />
     <svg:path d="M7 7H2" />
-    <rect x="5" y="14" width="14" height="6" rx="2" />
-    <rect x="7" y="4" width="10" height="6" rx="2" />
+    <svg:rect x="5" y="14" width="14" height="6" rx="2" />
+    <svg:rect x="7" y="4" width="10" height="6" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiAlignVerticalDistributeCenterIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,7 +18,7 @@ import {
     <svg:path d="M14 2h.01" />
     <svg:path d="m2 9 20-5" />
     <svg:path d="M12 12V6.5" />
-    <rect width="16" height="10" x="4" y="12" rx="3" />
+    <svg:rect width="16" height="10" x="4" y="12" rx="3" />
     <svg:path d="M9 12v5" />
     <svg:path d="M15 12v5" />
     <svg:path d="M4 17h16" />
@@ -30,7 +29,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiCableCarIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

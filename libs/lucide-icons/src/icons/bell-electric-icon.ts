@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -18,7 +17,7 @@ import {
     <svg:path d="M18.8 4A6.3 8.7 0 0 1 20 9" />
     <svg:path d="M9 9h.01" />
     <circle cx="9" cy="9" r="7" />
-    <rect width="10" height="6" x="4" y="16" rx="2" />
+    <svg:rect width="10" height="6" x="4" y="16" rx="2" />
     <svg:path d="M14 19c3 0 4.6-1.6 4.6-1.6" />
     <circle cx="20" cy="16" r="2" />
   `,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiBellElectricIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

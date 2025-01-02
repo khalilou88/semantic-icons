@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="18" height="18" x="3" y="3" rx="2" />
+    <svg:rect width="18" height="18" x="3" y="3" rx="2" />
     <svg:path d="M7 8h10" />
     <svg:path d="M7 12h10" />
     <svg:path d="M7 16h10" />
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiSquareMenuIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

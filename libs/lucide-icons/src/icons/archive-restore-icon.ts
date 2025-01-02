@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="20" height="5" x="2" y="3" rx="1" />
+    <svg:rect width="20" height="5" x="2" y="3" rx="1" />
     <svg:path d="M4 8v11a2 2 0 0 0 2 2h2" />
     <svg:path d="M20 8v11a2 2 0 0 1-2 2h-2" />
     <svg:path d="m9 15 3-3 3 3" />
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiArchiveRestoreIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

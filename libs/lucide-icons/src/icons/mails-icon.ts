@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="16" height="13" x="6" y="4" rx="2" />
+    <svg:rect width="16" height="13" x="6" y="4" rx="2" />
     <svg:path d="m22 7-7.1 3.78c-.57.3-1.23.3-1.8 0L6 7" />
     <svg:path d="M2 8v11c0 1.1.9 2 2 2h14" />
   `,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiMailsIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

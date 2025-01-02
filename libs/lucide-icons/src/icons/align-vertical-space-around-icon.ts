@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="10" height="6" x="7" y="9" rx="2" />
+    <svg:rect width="10" height="6" x="7" y="9" rx="2" />
     <svg:path d="M22 20H2" />
     <svg:path d="M22 4H2" />
   `,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiAlignVerticalSpaceAroundIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

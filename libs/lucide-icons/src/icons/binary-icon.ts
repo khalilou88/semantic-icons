@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect x="14" y="14" width="4" height="6" rx="2" />
-    <rect x="6" y="4" width="4" height="6" rx="2" />
+    <svg:rect x="14" y="14" width="4" height="6" rx="2" />
+    <svg:rect x="6" y="4" width="4" height="6" rx="2" />
     <svg:path d="M6 20h4" />
     <svg:path d="M14 10h4" />
     <svg:path d="M6 14h2v6" />
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiBinaryIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

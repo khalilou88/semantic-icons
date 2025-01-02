@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M2 20h20" />
     <svg:path d="m9 10 2 2 4-4" />
-    <rect x="3" y="4" width="18" height="12" rx="2" />
+    <svg:rect x="3" y="4" width="18" height="12" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiLaptopMinimalCheckIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

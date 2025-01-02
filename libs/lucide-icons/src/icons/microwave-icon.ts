@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="20" height="15" x="2" y="4" rx="2" />
-    <rect width="8" height="7" x="6" y="8" rx="1" />
+    <svg:rect width="20" height="15" x="2" y="4" rx="2" />
+    <svg:rect width="8" height="7" x="6" y="8" rx="1" />
     <svg:path d="M18 8v7" />
     <svg:path d="M6 19v2" />
     <svg:path d="M18 19v2" />
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiMicrowaveIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

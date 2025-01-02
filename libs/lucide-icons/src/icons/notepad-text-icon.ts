@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -18,7 +17,7 @@ import {
     <svg:path d="M8 2v4" />
     <svg:path d="M12 2v4" />
     <svg:path d="M16 2v4" />
-    <rect width="16" height="18" x="4" y="4" rx="2" />
+    <svg:rect width="16" height="18" x="4" y="4" rx="2" />
     <svg:path d="M8 10h6" />
     <svg:path d="M8 14h8" />
     <svg:path d="M8 18h5" />
@@ -29,7 +28,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiNotepadTextIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

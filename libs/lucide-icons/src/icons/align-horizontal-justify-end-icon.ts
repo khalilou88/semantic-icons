@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="6" height="14" x="2" y="5" rx="2" />
-    <rect width="6" height="10" x="12" y="7" rx="2" />
+    <svg:rect width="6" height="14" x="2" y="5" rx="2" />
+    <svg:rect width="6" height="10" x="12" y="7" rx="2" />
     <svg:path d="M22 2v20" />
   `,
   styles: ``,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiAlignHorizontalJustifyEndIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

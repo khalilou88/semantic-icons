@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M10 9.5 8 12l2 2.5" />
     <svg:path d="m14 9.5 2 2.5-2 2.5" />
-    <rect width="18" height="18" x="3" y="3" rx="2" />
+    <svg:rect width="18" height="18" x="3" y="3" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiSquareCodeIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

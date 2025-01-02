@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="20" height="15" x="2" y="7" rx="2" ry="2" />
+    <svg:rect width="20" height="15" x="2" y="7" rx="2" ry="2" />
     <polyline points="17 2 12 7 7 2" />
   `,
   styles: ``,
@@ -24,7 +23,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiTvIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

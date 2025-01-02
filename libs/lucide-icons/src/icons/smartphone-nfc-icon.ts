@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="7" height="12" x="2" y="6" rx="1" />
+    <svg:rect width="7" height="12" x="2" y="6" rx="1" />
     <svg:path d="M13 8.32a7.43 7.43 0 0 1 0 7.36" />
     <svg:path d="M16.46 6.21a11.76 11.76 0 0 1 0 11.58" />
     <svg:path d="M19.91 4.1a15.91 15.91 0 0 1 .01 15.8" />
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiSmartphoneNfcIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

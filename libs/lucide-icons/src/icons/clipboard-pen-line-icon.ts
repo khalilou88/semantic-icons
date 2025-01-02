@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="8" height="4" x="8" y="2" rx="1" />
+    <svg:rect width="8" height="4" x="8" y="2" rx="1" />
     <svg:path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.5" />
     <svg:path d="M16 4h2a2 2 0 0 1 1.73 1" />
     <svg:path d="M8 18h1" />
@@ -29,7 +28,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiClipboardPenLineIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

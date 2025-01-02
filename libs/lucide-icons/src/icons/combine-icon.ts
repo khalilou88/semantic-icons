@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,8 +18,8 @@ import {
     <svg:path d="M14 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
     <svg:path d="M20 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
     <svg:path d="m7 21 3-3-3-3" />
-    <rect x="14" y="14" width="8" height="8" rx="2" />
-    <rect x="2" y="2" width="8" height="8" rx="2" />
+    <svg:rect x="14" y="14" width="8" height="8" rx="2" />
+    <svg:rect x="2" y="2" width="8" height="8" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiCombineIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

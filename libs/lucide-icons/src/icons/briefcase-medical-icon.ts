@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -20,7 +19,7 @@ import {
     <svg:path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
     <svg:path d="M18 6v14" />
     <svg:path d="M6 6v14" />
-    <rect width="20" height="14" x="2" y="6" rx="2" />
+    <svg:rect width="20" height="14" x="2" y="6" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiBriefcaseMedicalIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

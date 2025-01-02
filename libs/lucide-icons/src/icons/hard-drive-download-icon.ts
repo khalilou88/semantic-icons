@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M12 2v8" />
     <svg:path d="m16 6-4 4-4-4" />
-    <rect width="20" height="8" x="2" y="14" rx="2" />
+    <svg:rect width="20" height="8" x="2" y="14" rx="2" />
     <svg:path d="M6 18h.01" />
     <svg:path d="M10 18h.01" />
   `,
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiHardDriveDownloadIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

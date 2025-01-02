@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -16,7 +15,7 @@ import {
   imports: [],
   template: `
     <svg:path d="M7 12h2l2 5 2-10h4" />
-    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <svg:rect x="3" y="3" width="18" height="18" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -24,7 +23,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiSquareRadicalIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

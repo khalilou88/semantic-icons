@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="16" height="16" x="4" y="3" rx="2" />
+    <svg:rect width="16" height="16" x="4" y="3" rx="2" />
     <svg:path d="M4 11h16" />
     <svg:path d="M12 3v8" />
     <svg:path d="m8 19-2 3" />
@@ -29,7 +28,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiTramFrontIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -21,7 +20,7 @@ import {
     <svg:path d="M14 14.01h.01" />
     <svg:path d="M18 6v11.5" />
     <svg:path d="M6 6v12" />
-    <rect x="2" y="6" width="20" height="12" rx="2" />
+    <svg:rect x="2" y="6" width="20" height="12" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -29,7 +28,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiBandageIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

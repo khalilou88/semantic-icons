@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,7 +18,7 @@ import {
     <svg:path d="M7 20V4" />
     <svg:path d="M17 10V4h-2" />
     <svg:path d="M15 10h4" />
-    <rect x="15" y="14" width="4" height="6" ry="2" />
+    <svg:rect x="15" y="14" width="4" height="6" ry="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiArrowDown10Icon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

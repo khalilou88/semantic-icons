@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -16,7 +15,7 @@ import {
   imports: [],
   template: `
     <circle cx="12" cy="12" r="10" />
-    <rect x="9" y="9" width="6" height="6" rx="1" />
+    <svg:rect x="9" y="9" width="6" height="6" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -24,7 +23,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiCircleStopIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

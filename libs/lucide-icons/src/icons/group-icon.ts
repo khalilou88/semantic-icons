@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,8 +18,8 @@ import {
     <svg:path d="M17 3h2c1.1 0 2 .9 2 2v2" />
     <svg:path d="M21 17v2c0 1.1-.9 2-2 2h-2" />
     <svg:path d="M7 21H5c-1.1 0-2-.9-2-2v-2" />
-    <rect width="7" height="5" x="7" y="7" rx="1" />
-    <rect width="7" height="5" x="10" y="12" rx="1" />
+    <svg:rect width="7" height="5" x="7" y="7" rx="1" />
+    <svg:rect width="7" height="5" x="10" y="12" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiGroupIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

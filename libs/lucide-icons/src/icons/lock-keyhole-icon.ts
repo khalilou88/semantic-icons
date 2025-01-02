@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -16,7 +15,7 @@ import {
   imports: [],
   template: `
     <circle cx="12" cy="16" r="1" />
-    <rect x="3" y="10" width="18" height="12" rx="2" />
+    <svg:rect x="3" y="10" width="18" height="12" rx="2" />
     <svg:path d="M7 10V7a5 5 0 0 1 10 0v3" />
   `,
   styles: ``,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiLockKeyholeIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

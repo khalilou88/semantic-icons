@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4" />
     <svg:path d="M14 2v4a2 2 0 0 0 2 2h4" />
-    <rect width="8" height="6" x="2" y="12" rx="1" />
+    <svg:rect width="8" height="6" x="2" y="12" rx="1" />
     <svg:path d="m10 15.5 4 2.5v-6l-4 2.5" />
   `,
   styles: ``,
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiFileVideo2Icon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

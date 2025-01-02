@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -18,7 +17,7 @@ import {
     <svg:path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" />
     <svg:path d="M14 6a6 6 0 0 1 6 6v3" />
     <svg:path d="M4 15v-3a6 6 0 0 1 6-6" />
-    <rect x="2" y="15" width="20" height="4" rx="1" />
+    <svg:rect x="2" y="15" width="20" height="4" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiHardHatIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

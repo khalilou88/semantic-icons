@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="12" height="20" x="6" y="2" rx="2" />
-    <rect width="20" height="12" x="2" y="6" rx="2" />
+    <svg:rect width="12" height="20" x="6" y="2" rx="2" />
+    <svg:rect width="20" height="12" x="2" y="6" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -24,7 +23,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiRatioIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

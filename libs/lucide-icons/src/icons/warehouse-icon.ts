@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -20,7 +19,7 @@ import {
     />
     <svg:path d="M6 18h12" />
     <svg:path d="M6 14h12" />
-    <rect width="12" height="12" x="6" y="10" />
+    <svg:rect width="12" height="12" x="6" y="10" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiWarehouseIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

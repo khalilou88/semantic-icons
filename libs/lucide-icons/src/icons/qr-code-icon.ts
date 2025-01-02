@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="5" height="5" x="3" y="3" rx="1" />
-    <rect width="5" height="5" x="16" y="3" rx="1" />
-    <rect width="5" height="5" x="3" y="16" rx="1" />
+    <svg:rect width="5" height="5" x="3" y="3" rx="1" />
+    <svg:rect width="5" height="5" x="16" y="3" rx="1" />
+    <svg:rect width="5" height="5" x="3" y="16" rx="1" />
     <svg:path d="M21 16h-3a2 2 0 0 0-2 2v3" />
     <svg:path d="M21 21v.01" />
     <svg:path d="M12 7v3a2 2 0 0 1-2 2H7" />
@@ -34,7 +33,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiQrCodeIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

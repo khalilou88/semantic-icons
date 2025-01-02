@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="18" height="18" x="3" y="3" rx="2" />
+    <svg:rect width="18" height="18" x="3" y="3" rx="2" />
     <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
     <svg:path d="m7.9 7.9 2.7 2.7" />
     <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
@@ -32,7 +31,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiVaultIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

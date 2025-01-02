@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -21,7 +20,7 @@ import {
     <svg:path d="M21 20H3" />
     <svg:path d="M6 20v2" />
     <svg:path d="M8 16V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12" />
-    <rect x="4" y="6" width="16" height="10" rx="2" />
+    <svg:rect x="4" y="6" width="16" height="10" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -29,7 +28,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiBriefcaseConveyorBeltIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

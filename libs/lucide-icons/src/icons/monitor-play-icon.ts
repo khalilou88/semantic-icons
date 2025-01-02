@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -20,7 +19,7 @@ import {
     />
     <svg:path d="M12 17v4" />
     <svg:path d="M8 21h8" />
-    <rect x="2" y="3" width="20" height="14" rx="2" />
+    <svg:rect x="2" y="3" width="20" height="14" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiMonitorPlayIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,7 +18,7 @@ import {
     <svg:path d="M17.915 22a6 6 0 0 0-12 0" />
     <svg:path d="M8 2v2" />
     <circle cx="12" cy="12" r="4" />
-    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <svg:rect x="3" y="4" width="18" height="18" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiContactRoundIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

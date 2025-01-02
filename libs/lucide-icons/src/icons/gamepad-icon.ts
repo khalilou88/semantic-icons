@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,7 +18,7 @@ import {
     <line x1="8" x2="8" y1="10" y2="14" />
     <line x1="15" x2="15.01" y1="13" y2="13" />
     <line x1="18" x2="18.01" y1="11" y2="11" />
-    <rect width="20" height="12" x="2" y="6" rx="2" />
+    <svg:rect width="20" height="12" x="2" y="6" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiGamepadIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

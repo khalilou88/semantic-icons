@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M5 16v2" />
     <svg:path d="M19 16v2" />
-    <rect width="20" height="8" x="2" y="8" rx="2" />
+    <svg:rect width="20" height="8" x="2" y="8" rx="2" />
     <svg:path d="M18 12h.01" />
   `,
   styles: ``,
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiRadioReceiverIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,7 +18,7 @@ import {
     <svg:path d="M2 10h4" />
     <svg:path d="M2 14h4" />
     <svg:path d="M2 18h4" />
-    <rect width="16" height="20" x="4" y="2" rx="2" />
+    <svg:rect width="16" height="20" x="4" y="2" rx="2" />
     <svg:path d="M16 2v20" />
   `,
   styles: ``,
@@ -28,7 +27,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiNotebookIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

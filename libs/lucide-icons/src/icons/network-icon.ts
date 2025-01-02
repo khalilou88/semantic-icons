@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect x="16" y="16" width="6" height="6" rx="1" />
-    <rect x="2" y="16" width="6" height="6" rx="1" />
-    <rect x="9" y="2" width="6" height="6" rx="1" />
+    <svg:rect x="16" y="16" width="6" height="6" rx="1" />
+    <svg:rect x="2" y="16" width="6" height="6" rx="1" />
+    <svg:rect x="9" y="2" width="6" height="6" rx="1" />
     <svg:path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" />
     <svg:path d="M12 12V8" />
   `,
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiNetworkIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -21,7 +20,7 @@ import {
     <svg:path d="M22 8a2 2 0 0 1-2 2" />
     <svg:path d="m3 7 3 3 3-3" />
     <svg:path d="M6 10V5a3 3 0 0 1 3-3h1" />
-    <rect x="2" y="14" width="8" height="8" rx="2" />
+    <svg:rect x="2" y="14" width="8" height="8" rx="2" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -29,7 +28,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiReplaceIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

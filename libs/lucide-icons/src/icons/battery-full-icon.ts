@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
+    <svg:rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
     <line x1="22" x2="22" y1="11" y2="13" />
     <line x1="6" x2="6" y1="11" y2="13" />
     <line x1="10" x2="10" y1="11" y2="13" />
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiBatteryFullIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

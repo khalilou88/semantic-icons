@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v1" />
     <svg:path d="M14 2v4a2 2 0 0 0 2 2h4" />
-    <rect width="8" height="5" x="2" y="13" rx="1" />
+    <svg:rect width="8" height="5" x="2" y="13" rx="1" />
     <svg:path d="M8 13v-2a2 2 0 1 0-4 0v2" />
   `,
   styles: ``,
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiFileLock2Icon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

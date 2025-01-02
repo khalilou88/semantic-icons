@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -17,7 +16,7 @@ import {
   template: `
     <svg:path d="M8 2v4" />
     <svg:path d="M16 2v4" />
-    <rect width="18" height="18" x="3" y="4" rx="2" />
+    <svg:rect width="18" height="18" x="3" y="4" rx="2" />
     <svg:path d="M3 10h18" />
     <svg:path d="M8 14h.01" />
     <svg:path d="M12 14h.01" />
@@ -32,7 +31,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiCalendarDaysIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

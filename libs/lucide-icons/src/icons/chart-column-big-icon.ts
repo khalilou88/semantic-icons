@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -16,8 +15,8 @@ import {
   imports: [],
   template: `
     <svg:path d="M3 3v16a2 2 0 0 0 2 2h16" />
-    <rect x="15" y="5" width="4" height="12" rx="1" />
-    <rect x="7" y="8" width="4" height="9" rx="1" />
+    <svg:rect x="15" y="5" width="4" height="12" rx="1" />
+    <svg:rect x="7" y="8" width="4" height="9" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiChartColumnBigIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

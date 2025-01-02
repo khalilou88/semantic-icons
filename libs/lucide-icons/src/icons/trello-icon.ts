@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-    <rect width="3" height="9" x="7" y="7" />
-    <rect width="3" height="5" x="14" y="7" />
+    <svg:rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+    <svg:rect width="3" height="9" x="7" y="7" />
+    <svg:rect width="3" height="5" x="14" y="7" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -25,7 +24,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiTrelloIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

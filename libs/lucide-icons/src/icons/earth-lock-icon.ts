@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -22,7 +21,7 @@ import {
     <svg:path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
     <svg:path d="M12 2a10 10 0 1 0 9.54 13" />
     <svg:path d="M20 6V4a2 2 0 1 0-4 0v2" />
-    <rect width="8" height="5" x="14" y="6" rx="1" />
+    <svg:rect width="8" height="5" x="14" y="6" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -30,7 +29,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiEarthLockIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

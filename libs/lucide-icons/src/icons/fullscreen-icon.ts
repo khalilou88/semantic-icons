@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -19,7 +18,7 @@ import {
     <svg:path d="M17 3h2a2 2 0 0 1 2 2v2" />
     <svg:path d="M21 17v2a2 2 0 0 1-2 2h-2" />
     <svg:path d="M7 21H5a2 2 0 0 1-2-2v-2" />
-    <rect width="10" height="8" x="7" y="8" rx="1" />
+    <svg:rect width="10" height="8" x="7" y="8" rx="1" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
@@ -27,7 +26,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiFullscreenIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {

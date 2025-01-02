@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  Inject,
   NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
@@ -15,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <rect x="14" y="14" width="8" height="8" rx="2" />
-    <rect x="2" y="2" width="8" height="8" rx="2" />
+    <svg:rect x="14" y="14" width="8" height="8" rx="2" />
+    <svg:rect x="2" y="2" width="8" height="8" rx="2" />
     <svg:path d="M7 14v1a2 2 0 0 0 2 2h1" />
     <svg:path d="M14 7h1a2 2 0 0 1 2 2v1" />
   `,
@@ -26,7 +25,7 @@ import {
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiSendToBackIcon implements OnInit {
-  private readonly elementRef = Inject(ElementRef);
+  private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
   ngOnInit(): void {
