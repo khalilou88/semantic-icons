@@ -20,14 +20,7 @@ import {
     <svg:path d="m11 7-3 5h4l-3 5" />
     <line x1="22" x2="22" y1="11" y2="13" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

@@ -18,14 +18,7 @@ import {
     <polyline points="9 10 4 15 9 20" />
     <svg:path d="M20 4v7a4 4 0 0 1-4 4H4" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

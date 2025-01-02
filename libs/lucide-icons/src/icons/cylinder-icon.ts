@@ -18,14 +18,7 @@ import {
     <ellipse cx="12" cy="5" rx="9" ry="3" />
     <svg:path d="M3 5v14a9 3 0 0 0 18 0V5" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

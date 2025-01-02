@@ -18,14 +18,7 @@ import {
     <line x1="6" x2="6" y1="4" y2="20" />
     <polygon points="10,4 20,12 10,20" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

@@ -24,14 +24,7 @@ import {
     />
     <svg:path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

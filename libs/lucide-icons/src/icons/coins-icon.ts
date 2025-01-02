@@ -20,14 +20,7 @@ import {
     <svg:path d="M7 6h1v4" />
     <svg:path d="m16.71 13.88.7.71-2.82 2.82" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

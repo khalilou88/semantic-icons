@@ -24,14 +24,7 @@ import {
     <line x1="7" x2="4" y1="17" y2="20" />
     <line x1="3" x2="5" y1="19" y2="21" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

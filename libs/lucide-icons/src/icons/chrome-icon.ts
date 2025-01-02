@@ -21,14 +21,7 @@ import {
     <line x1="3.95" x2="8.54" y1="6.06" y2="14" />
     <line x1="10.88" x2="15.46" y1="21.94" y2="14" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

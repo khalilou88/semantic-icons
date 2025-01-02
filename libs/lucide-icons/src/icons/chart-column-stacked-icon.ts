@@ -21,14 +21,7 @@ import {
     <rect x="15" y="5" width="4" height="12" rx="1" />
     <rect x="7" y="8" width="4" height="9" rx="1" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

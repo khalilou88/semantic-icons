@@ -20,14 +20,7 @@ import {
     <line x1="6" x2="6" y1="2" y2="22" />
     <line x1="18" x2="18" y1="2" y2="22" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

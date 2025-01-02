@@ -22,14 +22,7 @@ import {
     <svg:path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" />
     <svg:path d="m7.5 4.27 9 5.15" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

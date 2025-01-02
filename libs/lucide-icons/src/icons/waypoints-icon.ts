@@ -23,14 +23,7 @@ import {
     <svg:path d="m13.8 17.7 3.9-3.9" />
     <circle cx="12" cy="19.5" r="2.5" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

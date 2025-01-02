@@ -21,14 +21,7 @@ import {
     <polyline points="2 15.5 12 8.5 22 15.5" />
     <line x1="12" x2="12" y1="2" y2="8.5" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

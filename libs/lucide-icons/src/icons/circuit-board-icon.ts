@@ -21,14 +21,7 @@ import {
     <svg:path d="M7 21v-4a2 2 0 0 1 2-2h4" />
     <circle cx="15" cy="15" r="2" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

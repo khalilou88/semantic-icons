@@ -21,14 +21,7 @@ import {
     <svg:path d="M3 6v4c0 1.1.9 2 2 2h3" />
     <svg:path d="M3 10v6c0 1.1.9 2 2 2h3" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

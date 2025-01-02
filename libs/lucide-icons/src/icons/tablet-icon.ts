@@ -18,14 +18,7 @@ import {
     <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
     <line x1="12" x2="12.01" y1="18" y2="18" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],

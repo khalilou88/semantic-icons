@@ -18,14 +18,7 @@ import {
     <rect width="20" height="12" x="2" y="6" rx="6" ry="6" />
     <circle cx="8" cy="12" r="2" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [NO_ERRORS_SCHEMA],
