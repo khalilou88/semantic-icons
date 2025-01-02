@@ -1,50 +1,46 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  ElementRef,
+  NO_ERRORS_SCHEMA,
+  OnInit,
+  Renderer2,
   ViewEncapsulation,
-  input,
 } from '@angular/core';
 
 @Component({
-  selector: 'svg-bird-icon',
+  selector: 'svg[svg-bird-icon]',
   standalone: true,
   imports: [],
   template: `
-    <!-- @license lucide-static v0.469.0 - ISC -->
-    <svg
-      class="lucide lucide-bird"
-      [class]="classInput()"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <path d="M16 7h.01" />
-      <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" />
-      <path d="m20 7 2 .5-2 .5" />
-      <path d="M10 18v3" />
-      <path d="M14 17.75V21" />
-      <path d="M7 18a6 6 0 0 0 3.84-10.61" />
-    </svg>
+    <path d="M16 7h.01" />
+    <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" />
+    <path d="m20 7 2 .5-2 .5" />
+    <path d="M10 18v3" />
+    <path d="M14 17.75V21" />
+    <path d="M7 18a6 6 0 0 0 3.84-10.61" />
   `,
-  host: {
-    '[class.svg-host]': 'true',
-  },
-  styles: `
-    .svg-host {
-      display: contents;
-    }
-  `,
+  host: {},
+  styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  schemas: [NO_ERRORS_SCHEMA],
 })
-export class SvgBirdIcon {
-  readonly classInput = input<string>('', {
-    alias: 'class',
-  });
+export class SvgBirdIcon implements OnInit {
+  constructor(
+    private readonly elementRef: ElementRef,
+    private readonly render: Renderer2,
+  ) {}
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'width', '24');
+    this.render.setAttribute(svg, 'height', '24');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+    this.render.setAttribute(svg, 'stroke', 'currentColor');
+    this.render.setAttribute(svg, 'stroke-width', '2');
+    this.render.setAttribute(svg, 'stroke-linecap', 'round');
+    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
+  }
 }
