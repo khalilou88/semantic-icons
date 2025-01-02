@@ -58,6 +58,11 @@ function generateIconsComponents(
 
     const width = svgAttributes.width;
     const height = svgAttributes.height;
+    const fill = svgAttributes.fill;
+    const stroke = svgAttributes.stroke;
+    const strokeWidth = svgAttributes.strokeWidth;
+    const strokeLinecap = svgAttributes.strokeLinecap;
+    const strokeLinejoin = svgAttributes.strokeLinejoin;
 
     const o = {
       svgContent,
@@ -66,6 +71,11 @@ function generateIconsComponents(
       svgSelector,
       width,
       height,
+      fill,
+      stroke,
+      strokeWidth,
+      strokeLinecap,
+      strokeLinejoin,
     };
 
     generateFiles(

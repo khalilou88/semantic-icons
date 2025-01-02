@@ -9,7 +9,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { getSvgContent } from '../../utils';
+import { getSvgAttributes, getSvgContent } from '../../utils';
 import { HeroiconsGeneratorSchema } from './schema';
 
 interface HeroIcon {
@@ -134,37 +134,15 @@ function generateIconsComponents(
       type: iconType,
     });
 
-    let width = '';
-    let height = '';
+    const svgAttributes = getSvgAttributes(svgFileContent);
 
-    if (iconSize === 16) {
-      width = '16';
-      height = '16';
-    }
-
-    if (iconSize === 20) {
-      width = '20';
-      height = '20';
-    }
-
-    if (iconSize === 24) {
-      width = '24';
-      height = '24';
-    }
-
-    let fill = '';
-    let stroke = '';
-    let strokeWidth = '';
-
-    if (iconType === 'solid') {
-      fill = 'currentColor';
-    }
-
-    if (iconType === 'outline') {
-      fill = 'none';
-      stroke = 'currentColor';
-      strokeWidth = '1.5';
-    }
+    const width = svgAttributes.width;
+    const height = svgAttributes.height;
+    const fill = svgAttributes.fill;
+    const stroke = svgAttributes.stroke;
+    const strokeWidth = svgAttributes.strokeWidth;
+    const strokeLinecap = svgAttributes.strokeLinecap;
+    const strokeLinejoin = svgAttributes.strokeLinejoin;
 
     const o = {
       svgContent,
@@ -176,6 +154,8 @@ function generateIconsComponents(
       fill,
       stroke,
       strokeWidth,
+      strokeLinecap,
+      strokeLinejoin,
     };
 
     generateFiles(

@@ -28,8 +28,23 @@ export class <%= svgClassName %> implements OnInit {
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '512');
-    this.render.setAttribute(svg, 'height', '512');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
+    this.render.setAttribute(svg, 'width', '<%= width %>');
+    this.render.setAttribute(svg, 'height', '<%= height %>');
+    this.render.setAttribute(svg, 'viewBox', '0 0 <%= width %> <%= height %>');
+    <% if(fill) { -%>
+      this.render.setAttribute(svg, 'fill', '<%= fill %>');
+    <% } -%>
+    <% if(stroke) { -%>
+      this.render.setAttribute(svg, 'stroke', '<%= stroke %>');
+    <% } -%>
+    <% if(strokeWidth) { -%>
+      this.render.setAttribute(svg, 'stroke-width', '<%= strokeWidth %>');
+    <% } -%>
+    <% if(strokeLinecap) { -%>
+      this.render.setAttribute(svg, 'stroke-linecap', '<%= strokeLinecap %>');
+    <% } -%>
+    <% if(strokeLinejoin) { -%>
+      this.render.setAttribute(svg, 'stroke-linejoin', '<%= strokeLinejoin %>');
+    <% } -%>
   }
 }

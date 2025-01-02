@@ -8,7 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { getSvgContent } from '../../utils';
+import { getSvgAttributes, getSvgContent } from '../../utils';
 import { LucideIconsGeneratorSchema } from './schema';
 
 export async function lucideIconsGenerator(
@@ -54,7 +54,29 @@ function generateIconsComponents(
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
-    const o = { svgContent, svgFileName, svgClassName, svgSelector };
+    const svgAttributes = getSvgAttributes(svgFileContent);
+
+    const width = svgAttributes.width;
+    const height = svgAttributes.height;
+    const fill = svgAttributes.fill;
+    const stroke = svgAttributes.stroke;
+    const strokeWidth = svgAttributes.strokeWidth;
+    const strokeLinecap = svgAttributes.strokeLinecap;
+    const strokeLinejoin = svgAttributes.strokeLinejoin;
+
+    const o = {
+      svgContent,
+      svgFileName,
+      svgClassName,
+      svgSelector,
+      width,
+      height,
+      fill,
+      stroke,
+      strokeWidth,
+      strokeLinecap,
+      strokeLinejoin,
+    };
 
     generateFiles(
       tree,
