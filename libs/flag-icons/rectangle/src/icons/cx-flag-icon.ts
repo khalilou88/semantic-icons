@@ -29,7 +29,7 @@ import {
       fill="#1c8a42"
       d="M588.6 204.2a2.8 1.8 16 1 1-5.4-1.7 2.8 1.8 16 0 1 5.4 1.7"
     />
-    <g fill="#fff" transform="matrix(.64 0 0 .64 0 80)">
+    <svg:g fill="#fff" transform="matrix(.64 0 0 .64 0 80)">
       <svg:path
         id="cx-a"
         d="m188.2 191-12.8-12-12.9 11.8 1.4-17.4-17.3-2.8 14.5-9.8-8.6-15.2 16.7 5.3 6.5-16.2L182 151l16.7-5-8.8 15 14.4 10-17.3 2.5z"
@@ -40,7 +40,7 @@ import {
       <use xlink:href="#cx-a" width="100%" height="100%" x="2.5" y="269.1" />
       <use xlink:href="#cx-a" width="100%" height="100%" x="-112.1" y="123.2" />
       <use xlink:href="#cx-a" width="100%" height="100%" x="108.4" y="85" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

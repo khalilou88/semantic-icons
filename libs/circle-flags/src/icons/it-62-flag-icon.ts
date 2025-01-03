@@ -15,7 +15,7 @@ import {
   imports: [],
   template: `
     <defs>
-      <mask
+      <svg:mask
         id="a"
         width="512"
         height="512"
@@ -24,9 +24,9 @@ import {
         maskUnits="userSpaceOnUse"
       >
         <svg:circle cx="256" cy="256" r="256" fill="#fff" />
-      </mask>
+      </svg:mask>
     </defs>
-    <g mask="url(#a)">
+    <svg:g mask="url(#a)">
       <svg:path fill="#338af3" d="M0 0h512v512H0V0Z" />
       <svg:path
         fill="#6da544"
@@ -100,10 +100,10 @@ import {
         fill="#ffda44"
         d="M203.4 370.8h113.1v8H203.4zm167.4-54.2V203.5h8v113zm-229.6 0v-113h8v113z"
       />
-      <g fill="#ffda44">
+      <svg:g fill="#ffda44">
         <svg:path d="m202.9 189.4 27.1 27.1-13.6 13.6-27.1-27.2z" />
         <svg:circle cx="196.1" cy="196.1" r="9.6" />
-      </g>
+      </svg:g>
       <svg:path
         fill="#ffda44"
         d="m340.6 332.1 2.1.7 9.2-9.2-.7-2-11.3-11.4c2.1-2.1 2.1-5 0-7-1.4-1.5-5-2.2-7 0l-11.4 11.2-2.1.8v-2.9l11.3-11.3-2.1-2.1-11.3 11.3a5 5 0 0 0 0 7c1.4 1.5 5 2.2 7 0l11.4-11.2 2-.7v2.8l-12.6 12.7a6 6 0 0 1-9.2-.7 7 7 0 0 0-9.2.7 7 7 0 0 0 0 8.5l3.5 3.5 5 5a6 6 0 0 0 9.1.7l1.5 1.4-2.2 2.1a5 5 0 0 0 .7 7.8h1.5l8.4-8.5.8-2.1-5.7-5.7 11.3-12.7 2.1 2.1-2 2.2a5 5 0 0 0 0 7Z"
@@ -116,7 +116,7 @@ import {
         fill="#ffda44"
         d="M360 64v48H168V64a16 16 0 0 1 16 16h16a16 16 0 1 1 32 0h16a16 16 0 1 1 32 0h16a16 16 0 1 1 32 0h16a16 16 0 0 1 16-16Z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

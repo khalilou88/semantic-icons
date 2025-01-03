@@ -14,8 +14,10 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <mask id="a"><svg:circle cx="256" cy="256" r="256" fill="#fff" /></mask>
-    <g mask="url(#a)">
+    <svg:mask id="a">
+      <svg:circle cx="256" cy="256" r="256" fill="#fff" />
+    </svg:mask>
+    <svg:g mask="url(#a)">
       <svg:path
         fill="#eee"
         d="M0 0h32l32 32L96 0h160l12 8 13-8h36l24 8 25-8h36l25 8 24-8h36l25 22v34l-8 17 8 17v35l-8 17 8 17v34l-8 17 8 17v35l-8 17 8 17v34l-8 17 8 18v34l-8 17 8 17v35l-8 17 8 17v10h-22l-21-8-20 8h-44l-21-8-21 8h-44l-20-8-21 8h-44l-21-8-20 8h-44l-21-8-21 8H64l-21-8-21 8H0v-10l8-17-8-17v-35l8-17-8-17v-34l8-18-8-17v-34l8-17-8-17V96l32-32L0 32Z"
@@ -41,7 +43,7 @@ import {
         fill="#d80027"
         d="M351 289c-3 0-6 2-8 4-4 4-4 12 0 16l8 6v8h65v-8l8-6c4-4 4-12 0-16s-10-5-15-1l-15 14h-21l-15-14a11 11 0 0 0-7-3z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

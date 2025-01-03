@@ -14,11 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd" stroke-width="1pt">
+    <svg:g fill-rule="evenodd" stroke-width="1pt">
       <svg:path fill="#00319c" d="M0 0h170.7v512H0z" />
       <svg:path fill="#ffde00" d="M170.7 0h170.6v512H170.7z" />
       <svg:path fill="#de2110" d="M341.3 0H512v512H341.3z" />
-    </g>
+    </svg:g>
     <svg:path
       fill="#ff1900"
       fill-rule="evenodd"
@@ -59,7 +59,7 @@ import {
       d="m336.6 467.7 53.2 17.7a38 38 0 0 0 35.4-35.4c.6-39.4-14.2-53.2-17.7-53.2l7-7L404 379s3.6-18.4 39-17.7c35.4.7 35.4 17.7 35.4 35.4 0 17.8-17.7 17.8-17.7 53.2a38.1 38.1 0 0 0 35.5 35.4l53.1-17.7V645H336.6z"
       transform="matrix(.56007 0 0 .53518 9.8 -56)"
     />
-    <g fill="none" stroke="#000">
+    <svg:g fill="none" stroke="#000">
       <svg:path
         stroke-width=".6"
         d="m302.2 292.2 14.6 15 14.7-15 14.6 15 29.3-15 14.3 15.8 15-15.8 21.6 15.8 22.3-15.8 14.6 15 14.7-15"
@@ -70,8 +70,8 @@ import {
         d="m432.3 435.8-7.1 39m10.6-39v39m7.1-39v39m7.1-39 3.5 39m3.6-39 3.5 39"
         transform="matrix(.56007 0 0 .53518 9.8 -56)"
       />
-    </g>
-    <g stroke="#000" stroke-width="3.1">
+    </svg:g>
+    <svg:g stroke="#000" stroke-width="3.1">
       <svg:path
         fill="#a77b3b"
         fill-rule="evenodd"
@@ -108,8 +108,8 @@ import {
         d="m301.4 539.3-.2 176.5"
         transform="matrix(-.56007 0 0 1.0208 337.4 -384.6)"
       />
-    </g>
-    <g stroke="#000" stroke-width="3.1">
+    </svg:g>
+    <svg:g stroke="#000" stroke-width="3.1">
       <svg:path
         fill="#a77b3b"
         fill-rule="evenodd"
@@ -146,7 +146,7 @@ import {
         d="m301.4 539.3-.2 176.5"
         transform="matrix(.56007 0 0 1.0208 178.4 -384.6)"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#a77b3b"
       fill-rule="evenodd"
@@ -292,7 +292,7 @@ import {
       d="M386.2 652a7 7 0 1 1-14.1 0 7 7 0 0 1 14.1 0z"
       transform="matrix(.56007 0 0 .53518 7.9 -57.9)"
     />
-    <g fill-rule="evenodd">
+    <svg:g fill-rule="evenodd">
       <svg:path
         fill="#da4500"
         d="M238.7 159c-10 0-11.3 1.5-15.8 3 0-4.3 11.1-9.4 21.1-9.4 0 3.2-2.6 6.3-5.3 6.3z"
@@ -312,8 +312,8 @@ import {
         fill="#da4500"
         d="M244 152.6a64 64 0 0 0-23.8 3.2c0-5.9 6.8-12.7 18.5-12.7 2.7 0 5.3 6.3 5.3 9.5"
       />
-    </g>
-    <g fill-rule="evenodd">
+    </svg:g>
+    <svg:g fill-rule="evenodd">
       <svg:path
         fill="#008500"
         stroke="#000"
@@ -329,7 +329,7 @@ import {
         fill="#008f00"
         d="M146.7 256c7.7-4.6 6.2-22.2 5.3-22.3-.9-.2-4.2 4-4.6 7.9-1-6.2-3-11.9-4-11.2-1.8.7.3 10.3-.6 11.9-.9.7-5-4.7-5.8-4-.9.8 2.4 21.7 9.7 17.7m11 21.7c8.9-2 13.6-19 12.9-19.4-.8-.4-5.4 2.5-7.1 6 1.3-6.1 1.3-12.1 0-11.9-1.8.1-3.3 9.8-4.6 11-1.1.5-3-6-4.1-5.5-1.1.4-5.3 21.2 3 19.8zm13.3 22.1c8-4 8.2-21.6 7.3-21.8-.9-.2-4.5 3.7-5.3 7.5-.4-6.2-1.8-12-3-11.5-1.8.5-.7 10.3-1.7 11.8-1 .6-4.4-5.2-5.4-4.5-1 .7.4 21.9 8 18.5zm14.2 29c8.4-3.2 10.5-20.8 9.6-21-.8-.4-4.9 3.1-6 6.8.3-6.2-.6-12.1-1.8-11.7-1.9.4-1.7 10.2-2.9 11.6-1 .6-3.9-5.5-4.9-5-1 .7-2 21.8 6 19.2z"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#ff1900"
       fill-rule="evenodd"
@@ -338,7 +338,7 @@ import {
       d="M209 776c0 7.8-10.2 14.2-23 14.2s-23-6.4-23-14.2 10.3-14.2 23-14.2 23 6.4 23 14.2z"
       transform="matrix(.48902 .26089 -.27302 .46728 313.4 -58.3)"
     />
-    <g fill="#ff0" fill-rule="evenodd" stroke="#000" stroke-width=".6">
+    <svg:g fill="#ff0" fill-rule="evenodd" stroke="#000" stroke-width=".6">
       <svg:path
         d="M156 414.6v-7.1h7v-7.1h7v7h7.2v7.2H170v17.7h-7v-17.7zm7 60.2h7v205.5h-7z"
         transform="matrix(.40549 .1277 -.14842 .38308 363.6 58)"
@@ -347,7 +347,7 @@ import {
         d="M159.4 676.8h14.2v56.7h-14.2zM156 439.4h21.3c14.1 0-3.6 39-3.6 39h-14.1s-17.8-39-3.6-39zm17.6-5.4c0 3-3.1 5.4-7 5.4s-7.1-2.4-7.1-5.3 3.1-5.4 7-5.4 7.1 2.4 7.1 5.4z"
         transform="matrix(.40549 .1277 -.14842 .38308 363.6 58)"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#ff1900"
       fill-rule="evenodd"

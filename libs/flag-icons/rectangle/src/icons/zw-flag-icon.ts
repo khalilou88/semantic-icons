@@ -27,7 +27,10 @@ import {
         />
       </clipPath>
     </defs>
-    <g clip-path="url(#zw-a)" transform="matrix(1.1722 0 0 1.1426 -2.3 -.1)">
+    <svg:g
+      clip-path="url(#zw-a)"
+      transform="matrix(1.1722 0 0 1.1426 -2.3 -.1)"
+    >
       <svg:path fill="#006400" d="M0 0h840v420H0z" />
       <svg:path fill="#ffd200" d="M0 60h840v300H0z" />
       <svg:path fill="#d40000" d="M0 120h840v180H0z" />
@@ -53,7 +56,7 @@ import {
       <svg:path
         d="M88 145.3a1.7 1.8 0 0 0-1.6 1.7 1.7 1.8 0 1 0 3.5 0 1.7 1.8 0 0 0-1.9-1.7m.1.6a1.2 1.1 0 0 1 1.2 1.1 1.2 1.1 0 1 1-2.4 0 1.2 1.1 0 0 1 1.2-1.1"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

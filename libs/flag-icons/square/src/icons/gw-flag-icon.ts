@@ -17,8 +17,8 @@ import {
     <svg:path fill="#ce1126" d="M0 0h160v512H0z" />
     <svg:path fill="#fcd116" d="M160 0h352v256H160z" />
     <svg:path fill="#009e49" d="M160 256h352v256H160z" />
-    <g transform="translate(-46.2 72.8)scale(.7886)">
-      <g id="gw-b" transform="matrix(80 0 0 80 160 240)">
+    <svg:g transform="translate(-46.2 72.8)scale(.7886)">
+      <svg:g id="gw-b" transform="matrix(80 0 0 80 160 240)">
         <svg:path
           id="gw-a"
           fill="#000001"
@@ -31,7 +31,7 @@ import {
           height="100%"
           transform="scale(-1 1)"
         />
-      </g>
+      </svg:g>
       <use
         xlink:href="#gw-b"
         width="100%"
@@ -56,7 +56,7 @@ import {
         height="100%"
         transform="rotate(-72 160 240)"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

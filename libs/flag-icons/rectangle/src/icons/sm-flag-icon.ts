@@ -14,10 +14,10 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd" stroke-width="1pt">
+    <svg:g fill-rule="evenodd" stroke-width="1pt">
       <svg:path fill="#19b6ef" d="M0 240h640v240H0z" />
       <svg:path fill="#fff" d="M0 0h640v240H0z" />
-    </g>
+    </svg:g>
     <svg:path
       fill="#fd0"
       fill-rule="evenodd"
@@ -25,7 +25,7 @@ import {
       stroke-width="2.4"
       d="M317 339.2C369.6 300 426 220 359.9 177.8c-12.3-2.4-26-1.7-32.7 3.6-3.5-2-6.3-1.8-9.8 1.9-2.5-3-5-4.4-10-2.9a40.8 40.8 0 0 0-31.5-3C218 211.8 253.4 294 317 339.1z"
     />
-    <g stroke="#3a9d4f">
+    <svg:g stroke="#3a9d4f">
       <svg:path
         fill="#4fd46b"
         fill-rule="evenodd"
@@ -60,7 +60,7 @@ import {
         stroke-width="2.2"
         d="M414.3 246.5c.3-.3 11-24.8 12.4-32.2M415.4 203s1.8 20-3.1 34.6m-29.7-54.7s21.9 21 24 29.7m-8.7-32s1.4 17.3 7.5 34.3m31 28.4S414.6 261.8 404 278m11.8 30s-28.8 4-41.4 4.3m32 8s-35.8-.8-38.4-3.4m20.5-43c0 .4-18.2 30.3-18.8 40"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#65c7ff"
       fill-rule="evenodd"
@@ -280,7 +280,7 @@ import {
       stroke-width="2.2"
       d="M235 211.4a70.7 70.7 0 0 0 15.2-20.7"
     />
-    <g fill-rule="evenodd">
+    <svg:g fill-rule="evenodd">
       <svg:path
         fill="#ffe100"
         stroke="#e9bf00"
@@ -293,9 +293,9 @@ import {
         stroke-width="1.1"
         d="M235.4 212.7a4.3 4.3 0 1 1-8.6 0 4.3 4.3 0 0 1 8.6 0zm-2.6 23.6a4 4 0 1 1-8.1 0 4 4 0 0 1 8 0zm3.8 33.7a3.6 3.6 0 1 1-7.2 0 3.6 3.6 0 0 1 7.2 0zm31.3 37.2a3.6 3.6 0 1 1-7.2 0 3.6 3.6 0 0 1 7.2 0zm4.5 10.7a3.6 3.6 0 1 1-7.2 0 3.6 3.6 0 0 1 7.2 0z"
       />
-    </g>
-    <g fill="#fff" fill-rule="evenodd">
-      <g stroke="#000" stroke-width="1.1">
+    </svg:g>
+    <svg:g fill="#fff" fill-rule="evenodd">
+      <svg:g stroke="#000" stroke-width="1.1">
         <svg:path d="M288.2 349a15.5 15.5 0 0 1-4.8-5.8l-14-1.5-.2 8z" />
         <svg:path
           stroke-linejoin="round"
@@ -304,8 +304,8 @@ import {
         <svg:path
           d="M184.7 338a3.6 3.6 0 1 1-7.2 0 3.6 3.6 0 0 1 7.2 0zm-1 18a3.6 3.6 0 1 1-7.2 0 3.6 3.6 0 0 1 7.3 0z"
         />
-      </g>
-      <g stroke="#000" stroke-width="1.1">
+      </svg:g>
+      <svg:g stroke="#000" stroke-width="1.1">
         <svg:path d="M346.3 349.1c2.3-2.1 3.8-3.5 4.7-5.8l14-1.6.3 8z" />
         <svg:path
           stroke-linejoin="round"
@@ -314,12 +314,12 @@ import {
         <svg:path
           d="M449.7 338a3.6 3.6 0 1 0 7.3 0 3.6 3.6 0 0 0-7.3 0zm1 18a3.6 3.6 0 1 0 7.2 0 3.6 3.6 0 0 0-7.2 0z"
         />
-      </g>
+      </svg:g>
       <svg:path
         d="M317 329.3c-3.2-.6-4.4-.4-6.6-.6l-5.1 15.8c8 .7 15.3.7 15.3.7-4.8-1-3.7-15.8-3.6-15.9"
       />
-    </g>
-    <g font-family="Trebuchet MS" font-size="9" font-weight="bold">
+    </svg:g>
+    <svg:g font-family="Trebuchet MS" font-size="9" font-weight="bold">
       <svg:path d="M283.4 340.2v-10.7h1.8v9h5v1.7z" aria-label="L" />
       <svg:path d="M291.7 340.7V330h1.9v10.7z" aria-label="I" />
       <svg:path
@@ -343,7 +343,7 @@ import {
         d="m344.4 339.7.6-1.7q1.2.7 2.2.7 1.7 0 1.7-1.2l-.4-1-1.6-1.1-1.7-1-.7-1-.1-1.2q0-1.3.8-2.2 1-.6 2.3-.6 1.9 0 2.9.6l-.7 1.7q-1-.8-2.2-.8-.6 0-1 .3-.3.3-.3 1 0 .8 2 1.8 1.2.5 1.7 1l.6 1 .2 1.4q0 1.3-1 2.1t-2.7.9q-1.6 0-2.6-.9z"
         aria-label="S"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="none"
       stroke="#00a400"

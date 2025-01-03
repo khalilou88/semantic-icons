@@ -14,12 +14,12 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd" stroke-width="1pt">
+    <svg:g fill-rule="evenodd" stroke-width="1pt">
       <svg:path fill="#ffe800" d="M0 0h640v480H0z" />
       <svg:path fill="#00148e" d="M0 240h640v240H0z" />
       <svg:path fill="#da0010" d="M0 360h640v120H0z" />
-    </g>
-    <g fill-rule="evenodd">
+    </svg:g>
+    <svg:g fill-rule="evenodd">
       <svg:path
         d="M269.6 290.8 197 367.3l-1.2-1.6 72.4-76.5 1.2 1.6zm50.4 12.5-94.8 100-1.6-1.6 94.7-100z"
       />
@@ -37,7 +37,7 @@ import {
         d="M478.4 60.2v88.6l17.7 88.6 17.7-88.6V60.2z"
         transform="matrix(-.07 -.07 -.1 .1 240.6 390.5)"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#ffdf00"
       fill-rule="evenodd"
@@ -71,7 +71,7 @@ import {
       d="M301.2 272.8S265.8 609.4 372 609.4c88.5 0 88.5-53.1 106.2-53.1l-17.7-124z"
       transform="matrix(.58 0 0 .62 9.6 -10.2)"
     />
-    <g stroke="#000">
+    <svg:g stroke="#000">
       <svg:path
         fill="none"
         stroke-width="2.3"
@@ -235,7 +235,7 @@ import {
         stroke-width=".3"
         d="M255.5 166c.4.8 0 1.9-1 2.3s-2 .2-2.4-.6 0-1.8 1-2.3 2-.2 2.4.6z"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#0000c4"
       fill-rule="evenodd"
@@ -300,7 +300,7 @@ import {
       d="M422.5 137c0 2-2 3.7-4.3 3.7s-4.4-1.7-4.4-3.7 2-3.8 4.4-3.8 4.3 1.7 4.3 3.8zm-6.2 7.9c31.5 61.4 48.7 166.7 50.4 170.5.1 4.4-4.8 6.4-7.1.8-2.5-3.3-12.7-100.2-49.1-172.2-.3-13.7 3.7-14.8 8.3-14.5 3.7.2 8.3 3.7 8.3 7.9 0 5-5.8 8.7-10.8 7.5z"
       transform="matrix(.48 .15 -.2 .48 16.7 31.6)"
     />
-    <g fill-rule="evenodd">
+    <svg:g fill-rule="evenodd">
       <svg:path
         d="m370.4 290.8 72.5 76.5 1.3-1.6-72.5-76.5zM320 303.3l94.8 100 1.6-1.6-94.7-100z"
       />
@@ -318,8 +318,8 @@ import {
         d="M478.4 60.2v88.6l17.7 88.6 17.7-88.6V60.2z"
         transform="matrix(.07 -.07 .1 .1 399.4 390.5)"
       />
-    </g>
-    <g fill-rule="evenodd" stroke-width="1pt">
+    </svg:g>
+    <svg:g fill-rule="evenodd" stroke-width="1pt">
       <svg:path
         fill="#ffdf00"
         stroke="#000"
@@ -339,7 +339,7 @@ import {
         transform="matrix(-.45 0 0 .64 567.6 -59.8)"
       />
       <svg:path d="m433.8 116-72.4 76.5-1.3-1.6 72.4-76.5z" />
-      <g fill="#005b00" stroke="#000">
+      <svg:g fill="#005b00" stroke="#000">
         <svg:path
           d="M428.2-17s81.5 90.7 111 154.1c29.4 63.5 54.4 156.3 54.4 156.3s2.2-86-36.3-163C505.2 32.8 425.9-12.5 428.2-17z"
           transform="matrix(.16 -.07 .08 .35 309.5 211)"
@@ -388,7 +388,7 @@ import {
           d="M428.2-17s81.5 90.7 111 154.1c29.4 63.5 54.4 156.3 54.4 156.3s2.2-86-36.3-163C505.2 32.8 425.9-12.5 428.2-17z"
           transform="matrix(.24 .02 0 .4 276.4 128)"
         />
-      </g>
+      </svg:g>
       <svg:path
         fill="#ffdf00"
         stroke="#000"
@@ -444,8 +444,8 @@ import {
         d="M422.5 137c0 2-2 3.7-4.3 3.7s-4.4-1.7-4.4-3.7 2-3.8 4.4-3.8 4.3 1.7 4.3 3.8zm-6.2 7.9c31.5 61.4 48.7 166.7 50.4 170.5.1 4.4-4.8 6.4-7.1.8-2.5-3.3-12.7-100.2-49.1-172.2-.3-13.7 3.7-14.8 8.3-14.5 3.7.2 8.3 3.7 8.3 7.9 0 5-5.8 8.7-10.8 7.5z"
         transform="matrix(-.48 .15 .2 .48 623.3 31.6)"
       />
-    </g>
-    <g fill-rule="evenodd" stroke="#000" stroke-width="1pt">
+    </svg:g>
+    <svg:g fill-rule="evenodd" stroke="#000" stroke-width="1pt">
       <svg:path
         fill="#e10000"
         d="M478.4 698a53.3 53.3 0 0 0 53.1 0V556.3h-35.4c17.7 53.1 17.7 106.3-17.8 141.7z"
@@ -496,8 +496,8 @@ import {
         d="M478.4 609.5c-.9 51.7-43.8 95.7-35.5 106.3 9.5 9.4 35.5-17.8 70.9 0 17.7-17.8 19.4-107.7 17.7-106.3z"
         transform="matrix(-.35 0 0 .46 527.5 51)"
       />
-    </g>
-    <g fill-rule="evenodd" stroke="#000">
+    </svg:g>
+    <svg:g fill-rule="evenodd" stroke="#000">
       <svg:path
         fill="#908f8a"
         stroke-width="4.5"
@@ -558,8 +558,8 @@ import {
         d="M425.2 60.2v124h17.7v-124z"
         transform="matrix(.28 0 0 .27 194 315.2)"
       />
-    </g>
-    <g fill="#ffdf00" fill-rule="evenodd" stroke="#000" stroke-width="1pt">
+    </svg:g>
+    <svg:g fill="#ffdf00" fill-rule="evenodd" stroke="#000" stroke-width="1pt">
       <svg:path
         d="M655.5 396.9c0 88-55.6 159.4-124 159.4s-124-71.4-124-159.4 55.5-159.5 124-159.5 124 71.4 124 159.4zm-17.7 0c0 78.2-47.6 141.7-106.3 141.7-58.7 0-106.3-63.5-106.3-141.7 0-78.3 47.6-141.8 106.3-141.8 58.7 0 106.3 63.5 106.3 141.8z"
         transform="matrix(.58 0 0 .62 9.6 -10.2)"
@@ -572,7 +572,7 @@ import {
         d="M579.8 250c-14.9-8.1-31.2-12.6-48.3-12.6s-33.4 4.5-48.3 12.5l7 16.4a82.8 82.8 0 0 1 82.7 0z"
         transform="matrix(.58 0 0 -.62 9.8 479.3)"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#a7cfff"
       fill-rule="evenodd"

@@ -14,11 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd" stroke-width="1pt">
+    <svg:g fill-rule="evenodd" stroke-width="1pt">
       <svg:path fill="#fff" d="M155.8 0h200.4v512H155.8z" />
       <svg:path fill="#198200" d="M0 0h155.8v512H0zm356.2 0H512v512H356.2z" />
-    </g>
-    <g fill-rule="evenodd" stroke="#000" stroke-linejoin="round">
+    </svg:g>
+    <svg:g fill-rule="evenodd" stroke="#000" stroke-linejoin="round">
       <svg:path
         fill="#198200"
         stroke-linecap="round"
@@ -36,7 +36,7 @@ import {
         stroke-width=".8"
         d="M217 314.7v2.8s-5-1.4-6.5-4.1c2.9-.8 6.6 1.4 6.5 1.3z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

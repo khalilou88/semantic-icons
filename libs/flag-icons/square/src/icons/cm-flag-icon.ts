@@ -17,8 +17,8 @@ import {
     <svg:path fill="#007a5e" d="M0 0h170.7v512H0z" />
     <svg:path fill="#ce1126" d="M170.7 0h170.6v512H170.7z" />
     <svg:path fill="#fcd116" d="M341.3 0H512v512H341.3z" />
-    <g fill="#fcd116" transform="translate(256 256)scale(5.6889)">
-      <g id="cm-b">
+    <svg:g fill="#fcd116" transform="translate(256 256)scale(5.6889)">
+      <svg:g id="cm-b">
         <svg:path id="cm-a" d="M0-8-2.5-.4 1.3.9z" />
         <use
           xlink:href="#cm-a"
@@ -26,7 +26,7 @@ import {
           height="100%"
           transform="scale(-1 1)"
         />
-      </g>
+      </svg:g>
       <use
         xlink:href="#cm-b"
         width="100%"
@@ -51,7 +51,7 @@ import {
         height="100%"
         transform="rotate(-72)"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

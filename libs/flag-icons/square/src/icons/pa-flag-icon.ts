@@ -19,7 +19,7 @@ import {
         <svg:path fill-opacity=".7" d="M0 0h512v512H0z" />
       </clipPath>
     </defs>
-    <g fill-rule="evenodd" clip-path="url(#pa-a)">
+    <svg:g fill-rule="evenodd" clip-path="url(#pa-a)">
       <svg:path fill="#fff" d="M-26-25h592.5v596H-26z" />
       <svg:path fill="#db0000" d="M255.3-20.4h312.1v275.2h-312z" />
       <svg:path
@@ -30,7 +30,7 @@ import {
         fill="#d80000"
         d="m435.2 449-46.4-29.2-46.3 29.5 17.2-48-46.2-29.5 57.2-.4 17.7-47.8 18 47.7h57.2l-46 30z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

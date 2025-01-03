@@ -20,11 +20,11 @@ import {
     <svg:path fill="#fff" d="M0 174h512v164H0z" />
     <svg:circle cx="143.4" cy="81.9" r="61.4" fill="#fff" />
     <svg:circle cx="163.8" cy="81.9" r="61.4" fill="#0099b5" />
-    <g fill="#fff" transform="translate(278.5 131)scale(2.048)">
-      <g id="uz-e">
-        <g id="uz-d">
-          <g id="uz-c">
-            <g id="uz-b">
+    <svg:g fill="#fff" transform="translate(278.5 131)scale(2.048)">
+      <svg:g id="uz-e">
+        <svg:g id="uz-d">
+          <svg:g id="uz-c">
+            <svg:g id="uz-b">
               <svg:path id="uz-a" d="M0-6-1.9-.3 1 .7" />
               <use
                 xlink:href="#uz-a"
@@ -32,14 +32,14 @@ import {
                 height="100%"
                 transform="scale(-1 1)"
               />
-            </g>
+            </svg:g>
             <use
               xlink:href="#uz-b"
               width="100%"
               height="100%"
               transform="rotate(72)"
             />
-          </g>
+          </svg:g>
           <use
             xlink:href="#uz-b"
             width="100%"
@@ -52,16 +52,16 @@ import {
             height="100%"
             transform="rotate(144)"
           />
-        </g>
+        </svg:g>
         <use xlink:href="#uz-d" width="100%" height="100%" y="-24" />
         <use xlink:href="#uz-d" width="100%" height="100%" y="-48" />
-      </g>
+      </svg:g>
       <use xlink:href="#uz-e" width="100%" height="100%" x="24" />
       <use xlink:href="#uz-e" width="100%" height="100%" x="48" />
       <use xlink:href="#uz-d" width="100%" height="100%" x="-48" />
       <use xlink:href="#uz-d" width="100%" height="100%" x="-24" />
       <use xlink:href="#uz-d" width="100%" height="100%" x="-24" y="-24" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

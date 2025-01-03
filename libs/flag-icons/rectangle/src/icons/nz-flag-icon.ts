@@ -15,19 +15,19 @@ import {
   imports: [],
   template: `
     <defs>
-      <g id="nz-b">
-        <g id="nz-a">
+      <svg:g id="nz-b">
+        <svg:g id="nz-a">
           <svg:path d="M0-.3v.5l1-.5z" />
           <svg:path d="M.2.3 0-.1l1-.2z" />
-        </g>
+        </svg:g>
         <use xlink:href="#nz-a" transform="scale(-1 1)" />
         <use xlink:href="#nz-a" transform="rotate(72 0 0)" />
         <use xlink:href="#nz-a" transform="rotate(-72 0 0)" />
         <use xlink:href="#nz-a" transform="scale(-1 1)rotate(72)" />
-      </g>
+      </svg:g>
     </defs>
     <svg:path fill="#00247d" fill-rule="evenodd" d="M0 0h640v480H0z" />
-    <g transform="translate(-111 36.1)scale(.66825)">
+    <svg:g transform="translate(-111 36.1)scale(.66825)">
       <use
         xlink:href="#nz-b"
         width="100%"
@@ -42,8 +42,8 @@ import {
         fill="#cc142b"
         transform="matrix(30 0 0 30 900 120)"
       />
-    </g>
-    <g transform="rotate(82 525.2 114.6)scale(.66825)">
+    </svg:g>
+    <svg:g transform="rotate(82 525.2 114.6)scale(.66825)">
       <use
         xlink:href="#nz-b"
         width="100%"
@@ -58,8 +58,8 @@ import {
         fill="#cc142b"
         transform="rotate(-82 519 -457.7)scale(25)"
       />
-    </g>
-    <g transform="rotate(82 525.2 114.6)scale(.66825)">
+    </svg:g>
+    <svg:g transform="rotate(82 525.2 114.6)scale(.66825)">
       <use
         xlink:href="#nz-b"
         width="100%"
@@ -74,8 +74,8 @@ import {
         fill="#cc142b"
         transform="rotate(-82 668.6 -327.7)scale(30)"
       />
-    </g>
-    <g transform="translate(-111 36.1)scale(.66825)">
+    </svg:g>
+    <svg:g transform="translate(-111 36.1)scale(.66825)">
       <use
         xlink:href="#nz-b"
         width="100%"
@@ -90,7 +90,7 @@ import {
         fill="#cc142b"
         transform="matrix(35 0 0 35 900 480)"
       />
-    </g>
+    </svg:g>
     <svg:path fill="#012169" d="M0 0h320v240H0z" />
     <svg:path
       fill="#fff"

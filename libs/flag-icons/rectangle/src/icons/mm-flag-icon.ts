@@ -17,7 +17,7 @@ import {
     <svg:path fill="#fecb00" d="M0 0h640v480H0z" />
     <svg:path fill="#34b233" d="M0 160h640v320H0z" />
     <svg:path fill="#ea2839" d="M0 320h640v160H0z" />
-    <g transform="translate(320 256.9)scale(176.87999)">
+    <svg:g transform="translate(320 256.9)scale(176.87999)">
       <svg:path id="mm-a" fill="#fff" d="m0-1 .3 1h-.6z" />
       <use
         xlink:href="#mm-a"
@@ -43,7 +43,7 @@ import {
         height="100%"
         transform="rotate(144)"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

@@ -17,10 +17,10 @@ import {
     <clipPath id="tw-a">
       <svg:path d="M0 0h512v512H0z" />
     </clipPath>
-    <g clip-path="url(#tw-a)">
+    <svg:g clip-path="url(#tw-a)">
       <svg:path fill="red" d="M0 0h768v512H0z" />
       <svg:path fill="#000095" d="M0 0h384v256H0z" />
-      <g fill="#fff">
+      <svg:g fill="#fff">
         <svg:path
           d="m164.3 135.4-2.7 10.2 10.1 2.7-2-7.4zm50 5.5-2 7.4 10.1-2.7-2.7-10.2zm-44.6-25.8-5.4 5.5 2 7.4z"
         />
@@ -68,10 +68,10 @@ import {
         />
         <svg:path d="M204.9 80 192 32l-12.9 48L192 92.9z" />
         <svg:path d="m184.6 100.3 7.4-7.4L179.1 80l-4.7 17.6z" />
-      </g>
+      </svg:g>
       <svg:circle cx="192" cy="128" r="54.4" fill="#000095" />
       <svg:circle cx="192" cy="128" r="48" fill="#fff" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

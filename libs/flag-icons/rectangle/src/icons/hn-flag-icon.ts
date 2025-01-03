@@ -16,8 +16,12 @@ import {
   template: `
     <svg:path fill="#18c3df" d="M0 0h640v480H0z" />
     <svg:path fill="#fff" d="M0 160h640v160H0z" />
-    <g id="hn-c" fill="#18c3df" transform="translate(320 240)scale(26.66665)">
-      <g id="hn-b">
+    <svg:g
+      id="hn-c"
+      fill="#18c3df"
+      transform="translate(320 240)scale(26.66665)"
+    >
+      <svg:g id="hn-b">
         <svg:path id="hn-a" d="m-.3 0 .5.1L0-1z" />
         <use
           xlink:href="#hn-a"
@@ -25,7 +29,7 @@ import {
           height="100%"
           transform="scale(-1 1)"
         />
-      </g>
+      </svg:g>
       <use
         xlink:href="#hn-b"
         width="100%"
@@ -50,7 +54,7 @@ import {
         height="100%"
         transform="rotate(-144)"
       />
-    </g>
+    </svg:g>
     <use
       xlink:href="#hn-c"
       width="100%"

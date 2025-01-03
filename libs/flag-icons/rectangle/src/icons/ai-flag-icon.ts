@@ -39,18 +39,18 @@ import {
       fill="#fff"
       d="M424 191.8c0 90.4 9.7 121.5 29.3 142.5a179.4 179.4 0 0 0 35 30 179.7 179.7 0 0 0 35-30c19.5-21 29.3-52.1 29.3-142.5-14.2 6.5-22.3 9.7-34 9.5a78.4 78.4 0 0 1-30.3-9.5 78.4 78.4 0 0 1-30.3 9.5c-11.7.2-19.8-3-34-9.5"
     />
-    <g transform="matrix(1.96 0 0 2.002 -40.8 62.9)">
+    <svg:g transform="matrix(1.96 0 0 2.002 -40.8 62.9)">
       <use xlink:href="#ai-b" />
       <svg:circle cx="281.3" cy="91.1" r=".8" fill="#fff" fill-rule="evenodd" />
-    </g>
-    <g transform="matrix(-.916 -1.77 1.733 -.935 563.4 829)">
+    </svg:g>
+    <svg:g transform="matrix(-.916 -1.77 1.733 -.935 563.4 829)">
       <use xlink:href="#ai-b" />
       <svg:circle cx="281.3" cy="91.1" r=".8" fill="#fff" fill-rule="evenodd" />
-    </g>
-    <g transform="matrix(-1.01 1.716 -1.68 -1.031 925.4 -103.2)">
+    </svg:g>
+    <svg:g transform="matrix(-1.01 1.716 -1.68 -1.031 925.4 -103.2)">
       <use xlink:href="#ai-b" />
       <svg:circle cx="281.3" cy="91.1" r=".8" fill="#fff" fill-rule="evenodd" />
-    </g>
+    </svg:g>
     <svg:path
       fill="#9cf"
       d="M440 315.1a78 78 0 0 0 13.3 19.2 179.4 179.4 0 0 0 35 30 180 180 0 0 0 35-30 78 78 0 0 0 13.2-19.2z"

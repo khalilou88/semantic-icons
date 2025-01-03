@@ -14,21 +14,23 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <mask id="a"><svg:circle cx="256" cy="256" r="256" fill="#fff" /></mask>
-    <g mask="url(#a)">
+    <svg:mask id="a">
+      <svg:circle cx="256" cy="256" r="256" fill="#fff" />
+    </svg:mask>
+    <svg:g mask="url(#a)">
       <svg:path fill="#ffda44" d="m0 128 256-32 256 32v256l-256 32L0 384Z" />
       <svg:path fill="#d80027" d="M0 0h512v128H0zm0 384h512v128H0z" />
-      <g fill="#eee">
+      <svg:g fill="#eee">
         <svg:path d="M144 304h-16v-80h16zm128 0h16v-80h-16z" />
         <svg:ellipse cx="208" cy="296" rx="48" ry="32" />
-      </g>
-      <g fill="#d80027">
+      </svg:g>
+      <svg:g fill="#d80027">
         <svg:rect width="16" height="24" x="128" y="192" rx="8" />
         <svg:rect width="16" height="24" x="272" y="192" rx="8" />
         <svg:path
           d="M208 272v24a24 24 0 0 0 24 24 24 24 0 0 0 24-24v-24h-24z"
         />
-      </g>
+      </svg:g>
       <svg:rect width="32" height="16" x="120" y="208" fill="#ff9811" ry="8" />
       <svg:rect width="32" height="16" x="264" y="208" fill="#ff9811" ry="8" />
       <svg:rect width="32" height="16" x="120" y="304" fill="#ff9811" rx="8" />
@@ -66,21 +68,21 @@ import {
         fill="#ff9811"
         d="M168 232v8h8v16h-8v8h32v-8h-8v-16h8v-8zm8-16h64v8h-64z"
       />
-      <g fill="#ffda44">
+      <svg:g fill="#ffda44">
         <svg:circle cx="186" cy="202" r="6" />
         <svg:circle cx="208" cy="202" r="6" />
         <svg:circle cx="230" cy="202" r="6" />
-      </g>
+      </svg:g>
       <svg:path
         fill="#d80027"
         d="M169 272v43a24 24 0 0 0 10 4v-47h-10zm20 0v47a24 24 0 0 0 10-4v-43h-10z"
       />
-      <g fill="#338af3">
+      <svg:g fill="#338af3">
         <svg:circle cx="208" cy="272" r="16" />
         <svg:rect width="32" height="16" x="264" y="320" ry="8" />
         <svg:rect width="32" height="16" x="120" y="320" ry="8" />
-      </g>
-    </g>
+      </svg:g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

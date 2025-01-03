@@ -15,7 +15,7 @@ import {
   imports: [],
   template: `
     <defs>
-      <mask
+      <svg:mask
         id="a"
         width="512"
         height="512"
@@ -24,9 +24,9 @@ import {
         maskUnits="userSpaceOnUse"
       >
         <svg:circle cx="256" cy="256" r="256" fill="#fff" />
-      </mask>
+      </svg:mask>
     </defs>
-    <g mask="url(#a)">
+    <svg:g mask="url(#a)">
       <svg:path fill="#0052b4" d="M0 0h512v512H0V0Z" />
       <svg:circle cx="256" cy="256" r="160" fill="#eee" />
       <svg:path
@@ -43,7 +43,7 @@ import {
         fill="#338af3"
         d="m280 384-48-16v-24h48v40zm-48-48a16 16 0 0 1-16-16h80a16 16 0 0 1-16 16"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

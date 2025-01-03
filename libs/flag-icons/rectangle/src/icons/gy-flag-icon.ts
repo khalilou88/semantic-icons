@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd">
+    <svg:g fill-rule="evenodd">
       <svg:path fill="#399408" d="M2.4 0H640v480H2.4z" />
       <svg:path fill="#fff" d="M.2 0c-.9 0 619.6 241.5 619.6 241.5L0 479.8z" />
       <svg:path
@@ -29,7 +29,7 @@ import {
         fill="#de2110"
         d="M.3 33.9c1.6-15 260.9 208.4 260.9 208.4L.2 451.7V33.9z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

@@ -14,7 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd" stroke-width="1pt" transform="scale(.51314 1.0322)">
+    <svg:g
+      fill-rule="evenodd"
+      stroke-width="1pt"
+      transform="scale(.51314 1.0322)"
+    >
       <svg:rect
         width="1063"
         height="708.7"
@@ -33,7 +37,7 @@ import {
         transform="scale(.93865 .69686)"
       />
       <svg:path fill="#fdb913" d="M0 0h997.8v164.6H0z" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

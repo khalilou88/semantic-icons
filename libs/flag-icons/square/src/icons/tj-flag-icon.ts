@@ -17,7 +17,7 @@ import {
     <svg:path fill="#060" d="M0 0h512v512H0z" />
     <svg:path fill="#fff" d="M0 0h512v365.7H0z" />
     <svg:path fill="#c00" d="M0 0h512v146.3H0z" />
-    <g fill="#f8c300" transform="translate(-256)scale(.73143)">
+    <svg:g fill="#f8c300" transform="translate(-256)scale(.73143)">
       <svg:path
         d="M672 340.7a12.5 12.5 0 0 1 23.3 5.9v50h9.4v-50a12.5 12.5 0 0 1 23.3-5.9 29.5 29.5 0 1 0-56 0"
       />
@@ -57,15 +57,15 @@ import {
         stroke-width="16"
         d="M603 478a340 340 0 0 1 194 0"
       />
-      <g transform="translate(700 380)">
-        <g transform="translate(0 -140)">
+      <svg:g transform="translate(700 380)">
+        <svg:g transform="translate(0 -140)">
           <svg:path
             id="tj-c"
             d="m488533-158734-790463 574305L0-513674l301930 929245-790463-574305z"
             transform="scale(.00005)"
           />
-        </g>
-        <g id="tj-d">
+        </svg:g>
+        <svg:g id="tj-d">
           <use
             xlink:href="#tj-c"
             width="100%"
@@ -84,15 +84,15 @@ import {
             height="100%"
             transform="translate(-140)"
           />
-        </g>
+        </svg:g>
         <use
           xlink:href="#tj-d"
           width="100%"
           height="100%"
           transform="scale(-1 1)"
         />
-      </g>
-    </g>
+      </svg:g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

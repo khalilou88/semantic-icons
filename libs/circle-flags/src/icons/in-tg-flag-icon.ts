@@ -14,13 +14,15 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <mask id="a"><svg:circle cx="256" cy="256" r="256" fill="#fff" /></mask>
-    <g mask="url(#a)">
+    <svg:mask id="a">
+      <svg:circle cx="256" cy="256" r="256" fill="#fff" />
+    </svg:mask>
+    <svg:g mask="url(#a)">
       <svg:path fill="#eee" d="M0 0h512v128l-256 64L0 128Z" />
       <svg:path fill="#338af3" d="M0 128h512v128l-256 64L0 256Z" />
       <svg:path fill="#ff9811" d="M0 256h512v128l-256 64L0 384Z" />
       <svg:path fill="#496e2d" d="M0 384h512v128H0z" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

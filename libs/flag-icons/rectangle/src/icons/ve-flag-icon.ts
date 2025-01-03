@@ -15,9 +15,9 @@ import {
   imports: [],
   template: `
     <defs>
-      <g id="ve-d" transform="translate(0 -36)">
-        <g id="ve-c">
-          <g id="ve-b">
+      <svg:g id="ve-d" transform="translate(0 -36)">
+        <svg:g id="ve-c">
+          <svg:g id="ve-b">
             <svg:path id="ve-a" fill="#fff" d="M0-5-1.5-.2l2.8.9z" />
             <use
               xlink:href="#ve-a"
@@ -25,14 +25,14 @@ import {
               height="120"
               transform="scale(-1 1)"
             />
-          </g>
+          </svg:g>
           <use
             xlink:href="#ve-b"
             width="180"
             height="120"
             transform="rotate(72)"
           />
-        </g>
+        </svg:g>
         <use
           xlink:href="#ve-b"
           width="180"
@@ -45,13 +45,13 @@ import {
           height="120"
           transform="rotate(144)"
         />
-      </g>
+      </svg:g>
     </defs>
     <svg:path fill="#cf142b" d="M0 0h640v480H0z" />
     <svg:path fill="#00247d" d="M0 0h640v320H0z" />
     <svg:path fill="#fc0" d="M0 0h640v160H0z" />
-    <g id="ve-f" transform="matrix(4 0 0 4 320 336)">
-      <g id="ve-e">
+    <svg:g id="ve-f" transform="matrix(4 0 0 4 320 336)">
+      <svg:g id="ve-e">
         <use
           xlink:href="#ve-d"
           width="180"
@@ -64,9 +64,9 @@ import {
           height="120"
           transform="rotate(30)"
         />
-      </g>
+      </svg:g>
       <use xlink:href="#ve-e" width="180" height="120" transform="rotate(40)" />
-    </g>
+    </svg:g>
     <use
       xlink:href="#ve-f"
       width="180"

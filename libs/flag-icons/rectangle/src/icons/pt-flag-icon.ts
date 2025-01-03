@@ -16,7 +16,7 @@ import {
   template: `
     <svg:path fill="red" d="M256 0h384v480H256z" />
     <svg:path fill="#060" d="M0 0h256v480H0z" />
-    <g
+    <svg:g
       fill="#ff0"
       fill-rule="evenodd"
       stroke="#000"
@@ -71,8 +71,8 @@ import {
       <svg:path
         d="M158.6 195.5c6-4 50.2 15.6 96.6 43.6 46.1 28 90.3 59.6 86.3 65.5l-1.3 2.1-.6.5c.1-.1.8-1 0-3.1-2-6.5-33.4-31.5-85.3-62.9-50.7-30.1-92.9-48.3-97-43.1zM351 290.4c3.8-7.6-37.2-38.5-88.1-68.6-52-29.5-89.6-46.9-96.5-41.7L165 183c0 .1 0-.2.4-.5 1.2-1 3.3-1 4.2-1 11.8.2 45.5 15.7 92.8 42.8 20.8 12 87.6 55 87.3 67 0 1 .1 1.2-.3 1.8l1.7-2.6z"
       />
-    </g>
-    <g transform="translate(0 26.7)scale(1.06667)">
+    </svg:g>
+    <svg:g transform="translate(0 26.7)scale(1.06667)">
       <svg:path
         fill="#fff"
         stroke="#000"
@@ -85,8 +85,8 @@ import {
         stroke-width=".5"
         d="M183 211.1a56.4 56.4 0 0 0 16.8 40 57 57 0 0 0 40.2 16.8 56.9 56.9 0 0 0 40.2-16.6 56.4 56.4 0 0 0 16.7-40v-77H183v76.8m91-53.7v48.9l-.1 5.1a33.2 33.2 0 0 1-10 24 34 34 0 0 1-24 10c-9.4 0-17.7-4-23.9-10.2a34 34 0 0 1-10-24v-54z"
       />
-      <g id="pt-e">
-        <g id="pt-d" fill="#ff0" stroke="#000" stroke-width=".5">
+      <svg:g id="pt-e">
+        <svg:g id="pt-d" fill="#ff0" stroke="#000" stroke-width=".5">
           <svg:path
             stroke="none"
             d="M190.2 154.4c.1-5.5 4-6.8 4-6.8.1 0 4.3 1.4 4.3 6.9z"
@@ -116,7 +116,7 @@ import {
             d="M188.6 142.8c0-.6.8-.6.8 0v1.2h-.8z"
           />
           <use xlink:href="#pt-c" width="100%" height="100%" x="10.6" />
-        </g>
+        </svg:g>
         <use xlink:href="#pt-d" width="100%" height="100%" y="46.3" />
         <use
           xlink:href="#pt-d"
@@ -124,7 +124,7 @@ import {
           height="100%"
           transform="rotate(-45.2 312.8 180)"
         />
-      </g>
+      </svg:g>
       <use xlink:href="#pt-d" width="100%" height="100%" x="45.7" />
       <use
         xlink:href="#pt-e"
@@ -132,7 +132,7 @@ import {
         height="100%"
         transform="matrix(-1 0 0 1 479.8 0)"
       />
-      <g id="pt-f" fill="#fff">
+      <svg:g id="pt-f" fill="#fff">
         <svg:path
           fill="#039"
           d="M232.6 202.4a8.3 8.3 0 0 0 2.2 5.7 7.2 7.2 0 0 0 5.3 2.4c2.1 0 4-1 5.3-2.4a8.3 8.3 0 0 0 2.2-5.7v-10.8h-15z"
@@ -142,12 +142,12 @@ import {
         <svg:circle cx="240.2" cy="199.7" r="1.5" />
         <svg:circle cx="236.1" cy="203.9" r="1.5" />
         <svg:circle cx="244.4" cy="203.9" r="1.5" />
-      </g>
+      </svg:g>
       <use xlink:href="#pt-f" width="100%" height="100%" y="-26" />
       <use xlink:href="#pt-f" width="100%" height="100%" x="-20.8" />
       <use xlink:href="#pt-f" width="100%" height="100%" x="20.8" />
       <use xlink:href="#pt-f" width="100%" height="100%" y="25.8" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

@@ -14,11 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd">
+    <svg:g fill-rule="evenodd">
       <svg:path fill="#00cbff" d="M0 0h512v512H0z" />
       <svg:path fill="#fff" d="M0 192h512v128H0z" />
       <svg:path fill="#000001" d="M0 212.7h512V299H0z" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

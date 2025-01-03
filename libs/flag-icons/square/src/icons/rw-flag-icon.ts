@@ -17,8 +17,8 @@ import {
     <svg:path fill="#20603d" d="M0 0h512v512H0z" />
     <svg:path fill="#fad201" d="M0 0h512v384H0z" />
     <svg:path fill="#00a1de" d="M0 0h512v256H0z" />
-    <g transform="translate(374.4 133.8)scale(.7111)">
-      <g id="rw-b">
+    <svg:g transform="translate(374.4 133.8)scale(.7111)">
+      <svg:g id="rw-b">
         <svg:path
           id="rw-a"
           fill="#e5be01"
@@ -30,7 +30,7 @@ import {
           height="100%"
           transform="scale(1 -1)"
         />
-      </g>
+      </svg:g>
       <use
         xlink:href="#rw-b"
         width="100%"
@@ -38,7 +38,7 @@ import {
         transform="scale(-1 1)"
       />
       <svg:circle r="34.3" fill="#e5be01" stroke="#00a1de" stroke-width="3.4" />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

@@ -19,10 +19,10 @@ import {
         <svg:path fill-opacity=".7" d="M0 0h288v216H0z" />
       </clipPath>
     </defs>
-    <g clip-path="url(#aw-a)" transform="scale(2.2222)">
+    <svg:g clip-path="url(#aw-a)" transform="scale(2.2222)">
       <svg:path fill="#39c" d="M0 0v216h324V0z" />
       <svg:path fill="#ff0" d="M0 144v12h324v-12zm0 24v12h324v-12z" />
-    </g>
+    </svg:g>
     <svg:path fill="#9cc" d="m142.7 28 2.9 3zm-3 6 3 3zm5.9 0 3 3z" />
     <svg:path fill="#ccf" d="m139.7 37 3 2.9-3-3m5.9 0 3 3z" />
     <svg:path fill="#6cc" d="m136.7 42.8 3 3z" />

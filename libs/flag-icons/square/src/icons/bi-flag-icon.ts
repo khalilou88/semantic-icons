@@ -19,7 +19,7 @@ import {
         <svg:path fill="gray" d="M60.8 337h175v175h-175z" />
       </clipPath>
     </defs>
-    <g
+    <svg:g
       fill-rule="evenodd"
       clip-path="url(#bi-a)"
       transform="translate(-178 -986)scale(2.9257)"
@@ -47,7 +47,7 @@ import {
         stroke-width="1pt"
         d="m156.5 405.4-6.6.1-3.4 5.6-3.4-5.6-6.5-.1 3.2-5.8-3.2-5.7 6.6-.2 3.4-5.6 3.4 5.7h6.5l-3.1 5.8zm-22 38.2h-6.6l-3.4 5.7-3.4-5.6-6.6-.2 3.2-5.7-3.1-5.8 6.5-.1 3.4-5.6 3.4 5.6 6.6.2-3.2 5.7zm44.6 0h-6.6l-3.4 5.7-3.4-5.6-6.5-.2 3.1-5.7-3.1-5.8 6.6-.1 3.4-5.6 3.4 5.6 6.5.2-3.2 5.7z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

@@ -19,7 +19,7 @@ import {
         <svg:path fill-opacity=".7" d="M248 0h496v496H248z" />
       </clipPath>
     </defs>
-    <g
+    <svg:g
       fill-rule="evenodd"
       clip-path="url(#zm-a)"
       transform="translate(-256)scale(1.0321)"
@@ -28,7 +28,7 @@ import {
       <svg:path fill="#ef7d00" d="M656.8 178.2H744V496h-87.3z" />
       <svg:path fill="#000001" d="M569.6 178h87.2v318h-87.2z" />
       <svg:path fill="#de2010" d="M480.5 178.3h89V496h-89z" />
-      <g fill="#ef7d00" stroke="#000">
+      <svg:g fill="#ef7d00" stroke="#000">
         <svg:path
           stroke-linejoin="round"
           stroke-width=".9"
@@ -80,8 +80,8 @@ import {
           stroke-linejoin="round"
           d="M538.8 63s13.2 7 18.8 6.5c-1.5 1.4-3.7 2-3.7 2 1.4.5 5.2 2.6 11 1.2-1.3 1.4-3.1 3-3.1 3s5 1.9 10.6-1a43.6 43.6 0 0 0-2.7 3.6l4 .3"
         />
-      </g>
-    </g>
+      </svg:g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

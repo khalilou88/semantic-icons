@@ -14,11 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g font-size="12">
+    <svg:g font-size="12">
       <svg:path fill="#fff" fill-rule="evenodd" d="M0-.1h512v512H0z" />
       <svg:path fill="#09c" d="M512 437.4 73.4 0H0v73l440.3 439H512v-74.5" />
-    </g>
-    <g font-size="12">
+    </svg:g>
+    <svg:g font-size="12">
       <svg:path
         fill="#005bbf"
         d="M252 375.8c-68.2 0-66-64.4-66-64.4v-99h132.3v99s2.3 64.4-66.2 64.4"
@@ -812,7 +812,7 @@ import {
         d="m296 237.8-3.8 1.9 3.4 2.1 4-2-3.6-2"
         transform="matrix(1.13778 0 0 1.13875 -85.4 -81.1)"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

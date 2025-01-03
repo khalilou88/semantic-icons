@@ -14,10 +14,10 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <g fill-rule="evenodd">
+    <svg:g fill-rule="evenodd">
       <svg:path fill="#de0000" d="M512 511.6H.5V0H512z" />
       <svg:path fill="#35a100" d="M511.8 512H0V256.2h511.7z" />
-    </g>
+    </svg:g>
     <svg:path
       fill="#fff300"
       fill-rule="evenodd"

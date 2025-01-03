@@ -16,8 +16,8 @@ import {
   template: `
     <svg:path fill="#da000c" d="M0 0h640v480H0z" />
     <svg:path fill="#fff" d="M0 0h640v321.6H0z" />
-    <g stroke="#000" transform="translate(-160)scale(1.875)">
-      <g id="gi-a" fill="#da000c" stroke-linecap="square">
+    <svg:g stroke="#000" transform="translate(-160)scale(1.875)">
+      <svg:g id="gi-a" fill="#da000c" stroke-linecap="square">
         <svg:path fill="#000001" stroke="none" d="M196.6 116.3h64v44h-64z" />
         <svg:path
           d="M229.8 153.9h-39l-8.7 5.7v6h47.7m-16.3-37c5.6 0 10.2 4.7 10.2 10.5v14.7h7.3v-56h-40.3v56h12.6v-14.7c0-5.6 4.5-10.5 10.2-10.5z"
@@ -27,15 +27,15 @@ import {
           d="M223 88.7h-16.2v-5.8h-11.9v5.8h-8v-5.8H182v10.4h41m-36.2 0h35v4.5h-35zm14-45.7V83h6v-9.7c0-3.6 2.5-6.6 6.1-6.8h.4a6.8 6.8 0 0 1 6.8 6.8V83h5.7V47.6zm-2.3-4.8v4.8h29.3v-4.8zm-3.7-9.1v9.1h35v-9.1h-5.3v4.7h-6.6v-4.7h-10v4.7h-6.5v-4.7zM182 159.6h48m31-2.8h-32.4l-9.8 4.7v7H261"
         />
         <svg:path stroke-linecap="butt" d="M218.8 161.5H262" />
-      </g>
+      </svg:g>
       <use
         xlink:href="#gi-a"
         width="100%"
         height="100%"
         transform="matrix(-1 0 0 1 512 0)"
       />
-      <g fill="#f8d80e">
-        <g stroke-linecap="round">
+      <svg:g fill="#f8d80e">
+        <svg:g stroke-linecap="round">
           <svg:path
             stroke-width=".8"
             d="M273.3 150c-2.7 1-5 2.4-7.5 3.8a72.4 72.4 0 0 0-8.9 6c-1 .7-2 1.4-2.7 2.4-1 .8-2 2-1.8 3.5 0 .6.8-.8 1.4-.9a4.4 4.4 0 0 1 3.1-.4c1.3-1.4 3-2.3 4.4-3.4a77.4 77.4 0 0 1 13-7.6z"
@@ -48,7 +48,7 @@ import {
           <svg:path
             d="m254 158-.3 3.4m3.1-1.7-.8 3.3m3.8-1-1.8 2.6m2.7 3.6-2.6-1.4m3.4-1.4-3 .3m-.8 4-.2-2.6m-1-.3-2.4 1.8m-9.4-15.7v3.1m6.3.3v3.5m-3.2-5.2v3.3"
           />
-        </g>
+        </svg:g>
         <svg:path
           d="M235.8 227.6v8h5v-4h6.9v4h5.4v-8zm0 11v8H253v-8h-5.4v4h-6.9v-4z"
         />
@@ -59,8 +59,8 @@ import {
         <svg:path
           d="M255.3 164.3a5 5 0 0 0-4 5.1v11.2a5 5 0 0 0 4.6 4.6 4.9 4.9 0 0 0 4.8-2.8l-1.7-1a2.9 2.9 0 0 1-3 1.8c-1.6 0-2.9-1.6-2.7-3.1v-11.2a2.9 2.9 0 0 1 3-2.6c.6-.2 1.5.7 1.9 0 .6-.9-.4-1.5-1-2zm5.8 3.9a5 5 0 0 1-1.9 1.6v7.5l2 1.1v-10.2z"
         />
-      </g>
-      <g fill="#da000c">
+      </svg:g>
+      <svg:g fill="#da000c">
         <svg:path
           fill="#000001"
           stroke="none"
@@ -76,8 +76,8 @@ import {
           stroke-linejoin="round"
           d="M228.7 102.4v54.4h12.8v-20.4c0-9.5 6.4-14 14.5-14 7.8 0 14.5 4.5 14.5 14v20.4h12.8v-54.4z"
         />
-      </g>
-    </g>
+      </svg:g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

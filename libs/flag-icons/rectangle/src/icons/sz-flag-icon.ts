@@ -17,8 +17,8 @@ import {
     <svg:path fill="#3e5eb9" d="M0 0h640v480H0Z" />
     <svg:path fill="#ffd900" d="M0 90h640v300H0Z" />
     <svg:path fill="#b10c0c" d="M0 120h640v240H0Z" />
-    <g fill="#ffd900" stroke="#000" transform="translate(-43.2)scale(1.2)">
-      <g id="sz-a">
+    <svg:g fill="#ffd900" stroke="#000" transform="translate(-43.2)scale(1.2)">
+      <svg:g id="sz-a">
         <svg:path fill="#fff" d="m492.9 154.3-24.3 8.6 24.2 8.5 24.3-8.5z" />
         <svg:rect
           width="357.1"
@@ -31,7 +31,7 @@ import {
         <svg:path
           d="M471.4 165.7a3 3 0 0 0 2.9-2.8 3 3 0 0 0-2.9-2.9m-2.8 5.7a3 3 0 0 0 2.8-2.8 3 3 0 0 0-2.8-2.9m-2.9 5.7a3 3 0 0 0 2.9-2.8 3 3 0 0 0-2.9-2.9"
         />
-      </g>
+      </svg:g>
       <use xlink:href="#sz-a" width="100%" height="100%" x="-23.3" y="17.1" />
       <svg:rect
         width="485.7"
@@ -42,7 +42,7 @@ import {
         rx="4.2"
         ry="4.3"
       />
-    </g>
+    </svg:g>
     <svg:path
       fill="#fff"
       stroke="#000"
@@ -52,15 +52,15 @@ import {
     <svg:path
       d="M304.8 173c9.2 10.2 1.5 14.3 11.2 15 10.2.7 4.4 10.8 13 11.2 6 .2-.6 24.2 5.1 32 5.9 8.3 10.8 2.5 11 8.4 0 6.2-16 5.5-16.3 24.5-.5 10.9-13.6 11.6-14.2 18.6-.8 6.6 25.8 10.3 25.4 16.2-.3 6-28.7 5-30 11.7-.6 6 39 11 42.2 28.5-6 2-22.7 3.7-35.4 3.8-80 0-137.1-68.6-171.4-103 34.3-34.2 91.4-102.8 171.4-102.8 0 0-23.7 21.7-12 35.8z"
     />
-    <g stroke="#fff" transform="translate(-43.2)scale(1.2)">
-      <g id="sz-d" stroke-width="6.9">
-        <g id="sz-c">
+    <svg:g stroke="#fff" transform="translate(-43.2)scale(1.2)">
+      <svg:g id="sz-d" stroke-width="6.9">
+        <svg:g id="sz-c">
           <svg:path id="sz-b" d="M214 192.4v-22.9m13.8 0v22.9m13.8-22.9v22.9" />
           <use xlink:href="#sz-b" width="100%" height="100%" y="38.1" />
-        </g>
+        </svg:g>
         <use xlink:href="#sz-c" width="100%" height="100%" x="41.6" />
-      </g>
-    </g>
+      </svg:g>
+    </svg:g>
     <use
       xlink:href="#sz-d"
       width="100%"
@@ -69,7 +69,7 @@ import {
       stroke="#000"
       transform="translate(-43.2)scale(1.2)"
     />
-    <g fill="#a70000">
+    <svg:g fill="#a70000">
       <svg:path
         fill="#333"
         stroke="#000"
@@ -98,7 +98,7 @@ import {
         fill="#b3b3b3"
         d="M249.6 200.2c.8-6.3 2.4-8.6 3-12.8.8-7-.2-12.4 2.4-12.2 2.4.2 3.2 2.8 2 10-1.3 7.1-2.4 8.8-7.3 15.1zm13.3 11.6c-.5-5.2.5-7.6.1-11-.5-6-2.4-10.2-.2-10.5 2.2-.4 3.4 1.6 3.6 7.8.2 6-.3 7.7-3.5 13.7m20.8 9.6c-2.3-4.7-4.3-6-5.7-9-2.6-5.3-3.2-9.5-5.1-8.8-2 .8-1.9 3 1 8.2 2.8 5 4.1 6.1 9.7 9.6zm7.1-41.5c-5.8-3-8.7-3-12.4-5-6.5-3.4-10.3-7.1-11.6-5-1.4 2 .4 4.1 7.1 7.2 6.7 3.1 8.8 3.2 16.8 2.8zm2 17.3c-4-3.4-6.6-4-9.3-6.2-4.8-4-7.1-7.7-8.6-6.2-1.6 1.6-.6 3.6 4.4 7.3 5 3.7 6.7 4.1 13.6 5.1z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

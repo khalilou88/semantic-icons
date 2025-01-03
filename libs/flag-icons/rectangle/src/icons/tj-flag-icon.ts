@@ -62,14 +62,18 @@ import {
       stroke-width="11"
       d="M253.5 327.8a233.1 233.1 0 0 1 133 0"
     />
-    <g fill="#f8c300" transform="translate(320 164.6)scale(.68571)">
+    <svg:g fill="#f8c300" transform="translate(320 164.6)scale(.68571)">
       <svg:path
         id="tj-c"
         d="m301930 415571-790463-574305h977066l-790463 574305L0-513674z"
         transform="scale(.00005)"
       />
-    </g>
-    <g id="tj-d" fill="#f8c300" transform="translate(320 260.6)scale(.68571)">
+    </svg:g>
+    <svg:g
+      id="tj-d"
+      fill="#f8c300"
+      transform="translate(320 260.6)scale(.68571)"
+    >
       <use
         xlink:href="#tj-c"
         width="100%"
@@ -88,7 +92,7 @@ import {
         height="100%"
         transform="translate(-140)"
       />
-    </g>
+    </svg:g>
     <use
       xlink:href="#tj-d"
       width="100%"

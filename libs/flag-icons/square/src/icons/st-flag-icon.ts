@@ -17,8 +17,8 @@ import {
     <svg:path fill="#12ad2b" d="M0 0h512v512H0z" />
     <svg:path fill="#ffce00" d="M0 146.3h512v219.4H0z" />
     <svg:path fill="#d21034" d="M0 0v512l192-256" />
-    <g id="st-c" transform="translate(276.9 261.5)scale(.33167)">
-      <g id="st-b">
+    <svg:g id="st-c" transform="translate(276.9 261.5)scale(.33167)">
+      <svg:g id="st-b">
         <svg:path
           id="st-a"
           fill="#000001"
@@ -31,7 +31,7 @@ import {
           height="100%"
           transform="scale(-1 1)"
         />
-      </g>
+      </svg:g>
       <use
         xlink:href="#st-b"
         width="100%"
@@ -56,7 +56,7 @@ import {
         height="100%"
         transform="rotate(-72)"
       />
-    </g>
+    </svg:g>
     <use
       xlink:href="#st-c"
       width="100%"

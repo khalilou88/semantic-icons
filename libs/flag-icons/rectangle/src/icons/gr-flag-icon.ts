@@ -23,10 +23,10 @@ import {
     <svg:path fill="#fff" fill-rule="evenodd" d="M0 266.7h640V320H0z" />
     <svg:path fill="#0d5eaf" fill-rule="evenodd" d="M0 320h640v53.3H0z" />
     <svg:path fill="#fff" fill-rule="evenodd" d="M0 373.3h640v53.4H0z" />
-    <g fill="#fff" fill-rule="evenodd" stroke-width="1.3">
+    <svg:g fill="#fff" fill-rule="evenodd" stroke-width="1.3">
       <svg:path d="M106.7 0H160v266.7h-53.3z" />
       <svg:path d="M0 106.7h266.7V160H0z" />
-    </g>
+    </svg:g>
     <svg:path fill="#0d5eaf" d="M0 426.7h640V480H0z" />
   `,
   styles: ``,

@@ -24,10 +24,10 @@ import {
     <svg:path fill="#fff" d="M0 0h512v512H0z" />
     <svg:path fill="#000001" d="M0 0h512v153.6H0z" />
     <svg:path fill="#060" d="M0 358.4h512V512H0z" />
-    <g id="ke-b" transform="matrix(3.2 0 0 3.2 255.8 256)">
+    <svg:g id="ke-b" transform="matrix(3.2 0 0 3.2 255.8 256)">
       <use xlink:href="#ke-a" width="100%" height="100%" stroke="#000" />
       <use xlink:href="#ke-a" width="100%" height="100%" fill="#fff" />
-    </g>
+    </svg:g>
     <use
       xlink:href="#ke-b"
       width="100%"
@@ -48,7 +48,7 @@ import {
       height="100%"
       transform="matrix(-1 0 0 1 511.7 0)"
     />
-    <g fill="#fff" transform="matrix(3.2 0 0 3.2 255.8 256)">
+    <svg:g fill="#fff" transform="matrix(3.2 0 0 3.2 255.8 256)">
       <svg:ellipse rx="4" ry="6" />
       <svg:path id="ke-d" d="M1 5.8s4 8 4 21-4 21-4 21z" />
       <use
@@ -69,7 +69,7 @@ import {
         height="100%"
         transform="scale(1 -1)"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

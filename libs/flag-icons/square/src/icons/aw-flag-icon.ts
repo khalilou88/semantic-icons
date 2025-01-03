@@ -19,7 +19,7 @@ import {
         <svg:path fill="gray" d="M0 0h512v512H0z" />
       </clipPath>
     </defs>
-    <g clip-path="url(#aw-a)">
+    <svg:g clip-path="url(#aw-a)">
       <svg:path fill="#39c" d="M0 0v512h768V0z" />
       <svg:path
         fill="#ff0"
@@ -211,7 +211,7 @@ import {
         fill="#9cc"
         d="m119.7 194.7 2.4 2.4zm4.7 0 2.4 2.4-2.3-2.4m-2.4 4.8 2.4 2.3z"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

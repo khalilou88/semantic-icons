@@ -16,7 +16,7 @@ import {
   template: `
     <svg:path fill="#74acdf" d="M0 0h640v480H0z" />
     <svg:path fill="#fff" d="M0 160h640v160H0z" />
-    <g id="ar-c" transform="translate(-64)scale(.96)">
+    <svg:g id="ar-c" transform="translate(-64)scale(.96)">
       <svg:path
         id="ar-a"
         fill="#f6b40e"
@@ -65,7 +65,7 @@ import {
         height="100%"
         transform="rotate(67.5 400 250)"
       />
-    </g>
+    </svg:g>
     <use
       xlink:href="#ar-c"
       width="100%"

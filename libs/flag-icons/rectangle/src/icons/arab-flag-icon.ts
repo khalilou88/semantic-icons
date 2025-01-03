@@ -15,7 +15,7 @@ import {
   imports: [],
   template: `
     <svg:path class="arab-fil0 arab-str0" fill="#006233" d="M0 0v480h640V0Z" />
-    <g fill="#fff" fill-rule="evenodd" stroke="#fff">
+    <svg:g fill="#fff" fill-rule="evenodd" stroke="#fff">
       <svg:path
         stroke-width=".4"
         d="M1071.9 2779.7c-25.9 38.9-7.2 64.2 19.5 66 17.6 1.3 54.2-24.9 54.1-55.7l-10-5.6c5.6 15.8-.2 20.8-12.1 31.6-23.5 21.3-71.5 22.8-51.5-36.3z"
@@ -72,13 +72,13 @@ import {
         d="m1265.2 2599.8 3.7-.8-.4 10.3-2.3.9z"
         transform="matrix(.36355 0 0 .3308 -130 -670.9)"
       />
-    </g>
+    </svg:g>
     <svg:path
       class="arab-fil2"
       fill="#fff"
       d="M320 326.3c51.6 0 93.6-38.2 93.6-85.2a81.9 81.9 0 0 0-32.6-64.4 70.2 70.2 0 0 1 19.2 48c0 40.8-35.9 73.9-80.2 73.9-44.3 0-80.2-33.1-80.2-74 0-18.3 7.2-35.1 19.2-48a81.8 81.8 0 0 0-32.6 64.6c0 46.9 42 85.1 93.6 85.1"
     />
-    <g fill="#fff" stroke="#000" stroke-width="8">
+    <svg:g fill="#fff" stroke="#000" stroke-width="8">
       <svg:path
         class="arab-fil2 arab-str2"
         d="M-54 1623c-88 44-198 32-291-28-4-2-6 1-2 12 10 29 18 52-12 95-13 19 2 22 24 20 112-11 222-36 275-57zm-2 52c-35 14-95 31-162 43-27 4-26 21 22 27 49 5 112-30 150-61z"
@@ -99,8 +99,8 @@ import {
         d="M3 1665c2 17 5 54 28 38 31-21 38-37 38-67 0-19-23-47-69-47s-69 28-69 47c0 30 7 46 38 67 23 16 25-21 28-38 1-6 6-4 6 0z"
         transform="matrix(.23458 0 0 .21345 320 27.3)"
       />
-    </g>
-    <g fill="#fff" stroke="#000" stroke-width="8">
+    </svg:g>
+    <svg:g fill="#fff" stroke="#000" stroke-width="8">
       <svg:path
         class="arab-fil2 arab-str2"
         d="M-29 384c-13-74-122-79-139-91-20-13-17 0-10 20 20 52 88 73 119 79 25 4 33 6 30-8z"
@@ -286,7 +286,7 @@ import {
         d="M-333 1448c29 95 137 173 218 179 38 3 38-1 24-26-65-118-178-138-218-168-34-26-27 6-24 15z"
         transform="matrix(.23458 0 0 .21345 320 27.3)"
       />
-    </g>
+    </svg:g>
     <svg:path
       class="arab-fil0"
       fill="#006233"

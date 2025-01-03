@@ -14,8 +14,10 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <mask id="a"><svg:circle cx="256" cy="256" r="256" fill="#fff" /></mask>
-    <g mask="url(#a)">
+    <svg:mask id="a">
+      <svg:circle cx="256" cy="256" r="256" fill="#fff" />
+    </svg:mask>
+    <svg:g mask="url(#a)">
       <svg:path fill="#ffda44" d="m0 128 192-32 192 32-256 256-64 32-64-32Z" />
       <svg:rect width="16" height="24" x="128" y="192" fill="#d80027" rx="8" />
       <svg:rect width="16" height="24" x="272" y="192" fill="#d80027" rx="8" />
@@ -59,11 +61,11 @@ import {
         fill="#ff9811"
         d="M168 232v8h8v16h-8v8h32v-8h-8v-16h8v-8zm8-16h64v8h-64z"
       />
-      <g fill="#ffda44">
+      <svg:g fill="#ffda44">
         <svg:circle cx="186" cy="202" r="6" />
         <svg:circle cx="208" cy="202" r="6" />
         <svg:circle cx="230" cy="202" r="6" />
-      </g>
+      </svg:g>
       <svg:rect width="32" height="16" x="120" y="320" fill="#338af3" ry="8" />
       <svg:path fill="#d80027" d="M0 384v128l128-128ZM0 0v128h384L512 0Z" />
       <svg:path
@@ -108,7 +110,7 @@ import {
         rx="11"
         ry="11"
       />
-    </g>
+    </svg:g>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

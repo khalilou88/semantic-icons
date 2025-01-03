@@ -15,8 +15,8 @@ import {
   imports: [],
   template: `
     <defs>
-      <g id="gd-c">
-        <g id="gd-b">
+      <svg:g id="gd-c">
+        <svg:g id="gd-b">
           <svg:path
             id="gd-a"
             fill="#fcd116"
@@ -29,7 +29,7 @@ import {
             height="100%"
             transform="scale(-1 1)"
           />
-        </g>
+        </svg:g>
         <use
           xlink:href="#gd-b"
           width="100%"
@@ -54,7 +54,7 @@ import {
           height="100%"
           transform="rotate(-72)"
         />
-      </g>
+      </svg:g>
     </defs>
     <svg:path fill="#ce1126" d="M0 0h512v512H0z" />
     <svg:path fill="#007a5e" d="M71.7 71.7h368.6v368.6H71.7z" />
