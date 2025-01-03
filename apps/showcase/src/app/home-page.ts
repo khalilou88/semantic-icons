@@ -4,13 +4,14 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
-import { SiAcmIcon } from '@semantic-icons/simple-icons';
+import { SiFrFlagIcon } from '@semantic-icons/circle-flags';
 
 @Component({
   selector: 'app-home-page',
-  imports: [SiAcmIcon],
+  standalone: true,
+  imports: [SiFrFlagIcon],
   template: `
-    <svg class="size-36" si-acm-icon></svg>
+    <svg class="size-36" si-fr-flag-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,

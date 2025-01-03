@@ -12,3 +12,4 @@ A collection of free and open source icons ready for use in your angular project
 [`@semantic-icons/lineicons`](libs/lineicons)\
 [`@semantic-icons/flag-icons`](libs/flag-icons)\
 [`@semantic-icons/circle-flags`](libs/circle-flags)
+[`@semantic-icons/simple-icons`](libs/simple-icons)
