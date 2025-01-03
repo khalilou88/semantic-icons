@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
   ViewEncapsulation,
@@ -26,7 +25,6 @@ import {
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiThermometerSnowflakeIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);

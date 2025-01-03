@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  NO_ERRORS_SCHEMA,
   OnInit,
   Renderer2,
   ViewEncapsulation,
@@ -52,7 +51,6 @@ import {
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  schemas: [NO_ERRORS_SCHEMA],
 })
 export class SiIt42FlagIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
@@ -63,6 +61,5 @@ export class SiIt42FlagIcon implements OnInit {
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
     this.render.setAttribute(svg, 'width', '512');
     this.render.setAttribute(svg, 'height', '512');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
   }
 }
