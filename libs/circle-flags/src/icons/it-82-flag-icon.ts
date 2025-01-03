@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:mask
         id="a"
         width="513"
@@ -25,7 +25,7 @@ import {
       >
         <svg:circle cx="256" cy="256" r="256" fill="#fff" />
       </svg:mask>
-    </defs>
+    </svg:defs>
     <svg:g mask="url(#a)">
       <svg:path fill="#d80027" d="m0 0 216.9 301.6L512 512V0H0Z" />
       <svg:path fill="#ffda44" d="m0 0 512 512H0V0Z" />

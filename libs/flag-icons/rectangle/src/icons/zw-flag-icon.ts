@@ -14,8 +14,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
-      <clipPath id="zw-a">
+    <svg:defs>
+      <svg:clipPath id="zw-a">
         <svg:rect
           width="546"
           height="420.1"
@@ -25,8 +25,8 @@ import {
           fill-rule="evenodd"
           ry="0"
         />
-      </clipPath>
-    </defs>
+      </svg:clipPath>
+    </svg:defs>
     <svg:g
       clip-path="url(#zw-a)"
       transform="matrix(1.1722 0 0 1.1426 -2.3 -.1)"

@@ -14,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <clipPath id="tw-a">
+    <svg:clipPath id="tw-a">
       <svg:path d="M0 0h640v480H0z" />
-    </clipPath>
+    </svg:clipPath>
     <svg:g clip-path="url(#tw-a)">
       <svg:path fill="red" d="M0 0h720v480H0z" />
       <svg:path fill="#000095" d="M0 0h360v240H0z" />

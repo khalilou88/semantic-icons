@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:path
         id="cc-a"
         d="m0-360 69.4 215.8 212-80.3L156-35.6 351 80.1 125 99.8l31.1 224.6L0 160l-156.2 164.3 31.1-224.5L-351 80l195-115.7-125.5-188.9 212 80.3z"
@@ -23,7 +23,7 @@ import {
         id="cc-b"
         d="M0-210 54.9-75.5l144.8 10.6-111 93.8 34.7 141L0 93.3-123.4 170l34.6-141-111-93.8 145-10.6z"
       />
-    </defs>
+    </svg:defs>
     <svg:path fill="green" d="M0 0h512v512H0z" />
     <svg:circle cx="268.2" cy="250.4" r="61.2" fill="#ffe000" />
     <svg:circle cx="287.3" cy="250.4" r="50.4" fill="green" />

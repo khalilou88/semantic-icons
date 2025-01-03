@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <radialGradient
         id="mx-b"
         xlink:href="#mx-a"
@@ -43,10 +43,10 @@ import {
         gradientUnits="userSpaceOnUse"
       />
       <svg:linearGradient id="mx-a">
-        <stop offset="0" stop-color="#fff" />
-        <stop offset="1" stop-color="#f15770" />
+        <svg:stop offset="0" stop-color="#fff" />
+        <svg:stop offset="1" stop-color="#f15770" />
       </svg:linearGradient>
-    </defs>
+    </svg:defs>
     <svg:path fill="#ce1126" d="M341.3 0H512v512H341.3z" />
     <svg:path fill="#fff" d="M170.7 0h170.6v512H170.7z" />
     <svg:path fill="#006847" d="M0 0h170.7v512H0z" />

@@ -14,11 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
-      <clipPath id="ps-a">
+    <svg:defs>
+      <svg:clipPath id="ps-a">
         <svg:path fill-opacity=".7" d="M237.1 0h493.5v493.5H237.1z" />
-      </clipPath>
-    </defs>
+      </svg:clipPath>
+    </svg:defs>
     <svg:g clip-path="url(#ps-a)" transform="translate(-246)scale(1.0375)">
       <svg:g fill-rule="evenodd" stroke-width="1pt">
         <svg:path fill="#000001" d="M0 0h987v164.5H0z" />

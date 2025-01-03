@@ -14,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:path id="cn-a" fill="#ff0" d="M1-.3-.7.8 0-1 .6.8-1-.3z" />
-    </defs>
+    </svg:defs>
     <svg:path fill="#ee1c25" d="M0 0h512v512H0z" />
     <use
       xlink:href="#cn-a"

@@ -14,16 +14,16 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:path
         id="ai-b"
         fill="#f90"
         d="M271 87c1.5 3.6 6.5 7.6 7.8 9.6-1.7 2-2 1.8-1.8 5.4 3-3.1 3-3.5 5-3 4.2 4.2.8 13.3-2.8 15.3-3.4 2.1-2.8 0-8 2.6 2.3 2 5.1-.3 7.4.3 1.2 1.5-.6 4.1.4 6.7 2-.2 1.8-4.3 2.2-5.8 1.5-5.4 10.4-9.1 10.8-14.1 1.9-.9 3.7-.3 6 1-1.1-4.6-4.9-4.6-5.9-6-2.4-3.7-4.5-7.8-9.6-9-3.8-.7-3.5.3-6-1.4-1.6-1.2-6.3-3.4-5.5-1.6"
       />
-    </defs>
-    <clipPath id="ai-a">
+    </svg:defs>
+    <svg:clipPath id="ai-a">
       <svg:path d="M0 0v128h298.7v128H256zm256 0H128v298.7H0V256z" />
-    </clipPath>
+    </svg:clipPath>
     <svg:path fill="#012169" d="M0 0h512v512H0z" />
     <svg:path stroke="#fff" stroke-width="50" d="m0 0 256 256m0-256L0 256" />
     <svg:path

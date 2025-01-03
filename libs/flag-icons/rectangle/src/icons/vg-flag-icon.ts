@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:linearGradient
         id="vg-a"
         x1="103.1"
@@ -24,10 +24,10 @@ import {
         gradientTransform="matrix(.99614 0 0 2.25255 703.8 -75)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="red" />
-        <stop offset="1" stop-color="#ff0" />
+        <svg:stop offset="0" stop-color="red" />
+        <svg:stop offset="1" stop-color="#ff0" />
       </svg:linearGradient>
-    </defs>
+    </svg:defs>
     <svg:path fill="#006" d="M0 0h640v480H0Z" />
     <svg:path fill="#012169" d="M0 0h320v240H0Z" />
     <svg:path

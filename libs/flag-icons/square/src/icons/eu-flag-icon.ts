@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:g id="eu-d">
         <svg:g id="eu-b">
           <svg:path id="eu-a" d="m0-1-.3 1 .5.1z" />
@@ -26,7 +26,7 @@ import {
         </svg:g>
         <use xlink:href="#eu-c" transform="scale(-1 1)" />
       </svg:g>
-    </defs>
+    </svg:defs>
     <svg:path fill="#039" d="M0 0h512v512H0z" />
     <svg:g fill="#fc0" transform="translate(256 258.4)scale(25.28395)">
       <use xlink:href="#eu-d" width="100%" height="100%" y="-6" />

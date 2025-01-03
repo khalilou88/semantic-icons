@@ -14,11 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
-      <clipPath id="rs-a">
+    <svg:defs>
+      <svg:clipPath id="rs-a">
         <svg:path d="M54.3 32h480v480h-480z" />
-      </clipPath>
-    </defs>
+      </svg:clipPath>
+    </svg:defs>
     <svg:g
       clip-path="url(#rs-a)"
       transform="translate(-57.9 -34.1)scale(1.06667)"

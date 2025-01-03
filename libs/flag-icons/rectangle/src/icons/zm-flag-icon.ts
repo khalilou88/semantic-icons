@@ -14,11 +14,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
-      <clipPath id="zm-a">
+    <svg:defs>
+      <svg:clipPath id="zm-a">
         <svg:path fill-opacity=".7" d="M-170.7 0H512v512h-682.7z" />
-      </clipPath>
-    </defs>
+      </svg:clipPath>
+    </svg:defs>
     <svg:g
       fill-rule="evenodd"
       clip-path="url(#zm-a)"

@@ -14,14 +14,14 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:linearGradient id="gs-b">
-        <stop offset="0" stop-color="#d5dfff" />
-        <stop offset="1" stop-color="#fff" />
+        <svg:stop offset="0" stop-color="#d5dfff" />
+        <svg:stop offset="1" stop-color="#fff" />
       </svg:linearGradient>
       <svg:linearGradient id="gs-a">
-        <stop offset="0" stop-color="#474747" />
-        <stop offset="1" stop-color="#f50" />
+        <svg:stop offset="0" stop-color="#474747" />
+        <svg:stop offset="1" stop-color="#f50" />
       </svg:linearGradient>
       <svg:linearGradient
         id="gs-c"
@@ -42,8 +42,8 @@ import {
         gradientTransform="matrix(.84238 0 0 .54673 300.5 79.8)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#b50000" />
-        <stop offset="1" stop-color="#ffc500" />
+        <svg:stop offset="0" stop-color="#b50000" />
+        <svg:stop offset="1" stop-color="#ffc500" />
       </svg:linearGradient>
       <svg:linearGradient
         id="gs-e"
@@ -85,7 +85,7 @@ import {
         gradientTransform="matrix(.60628 0 0 .75962 300.5 79.8)"
         gradientUnits="userSpaceOnUse"
       />
-    </defs>
+    </svg:defs>
     <svg:path fill="#006" d="M0 0h512v512H0Z" />
     <svg:path
       fill="#6a4c2d"

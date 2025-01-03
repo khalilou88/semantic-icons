@@ -14,13 +14,13 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:path
         id="ke-a"
         stroke-miterlimit="10"
         d="m-28.6 47.5 1.8 1 46.7-81c2.7-.6 4.2-3.2 5.7-5.8 1-1.8 5-8.7 6.7-17.7a58 58 0 0 0-11.9 14.7c-1.5 2.6-3 5.2-2.3 7.9z"
       />
-    </defs>
+    </svg:defs>
     <svg:path fill="#fff" d="M0 0h512v512H0z" />
     <svg:path fill="#000001" d="M0 0h512v153.6H0z" />
     <svg:path fill="#060" d="M0 358.4h512V512H0z" />

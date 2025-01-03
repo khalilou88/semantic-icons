@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:g id="nz-b">
         <svg:g id="nz-a">
           <svg:path d="M0-.3v.5l1-.5z" />
@@ -25,7 +25,7 @@ import {
         <use xlink:href="#nz-a" transform="rotate(-72 0 0)" />
         <use xlink:href="#nz-a" transform="scale(-1 1)rotate(72)" />
       </svg:g>
-    </defs>
+    </svg:defs>
     <svg:path fill="#00247d" fill-rule="evenodd" d="M0 0h640v480H0z" />
     <svg:g transform="translate(-111 36.1)scale(.66825)">
       <use

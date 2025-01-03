@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:linearGradient
         id="fk-c"
         xlink:href="#fk-a"
@@ -66,8 +66,8 @@ import {
         gradientUnits="userSpaceOnUse"
       />
       <svg:linearGradient id="fk-a">
-        <stop offset="0" stop-color="#a43907" />
-        <stop offset="1" stop-color="#fff" />
+        <svg:stop offset="0" stop-color="#a43907" />
+        <svg:stop offset="1" stop-color="#fff" />
       </svg:linearGradient>
       <svg:linearGradient
         id="fk-h"
@@ -119,7 +119,7 @@ import {
         gradientTransform="matrix(.85733 0 0 .9624 -162.4 -.6)"
         gradientUnits="userSpaceOnUse"
       />
-    </defs>
+    </svg:defs>
     <svg:path fill="#012169" d="M0 0h640v480H0z" />
     <svg:path fill="#012169" fill-rule="evenodd" d="M0 0h400v200H0z" />
     <svg:path

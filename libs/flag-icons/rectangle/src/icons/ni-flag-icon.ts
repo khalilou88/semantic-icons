@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:linearGradient
         id="ni-f"
         x1="498.7"
@@ -23,9 +23,9 @@ import {
         y2="283.4"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#510000" />
-        <stop offset=".3" stop-color="#8a0000" />
-        <stop offset="1" stop-color="#a00" />
+        <svg:stop offset="0" stop-color="#510000" />
+        <svg:stop offset=".3" stop-color="#8a0000" />
+        <svg:stop offset="1" stop-color="#a00" />
       </svg:linearGradient>
       <svg:linearGradient
         id="ni-g"
@@ -35,8 +35,8 @@ import {
         y2="287.4"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#ff2a2a" />
-        <stop offset="1" stop-color="red" />
+        <svg:stop offset="0" stop-color="#ff2a2a" />
+        <svg:stop offset="1" stop-color="red" />
       </svg:linearGradient>
       <svg:linearGradient
         id="ni-b"
@@ -46,13 +46,13 @@ import {
         y2="317.6"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#F5F549" />
-        <stop offset="1" stop-color="#97C924" />
+        <svg:stop offset="0" stop-color="#F5F549" />
+        <svg:stop offset="1" stop-color="#97C924" />
       </svg:linearGradient>
       <svg:linearGradient id="ni-a">
-        <stop offset="0" stop-color="#025" />
-        <stop offset=".5" stop-color="#04a" />
-        <stop offset="1" stop-color="#025" />
+        <svg:stop offset="0" stop-color="#025" />
+        <svg:stop offset=".5" stop-color="#04a" />
+        <svg:stop offset="1" stop-color="#025" />
       </svg:linearGradient>
       <svg:linearGradient
         id="ni-h"
@@ -182,10 +182,10 @@ import {
         gradientTransform="scale(9.12405 .1096)"
         gradientUnits="userSpaceOnUse"
       />
-      <clipPath id="ni-c">
+      <svg:clipPath id="ni-c">
         <svg:path d="m500 226.4-63.7 110.3h127.4z" />
-      </clipPath>
-    </defs>
+      </svg:clipPath>
+    </svg:defs>
     <svg:path fill="#0067c6" d="M0 0h640v480H0z" />
     <svg:path fill="#fff" d="M0 160h640v160H0z" />
     <svg:path

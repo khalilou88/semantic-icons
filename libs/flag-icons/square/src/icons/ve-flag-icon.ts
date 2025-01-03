@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:g id="ve-d" transform="translate(0 -36)">
         <svg:g id="ve-c">
           <svg:g id="ve-b">
@@ -46,7 +46,7 @@ import {
           transform="rotate(144)"
         />
       </svg:g>
-    </defs>
+    </svg:defs>
     <svg:path fill="#cf142b" d="M0 0h512v512H0z" />
     <svg:path fill="#00247d" d="M0 0h512v341.3H0z" />
     <svg:path fill="#fc0" d="M0 0h512v170.7H0z" />

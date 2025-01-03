@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <radialGradient
         id="gt-d"
         xlink:href="#gt-a"
@@ -24,8 +24,8 @@ import {
         gradientUnits="userSpaceOnUse"
       />
       <radialGradient id="gt-a">
-        <stop offset=".2" stop-color="#f9f0aa" />
-        <stop offset="1" stop-color="#b07e09" />
+        <svg:stop offset=".2" stop-color="#f9f0aa" />
+        <svg:stop offset="1" stop-color="#b07e09" />
       </radialGradient>
       <radialGradient
         id="gt-e"
@@ -66,8 +66,8 @@ import {
         r=".3"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".3" stop-color="#a50a0a" />
-        <stop offset="1" stop-color="#4c0505" />
+        <svg:stop offset=".3" stop-color="#a50a0a" />
+        <svg:stop offset="1" stop-color="#4c0505" />
       </radialGradient>
       <radialGradient
         id="gt-n"
@@ -79,8 +79,8 @@ import {
         gradientTransform="scale(.97707 1.02346)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#fff" />
-        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+        <svg:stop offset="0" stop-color="#fff" />
+        <svg:stop offset="1" stop-color="#fff" stop-opacity="0" />
       </radialGradient>
       <svg:linearGradient
         id="gt-h"
@@ -90,8 +90,8 @@ import {
         y2="232"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".2" stop-color="#b07e09" stop-opacity="0" />
-        <stop offset="1" stop-color="#b07e09" />
+        <svg:stop offset=".2" stop-color="#b07e09" stop-opacity="0" />
+        <svg:stop offset="1" stop-color="#b07e09" />
       </svg:linearGradient>
       <svg:linearGradient
         id="gt-i"
@@ -101,8 +101,8 @@ import {
         y2="326.6"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".2" stop-color="#b07e09" stop-opacity="0" />
-        <stop offset="1" stop-color="#b07e09" />
+        <svg:stop offset=".2" stop-color="#b07e09" stop-opacity="0" />
+        <svg:stop offset="1" stop-color="#b07e09" />
       </svg:linearGradient>
       <svg:linearGradient
         id="gt-k"
@@ -112,8 +112,8 @@ import {
         y2="240.6"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".2" stop-color="#f9f0aa" />
-        <stop offset="1" stop-color="#b07e09" />
+        <svg:stop offset=".2" stop-color="#f9f0aa" />
+        <svg:stop offset="1" stop-color="#b07e09" />
       </svg:linearGradient>
       <svg:linearGradient
         id="gt-l"
@@ -123,10 +123,10 @@ import {
         y2="270.4"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".2" stop-color="#f9f0aa" />
-        <stop offset="1" stop-color="#b07e09" />
+        <svg:stop offset=".2" stop-color="#f9f0aa" />
+        <svg:stop offset="1" stop-color="#b07e09" />
       </svg:linearGradient>
-    </defs>
+    </svg:defs>
     <svg:path fill="#4997d0" d="M0 0h640v480H0Z" />
     <svg:path fill="#fff" d="M213.3 0h213.4v480H213.3Z" />
     <svg:g transform="matrix(.81133 0 0 .8264 -69.4 -8)">

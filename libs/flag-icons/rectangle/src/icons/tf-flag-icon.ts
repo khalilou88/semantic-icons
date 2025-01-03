@@ -14,9 +14,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <svg:path id="tf-a" fill="#fff" d="m0-21 12.3 38L-20-6.5h40L-12.3 17z" />
-    </defs>
+    </svg:defs>
     <svg:path fill="#002395" d="M0 0h640v480H0z" />
     <svg:path fill="#fff" d="M0 0h292.8v196.8H0z" />
     <svg:path fill="#002395" d="M0 0h96v192H0z" />

@@ -14,14 +14,14 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <defs>
+    <svg:defs>
       <radialGradient id="bz-a">
-        <stop offset="0" stop-color="#ffef5d" />
-        <stop offset="1" stop-color="#ea5700" />
+        <svg:stop offset="0" stop-color="#ffef5d" />
+        <svg:stop offset="1" stop-color="#ea5700" />
       </radialGradient>
       <radialGradient id="bz-b">
-        <stop offset="0" stop-color="#952d1a" />
-        <stop offset="1" stop-color="#570a00" />
+        <svg:stop offset="0" stop-color="#952d1a" />
+        <svg:stop offset="1" stop-color="#570a00" />
       </radialGradient>
       <radialGradient
         id="bz-c"
@@ -67,7 +67,7 @@ import {
         gradientTransform="scale(.95596 1.04607)"
         gradientUnits="userSpaceOnUse"
       />
-    </defs>
+    </svg:defs>
     <svg:path fill="#ce1126" d="M0 0h512v512H0z" />
     <svg:path fill="#003f87" d="M0 36.6h512v438.8H0z" />
     <svg:circle cx="256" cy="256" r="201.1" fill="#fff" />
