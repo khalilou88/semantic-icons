@@ -8,7 +8,7 @@ export function getSvgContent(svgFileContent: string) {
 
   // Add prefix to all SVG tags (like <circle>, <rect>, <path>, etc.)
   svgContent = svgContent.replace(
-    /<(\/?)(circle|rect|path|line|polygon|polyline|ellipse|text|mask|g|clipPath|defs|stop|use)([^>]*)>/gi,
+    /<(\/?)(circle|rect|path|line|polygon|polyline|ellipse|text|mask|g|clipPath|defs|stop|use|marker)([^>]*)>/gi,
     (match, closing, tagName, attributes) => {
       return `<${closing}${prefix}${tagName}${attributes}>`;
     },
