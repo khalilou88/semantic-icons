@@ -35,21 +35,21 @@ import {
             <svg:path fill="none" d="M-4.2 10.2c-6.8 11.2-2.4 17.4-8.4 20.3" />
             <svg:path d="M0 0h6L0 33-6 0h6v33" />
           </svg:g>
-          <use
+          <svg:use
             xlink:href="#uy-a"
             width="100%"
             height="100%"
             transform="rotate(45)"
           />
         </svg:g>
-        <use
+        <svg:use
           xlink:href="#uy-b"
           width="100%"
           height="100%"
           transform="rotate(90)"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#uy-c"
         width="100%"
         height="100%"
@@ -69,7 +69,7 @@ import {
           d="M56-17c13-7 5-17 0-19 2 2 10 12 0 19M0 43c6 0 8-2 16-2s27 11 38 7c-23 9-14 3-54 3h-5m63 6c-4-7-3-5-11-16 8 6 10 9 11 16M0 67c25 0 21-5 54-19-24 3-29 11-54 11h-5m5-29c7 0 9-5 17-5s19 3 24 7c1 1-3-8-11-9S25 9 16 7c0 4 3 3 4 9 0 5-9 5-11 0 2 8-4 8-9 8"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#uy-d"
         width="100%"
         height="100%"

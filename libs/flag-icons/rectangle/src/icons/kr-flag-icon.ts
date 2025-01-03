@@ -31,7 +31,7 @@ import {
             fill="#000001"
             d="M-6-26H6v2H-6Zm0 3H6v2H-6Zm0 3H6v2H-6Z"
           />
-          <use xlink:href="#kr-b" width="100%" height="100%" y="44" />
+          <svg:use xlink:href="#kr-b" width="100%" height="100%" y="44" />
         </svg:g>
         <svg:path stroke="#fff" d="M0 17v10" />
         <svg:path fill="#cd2e3a" d="M0-12a12 12 0 0 1 0 24Z" />
@@ -39,7 +39,7 @@ import {
         <svg:circle cy="-6" r="6" fill="#cd2e3a" />
       </svg:g>
       <svg:g transform="rotate(-123.7 191.2 62.2)scale(10.66667)">
-        <use xlink:href="#kr-c" width="100%" height="100%" />
+        <svg:use xlink:href="#kr-c" width="100%" height="100%" />
         <svg:path stroke="#fff" d="M0-23.5v3M0 17v3.5m0 3v3" />
       </svg:g>
     </svg:g>

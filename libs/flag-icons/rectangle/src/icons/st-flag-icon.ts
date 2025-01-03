@@ -24,39 +24,39 @@ import {
           d="M0-200V0h100"
           transform="rotate(18 0 -200)"
         />
-        <use
+        <svg:use
           xlink:href="#st-a"
           width="100%"
           height="100%"
           transform="scale(-1 1)"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#st-b"
         width="100%"
         height="100%"
         transform="rotate(72)"
       />
-      <use
+      <svg:use
         xlink:href="#st-b"
         width="100%"
         height="100%"
         transform="rotate(144)"
       />
-      <use
+      <svg:use
         xlink:href="#st-b"
         width="100%"
         height="100%"
         transform="rotate(-144)"
       />
-      <use
+      <svg:use
         xlink:href="#st-b"
         width="100%"
         height="100%"
         transform="rotate(-72)"
       />
     </svg:g>
-    <use
+    <svg:use
       xlink:href="#st-c"
       width="100%"
       height="100%"

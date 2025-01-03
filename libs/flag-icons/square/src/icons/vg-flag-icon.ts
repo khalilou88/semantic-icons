@@ -57,17 +57,65 @@ import {
         />
         <svg:path d="M831.5 161.7a2.6 2.6 0 1 1-5.2 0 2.6 2.6 0 0 1 5.2 0z" />
       </svg:g>
-      <use xlink:href="#vg-b" width="100%" height="100%" x="-.8" y="41.3" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="-1.1" y="82" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="25.6" y="126.1" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="-4.6" y="162.2" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="-3.8" y="204.8" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="146.3" y=".7" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="144.9" y="41.2" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="143.1" y="82.7" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="145.2" y="123.4" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="144.7" y="164.2" />
-      <use xlink:href="#vg-b" width="100%" height="100%" x="144.9" y="205.2" />
+      <svg:use xlink:href="#vg-b" width="100%" height="100%" x="-.8" y="41.3" />
+      <svg:use xlink:href="#vg-b" width="100%" height="100%" x="-1.1" y="82" />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="25.6"
+        y="126.1"
+      />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="-4.6"
+        y="162.2"
+      />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="-3.8"
+        y="204.8"
+      />
+      <svg:use xlink:href="#vg-b" width="100%" height="100%" x="146.3" y=".7" />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="144.9"
+        y="41.2"
+      />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="143.1"
+        y="82.7"
+      />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="145.2"
+        y="123.4"
+      />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="144.7"
+        y="164.2"
+      />
+      <svg:use
+        xlink:href="#vg-b"
+        width="100%"
+        height="100%"
+        x="144.9"
+        y="205.2"
+      />
       <svg:g fill="#ffc6b5" stroke="#000" stroke-width=".9">
         <svg:path
           fill="#ffc72c"

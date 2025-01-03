@@ -23,19 +23,19 @@ import {
         stroke-width="1.1"
         d="m396.8 251.3 28.5 62s.5 1.2 1.3.9c.8-.4.3-1.6.3-1.6l-23.7-64m-.7 24.2c-.4 9.4 5.4 14.6 4.7 23-.8 8.5 3.8 13.2 5 16.5 1 3.3-1.2 5.2-.3 5.7 1 .5 3-2.1 2.4-6.8-.7-4.6-4.2-6-3.4-16.3.8-10.3-4.2-12.7-3-22"
       />
-      <use
+      <svg:use
         xlink:href="#ar-a"
         width="100%"
         height="100%"
         transform="rotate(22.5 400 250)"
       />
-      <use
+      <svg:use
         xlink:href="#ar-a"
         width="100%"
         height="100%"
         transform="rotate(45 400 250)"
       />
-      <use
+      <svg:use
         xlink:href="#ar-a"
         width="100%"
         height="100%"
@@ -46,38 +46,38 @@ import {
         fill="#85340a"
         d="M404.3 274.4c.5 9 5.6 13 4.6 21.3 2.2-6.5-3.1-11.6-2.8-21.2m-7.7-23.8 19.5 42.6-16.3-43.9"
       />
-      <use
+      <svg:use
         xlink:href="#ar-b"
         width="100%"
         height="100%"
         transform="rotate(22.5 400 250)"
       />
-      <use
+      <svg:use
         xlink:href="#ar-b"
         width="100%"
         height="100%"
         transform="rotate(45 400 250)"
       />
-      <use
+      <svg:use
         xlink:href="#ar-b"
         width="100%"
         height="100%"
         transform="rotate(67.5 400 250)"
       />
     </svg:g>
-    <use
+    <svg:use
       xlink:href="#ar-c"
       width="100%"
       height="100%"
       transform="rotate(90 320 240)"
     />
-    <use
+    <svg:use
       xlink:href="#ar-c"
       width="100%"
       height="100%"
       transform="rotate(180 320 240)"
     />
-    <use
+    <svg:use
       xlink:href="#ar-c"
       width="100%"
       height="100%"
@@ -97,25 +97,25 @@ import {
       stroke-width="1"
       d="M329 234.3c-1.7 0-3.5.8-4.5 2.4 2 1.9 6.6 2 9.7-.2a7 7 0 0 0-5.1-2.2zm0 .4c1.8 0 3.5.8 3.7 1.6-2 2.3-5.3 2-7.4.4 1-1.4 2.4-2 3.8-2z"
     />
-    <use
+    <svg:use
       xlink:href="#ar-d"
       width="100%"
       height="100%"
       transform="matrix(-1 0 0 1 640.2 0)"
     />
-    <use
+    <svg:use
       xlink:href="#ar-e"
       width="100%"
       height="100%"
       transform="matrix(-1 0 0 1 640.2 0)"
     />
-    <use
+    <svg:use
       xlink:href="#ar-f"
       width="100%"
       height="100%"
       transform="translate(18.1)"
     />
-    <use
+    <svg:use
       xlink:href="#ar-g"
       width="100%"
       height="100%"
@@ -149,7 +149,7 @@ import {
       stroke-width="1"
       d="M310.8 233c2.7 0 3.3.6 4.5 1.7 1.2 1 1.9.8 2 1 .3.2 0 .8-.3.6-.5-.2-1.3-.6-2.5-1.6s-2.5-1-3.7-1c-3.7 0-5.7 3-6.1 2.8-.5-.2 2-3.5 6.1-3.5"
     />
-    <use
+    <svg:use
       xlink:href="#ar-h"
       width="100%"
       height="100%"

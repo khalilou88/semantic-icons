@@ -22,25 +22,25 @@ import {
       stroke-width="188.7"
       d="M312.6 274H199.4L256 85.3Z"
     />
-    <use
+    <svg:use
       xlink:href="#mm-a"
       width="100%"
       height="100%"
       transform="rotate(-144 256 274)"
     />
-    <use
+    <svg:use
       xlink:href="#mm-a"
       width="100%"
       height="100%"
       transform="rotate(-72 256 274)"
     />
-    <use
+    <svg:use
       xlink:href="#mm-a"
       width="100%"
       height="100%"
       transform="rotate(72 256 274)"
     />
-    <use
+    <svg:use
       xlink:href="#mm-a"
       width="100%"
       height="100%"

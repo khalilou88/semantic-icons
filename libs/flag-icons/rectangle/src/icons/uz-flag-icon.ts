@@ -25,41 +25,41 @@ import {
           <svg:g id="uz-c">
             <svg:g id="uz-b">
               <svg:path id="uz-a" d="M0-6-1.9-.3 1 .7" />
-              <use
+              <svg:use
                 xlink:href="#uz-a"
                 width="100%"
                 height="100%"
                 transform="scale(-1 1)"
               />
             </svg:g>
-            <use
+            <svg:use
               xlink:href="#uz-b"
               width="100%"
               height="100%"
               transform="rotate(72)"
             />
           </svg:g>
-          <use
+          <svg:use
             xlink:href="#uz-b"
             width="100%"
             height="100%"
             transform="rotate(-72)"
           />
-          <use
+          <svg:use
             xlink:href="#uz-c"
             width="100%"
             height="100%"
             transform="rotate(144)"
           />
         </svg:g>
-        <use xlink:href="#uz-d" width="100%" height="100%" y="-24" />
-        <use xlink:href="#uz-d" width="100%" height="100%" y="-48" />
+        <svg:use xlink:href="#uz-d" width="100%" height="100%" y="-24" />
+        <svg:use xlink:href="#uz-d" width="100%" height="100%" y="-48" />
       </svg:g>
-      <use xlink:href="#uz-e" width="100%" height="100%" x="24" />
-      <use xlink:href="#uz-e" width="100%" height="100%" x="48" />
-      <use xlink:href="#uz-d" width="100%" height="100%" x="-48" />
-      <use xlink:href="#uz-d" width="100%" height="100%" x="-24" />
-      <use xlink:href="#uz-d" width="100%" height="100%" x="-24" y="-24" />
+      <svg:use xlink:href="#uz-e" width="100%" height="100%" x="24" />
+      <svg:use xlink:href="#uz-e" width="100%" height="100%" x="48" />
+      <svg:use xlink:href="#uz-d" width="100%" height="100%" x="-48" />
+      <svg:use xlink:href="#uz-d" width="100%" height="100%" x="-24" />
+      <svg:use xlink:href="#uz-d" width="100%" height="100%" x="-24" y="-24" />
     </svg:g>
   `,
   styles: ``,

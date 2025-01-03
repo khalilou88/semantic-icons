@@ -36,9 +36,21 @@ import {
       <svg:path
         d="m233.4 335.5-13.8-9.1-13.4 9.6 4.8-15.5-13.6-9.5 16.6-.4 5-15.5 5.6 15.3 16.7-.1L228 320l5.3 15.4z"
       />
-      <use xlink:href="#cx-a" width="100%" height="100%" x="2.5" y="269.1" />
-      <use xlink:href="#cx-a" width="100%" height="100%" x="-112.1" y="123.2" />
-      <use xlink:href="#cx-a" width="100%" height="100%" x="108.4" y="85" />
+      <svg:use
+        xlink:href="#cx-a"
+        width="100%"
+        height="100%"
+        x="2.5"
+        y="269.1"
+      />
+      <svg:use
+        xlink:href="#cx-a"
+        width="100%"
+        height="100%"
+        x="-112.1"
+        y="123.2"
+      />
+      <svg:use xlink:href="#cx-a" width="100%" height="100%" x="108.4" y="85" />
     </svg:g>
   `,
   styles: ``,

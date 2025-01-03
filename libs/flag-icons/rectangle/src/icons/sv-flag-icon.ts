@@ -138,7 +138,7 @@ import {
           <svg:path stroke-width=".3" d="M469.2 258s-.4 1 1.4.7" />
         </svg:g>
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#sv-a"
         width="100%"
         height="100%"
@@ -386,7 +386,7 @@ import {
           d="M514.8 331.6s-1 4.3-1.6 5.4c-.6 1-2.8 3.3-1.1 6.3"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#sv-b"
         width="100%"
         height="100%"
@@ -1453,7 +1453,7 @@ import {
           />
         </svg:g>
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#sv-c"
         width="100%"
         height="100%"

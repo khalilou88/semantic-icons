@@ -207,74 +207,74 @@ import {
           />
           <svg:path fill="#fff" d="M500 277.5h-.1l.1 3 .1-3z" />
         </svg:g>
-        <use
+        <svg:use
           xlink:href="#ni-d"
           width="100%"
           height="100%"
           transform="rotate(72 500 285.5)"
         />
-        <use
+        <svg:use
           xlink:href="#ni-d"
           width="100%"
           height="100%"
           transform="rotate(144 500 285.5)"
         />
-        <use
+        <svg:use
           xlink:href="#ni-d"
           width="100%"
           height="100%"
           transform="rotate(-144 500 285.5)"
         />
-        <use
+        <svg:use
           xlink:href="#ni-d"
           width="100%"
           height="100%"
           transform="rotate(-72 500 285.5)"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
         transform="rotate(8 500 285.5)"
       />
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
         transform="rotate(16 500 285.5)"
       />
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
         transform="rotate(24 500 285.5)"
       />
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
         transform="rotate(32 500 285.5)"
       />
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
         transform="rotate(40 500 285.5)"
       />
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
         transform="rotate(48 500 285.5)"
       />
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
         transform="rotate(56 500 285.5)"
       />
-      <use
+      <svg:use
         xlink:href="#ni-e"
         width="100%"
         height="100%"
@@ -344,14 +344,14 @@ import {
             fill="url(#ni-j)"
             d="M449.7 321.4a36 36 0 0 0-4.7.3l-.5.9c2.4-.3 4.7-.7 7.2-.7 3.2 0 6.2.8 9.7.8h4.6c3.5 0 6.4-.8 9.7-.8 3.3 0 6.3.8 9.8.8h4.6c3.5 0 6.4-.8 9.7-.8 3.3 0 6.3.8 9.8.8h4.5c3.5 0 6.5-.8 9.8-.8 3.3 0 6.3.8 9.8.8h4.5c3.5 0 6.5-.8 9.8-.8 2.6 0 5 .5 7.5.7l-.5-1a38 38 0 0 0-4.4-.2h-4.5c-3.5 0-6.5.7-9.8.8-3.3 0-6.3-.8-9.8-.8H522c-3.5 0-6.5.7-9.8.8-3.3 0-6.3-.8-9.8-.8H498c-3.5 0-6.5.7-9.8.8-3.3 0-6.3-.8-9.8-.8h-4.5c-3.5 0-6.5.7-9.8.8-3.3 0-6.2-.8-9.7-.8z"
           />
-          <use
+          <svg:use
             xlink:href="#ni-k"
             width="100%"
             height="100%"
             y="-1.1"
             fill="url(#ni-l)"
           />
-          <use
+          <svg:use
             xlink:href="#ni-k"
             width="100%"
             height="100%"
@@ -359,14 +359,14 @@ import {
             fill="url(#ni-m)"
           />
         </svg:g>
-        <use
+        <svg:use
           xlink:href="#ni-n"
           width="100%"
           height="100%"
           y="-3.3"
           fill="url(#ni-o)"
         />
-        <use
+        <svg:use
           xlink:href="#ni-n"
           width="100%"
           height="100%"
@@ -405,7 +405,7 @@ import {
             d="M524.5 309.3c-1 2.7-4.8 6.7-8.8 10h-2.9c2.5-.2 8.3-5 11.7-10"
           />
         </svg:g>
-        <use xlink:href="#ni-t" width="100%" height="100%" x="-15.3" />
+        <svg:use xlink:href="#ni-t" width="100%" height="100%" x="-15.3" />
         <svg:g fill="#c6cb24">
           <svg:path
             fill="url(#ni-u)"
@@ -459,7 +459,7 @@ import {
             d="M489.6 307.3a35 35 0 0 0 14.6 14.9h2.5c-4.4-2.4-11.5-5.8-17-15z"
           />
         </svg:g>
-        <use
+        <svg:use
           xlink:href="#ni-w"
           width="100%"
           height="100%"
@@ -481,11 +481,11 @@ import {
           fill="url(#ni-y)"
           d="M450.3 334.8c-3.4 0-6.4.8-9.6.9a31.8 31.8 0 0 1-3.6-.3l-.5.8h6c3.5 0 6.4-.8 9.6-.9 3.3.1 6.2 1 9.7 1h4.5c3.4 0 6.4-.9 9.6-1 3.3.1 6.3 1 9.7 1h4.5c3.5 0 6.4-.9 9.7-1 3.2.1 6.1 1 9.6 1h4.5c3.4 0 6.4-.9 9.7-1 3.2.1 6.2 1 9.6 1h4.5c3.5 0 6.4-.9 9.6-1 3.3.1 6.2 1 9.7 1h4.5l1.8-.1-.5-.8c-1 .1-2.1.3-3.2.3-3.3 0-6.2-1-9.7-1h-4.5c-3.4 0-6.4 1-9.6 1-3.3-.1-6.2-1-9.7-1h-4.5c-3.4 0-6.4 1-9.6 1-3.3-.1-6.2-1-9.7-1h-4.5c-3.5 0-6.4 1-9.6 1-3.3-.1-6.2-1-9.7-1h-4.5c-3.4 0-6.4 1-9.6 1-3.3-.1-6.2-1-9.7-1h-4.5z"
         />
-        <use xlink:href="#ni-z" width="100%" height="100%" y="-1.3" />
-        <use xlink:href="#ni-z" width="100%" height="100%" y="-2.6" />
+        <svg:use xlink:href="#ni-z" width="100%" height="100%" y="-1.3" />
+        <svg:use xlink:href="#ni-z" width="100%" height="100%" y="-2.6" />
       </svg:g>
-      <use xlink:href="#ni-A" width="100%" height="100%" y="-3.9" />
-      <use xlink:href="#ni-A" width="100%" height="100%" y="-7.7" />
+      <svg:use xlink:href="#ni-A" width="100%" height="100%" y="-3.9" />
+      <svg:use xlink:href="#ni-A" width="100%" height="100%" y="-7.7" />
       <svg:path
         fill="#97c924"
         d="m443.9 324.7-2.5 4.2c2.9-.5 7.1-1.7 10.7-1.7 3.6 0 8 .9 12.4 1 5 0 7-1.2 11-1.6 4.1-.4 8 .5 12 .6 3.1 0 7.9-1.1 12-1.5 4-.5 7.7.3 12.5.3 4.9.1 5.7-1.2 11.6-1.3 6.4-.1 7 .9 12.6.9 4.2.2 7.9-.9 11.7-1.1 3.8-.3 5.5 0 8.3 0l-1.9-3.2-101.3 2.3z"

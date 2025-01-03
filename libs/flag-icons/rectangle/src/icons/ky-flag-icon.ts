@@ -31,13 +31,13 @@ import {
       stroke-width="9.6"
       transform="translate(-306.8 -21.2)scale(.87136)"
     >
-      <use xlink:href="#ky-a" width="100%" height="100%" />
-      <use xlink:href="#ky-b" width="100%" height="100%" />
-      <use xlink:href="#ky-c" width="100%" height="100%" />
-      <use xlink:href="#ky-d" width="100%" height="100%" />
-      <use xlink:href="#ky-e" width="100%" height="100%" />
-      <use xlink:href="#ky-f" width="100%" height="100%" />
-      <use xlink:href="#ky-g" width="100%" height="100%" />
+      <svg:use xlink:href="#ky-a" width="100%" height="100%" />
+      <svg:use xlink:href="#ky-b" width="100%" height="100%" />
+      <svg:use xlink:href="#ky-c" width="100%" height="100%" />
+      <svg:use xlink:href="#ky-d" width="100%" height="100%" />
+      <svg:use xlink:href="#ky-e" width="100%" height="100%" />
+      <svg:use xlink:href="#ky-f" width="100%" height="100%" />
+      <svg:use xlink:href="#ky-g" width="100%" height="100%" />
     </svg:g>
     <svg:g
       stroke="#000"
@@ -241,8 +241,8 @@ import {
           d="m835.9 376.7 49.8-36.4h-61.3l49.3 36.4-18.6-58.4z"
         />
       </svg:g>
-      <use xlink:href="#ky-h" width="100%" height="100%" x="90.1" />
-      <use xlink:href="#ky-h" width="100%" height="100%" x="45" y="52.2" />
+      <svg:use xlink:href="#ky-h" width="100%" height="100%" x="90.1" />
+      <svg:use xlink:href="#ky-h" width="100%" height="100%" x="45" y="52.2" />
       <svg:path
         fill="none"
         stroke="#000"

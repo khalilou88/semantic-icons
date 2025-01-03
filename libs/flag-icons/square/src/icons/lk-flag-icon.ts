@@ -24,26 +24,26 @@ import {
       stroke-width=".9"
       d="M463.4 454.9s2.9 5.9 6.1 8.3c4.8 3.5 14.5 3.3 18.6 7.4 5 5-.4 11.4-.3 12l.3 3.4s-3.4 0-4.8.3c-2.1.3-3 2-6.9 1.8-9.9-.7-9.5-9.6-10-17.2-.5-3-1.7-6.7-2.3-9.6-.6-2.5-.7-6.4-.7-6.4z"
     />
-    <use
+    <svg:use
       xlink:href="#lk-a"
       width="100%"
       height="100%"
       transform="matrix(-1 0 0 1 676.3 0)"
     />
-    <use
+    <svg:use
       xlink:href="#lk-a"
       width="100%"
       height="100%"
       transform="matrix(1 0 0 -1 0 512)"
     />
-    <use
+    <svg:use
       xlink:href="#lk-a"
       width="100%"
       height="100%"
       transform="rotate(180 338.1 256)"
     />
     <svg:g transform="matrix(.8 0 0 .8 0 3.2)">
-      <use
+      <svg:use
         xlink:href="#lk-b"
         width="100%"
         height="100%"

@@ -28,7 +28,7 @@ import {
         id="tj-a"
         d="M695.3 376.6a38 38 0 0 1-63.8 24.3 39.5 39.5 0 0 1-59.8 17.5c3.7 36.4 58.3 29 62.3-6.4 17.2 30.1 55 21.5 66-15.4z"
       />
-      <use
+      <svg:use
         xlink:href="#tj-a"
         width="100%"
         height="100%"
@@ -38,13 +38,13 @@ import {
         id="tj-b"
         d="M658.8 441.3c-7.6 16.5-22.8 19.3-36.1 6 0 0 5.3-3.8 11-4.8a18 18 0 0 1 4.3-14.3 22 22 0 0 1 9 11.8c8-1 11.8 1.3 11.8 1.3"
       />
-      <use
+      <svg:use
         xlink:href="#tj-b"
         width="100%"
         height="100%"
         transform="rotate(9.4 700 804)"
       />
-      <use
+      <svg:use
         xlink:href="#tj-b"
         width="100%"
         height="100%"
@@ -65,26 +65,26 @@ import {
           />
         </svg:g>
         <svg:g id="tj-d">
-          <use
+          <svg:use
             xlink:href="#tj-c"
             width="100%"
             height="100%"
             transform="translate(-70 -121.2)"
           />
-          <use
+          <svg:use
             xlink:href="#tj-c"
             width="100%"
             height="100%"
             transform="translate(-121.2 -70)"
           />
-          <use
+          <svg:use
             xlink:href="#tj-c"
             width="100%"
             height="100%"
             transform="translate(-140)"
           />
         </svg:g>
-        <use
+        <svg:use
           xlink:href="#tj-d"
           width="100%"
           height="100%"

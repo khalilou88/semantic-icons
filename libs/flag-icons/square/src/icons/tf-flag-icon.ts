@@ -24,7 +24,7 @@ import {
       fill="#fff"
       d="m282.4 234.2 16.5 26.3h46.9V352l-35.3-55-47.3 75.5h23l24.4-43.5 49.9 89.6 49.9-89.6 24.3 43.5h23L410.5 297l-35.2 55v-50.6h21.1l15.7-25h-36.8v-16h46.9l16.5-26.2zm55 112h-51.2v18h51.2zm97.3 0h-51.2v18h51.2z"
     />
-    <use
+    <svg:use
       xlink:href="#tf-a"
       width="100%"
       height="100%"
@@ -32,7 +32,7 @@ import {
       y="362"
       transform="translate(-172)scale(1.28)"
     />
-    <use
+    <svg:use
       xlink:href="#tf-a"
       width="100%"
       height="100%"
@@ -40,7 +40,7 @@ import {
       y="328"
       transform="translate(-172)scale(1.28)"
     />
-    <use
+    <svg:use
       xlink:href="#tf-a"
       width="100%"
       height="100%"
@@ -48,7 +48,7 @@ import {
       y="328"
       transform="translate(-172)scale(1.28)"
     />
-    <use
+    <svg:use
       xlink:href="#tf-a"
       width="100%"
       height="100%"
@@ -56,7 +56,7 @@ import {
       y="227"
       transform="translate(-172)scale(1.28)"
     />
-    <use
+    <svg:use
       xlink:href="#tf-a"
       width="100%"
       height="100%"

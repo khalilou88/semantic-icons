@@ -21,19 +21,19 @@ import {
       fill="#f9dd16"
       d="m46 305.8 23.3-25h210v-49.7h-210L46 206.2z"
     />
-    <use
+    <svg:use
       xlink:href="#gg-a"
       width="36"
       height="24"
       transform="matrix(0 1.06667 -.9375 0 496 -17)"
     />
-    <use
+    <svg:use
       xlink:href="#gg-a"
       width="36"
       height="24"
       transform="matrix(0 -1.06667 .9375 0 16 529)"
     />
-    <use
+    <svg:use
       xlink:href="#gg-a"
       width="36"
       height="24"

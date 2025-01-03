@@ -25,7 +25,7 @@ import {
       rx="0"
       ry="0"
     />
-    <use
+    <svg:use
       xlink:href="#gb-nir-a"
       width="600"
       height="300"

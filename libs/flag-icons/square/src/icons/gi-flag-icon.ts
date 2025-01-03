@@ -27,7 +27,7 @@ import {
         />
         <svg:path stroke-linecap="butt" d="M218.8 161.5H262" />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#gi-a"
         width="100%"
         height="100%"

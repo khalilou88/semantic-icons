@@ -14,7 +14,7 @@ import {
   imports: [],
   template: `
     <svg:path fill="#003da5" d="M0 0h512v512H0z" />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
@@ -29,145 +29,145 @@ import {
       stroke-width=".7"
       d="m419 280.3-8.9 1.7-1.1 9-4.4-8-9 1.7 6.3-6.6-4.4-8 8.2 3.9 6.3-6.7-1.2 9z"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-10.3 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-30.9 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-20.6 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-51.5 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-72.1 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-61.8 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-41.2 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-92.7 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-113.3 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-103 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-133.9 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-154.5 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-144.2 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-123.6 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-82.4 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-175.1 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(174.6 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(143.7 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(123.1 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(133.4 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(154 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(-164.8 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"
       transform="rotate(112.8 247 258.3)"
     />
-    <use
+    <svg:use
       xlink:href="#pc-a"
       width="1000"
       height="700"

@@ -22,7 +22,7 @@ import {
     <svg:g clip-path="url(#cw-a)" transform="scale(.057)">
       <svg:path fill="#002b7f" d="M0 0h13500v9000H0z" />
       <svg:path fill="#f9e814" d="M0 5625h13500v1125H0z" />
-      <use
+      <svg:use
         xlink:href="#cw-b"
         width="13500"
         height="9000"
@@ -31,7 +31,7 @@ import {
         fill="#fff"
         transform="scale(750)"
       />
-      <use
+      <svg:use
         xlink:href="#cw-b"
         width="13500"
         height="9000"

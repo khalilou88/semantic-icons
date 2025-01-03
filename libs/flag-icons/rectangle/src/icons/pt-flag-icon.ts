@@ -97,12 +97,12 @@ import {
             d="M192 154c0-3.3 2.3-4.2 2.3-4.2s2.3 1 2.3 4.2H192m-5.8-9h16.3c.3 0 .6.4.6.8 0 .3-.3.6-.6.6h-16.3c-.3 0-.6-.3-.6-.7 0-.3.3-.6.6-.6zm.4 1.5H202c.3 0 .6.3.6.7 0 .4-.3.7-.6.7h-15.5c-.4 0-.6-.3-.6-.7 0-.4.2-.7.6-.7zm5-10.6h1.2v.8h.9v-.8h1.3v.9h.9v-1h1.2v2c0 .4-.2.6-.5.6h-4.4c-.3 0-.6-.2-.6-.5zm4.6 2.7.3 6.4h-4.3l.3-6.5h3.7"
           />
           <svg:path id="pt-a" d="M191 141.6v3.4h-4v-3.4z" />
-          <use xlink:href="#pt-a" width="100%" height="100%" x="10.6" />
+          <svg:use xlink:href="#pt-a" width="100%" height="100%" x="10.6" />
           <svg:path
             id="pt-b"
             d="M186.3 139h1.2v1h.9v-1h1.2v1h.9v-1h1.2v2c0 .4-.2.6-.5.6h-4.3a.6.6 0 0 1-.6-.6z"
           />
-          <use xlink:href="#pt-b" width="100%" height="100%" x="10.6" />
+          <svg:use xlink:href="#pt-b" width="100%" height="100%" x="10.6" />
           <svg:path
             fill="#000001"
             stroke="none"
@@ -114,18 +114,18 @@ import {
             stroke="none"
             d="M188.6 142.8c0-.6.8-.6.8 0v1.2h-.8z"
           />
-          <use xlink:href="#pt-c" width="100%" height="100%" x="10.6" />
+          <svg:use xlink:href="#pt-c" width="100%" height="100%" x="10.6" />
         </svg:g>
-        <use xlink:href="#pt-d" width="100%" height="100%" y="46.3" />
-        <use
+        <svg:use xlink:href="#pt-d" width="100%" height="100%" y="46.3" />
+        <svg:use
           xlink:href="#pt-d"
           width="100%"
           height="100%"
           transform="rotate(-45.2 312.8 180)"
         />
       </svg:g>
-      <use xlink:href="#pt-d" width="100%" height="100%" x="45.7" />
-      <use
+      <svg:use xlink:href="#pt-d" width="100%" height="100%" x="45.7" />
+      <svg:use
         xlink:href="#pt-e"
         width="100%"
         height="100%"
@@ -142,10 +142,10 @@ import {
         <svg:circle cx="236.1" cy="203.9" r="1.5" />
         <svg:circle cx="244.4" cy="203.9" r="1.5" />
       </svg:g>
-      <use xlink:href="#pt-f" width="100%" height="100%" y="-26" />
-      <use xlink:href="#pt-f" width="100%" height="100%" x="-20.8" />
-      <use xlink:href="#pt-f" width="100%" height="100%" x="20.8" />
-      <use xlink:href="#pt-f" width="100%" height="100%" y="25.8" />
+      <svg:use xlink:href="#pt-f" width="100%" height="100%" y="-26" />
+      <svg:use xlink:href="#pt-f" width="100%" height="100%" x="-20.8" />
+      <svg:use xlink:href="#pt-f" width="100%" height="100%" x="20.8" />
+      <svg:use xlink:href="#pt-f" width="100%" height="100%" y="25.8" />
     </svg:g>
   `,
   styles: ``,

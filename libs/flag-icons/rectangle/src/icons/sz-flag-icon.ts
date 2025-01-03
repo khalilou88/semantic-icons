@@ -31,7 +31,13 @@ import {
           d="M471.4 165.7a3 3 0 0 0 2.9-2.8 3 3 0 0 0-2.9-2.9m-2.8 5.7a3 3 0 0 0 2.8-2.8 3 3 0 0 0-2.8-2.9m-2.9 5.7a3 3 0 0 0 2.9-2.8 3 3 0 0 0-2.9-2.9"
         />
       </svg:g>
-      <use xlink:href="#sz-a" width="100%" height="100%" x="-23.3" y="17.1" />
+      <svg:use
+        xlink:href="#sz-a"
+        width="100%"
+        height="100%"
+        x="-23.3"
+        y="17.1"
+      />
       <svg:rect
         width="485.7"
         height="8.6"
@@ -55,12 +61,12 @@ import {
       <svg:g id="sz-d" stroke-width="6.9">
         <svg:g id="sz-c">
           <svg:path id="sz-b" d="M214 192.4v-22.9m13.8 0v22.9m13.8-22.9v22.9" />
-          <use xlink:href="#sz-b" width="100%" height="100%" y="38.1" />
+          <svg:use xlink:href="#sz-b" width="100%" height="100%" y="38.1" />
         </svg:g>
-        <use xlink:href="#sz-c" width="100%" height="100%" x="41.6" />
+        <svg:use xlink:href="#sz-c" width="100%" height="100%" x="41.6" />
       </svg:g>
     </svg:g>
-    <use
+    <svg:use
       xlink:href="#sz-d"
       width="100%"
       height="100%"

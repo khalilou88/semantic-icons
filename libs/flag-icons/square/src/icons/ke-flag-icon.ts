@@ -24,10 +24,10 @@ import {
     <svg:path fill="#000001" d="M0 0h512v153.6H0z" />
     <svg:path fill="#060" d="M0 358.4h512V512H0z" />
     <svg:g id="ke-b" transform="matrix(3.2 0 0 3.2 255.8 256)">
-      <use xlink:href="#ke-a" width="100%" height="100%" stroke="#000" />
-      <use xlink:href="#ke-a" width="100%" height="100%" fill="#fff" />
+      <svg:use xlink:href="#ke-a" width="100%" height="100%" stroke="#000" />
+      <svg:use xlink:href="#ke-a" width="100%" height="100%" fill="#fff" />
     </svg:g>
-    <use
+    <svg:use
       xlink:href="#ke-b"
       width="100%"
       height="100%"
@@ -41,7 +41,7 @@ import {
       id="ke-c"
       d="M316.6 332.8a220 220 0 0 0 16-76.8 220 220 0 0 0-16-76.8 220 220 0 0 0-16 76.8 220 220 0 0 0 16 76.8"
     />
-    <use
+    <svg:use
       xlink:href="#ke-c"
       width="100%"
       height="100%"
@@ -50,19 +50,19 @@ import {
     <svg:g fill="#fff" transform="matrix(3.2 0 0 3.2 255.8 256)">
       <svg:ellipse rx="4" ry="6" />
       <svg:path id="ke-d" d="M1 5.8s4 8 4 21-4 21-4 21z" />
-      <use
+      <svg:use
         xlink:href="#ke-d"
         width="100%"
         height="100%"
         transform="scale(-1)"
       />
-      <use
+      <svg:use
         xlink:href="#ke-d"
         width="100%"
         height="100%"
         transform="scale(-1 1)"
       />
-      <use
+      <svg:use
         xlink:href="#ke-d"
         width="100%"
         height="100%"

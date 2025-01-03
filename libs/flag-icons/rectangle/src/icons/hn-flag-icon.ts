@@ -22,57 +22,57 @@ import {
     >
       <svg:g id="hn-b">
         <svg:path id="hn-a" d="m-.3 0 .5.1L0-1z" />
-        <use
+        <svg:use
           xlink:href="#hn-a"
           width="100%"
           height="100%"
           transform="scale(-1 1)"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#hn-b"
         width="100%"
         height="100%"
         transform="rotate(72)"
       />
-      <use
+      <svg:use
         xlink:href="#hn-b"
         width="100%"
         height="100%"
         transform="rotate(-72)"
       />
-      <use
+      <svg:use
         xlink:href="#hn-b"
         width="100%"
         height="100%"
         transform="rotate(144)"
       />
-      <use
+      <svg:use
         xlink:href="#hn-b"
         width="100%"
         height="100%"
         transform="rotate(-144)"
       />
     </svg:g>
-    <use
+    <svg:use
       xlink:href="#hn-c"
       width="100%"
       height="100%"
       transform="translate(133.3 -42.7)"
     />
-    <use
+    <svg:use
       xlink:href="#hn-c"
       width="100%"
       height="100%"
       transform="translate(133.3 37.3)"
     />
-    <use
+    <svg:use
       xlink:href="#hn-c"
       width="100%"
       height="100%"
       transform="translate(-133.3 -42.7)"
     />
-    <use
+    <svg:use
       xlink:href="#hn-c"
       width="100%"
       height="100%"

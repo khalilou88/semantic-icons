@@ -37,7 +37,7 @@ import {
             d="m1581.7 845 31.8 46.7m-18-54.8-15 8.8-14.3 11 31 47.1 13.7-10.6 14.1-8.2zm58.3 199 17.9-37 19.1 7.7 7.8-19-19-9 9.8-21.3-14-6.3-10.6 20.5-19.2-8-8.4 20 18.6 7.7-17.2 36.7zm143.2-11.1 18.1-.4v21l17.6.9-3 21.4-16.4-1s-2.7 12.5-5.1 18.4c-2.5 6.2-9.7 17.4-9.7 17.4l-19.4-4.8s7-11 9.7-17c2.4-5.4 5.7-16.6 5.7-16.6l-20-2.5 3.5-20.2 18.1 1.2z"
           />
         </svg:g>
-        <use
+        <svg:use
           xlink:href="#va-a"
           width="100%"
           height="100%"
@@ -122,15 +122,21 @@ import {
         </svg:g>
       </svg:g>
       <svg:g fill="#ce9d09" transform="matrix(-.2048 0 0 .2048 761.5 0)">
-        <use xlink:href="#va-b" width="100%" height="100%" />
-        <use xlink:href="#va-c" width="100%" height="100%" fill="#ccc" />
+        <svg:use xlink:href="#va-b" width="100%" height="100%" />
+        <svg:use xlink:href="#va-c" width="100%" height="100%" fill="#ccc" />
       </svg:g>
       <svg:g fill="#fa0204" transform="scale(.2048)">
         <svg:path
           id="va-d"
           d="M1869.2 1175.8c0 5.4-4.5 7.4-13.3 7.4-8.7 0-12.7-2.5-12.7-7.9s4-6.7 12.7-6.7c8.8 0 13.3 1.8 13.3 7.2z"
         />
-        <use xlink:href="#va-d" width="100%" height="100%" x="6.4" y="14.3" />
+        <svg:use
+          xlink:href="#va-d"
+          width="100%"
+          height="100%"
+          x="6.4"
+          y="14.3"
+        />
         <svg:path
           d="M1877.3 1208.7c-1.7 5-6.7 5.6-15 2.7-8.2-3-11.2-6.6-9.4-11.7 1.8-5 6-5 14.3-2.1 8.2 2.9 12 6 10.1 11z"
         />
@@ -138,7 +144,7 @@ import {
           id="va-e"
           d="M1877.5 1222.5c-1 5.3-5.9 6.4-14.4 4.7-8.6-1.7-12-5-11-10.3 1-5.3 5.3-5.8 13.8-4 8.6 1.7 12.7 4.3 11.6 9.6z"
         />
-        <use xlink:href="#va-e" width="100%" height="100%" x="4" y="16.1" />
+        <svg:use xlink:href="#va-e" width="100%" height="100%" x="4" y="16.1" />
         <svg:path
           d="M1921.7 1216.2c-2.6-.7-2.3-5.3-1.6-7.9 1.2-4 8.4-9.1 8.4-9.1s1.8 5.6 1 8.2c-1.2 3.7-4 9.8-7.8 8.8z"
         />
@@ -152,7 +158,13 @@ import {
           id="va-f"
           d="M1844.3 1230.5c4.8 2.2 3.4 8.1 0 11.2-3.6 3.2-12.6 6.3-17.7 4-5.2-2.2-3-8.6.8-11.7 3.6-3 12-5.6 16.9-3.5z"
         />
-        <use xlink:href="#va-f" width="100%" height="100%" x="14" y="10.7" />
+        <svg:use
+          xlink:href="#va-f"
+          width="100%"
+          height="100%"
+          x="14"
+          y="10.7"
+        />
         <svg:path
           d="M1863 1250.7c4.8.7 6 7.4 4.6 11.7-1.6 4.5-7.5 10.6-12.5 9.8-5.1-.8-6-8-4.2-12.6 1.6-4.2 7.3-9.7 12-9z"
         />
@@ -172,13 +184,31 @@ import {
           id="va-g"
           d="M1838.6 1265.7c4.5-.6 8.2 5.8 8.4 10.5.3 5-2.7 12.8-7.4 13.4-4.9.6-8.4-6.6-8.5-11.6 0-4.7 3-11.8 7.5-12.3z"
         />
-        <use xlink:href="#va-g" width="100%" height="100%" x="12.8" y="10.4" />
+        <svg:use
+          xlink:href="#va-g"
+          width="100%"
+          height="100%"
+          x="12.8"
+          y="10.4"
+        />
         <svg:path
           id="va-h"
           d="M1929.3 1250.9c-3.3 2.8-9.7.3-12.6-2.9-3.1-3.3-5.3-10.5-1.8-13.5 3.4-3 10.2.2 13.2 3.6 2.7 3.3 4.4 10 1.2 12.8z"
         />
-        <use xlink:href="#va-h" width="100%" height="100%" x="-7" y="12.8" />
-        <use xlink:href="#va-h" width="100%" height="100%" x="-19.5" y="23.5" />
+        <svg:use
+          xlink:href="#va-h"
+          width="100%"
+          height="100%"
+          x="-7"
+          y="12.8"
+        />
+        <svg:use
+          xlink:href="#va-h"
+          width="100%"
+          height="100%"
+          x="-19.5"
+          y="23.5"
+        />
         <svg:path
           d="M1905.2 1281.2c-1.1 4.1-8 5.6-12.1 4.5-4.4-1-10.2-5.8-9-10.2 1.3-4.4 8.7-5.6 13-4.3 4.2 1.2 9.2 5.9 8 10z"
         />
@@ -192,27 +222,81 @@ import {
           id="va-i"
           d="M1831.3 1313c-3.4 3.1-.7 11.2 2.8 15.2 3.7 4.2 11.8 8.1 15.4 4.7 3.5-3.4.3-12-3.6-16.1-3.7-3.9-11.2-7-14.6-3.9z"
         />
-        <use xlink:href="#va-i" width="100%" height="100%" x="-7.3" y="13.8" />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="-7.3"
+          y="13.8"
+        />
         <svg:path
           id="va-j"
           d="M1820.8 1339.5c-4.3 1.8-4.8 10.2-3 15.3 1.8 5.3 7.9 11.9 12.5 10 4.6-1.8 4.7-11 2.6-16.3-2-4.9-7.8-10.7-12-9z"
         />
-        <use xlink:href="#va-j" width="100%" height="100%" x="-10.5" y="14.9" />
+        <svg:use
+          xlink:href="#va-j"
+          width="100%"
+          height="100%"
+          x="-10.5"
+          y="14.9"
+        />
         <svg:path
           id="va-k"
           d="M1802.7 1371c-4.6 1-6.5 9.3-5.5 14.6 1 5.5 6 13 10.8 11.9 4.8-1.1 6.4-10.2 5.2-15.7-1.2-5.1-6-11.8-10.5-10.8z"
         />
-        <use xlink:href="#va-k" width="100%" height="100%" x="-10.1" y="15.9" />
+        <svg:use
+          xlink:href="#va-k"
+          width="100%"
+          height="100%"
+          x="-10.1"
+          y="15.9"
+        />
         <svg:path
           id="va-l"
           d="M1784 1403.3c-4.6.2-8 8-8 13.3 0 5.6 3.5 13.9 8.4 13.7 5-.2 8.2-8.8 8-14.5-.2-5.3-3.7-12.7-8.3-12.5z"
         />
-        <use xlink:href="#va-l" width="100%" height="100%" x="-10.3" y="19.2" />
-        <use xlink:href="#va-l" width="100%" height="100%" x="-22.4" y="37" />
-        <use xlink:href="#va-l" width="100%" height="100%" x="-34.9" y="52.3" />
-        <use xlink:href="#va-l" width="100%" height="100%" x="-47.8" y="66.5" />
-        <use xlink:href="#va-l" width="100%" height="100%" x="-62" y="78.1" />
-        <use xlink:href="#va-l" width="100%" height="100%" x="-75.6" y="90.6" />
+        <svg:use
+          xlink:href="#va-l"
+          width="100%"
+          height="100%"
+          x="-10.3"
+          y="19.2"
+        />
+        <svg:use
+          xlink:href="#va-l"
+          width="100%"
+          height="100%"
+          x="-22.4"
+          y="37"
+        />
+        <svg:use
+          xlink:href="#va-l"
+          width="100%"
+          height="100%"
+          x="-34.9"
+          y="52.3"
+        />
+        <svg:use
+          xlink:href="#va-l"
+          width="100%"
+          height="100%"
+          x="-47.8"
+          y="66.5"
+        />
+        <svg:use
+          xlink:href="#va-l"
+          width="100%"
+          height="100%"
+          x="-62"
+          y="78.1"
+        />
+        <svg:use
+          xlink:href="#va-l"
+          width="100%"
+          height="100%"
+          x="-75.6"
+          y="90.6"
+        />
         <svg:path
           d="m1692.8 1500.2-5.3 20.6s3 7.3 6 7c5.5-.6 7-9 8-14.5 1-8.4-8.7-13.1-8.7-13.1zm324.4 13.1c1.6 6 15.3 11.3 15.3 11.3l-6.7-27.8c-5.7.2-9.5 12.4-8.6 16.4z"
         />
@@ -223,57 +307,69 @@ import {
           id="va-m"
           d="M2000.8 1478.7c-4.7-.3-8.7 7.2-9.2 12.5-.5 5.6 2.2 14.1 7.1 14.4 5 .2 9-8 9.3-13.7.3-5.3-2.6-13-7.2-13.2z"
         />
-        <use
+        <svg:use
           xlink:href="#va-m"
           width="100%"
           height="100%"
           x="-13.4"
           y="-13.7"
         />
-        <use
+        <svg:use
           xlink:href="#va-m"
           width="100%"
           height="100%"
           x="-25.9"
           y="-29.2"
         />
-        <use
+        <svg:use
           xlink:href="#va-m"
           width="100%"
           height="100%"
           x="-38.7"
           y="-42.3"
         />
-        <use xlink:href="#va-m" width="100%" height="100%" x="-49" y="-60.3" />
-        <use
+        <svg:use
+          xlink:href="#va-m"
+          width="100%"
+          height="100%"
+          x="-49"
+          y="-60.3"
+        />
+        <svg:use
           xlink:href="#va-m"
           width="100%"
           height="100%"
           x="-60.3"
           y="-76.4"
         />
-        <use
+        <svg:use
           xlink:href="#va-m"
           width="100%"
           height="100%"
           x="-70.6"
           y="-93.5"
         />
-        <use
+        <svg:use
           xlink:href="#va-m"
           width="100%"
           height="100%"
           x="-79.8"
           y="-113.3"
         />
-        <use
+        <svg:use
           xlink:href="#va-m"
           width="100%"
           height="100%"
           x="-89.8"
           y="-131.2"
         />
-        <use xlink:href="#va-m" width="100%" height="100%" x="-98" y="-152.5" />
+        <svg:use
+          xlink:href="#va-m"
+          width="100%"
+          height="100%"
+          x="-98"
+          y="-152.5"
+        />
         <svg:path
           d="M1883.8 1304.6s-1.6 26.6 8 28.3c6.1 1.1 10.9-14.9 10.9-14.9z"
         />
@@ -281,27 +377,81 @@ import {
           id="va-n"
           d="M1862 1610.8c-2.9 3.6 1 11.2 5 14.7 4.3 3.6 12.9 6.2 15.9 2.3 3-3.9-1.5-11.9-6-15.4-4-3.2-12-5.3-14.9-1.6z"
         />
-        <use xlink:href="#va-n" width="100%" height="100%" x="18.3" y="-2.2" />
-        <use xlink:href="#va-n" width="100%" height="100%" x="36.8" y="-5.8" />
+        <svg:use
+          xlink:href="#va-n"
+          width="100%"
+          height="100%"
+          x="18.3"
+          y="-2.2"
+        />
+        <svg:use
+          xlink:href="#va-n"
+          width="100%"
+          height="100%"
+          x="36.8"
+          y="-5.8"
+        />
         <svg:path
           id="va-o"
           d="M1916.2 1603.8c-2.3 4 2.6 11 7.1 13.8 4.8 3 13.7 4.3 16 0 2.5-4.4-3.2-11.6-8.1-14.4-4.6-2.6-12.8-3.4-15 .6z"
         />
-        <use xlink:href="#va-o" width="100%" height="100%" x="20" y="-3.2" />
+        <svg:use
+          xlink:href="#va-o"
+          width="100%"
+          height="100%"
+          x="20"
+          y="-3.2"
+        />
         <svg:path
           id="va-p"
           d="M1953.5 1595.4c-2 4.3 3.6 10.7 8.4 13.1 5 2.5 14 3 16-1.5s-4.4-11.2-9.5-13.5c-4.8-2.2-13-2.3-15 2z"
         />
-        <use xlink:href="#va-p" width="100%" height="100%" x="18.9" y="-5.6" />
+        <svg:use
+          xlink:href="#va-p"
+          width="100%"
+          height="100%"
+          x="18.9"
+          y="-5.6"
+        />
         <svg:path
           id="va-q"
           d="M1991.3 1583.9c-1.7 4.4 4.2 10.5 9.1 12.5 5.2 2.2 14.2 2.2 15.9-2.4 1.7-4.7-5-11-10.3-13-5-1.8-13.1-1.4-14.7 2.9z"
         />
-        <use xlink:href="#va-q" width="100%" height="100%" x="19.2" y="-6.2" />
-        <use xlink:href="#va-q" width="100%" height="100%" x="37.7" y="-14" />
-        <use xlink:href="#va-q" width="100%" height="100%" x="57.5" y="-22.2" />
-        <use xlink:href="#va-q" width="100%" height="100%" x="77.5" y="-28.6" />
-        <use xlink:href="#va-q" width="100%" height="100%" x="79.9" y="-44.3" />
+        <svg:use
+          xlink:href="#va-q"
+          width="100%"
+          height="100%"
+          x="19.2"
+          y="-6.2"
+        />
+        <svg:use
+          xlink:href="#va-q"
+          width="100%"
+          height="100%"
+          x="37.7"
+          y="-14"
+        />
+        <svg:use
+          xlink:href="#va-q"
+          width="100%"
+          height="100%"
+          x="57.5"
+          y="-22.2"
+        />
+        <svg:use
+          xlink:href="#va-q"
+          width="100%"
+          height="100%"
+          x="77.5"
+          y="-28.6"
+        />
+        <svg:use
+          xlink:href="#va-q"
+          width="100%"
+          height="100%"
+          x="79.9"
+          y="-44.3"
+        />
         <svg:path
           d="M2066.7 1534.9s13.6 2 14.8-2.9c1.6-6.5-15.4-12.7-15.4-12.7z"
         />
@@ -309,14 +459,62 @@ import {
           id="va-r"
           d="M1701.6 1575.6c-4 2.5-3 10.9-.4 15.5 2.7 4.9 9.8 10.4 14 7.8 4.2-2.6 2.8-11.7-.2-16.5-2.7-4.5-9.4-9.2-13.4-6.8z"
         />
-        <use xlink:href="#va-r" width="100%" height="100%" x="18.9" y="7.8" />
-        <use xlink:href="#va-r" width="100%" height="100%" x="37" y="10.6" />
-        <use xlink:href="#va-r" width="100%" height="100%" x="56.8" y="15.5" />
-        <use xlink:href="#va-r" width="100%" height="100%" x="74.7" y="18.1" />
-        <use xlink:href="#va-r" width="100%" height="100%" x="92.3" y="21.7" />
-        <use xlink:href="#va-r" width="100%" height="100%" x="110.4" y="26.7" />
-        <use xlink:href="#va-r" width="100%" height="100%" x="128.3" y="29.9" />
-        <use xlink:href="#va-r" width="100%" height="100%" x="146.6" y="32.7" />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="18.9"
+          y="7.8"
+        />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="37"
+          y="10.6"
+        />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="56.8"
+          y="15.5"
+        />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="74.7"
+          y="18.1"
+        />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="92.3"
+          y="21.7"
+        />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="110.4"
+          y="26.7"
+        />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="128.3"
+          y="29.9"
+        />
+        <svg:use
+          xlink:href="#va-r"
+          width="100%"
+          height="100%"
+          x="146.6"
+          y="32.7"
+        />
         <svg:path
           d="M1648.2 1517.5c-4.2-2.1-11 3-13.6 7.6-2.7 5-3.8 13.8.6 16 4.4 2.3 11.5-3.6 14-8.6 2.5-4.7 3-12.9-1-15z"
         />
@@ -333,38 +531,206 @@ import {
           id="va-s"
           d="M1672 1558.8c-4.6 1.1-6.3 9.4-5.2 14.7 1.1 5.5 6.2 12.8 11 11.6 4.8-1.2 6.2-10.3 4.8-15.8-1.2-5-6.2-11.6-10.7-10.5z"
         />
-        <use xlink:href="#va-s" width="100%" height="100%" x="16.8" y="6.2" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="8.6" y="-11.2" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.7" y="6.5" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.9" y="26.7" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.7" y="47.9" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="5.6" y="68.6" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="2.2" y="87.7" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.7" y="109.1" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="2.2" y="126.4" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.7" y="143.5" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.7" y="163.9" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="3.4" y="183.9" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="3.7" y="203.1" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.4" y="223.5" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="4.4" y="243.3" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="3.7" y="263.1" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="2.5" y="283.2" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="2.5" y="305.1" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="1.9" y="327.9" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="1.9" y="349.3" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="1.9" y="369" />
-        <use xlink:href="#va-i" width="100%" height="100%" x="1.3" y="391.3" />
+        <svg:use
+          xlink:href="#va-s"
+          width="100%"
+          height="100%"
+          x="16.8"
+          y="6.2"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="8.6"
+          y="-11.2"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.7"
+          y="6.5"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.9"
+          y="26.7"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.7"
+          y="47.9"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="5.6"
+          y="68.6"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="2.2"
+          y="87.7"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.7"
+          y="109.1"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="2.2"
+          y="126.4"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.7"
+          y="143.5"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.7"
+          y="163.9"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="3.4"
+          y="183.9"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="3.7"
+          y="203.1"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.4"
+          y="223.5"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="4.4"
+          y="243.3"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="3.7"
+          y="263.1"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="2.5"
+          y="283.2"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="2.5"
+          y="305.1"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="1.9"
+          y="327.9"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="1.9"
+          y="349.3"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="1.9"
+          y="369"
+        />
+        <svg:use
+          xlink:href="#va-i"
+          width="100%"
+          height="100%"
+          x="1.3"
+          y="391.3"
+        />
         <svg:path
           id="va-t"
           d="M1882.2 1303.2c2.5 3.7-1.3 10.8-5.1 14-4 3.2-12 5.4-14.5 1.5-2.6-4 1.9-11.4 6-14.6 4-3 11.2-4.6 13.6-1z"
         />
-        <use xlink:href="#va-t" width="100%" height="100%" x="2.7" y="16.1" />
-        <use xlink:href="#va-t" width="100%" height="100%" x="2.4" y="34.1" />
-        <use xlink:href="#va-t" width="100%" height="100%" x="2.1" y="52.4" />
-        <use xlink:href="#va-t" width="100%" height="100%" x="1.8" y="69.1" />
-        <use xlink:href="#va-t" width="100%" height="100%" x="2.7" y="87.1" />
-        <use xlink:href="#va-t" width="100%" height="100%" x="1.5" y="104.4" />
+        <svg:use
+          xlink:href="#va-t"
+          width="100%"
+          height="100%"
+          x="2.7"
+          y="16.1"
+        />
+        <svg:use
+          xlink:href="#va-t"
+          width="100%"
+          height="100%"
+          x="2.4"
+          y="34.1"
+        />
+        <svg:use
+          xlink:href="#va-t"
+          width="100%"
+          height="100%"
+          x="2.1"
+          y="52.4"
+        />
+        <svg:use
+          xlink:href="#va-t"
+          width="100%"
+          height="100%"
+          x="1.8"
+          y="69.1"
+        />
+        <svg:use
+          xlink:href="#va-t"
+          width="100%"
+          height="100%"
+          x="2.7"
+          y="87.1"
+        />
+        <svg:use
+          xlink:href="#va-t"
+          width="100%"
+          height="100%"
+          x="1.5"
+          y="104.4"
+        />
         <svg:path
           d="M1883.3 1426c2.6 3.9-1.5 11.3-5.7 14.5-4.5 3.4-13.2 5.7-16 1.6-2.9-4 2-11.8 6.6-15 4.4-3.1 12.4-4.8 15-1z"
         />
@@ -372,18 +738,84 @@ import {
           id="va-u"
           d="M1882 1443.6c3.5 3.2.8 11.3-2.7 15.3-3.7 4.2-11.8 8-15.3 4.7-3.6-3.5-.3-12 3.6-16.2 3.6-3.8 11.1-7 14.5-3.8z"
         />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".6" y="20.4" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".9" y="40.5" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".3" y="62.1" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".9" y="82.2" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".3" y="102.6" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".6" y="123" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".6" y="143.7" />
-        <use xlink:href="#va-u" width="100%" height="100%" x="-.3" y="164.4" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".9" y="183.3" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".9" y="203.1" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".3" y="224.4" />
-        <use xlink:href="#va-u" width="100%" height="100%" x=".3" y="245.4" />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".6"
+          y="20.4"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".9"
+          y="40.5"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".3"
+          y="62.1"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".9"
+          y="82.2"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".3"
+          y="102.6"
+        />
+        <svg:use xlink:href="#va-u" width="100%" height="100%" x=".6" y="123" />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".6"
+          y="143.7"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x="-.3"
+          y="164.4"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".9"
+          y="183.3"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".9"
+          y="203.1"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".3"
+          y="224.4"
+        />
+        <svg:use
+          xlink:href="#va-u"
+          width="100%"
+          height="100%"
+          x=".3"
+          y="245.4"
+        />
       </svg:g>
       <svg:g transform="scale(.2048)">
         <svg:path

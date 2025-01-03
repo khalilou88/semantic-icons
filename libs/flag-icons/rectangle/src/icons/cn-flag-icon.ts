@@ -17,31 +17,31 @@ import {
       <svg:path id="cn-a" fill="#ff0" d="M-.6.8 0-1 .6.8-1-.3h2z" />
     </svg:defs>
     <svg:path fill="#ee1c25" d="M0 0h640v480H0z" />
-    <use
+    <svg:use
       xlink:href="#cn-a"
       width="30"
       height="20"
       transform="matrix(71.9991 0 0 72 120 120)"
     />
-    <use
+    <svg:use
       xlink:href="#cn-a"
       width="30"
       height="20"
       transform="matrix(-12.33562 -20.5871 20.58684 -12.33577 240.3 48)"
     />
-    <use
+    <svg:use
       xlink:href="#cn-a"
       width="30"
       height="20"
       transform="matrix(-3.38573 -23.75998 23.75968 -3.38578 288 95.8)"
     />
-    <use
+    <svg:use
       xlink:href="#cn-a"
       width="30"
       height="20"
       transform="matrix(6.5991 -23.0749 23.0746 6.59919 288 168)"
     />
-    <use
+    <svg:use
       xlink:href="#cn-a"
       width="30"
       height="20"

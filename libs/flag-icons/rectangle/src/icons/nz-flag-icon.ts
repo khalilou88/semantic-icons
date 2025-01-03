@@ -19,22 +19,22 @@ import {
           <svg:path d="M0-.3v.5l1-.5z" />
           <svg:path d="M.2.3 0-.1l1-.2z" />
         </svg:g>
-        <use xlink:href="#nz-a" transform="scale(-1 1)" />
-        <use xlink:href="#nz-a" transform="rotate(72 0 0)" />
-        <use xlink:href="#nz-a" transform="rotate(-72 0 0)" />
-        <use xlink:href="#nz-a" transform="scale(-1 1)rotate(72)" />
+        <svg:use xlink:href="#nz-a" transform="scale(-1 1)" />
+        <svg:use xlink:href="#nz-a" transform="rotate(72 0 0)" />
+        <svg:use xlink:href="#nz-a" transform="rotate(-72 0 0)" />
+        <svg:use xlink:href="#nz-a" transform="scale(-1 1)rotate(72)" />
       </svg:g>
     </svg:defs>
     <svg:path fill="#00247d" fill-rule="evenodd" d="M0 0h640v480H0z" />
     <svg:g transform="translate(-111 36.1)scale(.66825)">
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"
         fill="#fff"
         transform="translate(900 120)scale(45.4)"
       />
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"
@@ -43,14 +43,14 @@ import {
       />
     </svg:g>
     <svg:g transform="rotate(82 525.2 114.6)scale(.66825)">
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"
         fill="#fff"
         transform="rotate(-82 519 -457.7)scale(40.4)"
       />
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"
@@ -59,14 +59,14 @@ import {
       />
     </svg:g>
     <svg:g transform="rotate(82 525.2 114.6)scale(.66825)">
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"
         fill="#fff"
         transform="rotate(-82 668.6 -327.7)scale(45.4)"
       />
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"
@@ -75,14 +75,14 @@ import {
       />
     </svg:g>
     <svg:g transform="translate(-111 36.1)scale(.66825)">
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"
         fill="#fff"
         transform="translate(900 480)scale(50.4)"
       />
-      <use
+      <svg:use
         xlink:href="#nz-b"
         width="100%"
         height="100%"

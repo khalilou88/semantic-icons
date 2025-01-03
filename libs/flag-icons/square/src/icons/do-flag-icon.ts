@@ -120,43 +120,43 @@ import {
           d="M91.4 426a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#do-a"
         width="100%"
         height="100%"
         transform="matrix(.1567 0 0 .18128 444.6 235.3)"
       />
-      <use
+      <svg:use
         xlink:href="#do-a"
         width="100%"
         height="100%"
         transform="translate(443.7 248.3)scale(.1567)"
       />
-      <use
+      <svg:use
         xlink:href="#do-a"
         width="100%"
         height="100%"
         transform="translate(440 252)scale(.16899)"
       />
-      <use
+      <svg:use
         xlink:href="#do-a"
         width="100%"
         height="100%"
         transform="translate(438.7 256.2)scale(.16899)"
       />
-      <use
+      <svg:use
         xlink:href="#do-a"
         width="100%"
         height="100%"
         transform="translate(440.3 257.8)scale(.16899)"
       />
-      <use
+      <svg:use
         xlink:href="#do-a"
         width="100%"
         height="100%"
         transform="translate(463.2 286)scale(.12289)"
       />
-      <use
+      <svg:use
         xlink:href="#do-a"
         width="100%"
         height="100%"
@@ -331,7 +331,7 @@ import {
           />
         </svg:g>
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#do-b"
         width="100%"
         height="100%"

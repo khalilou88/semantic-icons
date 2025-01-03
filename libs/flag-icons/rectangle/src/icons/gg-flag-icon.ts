@@ -21,19 +21,19 @@ import {
       fill="#f9dd16"
       d="m110 286.7 23.3-23.4h210v-46.6h-210L110 193.3z"
     />
-    <use
+    <svg:use
       xlink:href="#gg-a"
       width="36"
       height="24"
       transform="rotate(90 320 240)"
     />
-    <use
+    <svg:use
       xlink:href="#gg-a"
       width="36"
       height="24"
       transform="rotate(-90 320 240)"
     />
-    <use
+    <svg:use
       xlink:href="#gg-a"
       width="36"
       height="24"

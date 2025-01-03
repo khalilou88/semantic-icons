@@ -29,7 +29,7 @@ import {
       fill="#f8c300"
       d="M316.8 258.3a26 26 0 0 1-43.8 16.6 27 27 0 0 1-41 12c2.5 25 40 19.9 42.8-4.4 11.7 20.7 37.6 14.7 45.2-10.6z"
     />
-    <use
+    <svg:use
       xlink:href="#tj-a"
       width="100%"
       height="100%"
@@ -41,14 +41,14 @@ import {
       fill="#f8c300"
       d="M291.8 302.6c-5.3 11.3-15.7 13.2-24.8 4.1 0 0 3.6-2.6 7.6-3.3-.8-3.1.7-7.5 2.9-9.8a15 15 0 0 1 6.1 8.1c5.5-.7 8.2 1 8.2 1z"
     />
-    <use
+    <svg:use
       xlink:href="#tj-b"
       width="100%"
       height="100%"
       fill="#f8c300"
       transform="rotate(9.4 320 551.3)"
     />
-    <use
+    <svg:use
       xlink:href="#tj-b"
       width="100%"
       height="100%"
@@ -73,26 +73,26 @@ import {
       fill="#f8c300"
       transform="translate(320 260.6)scale(.68571)"
     >
-      <use
+      <svg:use
         xlink:href="#tj-c"
         width="100%"
         height="100%"
         transform="translate(-70 -121.2)"
       />
-      <use
+      <svg:use
         xlink:href="#tj-c"
         width="100%"
         height="100%"
         transform="translate(-121.2 -70)"
       />
-      <use
+      <svg:use
         xlink:href="#tj-c"
         width="100%"
         height="100%"
         transform="translate(-140)"
       />
     </svg:g>
-    <use
+    <svg:use
       xlink:href="#tj-d"
       width="100%"
       height="100%"

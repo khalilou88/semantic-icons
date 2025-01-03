@@ -27,34 +27,34 @@ import {
               <svg:circle r=".9" transform="rotate(7.5 -8.8 133.5)" />
               <svg:path d="M0 17.5.6 7 0 2l-.6 5z" />
             </svg:g>
-            <use
+            <svg:use
               xlink:href="#in-a"
               width="100%"
               height="100%"
               transform="rotate(15)"
             />
           </svg:g>
-          <use
+          <svg:use
             xlink:href="#in-b"
             width="100%"
             height="100%"
             transform="rotate(30)"
           />
         </svg:g>
-        <use
+        <svg:use
           xlink:href="#in-c"
           width="100%"
           height="100%"
           transform="rotate(60)"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#in-d"
         width="100%"
         height="100%"
         transform="rotate(120)"
       />
-      <use
+      <svg:use
         xlink:href="#in-d"
         width="100%"
         height="100%"

@@ -25,7 +25,7 @@ import {
       stroke-width="2.9"
       d="M0 348.2h512v23H0z"
     />
-    <use
+    <svg:use
       xlink:href="#eac-a"
       width="600"
       height="330"
@@ -43,7 +43,7 @@ import {
       stroke-width="2.9"
       d="M0 371.2h512V512H0z"
     />
-    <use
+    <svg:use
       xlink:href="#eac-b"
       width="600"
       height="330"
@@ -64,7 +64,7 @@ import {
       stroke-width="2.9"
       d="M0 291.8h512v17.9H0z"
     />
-    <use
+    <svg:use
       xlink:href="#eac-c"
       width="600"
       height="330"
@@ -98,7 +98,7 @@ import {
           d="M258.5-431.4h-21.8l21.8-5.9zm-4.8-9.2H244l10-3.8zM241-439l2.2 4 14.5-4z"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#eac-d"
         width="600"
         height="330"
@@ -159,7 +159,7 @@ import {
           d="M288-541.2c-13-3.7-10.6 9.4-15 12.5 11 1.8 8.7-8.7 15-12.5zm-6-5.6c-2.6-10.4 2.6-8.7 8.5-13.3 3.2 8.4-4.7 7.4-8.5 13.3zm16.6-1.6c-10-7.4-11.1 2.6-16.3 4 9.6 5.7 10-2.8 16.3-3.9zm-6-5c.3-4.5 6.3-10.4 12.5-8.4-.3 7.5-7.5 9.4-12.5 8.5z"
         />
       </svg:g>
-      <use
+      <svg:use
         xlink:href="#eac-e"
         width="600"
         height="330"

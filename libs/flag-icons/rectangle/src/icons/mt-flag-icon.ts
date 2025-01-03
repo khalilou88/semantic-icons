@@ -46,9 +46,9 @@ import {
           d="M3240.8-2291.9h-158.6a600 330 45 1 0-242.3 173.3l112.1-133.7 138.1 138.1-154.5 154.4a1070 940 45 0 1-974.1-1283 1070 940 45 0 1 1279.3 950.9z"
         />
       </svg:g>
-      <use xlink:href="#mt-a" transform="rotate(90)" />
-      <use xlink:href="#mt-a" transform="scale(-1)" />
-      <use xlink:href="#mt-a" transform="rotate(-90)" />
+      <svg:use xlink:href="#mt-a" transform="rotate(90)" />
+      <svg:use xlink:href="#mt-a" transform="scale(-1)" />
+      <svg:use xlink:href="#mt-a" transform="rotate(-90)" />
     </svg:g>
     <svg:g transform="translate(161.8 160.6)scale(.0147)">
       <svg:path
