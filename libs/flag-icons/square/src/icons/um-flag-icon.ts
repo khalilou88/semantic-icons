@@ -20,9 +20,9 @@ import {
       d="M0 58h512M0 137h512M0 216h512M0 295h512M0 374h512M0 453h512"
     />
     <svg:path fill="#192f5d" d="M0 0h390v275H0z" />
-    <marker id="um-a" markerHeight="30" markerWidth="30">
+    <svg:marker id="um-a" markerHeight="30" markerWidth="30">
       <svg:path fill="#fff" d="m15 0 9.3 28.6L0 11h30L5.7 28.6" />
-    </marker>
+    </svg:marker>
     <svg:path
       fill="none"
       marker-mid="url(#um-a)"
