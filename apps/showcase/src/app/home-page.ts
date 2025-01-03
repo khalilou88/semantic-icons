@@ -4,14 +4,14 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
-import { SiIt42FlagIcon } from '@semantic-icons/circle-flags';
+import { SiBirdIcon } from '@semantic-icons/lucide-icons';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SiIt42FlagIcon],
+  imports: [SiBirdIcon],
   template: `
-    <svg class="size-36" si-it-42-flag-icon></svg>
+    <svg class="text-blue-500 size-6" si-bird-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
