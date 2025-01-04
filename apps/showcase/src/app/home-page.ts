@@ -4,14 +4,13 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
-import { SiBirdIcon } from '@semantic-icons/lucide-icons';
+import { SiGithubIcon } from '@semantic-icons/simple-icons';
 
 @Component({
   selector: 'app-home-page',
-  standalone: true,
-  imports: [SiBirdIcon],
+  imports: [SiGithubIcon],
   template: `
-    <svg class="text-blue-500 size-6" si-bird-icon></svg>
+    <svg class="size-36" si-github-icon></svg>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
