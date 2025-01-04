@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>Telegraph</title>
+    <svg:title>Telegraph</svg:title>
     <svg:path d="M0 0v24h24V0H0zm6 6h12v3h-4.5v9h-3V9H6V6Z" />
   `,
   styles: ``,

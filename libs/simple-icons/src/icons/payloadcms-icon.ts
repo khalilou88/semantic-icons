@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>Payload CMS</title>
+    <svg:title>Payload CMS</svg:title>
     <svg:path
       d="M11.068 0 22.08 6.625v12.573L13.787 24V11.427L2.769 4.808 11.068 0ZM1.92 18.302l8.31-4.812v9.812l-8.31-5Z"
     />

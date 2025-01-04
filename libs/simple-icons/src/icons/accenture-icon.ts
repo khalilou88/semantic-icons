@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>Accenture</title>
+    <svg:title>Accenture</svg:title>
     <svg:path
       d="m.66 16.95 13.242-4.926L.66 6.852V0l22.68 9.132v5.682L.66 24Z"
     />

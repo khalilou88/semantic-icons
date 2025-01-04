@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>Kotlin</title>
+    <svg:title>Kotlin</svg:title>
     <svg:path d="M24 24H0V0h24L12 12Z" />
   `,
   styles: ``,

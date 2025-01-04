@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>awesomeWM</title>
+    <svg:title>awesomeWM</svg:title>
     <svg:path d="M0 24V8.25h16.5V7.5H0V0h24v24h-7.5v-8.25h-9v.75h8.25V24z" />
   `,
   styles: ``,

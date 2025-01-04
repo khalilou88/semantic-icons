@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>ElevenLabs</title>
+    <svg:title>ElevenLabs</svg:title>
     <svg:path d="M4.6035 0v24h4.9317V0zm9.8613 0v24h4.9317V0z" />
   `,
   styles: ``,

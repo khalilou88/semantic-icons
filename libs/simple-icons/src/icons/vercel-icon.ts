@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>Vercel</title>
+    <svg:title>Vercel</svg:title>
     <svg:path d="M24 22.525H0l12-21.05 12 21.05z" />
   `,
   styles: ``,

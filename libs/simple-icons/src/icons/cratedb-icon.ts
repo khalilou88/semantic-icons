@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>CrateDB</title>
+    <svg:title>CrateDB</svg:title>
     <svg:path d="M18 9V3h-6v6H0v6h6v6h6v-6h12V9h-6z" />
   `,
   styles: ``,

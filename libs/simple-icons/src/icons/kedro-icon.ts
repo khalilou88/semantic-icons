@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <title>Kedro</title>
+    <svg:title>Kedro</svg:title>
     <svg:path d="m12 0 12 12-12 12L0 12 12 0z" />
   `,
   styles: ``,
