@@ -3,6 +3,7 @@ import {
   formatFiles,
   generateFiles,
   names,
+  readJsonFile,
   workspaceRoot,
 } from '@nx/devkit';
 import * as fs from 'fs';
@@ -10,6 +11,23 @@ import * as path from 'path';
 
 import { getSvgAttributes, getSvgContent } from '../../utils';
 import { SimpleIconsGeneratorSchema } from './schema';
+
+interface SimpleIcon {
+  title: string;
+  hex: string;
+}
+
+function getSvgTitle(svgContent: string) {
+  const regex = /<title>(.*?)<\/title>/;
+
+  const match = regex.exec(svgContent);
+
+  if (match) {
+    return match[1];
+  }
+
+  return '';
+}
 
 export async function simpleIconsGenerator(
   tree: Tree,
@@ -59,11 +77,26 @@ function generateIconsComponents(
     const width = svgAttributes.width;
     const height = svgAttributes.height;
     const viewBox = svgAttributes.viewBox;
-    const fill = svgAttributes.fill;
+    // const fill = svgAttributes.fill;
     const stroke = svgAttributes.stroke;
     const strokeWidth = svgAttributes.strokeWidth;
     const strokeLinecap = svgAttributes.strokeLinecap;
     const strokeLinejoin = svgAttributes.strokeLinejoin;
+
+    //Colors
+    const title = getSvgTitle(svgFileContent);
+    const simpleIconsJsonPath = path.join(
+      workspaceRoot,
+      'node_modules',
+      'simple-icons',
+      '_data',
+      'simple-icons.json',
+    );
+    const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
+
+    const fill = simpleIconsJson.find(
+      (icon: SimpleIcon) => icon.title === title,
+    ).hex;
 
     const o = {
       svgContent,
