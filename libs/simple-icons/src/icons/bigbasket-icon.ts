@@ -31,6 +31,6 @@ export class SiBigbasketIcon implements OnInit {
     this.render.setAttribute(svg, 'role', 'img');
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
     this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'A5CD39');
+    this.render.setAttribute(svg, 'fill', '#A5CD39');
   }
 }
