@@ -96,7 +96,7 @@ function generateIconsComponents(
 
     const fill = simpleIconsJson.find(
       (icon: SimpleIcon) => icon.title === title,
-    ).hex;
+    )?.hex;
 
     const o = {
       svgContent,
