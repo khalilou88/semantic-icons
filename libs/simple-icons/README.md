@@ -4,9 +4,9 @@
 
 ## Supported versions
 
-| @semantic-icons/simple-icons | Angular   | Simple Icons                                                                                                                                                                                                                                     |
-| ---------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 0.x.x                        | >= 17.1.0 | ![Simple Icons version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkhalilou88%2Fsemantic-icons%2Fmain%2Fpackage.json&query=%24..devDependencies%5B'simple-icons'%5D&logo=simpleicons&label=version) |
+| @semantic-icons/simple-icons | Angular   | Simple Icons |
+| ---------------------------- | --------- | ------------ |
+| 0.x.x                        | >= 17.1.0 | 14.0.1       |
 
 ## Usage
 
