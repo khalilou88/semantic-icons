@@ -81,7 +81,7 @@ function generateIconsComponents(
     const width = svgAttributes.width;
     const height = svgAttributes.height;
     const viewBox = svgAttributes.viewBox;
-    // const fill = svgAttributes.fill;
+    let fill = svgAttributes.fill;
     const stroke = svgAttributes.stroke;
     const strokeWidth = svgAttributes.strokeWidth;
     const strokeLinecap = svgAttributes.strokeLinecap;
@@ -106,7 +106,11 @@ function generateIconsComponents(
       simpleIconTitle.push(title);
     }
 
-    const fill = simpleIcon?.hex;
+    const hex = simpleIcon?.hex;
+
+    if (hex) {
+      fill = `#${hex}`;
+    }
 
     const o = {
       svgContent,
