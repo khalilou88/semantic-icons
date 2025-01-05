@@ -93,10 +93,15 @@ function generateIconsComponents(
       'simple-icons.json',
     );
     const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
-
-    const fill = simpleIconsJson.find(
+    const simpleIcon = simpleIconsJson.find(
       (icon: SimpleIcon) => icon.title === title,
-    )?.hex;
+    );
+
+    if (!simpleIcon) {
+      console.log(`Cannot find Icon with Title ${title}`);
+    }
+
+    const fill = simpleIcon?.hex;
 
     const o = {
       svgContent,
