@@ -8,6 +8,7 @@ import {
   writeJsonFile,
 } from '@nx/devkit';
 import * as fs from 'fs';
+import { decode } from 'html-entities';
 import * as path from 'path';
 
 import { getSvgAttributes, getSvgContent } from '../../utils';
@@ -97,7 +98,7 @@ function generateIconsComponents(
     );
     const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
     const simpleIcon = simpleIconsJson.find(
-      (icon: SimpleIcon) => icon.title === title,
+      (icon: SimpleIcon) => icon.title === decode(title),
     );
 
     if (!simpleIcon) {
