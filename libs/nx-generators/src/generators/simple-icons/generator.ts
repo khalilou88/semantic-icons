@@ -5,6 +5,7 @@ import {
   names,
   readJsonFile,
   workspaceRoot,
+  writeJsonFile,
 } from '@nx/devkit';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -28,6 +29,8 @@ function getSvgTitle(svgContent: string) {
 
   return '';
 }
+
+const simpleIconTitle: string[] = [];
 
 export async function simpleIconsGenerator(
   tree: Tree,
@@ -99,6 +102,7 @@ function generateIconsComponents(
 
     if (!simpleIcon) {
       console.log(`Cannot find Icon with Title ${title}`);
+      simpleIconTitle.push(title);
     }
 
     const fill = simpleIcon?.hex;
@@ -127,6 +131,17 @@ function generateIconsComponents(
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
+
+  writeJsonFile(
+    path.join(
+      workspaceRoot,
+      'apps',
+      'showcase',
+      'public',
+      'simple-icons-color-issue.json',
+    ),
+    simpleIconTitle,
+  );
 }
 
 export default simpleIconsGenerator;
