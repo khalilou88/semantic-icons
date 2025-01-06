@@ -1,0 +1,34 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-stacked-view-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <svg:path
+      d="M4 2C3.44772 2 3 2.44772 3 3V14C3 14.5523 3.44772 15 4 15H20C20.5523 15 21 14.5523 21 14V3C21 2.44772 20.5523 2 20 2H4ZM5 13V4H19V13H5ZM4 17C3.44772 17 3 17.4477 3 18V22H5V19H19V22H21V18C21 17.4477 20.5523 17 20 17H4Z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SiStackedViewIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+    this.render.setAttribute(svg, 'fill', 'currentColor');
+  }
+}
