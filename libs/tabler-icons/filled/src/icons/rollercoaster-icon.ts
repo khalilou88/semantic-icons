@@ -9,20 +9,20 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-car-icon]',
+  selector: 'svg[si-rollercoaster-icon]',
   standalone: true,
   imports: [],
   template: `
     <svg:path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <svg:path
-      d="M14 5a1 1 0 0 1 .694 .28l.087 .095l3.699 4.625h.52a3 3 0 0 1 2.995 2.824l.005 .176v4a1 1 0 0 1 -1 1h-1.171a3.001 3.001 0 0 1 -5.658 0h-4.342a3.001 3.001 0 0 1 -5.658 0h-1.171a1 1 0 0 1 -1 -1v-6l.007 -.117l.008 -.056l.017 -.078l.012 -.036l.014 -.05l2.014 -5.034a1 1 0 0 1 .928 -.629zm-7 11a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m10 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m-6 -9h-5.324l-1.2 3h6.524zm2.52 0h-.52v3h2.92z"
+      d="M21 8a1 1 0 0 1 0 2v11a1 1 0 0 1 -2 0v-11h-1.675q -.163 0 -.325 .007v10.993a1 1 0 0 1 -2 0v-10.645a7.8 7.8 0 0 0 -2 .959v9.686a1 1 0 0 1 -2 0v-7.748a7.8 7.8 0 0 0 -1.051 2.064l-.735 2.205a7 7 0 0 1 -.213 .553l-.001 2.926a1 1 0 0 1 -2 0l.001 -.364a6.54 6.54 0 0 1 -4.001 1.364a1 1 0 0 1 0 -2a4.55 4.55 0 0 0 4.316 -3.111l.735 -2.205a9.775 9.775 0 0 1 9.274 -6.684zm-10.22 -3.625l2 2.5a1 1 0 0 1 -.18 1.425l-4 3a1 1 0 0 1 -.868 .164l-1.8 -.5a1 1 0 0 1 -.727 -.864l-.2 -2a1 1 0 0 1 .395 -.9l4 -3a1 1 0 0 1 1.38 .175m9.22 -2.375a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1z"
     />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCarIcon implements OnInit {
+export class SiRollercoasterIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 

@@ -9,20 +9,20 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-car-icon]',
+  selector: 'svg[si-trolley-icon]',
   standalone: true,
   imports: [],
   template: `
     <svg:path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <svg:path
-      d="M14 5a1 1 0 0 1 .694 .28l.087 .095l3.699 4.625h.52a3 3 0 0 1 2.995 2.824l.005 .176v4a1 1 0 0 1 -1 1h-1.171a3.001 3.001 0 0 1 -5.658 0h-4.342a3.001 3.001 0 0 1 -5.658 0h-1.171a1 1 0 0 1 -1 -1v-6l.007 -.117l.008 -.056l.017 -.078l.012 -.036l.014 -.05l2.014 -5.034a1 1 0 0 1 .928 -.629zm-7 11a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m10 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m-6 -9h-5.324l-1.2 3h6.524zm2.52 0h-.52v3h2.92z"
+      d="M20.555 4.168a1 1 0 0 1 .277 1.387l-2.621 3.932l1.236 .619a1 1 0 0 1 -.894 1.788l-1.46 -.73l-3.876 5.815a3 3 0 1 1 -5.217 2.021l.005 -.176q .008 -.135 .027 -.267l-2.587 -1.725a1 1 0 0 1 1.11 -1.664l2.424 1.615a2.99 2.99 0 0 1 2.464 -.75l7.725 -11.588a1 1 0 0 1 1.387 -.277m-10.567 -.399l.14 .082l3.307 2.104a2.3 2.3 0 0 1 .7 3.185l-3.094 4.81a2.3 2.3 0 0 1 -3.17 .698l-3.306 -2.104a2.3 2.3 0 0 1 -.7 -3.185l3.094 -4.81a2.3 2.3 0 0 1 3.029 -.78"
     />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCarIcon implements OnInit {
+export class SiTrolleyIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
