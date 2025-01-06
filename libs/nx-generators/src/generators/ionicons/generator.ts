@@ -9,16 +9,16 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { getSvgAttributes, getSvgContent } from '../../utils';
-import { LucideIconsGeneratorSchema } from './schema';
+import { IoniconsGeneratorSchema } from './schema';
 
-export async function lucideIconsGenerator(
+export async function IoniconsGenerator(
   tree: Tree,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  options: LucideIconsGeneratorSchema,
+  options: IoniconsGeneratorSchema,
 ) {
-  const iconsLibPath = 'libs/lucide-icons';
+  const iconsLibPath = 'libs/ionicons';
 
-  const iconsSourcePath = 'node_modules/lucide-static/icons';
+  const iconsSourcePath = 'node_modules/ionicons/dist/svg';
   const iconsDestinationPath = path.join(iconsLibPath, 'src');
 
   generateIconsComponents(tree, iconsSourcePath, iconsDestinationPath);
@@ -91,4 +91,4 @@ function generateIconsComponents(
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
 }
 
-export default lucideIconsGenerator;
+export default IoniconsGenerator;
