@@ -1,1 +1,1 @@
-export * from './lib/remixicon/remixicon.component';
+export default {};
