@@ -9,41 +9,23 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { getSvgAttributes, getSvgContent } from '../../utils';
-import { FlowbiteIconsGeneratorSchema } from './schema';
+import { RemixiconGeneratorSchema } from './schema';
 
-export async function flowbiteIconsGenerator(
+export async function remixiconGenerator(
   tree: Tree,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  options: FlowbiteIconsGeneratorSchema,
+  options: RemixiconGeneratorSchema,
 ) {
-  const iconsDestinationPath = 'libs/flowbite-icons';
+  const iconsDestinationPath = 'libs/remixicon';
 
   //1
-  const filledIconsSourcePath = 'node_modules/flowbite-icons/src/solid';
-  const filledIconsDestinationPath = path.join(
-    iconsDestinationPath,
-    'solid',
-    'src',
-  );
+  const filledIconsSourcePath = 'node_modules/remixicon/icons';
+  const filledIconsDestinationPath = path.join(iconsDestinationPath, 'src');
 
   generateIconsComponents(
     tree,
     filledIconsSourcePath,
     filledIconsDestinationPath,
-  );
-
-  //2
-  const outlineIconsSourcePath = 'node_modules/flowbite-icons/src/outline';
-  const outlineIconsDestinationPath = path.join(
-    iconsDestinationPath,
-    'outline',
-    'src',
-  );
-
-  generateIconsComponents(
-    tree,
-    outlineIconsSourcePath,
-    outlineIconsDestinationPath,
   );
 
   await formatFiles(tree);
@@ -144,4 +126,4 @@ const a = function f(
   );
 };
 
-export default flowbiteIconsGenerator;
+export default remixiconGenerator;
