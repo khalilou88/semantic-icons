@@ -2,7 +2,7 @@
   "name": "remixicon",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/remixicon/src",
-  "prefix": "lib",
+  "prefix": "si",
   "projectType": "library",
   "tags": [],
   "targets": {

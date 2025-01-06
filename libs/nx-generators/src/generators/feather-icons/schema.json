@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/schema",
-  "$id": "LucideIcons",
+  "$id": "FeatherIcons",
   "title": "",
   "type": "object",
   "properties": {},

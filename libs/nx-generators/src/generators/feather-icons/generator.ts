@@ -9,16 +9,16 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { getSvgAttributes, getSvgContent } from '../../utils';
-import { LucideIconsGeneratorSchema } from './schema';
+import { FeatherIconsGeneratorSchema } from './schema';
 
-export async function lucideIconsGenerator(
+export async function featherIconsGenerator(
   tree: Tree,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  options: LucideIconsGeneratorSchema,
+  options: FeatherIconsGeneratorSchema,
 ) {
-  const iconsLibPath = 'libs/lucide-icons';
+  const iconsLibPath = 'libs/feather-icons';
 
-  const iconsSourcePath = 'node_modules/lucide-static/icons';
+  const iconsSourcePath = 'node_modules/feather-icons/dist/icons';
   const iconsDestinationPath = path.join(iconsLibPath, 'src');
 
   generateIconsComponents(tree, iconsSourcePath, iconsDestinationPath);
@@ -91,4 +91,4 @@ function generateIconsComponents(
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
 }
 
-export default lucideIconsGenerator;
+export default featherIconsGenerator;

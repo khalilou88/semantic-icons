@@ -2,7 +2,7 @@
   "name": "feather-icons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/feather-icons/src",
-  "prefix": "lib",
+  "prefix": "si",
   "projectType": "library",
   "tags": [],
   "targets": {

@@ -11,7 +11,7 @@ import * as path from 'path';
 import { getSvgAttributes, getSvgContent } from '../../utils';
 import { IoniconsGeneratorSchema } from './schema';
 
-export async function IoniconsGenerator(
+export async function ioniconsGenerator(
   tree: Tree,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   options: IoniconsGeneratorSchema,
@@ -91,4 +91,4 @@ function generateIconsComponents(
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
 }
 
-export default IoniconsGenerator;
+export default ioniconsGenerator;
