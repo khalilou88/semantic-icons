@@ -1,0 +1,29 @@
+{
+  "name": "ionicons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ionicons/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ionicons/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ionicons/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ionicons/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

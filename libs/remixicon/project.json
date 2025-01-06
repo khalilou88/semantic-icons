@@ -1,0 +1,29 @@
+{
+  "name": "remixicon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/remixicon/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/remixicon/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/remixicon/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/remixicon/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
