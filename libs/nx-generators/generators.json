@@ -44,6 +44,21 @@
       "factory": "./src/generators/lineicons/generator",
       "schema": "./src/generators/lineicons/schema.json",
       "description": "lineicons generator"
+    },
+    "feather-icons": {
+      "factory": "./src/generators/feather-icons/generator",
+      "schema": "./src/generators/feather-icons/schema.json",
+      "description": "feather-icons generator"
+    },
+    "remixicon": {
+      "factory": "./src/generators/remixicon/generator",
+      "schema": "./src/generators/remixicon/schema.json",
+      "description": "remixicon generator"
+    },
+    "ionicons": {
+      "factory": "./src/generators/ionicons/generator",
+      "schema": "./src/generators/ionicons/schema.json",
+      "description": "ionicons generator"
     }
   }
 }
