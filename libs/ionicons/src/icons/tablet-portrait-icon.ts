@@ -1,0 +1,36 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-tablet-portrait-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <svg:path
+      d="M384 512H128a64.07 64.07 0 01-64-64V64a64.07 64.07 0 0164-64h256a64.07 64.07 0 0164 64v384a64.07 64.07 0 01-64 64zM128 32a32 32 0 00-32 32v384a32 32 0 0032 32h256a32 32 0 0032-32V64a32 32 0 00-32-32z"
+    />
+    <svg:path
+      d="M384 0a64.07 64.07 0 0164 64v384a64.07 64.07 0 01-64 64H128a64.07 64.07 0 01-64-64V64a64.07 64.07 0 0164-64h256M128 480h256a32 32 0 0032-32V64a32 32 0 00-32-32H128a32 32 0 00-32 32v384a32 32 0 0032 32m0-16a16 16 0 01-16-16V64a16 16 0 0116-16h256a16 16 0 0116 16v384a16 16 0 01-16 16z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SiTabletPortraitIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
+  }
+}

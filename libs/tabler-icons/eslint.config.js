@@ -29,7 +29,7 @@ module.exports = [
         'warn',
         {
           type: 'attribute',
-          prefix: 'svg',
+          prefix: 'si',
           style: 'camelCase',
         },
       ],
@@ -37,7 +37,7 @@ module.exports = [
         'warn',
         {
           type: 'element',
-          prefix: 'svg',
+          prefix: 'si',
           style: 'kebab-case',
         },
       ],

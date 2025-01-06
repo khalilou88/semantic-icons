@@ -2,7 +2,7 @@
   "name": "ionicons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/ionicons/src",
-  "prefix": "lib",
+  "prefix": "si",
   "projectType": "library",
   "tags": [],
   "targets": {
