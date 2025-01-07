@@ -59,6 +59,11 @@
       "factory": "./src/generators/ionicons/generator",
       "schema": "./src/generators/ionicons/schema.json",
       "description": "ionicons generator"
+    },
+    "material-design-icons": {
+      "factory": "./src/generators/material-design-icons/generator",
+      "schema": "./src/generators/material-design-icons/schema.json",
+      "description": "material-design-icons generator"
     }
   }
 }
