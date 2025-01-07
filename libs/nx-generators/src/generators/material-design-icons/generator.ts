@@ -33,6 +33,64 @@ export async function materialDesignIconsGenerator(
     filledIconsDestinationPath,
   );
 
+  //2
+  const outlinedIconsSourcePath =
+    'node_modules/@material-design-icons/svg/outlined';
+  const outlinedIconsDestinationPath = path.join(
+    iconsDestinationPath,
+    'outlined',
+    'src',
+  );
+
+  generateIconsComponents(
+    tree,
+    outlinedIconsSourcePath,
+    outlinedIconsDestinationPath,
+  );
+
+  //3
+  const roundIconsSourcePath = 'node_modules/@material-design-icons/svg/round';
+  const roundIconsDestinationPath = path.join(
+    iconsDestinationPath,
+    'round',
+    'src',
+  );
+
+  generateIconsComponents(
+    tree,
+    roundIconsSourcePath,
+    roundIconsDestinationPath,
+  );
+
+  //4
+  const sharpIconsSourcePath = 'node_modules/@material-design-icons/svg/sharp';
+  const sharpIconsDestinationPath = path.join(
+    iconsDestinationPath,
+    'sharp',
+    'src',
+  );
+
+  generateIconsComponents(
+    tree,
+    sharpIconsSourcePath,
+    sharpIconsDestinationPath,
+  );
+
+  //5
+  const twoToneIconsSourcePath =
+    'node_modules/@material-design-icons/svg/two-tone';
+  const twoToneIconsDestinationPath = path.join(
+    iconsDestinationPath,
+    'two-tone',
+    'src',
+  );
+
+  generateIconsComponents(
+    tree,
+    twoToneIconsSourcePath,
+    twoToneIconsDestinationPath,
+  );
+
   await formatFiles(tree);
 }
 

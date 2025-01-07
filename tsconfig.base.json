@@ -54,6 +54,21 @@
       "@semantic-icons/material-design-icons": [
         "libs/material-design-icons/src/index.ts"
       ],
+      "@semantic-icons/material-design-icons/filled": [
+        "libs/material-design-icons/filled/src/index.ts"
+      ],
+      "@semantic-icons/material-design-icons/outlined": [
+        "libs/material-design-icons/outlined/src/index.ts"
+      ],
+      "@semantic-icons/material-design-icons/round": [
+        "libs/material-design-icons/round/src/index.ts"
+      ],
+      "@semantic-icons/material-design-icons/sharp": [
+        "libs/material-design-icons/sharp/src/index.ts"
+      ],
+      "@semantic-icons/material-design-icons/two-tone": [
+        "libs/material-design-icons/two-tone/src/index.ts"
+      ],
       "@semantic-icons/nx-generators": ["libs/nx-generators/src/index.ts"],
       "@semantic-icons/remixicon": ["libs/remixicon/src/index.ts"],
       "@semantic-icons/simple-icons": ["libs/simple-icons/src/index.ts"],
