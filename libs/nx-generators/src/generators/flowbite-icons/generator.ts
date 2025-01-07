@@ -8,7 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { getSvgAttributes, getSvgContent } from '../../utils';
+import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { FlowbiteIconsGeneratorSchema } from './schema';
 
 export async function flowbiteIconsGenerator(
@@ -102,7 +102,7 @@ const a = function f(
 
   const svgFileContent = tree.read(path.join(filePath), 'utf-8');
 
-  const svgContent = getSvgContent(svgFileContent);
+  const svgTagContent = getSvgTagContent(svgFileContent);
 
   const svgFileName = `${names(name).fileName}-icon`;
   const svgClassName = `Si${names(name).className}Icon`;
@@ -122,7 +122,7 @@ const a = function f(
   const strokeLinejoin = svgAttributes.strokeLinejoin;
 
   const o = {
-    svgContent,
+    svgTagContent,
     svgFileName,
     svgClassName,
     svgSelector,

@@ -8,7 +8,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { getSvgAttributes, getSvgContent } from '../../utils';
+import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { TablerIconsGeneratorSchema } from './schema';
 
 export async function tablerIconsGenerator(
@@ -69,7 +69,7 @@ function generateIconsComponents(
       'utf-8',
     );
 
-    const svgContent = getSvgContent(svgFileContent);
+    const svgTagContent = getSvgTagContent(svgFileContent);
 
     const svgFileName = `${names(name).fileName}-icon`;
     const svgClassName = `Si${names(name).className}Icon`;
@@ -89,7 +89,7 @@ function generateIconsComponents(
     const strokeLinejoin = svgAttributes.strokeLinejoin;
 
     const o = {
-      svgContent,
+      svgTagContent,
       svgFileName,
       svgClassName,
       svgSelector,

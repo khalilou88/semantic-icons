@@ -11,7 +11,7 @@ import * as fs from 'fs';
 import { decode } from 'html-entities';
 import * as path from 'path';
 
-import { getSvgAttributes, getSvgContent } from '../../utils';
+import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { SimpleIconsGeneratorSchema } from './schema';
 
 interface SimpleIcon {
@@ -68,7 +68,7 @@ function generateIconsComponents(
       'utf-8',
     );
 
-    const svgContent = getSvgContent(svgFileContent);
+    const svgTagContent = getSvgTagContent(svgFileContent);
 
     const svgFileName = `${names(name).fileName}-icon`;
     const svgClassName = `Si${names(name).className}Icon`;
@@ -113,7 +113,7 @@ function generateIconsComponents(
     }
 
     const o = {
-      svgContent,
+      svgTagContent,
       svgFileName,
       svgClassName,
       svgSelector,

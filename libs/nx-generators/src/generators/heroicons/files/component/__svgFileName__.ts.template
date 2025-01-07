@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <%- svgContent %>
+    <%- svgTagContent %>
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
