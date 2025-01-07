@@ -1,0 +1,54 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[<%= svgSelector %>]',
+  standalone: true,
+  imports: [],
+  template: `
+    <%- svgTagContent %>
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class <%= svgClassName %> implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    <% if(width) { -%>
+      this.render.setAttribute(svg, 'width', '<%= width %>');
+    <% } -%>
+    <% if(height) { -%>
+      this.render.setAttribute(svg, 'height', '<%= height %>');
+    <% } -%>
+    <% if(viewBox) { -%>
+      this.render.setAttribute(svg, 'viewBox', '<%= viewBox %>');
+    <% } -%>
+    <% if(fill) { -%>
+      this.render.setAttribute(svg, 'fill', '<%= fill %>');
+    <% } -%>
+    <% if(stroke) { -%>
+      this.render.setAttribute(svg, 'stroke', '<%= stroke %>');
+    <% } -%>
+    <% if(strokeWidth) { -%>
+      this.render.setAttribute(svg, 'stroke-width', '<%= strokeWidth %>');
+    <% } -%>
+    <% if(strokeLinecap) { -%>
+      this.render.setAttribute(svg, 'stroke-linecap', '<%= strokeLinecap %>');
+    <% } -%>
+    <% if(strokeLinejoin) { -%>
+      this.render.setAttribute(svg, 'stroke-linejoin', '<%= strokeLinejoin %>');
+    <% } -%>
+  }
+}

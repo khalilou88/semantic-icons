@@ -51,6 +51,9 @@
       "@semantic-icons/ionicons": ["libs/ionicons/src/index.ts"],
       "@semantic-icons/lineicons": ["libs/lineicons/src/index.ts"],
       "@semantic-icons/lucide-icons": ["libs/lucide-icons/src/index.ts"],
+      "@semantic-icons/material-design-icons": [
+        "libs/material-design-icons/src/index.ts"
+      ],
       "@semantic-icons/nx-generators": ["libs/nx-generators/src/index.ts"],
       "@semantic-icons/remixicon": ["libs/remixicon/src/index.ts"],
       "@semantic-icons/simple-icons": ["libs/simple-icons/src/index.ts"],

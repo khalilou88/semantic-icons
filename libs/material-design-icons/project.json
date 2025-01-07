@@ -1,0 +1,29 @@
+{
+  "name": "material-design-icons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/material-design-icons/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/material-design-icons/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/material-design-icons/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/material-design-icons/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
