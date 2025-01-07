@@ -1,0 +1,36 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-event-seat-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <svg:path d="M9 5h6v7H9z" opacity=".3" />
+    <svg:path
+      d="M4 21h2v-4h12v4h2v-6H4zM17 5c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v9h10V5zm-2 7H9V5h6v7zm4-2h3v3h-3zM2 10h3v3H2z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SiEventSeatIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'width', '24');
+    this.render.setAttribute(svg, 'height', '24');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+  }
+}

@@ -1,0 +1,35 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-inbox-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <svg:path
+      d="M19 3H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5v-3h3.56c.69 1.19 1.97 2 3.45 2s2.75-.81 3.45-2H19v3zm0-5h-4.99c0 1.1-.9 2-2 2s-2-.9-2-2H5V5h14v9z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SiInboxIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'width', '24');
+    this.render.setAttribute(svg, 'height', '24');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+  }
+}

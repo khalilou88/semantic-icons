@@ -1,0 +1,39 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-explore-off-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <svg:path
+      d="M12 20c1.48 0 2.86-.41 4.06-1.12l-3.98-3.98-5.58 2.6 2.59-5.58-3.97-3.98A7.932 7.932 0 0 0 4 12c0 4.41 3.59 8 8 8zm0-16c-1.48 0-2.86.41-4.06 1.12l3.98 3.98 5.58-2.6-2.59 5.58 3.98 3.98c.7-1.2 1.11-2.58 1.11-4.06 0-4.41-3.59-8-8-8z"
+      opacity=".3"
+    />
+    <svg:path
+      d="m17.5 6.5-5.58 2.59 2.99 2.99zM2.1 4.93l1.56 1.56A9.91 9.91 0 0 0 2 12c0 5.52 4.48 10 10 10 2.04 0 3.93-.61 5.51-1.66l1.56 1.56 1.41-1.41L3.51 3.51 2.1 4.93zm3.02 3.01 3.98 3.98-2.6 5.58 5.58-2.59 3.98 3.98c-1.2.7-2.58 1.11-4.06 1.11-4.41 0-8-3.59-8-8 0-1.48.41-2.86 1.12-4.06zM12 4c4.41 0 8 3.59 8 8 0 1.48-.41 2.86-1.12 4.06l1.46 1.46A9.967 9.967 0 0 0 22 12c0-5.52-4.48-10-10-10-2.04 0-3.93.61-5.51 1.66l1.46 1.46A7.869 7.869 0 0 1 12 4z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SiExploreOffIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'width', '24');
+    this.render.setAttribute(svg, 'height', '24');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+  }
+}
