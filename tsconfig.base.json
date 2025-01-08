@@ -36,6 +36,16 @@
       "@semantic-icons/flowbite-icons/solid": [
         "libs/flowbite-icons/solid/src/index.ts"
       ],
+      "@semantic-icons/fontawesome": ["libs/fontawesome/src/index.ts"],
+      "@semantic-icons/fontawesome/brands": [
+        "libs/fontawesome/brands/src/index.ts"
+      ],
+      "@semantic-icons/fontawesome/regular": [
+        "libs/fontawesome/regular/src/index.ts"
+      ],
+      "@semantic-icons/fontawesome/solid": [
+        "libs/fontawesome/solid/src/index.ts"
+      ],
       "@semantic-icons/heroicons/16/solid": [
         "libs/heroicons/16/solid/src/index.ts"
       ],

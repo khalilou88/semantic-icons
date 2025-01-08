@@ -32,8 +32,7 @@ nx g @nx/angular:library libs/lineicons --publishable --import-path=@semantic-ic
 nx generate @nx/plugin:generator libs/nx-generators/src/generators/simple-icons
 nx g @nx/angular:library libs/simple-icons --publishable --import-path=@semantic-icons/simple-icons
 
-nx g @nx/angular:library-secondary-entry-point --library=material-design-icons --name=filled
-nx g @nx/angular:library-secondary-entry-point --library=material-design-icons --name=outlined
-nx g @nx/angular:library-secondary-entry-point --library=material-design-icons --name=round
-nx g @nx/angular:library-secondary-entry-point --library=material-design-icons --name=sharp
-nx g @nx/angular:library-secondary-entry-point --library=material-design-icons --name=two-tone
+nx g @nx/angular:library libs/fontawesome --publishable --import-path=@semantic-icons/fontawesome
+nx g @nx/angular:library-secondary-entry-point --library=fontawesome --name=brands
+nx g @nx/angular:library-secondary-entry-point --library=fontawesome --name=regular
+nx g @nx/angular:library-secondary-entry-point --library=fontawesome --name=solid

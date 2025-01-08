@@ -64,6 +64,11 @@
       "factory": "./src/generators/material-design-icons/generator",
       "schema": "./src/generators/material-design-icons/schema.json",
       "description": "material-design-icons generator"
+    },
+    "fontawesome": {
+      "factory": "./src/generators/fontawesome/generator",
+      "schema": "./src/generators/fontawesome/schema.json",
+      "description": "fontawesome generator"
     }
   }
 }
