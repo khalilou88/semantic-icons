@@ -1,0 +1,26 @@
+name: Example Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Run command and capture output
+        id: get_output
+        run: |
+          # Run your command and save the output to a variable
+          output=$(nx show projects --affected -t nx-release-publish --sep=,)
+          echo "Command Output: $output"
+          echo "::set-output name=result::$output"
+
+      - name: Use the output
+        run: |
+          echo "Captured Output: ${{ steps.get_output.outputs.result }}"
