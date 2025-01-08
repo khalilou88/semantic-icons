@@ -27,10 +27,9 @@ jobs:
       - name: Run command and capture output
         id: get_output
         run: |
-          # Run your command and save the output to a variable
-          output=$(nx show projects --affected -t nx-release-publish --sep=,)
+          output=$(npx nx show projects --affected -t nx-release-publish --sep=,)
           echo "Command Output: $output"
-          echo "::set-output name=result::$output"
+          echo "result=$output" >> $GITHUB_OUTPUT
 
       - name: Use the output
         run: |
