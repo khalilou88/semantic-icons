@@ -6,7 +6,6 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
-  input,
 } from '@angular/core';
 
 @Component({
@@ -21,9 +20,6 @@ import {
     <svg:path d="M7 15a6.47 6.47 0 0 1 5 0 6.472 6.472 0 0 0 3.435.435" />
     <svg:line x1="2" x2="22" y1="2" y2="22" />
   `,
-  host: {
-    '[class]': 'class()',
-  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -31,8 +27,6 @@ import {
 export class SiMilkOffIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
-
-  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

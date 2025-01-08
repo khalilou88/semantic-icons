@@ -6,7 +6,6 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
-  input,
 } from '@angular/core';
 
 @Component({
@@ -17,9 +16,6 @@ import {
     <svg:path d="M6 11h8a4 4 0 0 0 0-8H9v18" />
     <svg:path d="M6 15h8" />
   `,
-  host: {
-    '[class]': 'class()',
-  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,8 +23,6 @@ import {
 export class SiRussianRubleIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
-
-  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

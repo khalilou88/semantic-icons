@@ -6,7 +6,6 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
-  input,
 } from '@angular/core';
 
 @Component({
@@ -21,9 +20,6 @@ import {
       d="M14.8 7.5a1.84 1.84 0 0 0-2.6 0l-.2.3-.3-.3a1.84 1.84 0 1 0-2.4 2.8L12 13l2.7-2.7c.9-.9.8-2.1.1-2.8"
     />
   `,
-  host: {
-    '[class]': 'class()',
-  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -31,8 +27,6 @@ import {
 export class SiMessageSquareHeartIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
-
-  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

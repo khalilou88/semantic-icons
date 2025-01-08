@@ -6,7 +6,6 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
-  input,
 } from '@angular/core';
 
 @Component({
@@ -18,9 +17,6 @@ import {
     <svg:circle cx="12" cy="12" r="2" />
     <svg:path d="M13.4 10.6 19 5" />
   `,
-  host: {
-    '[class]': 'class()',
-  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -28,8 +24,6 @@ import {
 export class SiCircleGaugeIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
-
-  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
