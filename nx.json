@@ -17,6 +17,7 @@
   },
   "release": {
     "projects": ["libs/*"],
+    "projectsRelationship": "independent",
     "releaseTagPattern": "release/{projectName}/{version}",
     "version": {
       "generatorOptions": {
