@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -16,6 +17,9 @@ import {
     <svg:polyline points="16 18 22 12 16 6" />
     <svg:polyline points="8 6 2 12 8 18" />
   `,
+  host: {
+    '[class]': 'class()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -23,6 +27,8 @@ import {
 export class SiCodeIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
+
+  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

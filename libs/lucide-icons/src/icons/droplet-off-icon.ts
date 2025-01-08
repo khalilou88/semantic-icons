@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -21,6 +22,9 @@ import {
       d="M8.795 8.797A11 11 0 0 1 8 9.5C6 11.1 5 13 5 15a7 7 0 0 0 13.222 3.208"
     />
   `,
+  host: {
+    '[class]': 'class()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -28,6 +32,8 @@ import {
 export class SiDropletOffIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
+
+  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

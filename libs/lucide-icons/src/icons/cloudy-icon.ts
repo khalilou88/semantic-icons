@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -16,6 +17,9 @@ import {
     <svg:path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
     <svg:path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5" />
   `,
+  host: {
+    '[class]': 'class()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -23,6 +27,8 @@ import {
 export class SiCloudyIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
+
+  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

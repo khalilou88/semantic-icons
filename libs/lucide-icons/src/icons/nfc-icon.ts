@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -18,6 +19,9 @@ import {
     <svg:path d="M12.91 4.1a15.91 15.91 0 0 1 .01 15.8" />
     <svg:path d="M16.37 2a20.16 20.16 0 0 1 0 20" />
   `,
+  host: {
+    '[class]': 'class()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -25,6 +29,8 @@ import {
 export class SiNfcIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
+
+  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

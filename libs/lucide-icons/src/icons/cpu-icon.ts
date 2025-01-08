@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -24,6 +25,9 @@ import {
     <svg:path d="M9 2v2" />
     <svg:path d="M9 20v2" />
   `,
+  host: {
+    '[class]': 'class()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -31,6 +35,8 @@ import {
 export class SiCpuIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
+
+  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

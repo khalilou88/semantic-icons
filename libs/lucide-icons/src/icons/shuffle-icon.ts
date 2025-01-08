@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -21,6 +22,9 @@ import {
     <svg:path d="M2 6h1.972a4 4 0 0 1 3.6 2.2" />
     <svg:path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45" />
   `,
+  host: {
+    '[class]': 'class()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -28,6 +32,8 @@ import {
 export class SiShuffleIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
+
+  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;

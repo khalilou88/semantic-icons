@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -22,6 +23,9 @@ import {
     <svg:path d="M3.1 10.5c0 .5-.1 1-.1 1.5s.1 1 .1 1.5" />
     <svg:path d="M6.8 4.7a10.45 10.45 0 0 0-2.1 2.1" />
   `,
+  host: {
+    '[class]': 'class()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -29,6 +33,8 @@ import {
 export class SiMessageCircleDashedIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
+
+  readonly class = input<string>('');
 
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
