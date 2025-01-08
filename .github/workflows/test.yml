@@ -36,6 +36,11 @@ jobs:
         run: npx nx release version minor -p ${{ steps.get_output.outputs.result }}
         shell: bash
 
+      - name: Build projects
+        if: steps.get_output.outputs.result != ''
+        run: npx nx run-many --target=build --projects=${{ steps.get_output.outputs.result }}
+        shell: bash
+
       - name: Publish packages
         if: steps.get_output.outputs.result != ''
         run: npx nx release publish -p ${{ steps.get_output.outputs.result }}
