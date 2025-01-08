@@ -31,6 +31,39 @@ jobs:
           echo "Command Output: $output"
           echo "result=$output" >> $GITHUB_OUTPUT
 
-      - name: Use the output
+      - name: Version
+        if: steps.get_output.outputs.result != ''
+        run: npx nx release version minor -p ${{ steps.get_output.outputs.result }}
+        shell: bash
+
+      - name: Publish packages
+        if: steps.get_output.outputs.result != ''
+        run: npx nx release publish -p ${{ steps.get_output.outputs.result }}
+        shell: bash
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
+
+      - name: Setup Git
+        if: steps.get_output.outputs.result != ''
         run: |
-          echo "Captured Output: ${{ steps.get_output.outputs.result }}"
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Commit changes
+        if: steps.get_output.outputs.result != ''
+        run: |
+          git add .
+          [[ $(git status --porcelain) ]] && git commit -m "build: publish packages" || echo "nothing to commit"
+
+      - name: Push changes
+        if: steps.get_output.outputs.result != ''
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+      - name: Fallback if empty
+        if: steps.get_output.outputs.result == ''
+        run: |
+          echo "No project to publish."
