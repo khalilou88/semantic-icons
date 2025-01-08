@@ -2,6 +2,8 @@ name: Generate icons
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
 
 jobs:
   generate-icons:
@@ -25,19 +27,19 @@ jobs:
       - name: Build nx-generators
         run: npx nx build nx-generators
 
-      # - run: npx nx generate @semantic-icons/nx-generators:heroicons
-      # - run: npx nx generate @semantic-icons/nx-generators:tabler-icons
-      # - run: npx nx generate @semantic-icons/nx-generators:flowbite-icons
-      # - run: npx nx generate @semantic-icons/nx-generators:flag-icons
-      # - run: npx nx generate @semantic-icons/nx-generators:lucide-icons
-      # - run: npx nx generate @semantic-icons/nx-generators:circle-flags
-      # - run: npx nx generate @semantic-icons/nx-generators:bootstrap-icons
-      # - run: npx nx generate @semantic-icons/nx-generators:lineicons
-      # - run: npx nx generate @semantic-icons/nx-generators:simple-icons
-      # - run: npx nx generate @semantic-icons/nx-generators:ionicons
-      # - run: npx nx generate @semantic-icons/nx-generators:remixicon
-      # - run: npx nx generate @semantic-icons/nx-generators:feather-icons
-      # - run: npx nx generate @semantic-icons/nx-generators:material-design-icons
+      - run: npx nx generate @semantic-icons/nx-generators:heroicons
+      - run: npx nx generate @semantic-icons/nx-generators:tabler-icons
+      - run: npx nx generate @semantic-icons/nx-generators:flowbite-icons
+      - run: npx nx generate @semantic-icons/nx-generators:flag-icons
+      - run: npx nx generate @semantic-icons/nx-generators:lucide-icons
+      - run: npx nx generate @semantic-icons/nx-generators:circle-flags
+      - run: npx nx generate @semantic-icons/nx-generators:bootstrap-icons
+      - run: npx nx generate @semantic-icons/nx-generators:lineicons
+      - run: npx nx generate @semantic-icons/nx-generators:simple-icons
+      - run: npx nx generate @semantic-icons/nx-generators:ionicons
+      - run: npx nx generate @semantic-icons/nx-generators:remixicon
+      - run: npx nx generate @semantic-icons/nx-generators:feather-icons
+      - run: npx nx generate @semantic-icons/nx-generators:material-design-icons
       - run: npx nx generate @semantic-icons/nx-generators:fontawesome
 
       - name: Setup Git
@@ -48,7 +50,7 @@ jobs:
       - name: Commit changes
         run: |
           git add .
-          [[ $(git status --porcelain) ]] && git commit -m "build: generate icons" || echo "nothing to commit"
+          [[ $(git status --porcelain) ]] && git commit -m "feat: generate icons" || echo "nothing to commit"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
