@@ -1,0 +1,34 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation,
+  inject,
+} from '@angular/core';
+
+@Component({
+  selector: 'svg[si-guarani-sign-icon]',
+  standalone: true,
+  imports: [],
+  template: `
+    <!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+    <svg:path
+      d="M192 0c-17.7 0-32 14.3-32 32l0 34.7C69.2 81.9 0 160.9 0 256s69.2 174.1 160 189.3l0 34.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-34.7c90.8-15.2 160-94.2 160-189.3c0-17.7-14.3-32-32-32l-128 0 0-92c22.1 5.7 41.8 17.1 57.6 32.6c12.6 12.4 32.9 12.2 45.3-.4s12.2-32.9-.5-45.3C299 92 263.5 73.3 224 66.7L224 32c0-17.7-14.3-32-32-32zM160 132L160 380c-55.2-14.2-96-64.3-96-124s40.8-109.8 96-124zM224 380l0-92 92 0c-11.6 45-47 80.4-92 92z"
+    />
+  `,
+  styles: ``,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SiGuaraniSignIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
+
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'viewBox', '0 0 384 512');
+  }
+}
