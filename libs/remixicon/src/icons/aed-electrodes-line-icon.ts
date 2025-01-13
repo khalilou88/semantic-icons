@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -17,18 +14,19 @@ import {
       d="M7 4C7 3.44772 7.44772 3 8 3H20C20.5523 3 21 3.44772 21 4V16C21 16.5523 20.5523 17 20 17H17V20C17 20.5523 16.5523 21 16 21H11V23H9V21H4C3.44772 21 3 20.5523 3 20V8C3 7.44772 3.44772 7 4 7H7V4ZM19 15V5H9V7H16C16.5523 7 17 7.44772 17 8V15H19ZM5 9V19H15V9H5Z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiAedElectrodesLineIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiAedElectrodesLineIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'currentColor');
-  }
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('currentColor');
 }

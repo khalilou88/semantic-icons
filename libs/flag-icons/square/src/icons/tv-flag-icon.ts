@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -31,17 +28,16 @@ import {
     <svg:path fill="#FFF" d="M88 0v256h80V0zM0 88v80h256V88z" />
     <svg:path fill="#C8102E" d="M0 104v48h256v-48zM104 0v256h48V0z" />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiTvFlagIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiTvFlagIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

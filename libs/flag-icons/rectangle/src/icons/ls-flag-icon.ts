@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -32,17 +29,16 @@ import {
       d="M260.5 292.1c-.6.7-4.7 8.9-4.7 8.9l7-1.5zm4 10.5-7.4 2.4 8.9 3.5zm3.3-10.3 3.7 10.9 9-2.6-2.3-5.2zm5.8 14.8 1.2 4.4 12 3-4.8-10.2zm13.2-9.3 4.3 10.2 9-3.5-3-4.5zm6 13.9 1.4 3.8 14 2-5.9-9.2-9.6 3.4zm13.4-11 5.2 9.1 13-4.8-1.4-3.5-16.8-.7zm7.6 12.4 2.7 4.8 16.2-.5-6-9-13 4.7zm17.1-12 4.4 7.6 10.4-5-2.8-4zm17 5.8-10.3 5.1 2.7 4.5 13.8-2.2zm3.3-8 5.3 6.7 8.7-6.9-3-3zm15.9 3.5-8.3 6.3 2.2 3.9 11.4-3zm11.4-13 2 2.9-5.7 8.5-5.9-7.6zm3.9 7.3 3.5 7-7 2.4-.6-3.3 4-6z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiLsFlagIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiLsFlagIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 640 480');
-  }
+  readonly viewBox = input<string>('0 0 640 480');
 }

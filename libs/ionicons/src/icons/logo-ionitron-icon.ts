@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -20,17 +17,16 @@ import {
       d="M165.51 70a.31.31 0 01.1.2c.1.2.2.3.3.5v.1a5.78 5.78 0 002.3 2.7c2 1.5 5 2.4 8.6 3a63.69 63.69 0 0011.9.5 28.25 28.25 0 002.9-.2c-.4-.4-.8-.9-1.2-1.3h-1.3a52 52 0 01-11.6-.9 19.71 19.71 0 01-8.4-3.4 9.24 9.24 0 01-1.4-1.4 4.48 4.48 0 010-2.3c.5-2.3 2.4-4.8 5.5-7.4a57.25 57.25 0 0110.9-7c.9-.4 1.7-.9 2.6-1.3.1-.1.3-.1.5-.2a24.69 24.69 0 00-.2 10.5c2.3 11.9 11.6 20.3 23.2 20.6l4 24.3 12.7-3-4-23.3c10.8-4.6 16.3-16.1 14-28a25.8 25.8 0 00-3.9-9.5c-5.3-.8-15.6-.8-29.2 2.1 1.1-.3 2.1-.7 3.2-1a135.27 135.27 0 0121.5-4.2c.6-.1 1.2-.1 1.8-.2l3.5-.3h.6a61.83 61.83 0 0110.8.3 29 29 0 016.1 1.4 5.71 5.71 0 00-.9 3.2 6.12 6.12 0 004.3 5.8 25.53 25.53 0 01-2.1 2.8 26 26 0 01-2.9 2.8c-1.1.9-2.3 1.8-3.5 2.7l-6.5 3.8-.3 1.5a.35.35 0 00.2-.1l8.4-4.7c1.2-.8 2.4-1.6 3.4-2.4a29.15 29.15 0 003.2-2.8 29.86 29.86 0 002.4-2.8l.3-.6a6.14 6.14 0 005.4-6 6.06 6.06 0 00-6.1-6.1 6.81 6.81 0 00-2.8.7 24.6 24.6 0 00-8.2-2.7 63.48 63.48 0 00-15.5-.6 14.92 14.92 0 00-2.1.2 13.55 13.55 0 01-2 .2 25.15 25.15 0 00-18.7-3.7 25.86 25.86 0 00-17.8 13c-1.3.5-2.6 1.1-3.8 1.7-.7.3-1.3.6-2 .9a60.75 60.75 0 00-13.9 9.1c-3.1 2.9-4.9 5.7-5.3 8.3a6.14 6.14 0 00.7 4 2.19 2.19 0 01.3.5z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiLogoIonitronIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiLogoIonitronIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

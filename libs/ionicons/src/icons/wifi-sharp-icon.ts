@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -29,17 +26,16 @@ import {
       d="M512 195.36s-4.5-8.36-11.85-16.485c-4.391-4.855-6.219-7.406-11.155-12.511-9.868-10.207-24.703-23.648-44.901-37.04C403.583 102.463 341.778 76 256 76c-85.778 0-147.583 26.463-188.094 53.324-20.198 13.392-35.034 26.833-44.9 37.04-4.937 5.105-8.639 9.411-11.156 12.511-1.259 1.55-1.784 2.241-2.898 3.7C5.254 187.42 0 195.36 0 195.36l58.06 55.873 11.004-13.001.002-.004.002-.002.08-.092c.089-.102.245-.28.469-.529.447-.499 1.163-1.282 2.144-2.309 1.962-2.056 4.979-5.083 9.02-8.76 8.092-7.361 20.236-17.28 36.189-27.221 31.891-19.872 78.774-39.709 139.03-39.709s107.139 19.837 139.03 39.709c15.953 9.941 28.097 19.86 36.189 27.221 4.041 3.677 7.058 6.704 9.02 8.76a99.983 99.983 0 012.144 2.309c.224.249.38.427.469.529l.036.042.044.051.002.001.002.004 11.004 13.001L512 195.36z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiWifiSharpIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiWifiSharpIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

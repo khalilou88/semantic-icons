@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -613,17 +610,16 @@ import {
       d="M205.6 424.8c-.7 2.7-3 4.6-3.4 7.6-1-3-1.8-5.7-1-8.7 0-2.3 2.2-3.8 2.6-6.4 1.8 1.8 2.2 4.5 1.8 7.5m.4 11.4a17.8 17.8 0 0 1-6.8 5.6c.4-2.2-.7-3.8-1.9-5.6-1.1-2-1.9-3.8-.7-6.5a14.4 14.4 0 0 0 1.9 3.4c1.1 1.5 2.2 3 2.2 5.3 1.5-1.1 2-2.6 2.7-4.1a12.9 12.9 0 0 1 5.3-5.3c-.8 2.6-1.2 4.9-2.7 7.2m-9.8 7.5.4 3.8 4.1-3c2-2 4.2-2.7 5.7-5a9.5 9.4 0 0 1-3.8 7.2l-7.5 5c0-2.7-.8-5-2-7.6a6.8 6.8 0 0 1 2-6c0 1.8.3 3.7 1.1 5.2zm-5.7 8.7-3 5.3c2.6-.8 5-2.3 7.6-3.8 2.6-1.5 5.6-2.2 8.3-4.5-1.2 4.9-4.6 7.5-9 9-3.1.8-6.1.4-10 2a26.5 26.5 0 0 1 2.7-7.6l2.7-5.3c.7 1.5 1.1 3 .7 5zm-9.8 7.2a12.1 12 0 0 1-3.8 3.8c3.8 0 6.8-2 10.6-2.3 2.3 0 4.5.8 6.8.4-2.6 1.9-5.7 3.8-9 3.8-4.2.7-8.4 0-13 0 2.3-1.6 3.5-3.8 4.6-5.7 2-3 3.8-5 7.2-5.3-1.5 1.5-2.3 3.8-3.4 5.3m-13.2 6c6.4 1.2 12.8 2.7 19.6 2.7a30.3 30.3 0 0 1-22.3.4c-3.8-1.2-7.2-2.3-10.2-2-4.1 0-9.8 2.3-15.9 8.4l-2.2-1.9c8.7-7.6 20-9.5 31-7.6"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiTmFlagIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiTmFlagIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 640 480');
-  }
+  readonly viewBox = input<string>('0 0 640 480');
 }

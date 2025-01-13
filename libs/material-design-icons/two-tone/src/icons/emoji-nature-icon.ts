@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -25,19 +22,22 @@ import {
       d="M14.86 12c-.17-.67-.5-1.31-1.03-1.84-.52-.52-1.16-.85-1.83-1.02V7h-1v2c-1.01.01-2.02.39-2.79 1.16l-.56.56-1.53-.63c-1.52-.63-3.27.1-3.89 1.62a2.98 2.98 0 0 0 1.44 3.8A3.97 3.97 0 0 0 4.7 19.3c1.03 1.03 2.48 1.36 3.79 1.03a2.98 2.98 0 0 0 3.8 1.44 2.98 2.98 0 0 0 1.62-3.89l-.63-1.53.56-.56C14.61 15.02 15 14.01 15 13h2v-1h-2.14zM4.58 13.8a.993.993 0 0 1-.54-1.3c.21-.51.79-.75 1.3-.54l2.92 1.2c-1.04.68-2.43 1.15-3.68.64zm3.46 4.6c-.67.19-1.41.02-1.94-.5-.53-.53-.69-1.27-.5-1.94 1.19.03 2.37-.35 3.36-.92-.57.99-.95 2.17-.92 3.36zm3.46 1.56a.993.993 0 0 1-1.3-.54c-.51-1.25-.04-2.64.64-3.67l1.2 2.92c.21.5-.03 1.09-.54 1.29zm.95-5.61-.66-1.61c-.1-.25-.3-.44-.54-.54l-1.61-.66a1.98 1.98 0 0 1 2.78.03c.78.77.78 2 .03 2.78z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiEmojiNatureIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiEmojiNatureIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
 }

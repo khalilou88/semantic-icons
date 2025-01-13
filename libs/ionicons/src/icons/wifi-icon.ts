@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -27,17 +24,16 @@ import {
       d="M507.974 181.264c.343.459 1.181 1.629 1.181 1.629a16.001 16.001 0 01-2.029 20.606l-36.69 35.5a16 16 0 01-23.345-1.17l-.003-.003a68.347 68.347 0 00-.567-.647 108.106 108.106 0 00-2.197-2.379c-2.009-2.116-5.095-5.229-9.229-9.01-8.275-7.569-20.69-17.764-36.997-27.981C365.499 177.384 317.58 157 256 157c-61.58 0-109.499 20.384-142.098 40.809-16.307 10.217-28.722 20.412-36.997 27.981-4.133 3.781-7.22 6.894-9.229 9.01a108.551 108.551 0 00-2.197 2.379c-.23.258-.39.442-.482.548l-.047.054-.03.034-.004.006-.004.005-.004.004a16 16 0 01-23.344 1.169l-36.69-35.5a16 16 0 01-2.03-20.606l.011-.016.013-.017.03-.043.079-.113.24-.337c.197-.274.466-.644.809-1.103.686-.92 1.667-2.199 2.949-3.786 2.563-3.174 6.335-7.585 11.367-12.818 10.057-10.46 25.185-24.241 45.783-37.973C105.437 99.146 168.48 72 256 72s150.563 27.146 191.875 54.687c20.598 13.732 35.726 27.513 45.783 37.973 5.032 5.233 8.804 9.644 11.367 12.818a124.805 124.805 0 012.949 3.786z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiWifiIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiWifiIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

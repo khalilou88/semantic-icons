@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -27,17 +24,16 @@ import {
       d="M195.94 459.38C205.37 472.67 221 480 240 480a16 16 0 0014.31-8.85c3-6.06 15.25-24 28.19-42.9 18-26.33 40.35-59.08 55.23-84.81l.13-.22c20.48-35.49 30.35-54.94 33.82-62l1-2a16.48 16.48 0 015.79-5.23A15.93 15.93 0 01386 272h25.32A84.7 84.7 0 00496 187.3v-38.6A84.7 84.7 0 00411.31 64h-48.79a17.46 17.46 0 01-9.58-2.89C330 46.13 286.66 32 240 32c-7.45 0-14.19.14-20.27.38a8 8 0 00-6.2 12.68l.1.14C222.2 57.59 224 71 224 80a61.16 61.16 0 01-5.19 24.77 17.38 17.38 0 000 14.06 63.81 63.81 0 010 50.39 17.32 17.32 0 000 14 62.13 62.13 0 010 49.58 18.13 18.13 0 000 14.68A60.41 60.41 0 01224 273c0 8.2-2 21.3-8 31.18a15.66 15.66 0 00-1.14 13.65c.38 1 .76 2.06 1.13 3.17a24.8 24.8 0 01.86 11.57c-3 19.35-9.67 36.3-16.74 54.16-3.08 7.78-6.27 15.82-9.22 24.27-6.14 17.56-4.3 35.2 5.05 48.38z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiThumbsDownIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiThumbsDownIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

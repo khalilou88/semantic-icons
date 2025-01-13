@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -17,19 +14,22 @@ import {
       d="m9.6 5.2 2-2.67c.2-.27.6-.27.8 0l2 2.67a.5.5 0 0 1-.4.8h-1v4.17l-2-2V6h-1a.5.5 0 0 1-.4-.8zm5.9 6.8h.5v1.17l1.77 1.77c.14-.28.23-.6.23-.94v-2h.5c.28 0 .5-.22.5-.5v-3c0-.28-.22-.5-.5-.5h-3c-.28 0-.5.22-.5.5v3c0 .28.22.5.5.5zm4.99 9.9a.996.996 0 0 1-1.41 0l-5.9-5.9H13v2.28c.6.34 1 .98 1 1.72 0 1.2-1.07 2.16-2.31 1.98-.88-.13-1.59-.88-1.68-1.77-.08-.83.33-1.55.99-1.93V16H8c-1.1 0-2-.9-2-2v-2.28c-.6-.34-1-.98-1-1.72 0-.59.26-1.13.68-1.5L2.1 4.93a.996.996 0 1 1 1.41-1.41l16.97 16.97c.4.39.4 1.02.01 1.41zM11 13.83l-2.51-2.51c-.14.16-.31.29-.49.4V14h3v-.17z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiUsbOffIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiUsbOffIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
 }

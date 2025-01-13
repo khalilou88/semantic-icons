@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -339,17 +336,16 @@ import {
       d="M161.4 339.8c10.8 1.3 25.7.4 32.2 0m-48.4-36.7c9 7.2 28.9 11.4 28.6 11.4m11.3 2c-2.9-15-6.1-18.5-8.7-28m-46.5-16.9c15.3 6.9 17.6 11.4 27.3 18.2m5.5-15c1.3-18.4 4-23.3 8.5-27.5m-41.3-2.3a2102 2102 0 0 0 23.7 25.3m-7.4-42.2c6.8 4.9 6.8 22.4 6.8 22.4"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiSmFlagIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiSmFlagIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

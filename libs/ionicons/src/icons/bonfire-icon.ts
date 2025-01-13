@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -20,17 +17,16 @@ import {
       d="M139.82 156.57c12.22-15.76 27-29.68 41.37-43.15 19.92-18.72 37.81-35.58 46.5-53.86-12.24-7.37-27.36-11.36-46.51-11.36-17.79 0-20.39 5.18-20.39 19.06 0 12.56-6.53 20.54-14.34 30.65C137.8 109.1 128 121.77 128 140.84c0 10.23 1.29 18.77 4.2 26.37q3.5-5.32 7.62-10.64zM330.34 239.74c-9.33 5.92-19 11.16-29.25 16.71-28.91 15.68-56.21 30.48-68.88 56.28a62.6 62.6 0 01-1.88 3.61 8 8 0 003.89 11.3c12.31 5.1 25.13 8.27 38.91 8.27a111.42 111.42 0 0078.24-31.37A107.45 107.45 0 00384 226.85a86.56 86.56 0 00-1.33-15 8 8 0 00-13.8-4c-10.18 11.47-22.93 22-38.53 31.89z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBonfireIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiBonfireIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

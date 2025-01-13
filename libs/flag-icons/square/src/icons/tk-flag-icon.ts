@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -23,17 +20,16 @@ import {
       d="m105.5 116.6-4 12.1 10.4-7.5 10.3 7.5-4-12.1 10.4-7.5h-12.8l-3.9-12.2-4 12.2H95.2zm77.8 57.1 8.6-6.2h-10.6l-3.3-10.1-3.3 10.1h-10.6l8.6 6.2-3.3 10.1 8.6-6.2 8.6 6.2zm-144.7 13-3.9-12.1-4 12.1H18l10.3 7.5-4 12.1 10.4-7.5 10.3 7.5-3.9-12.1 10.3-7.5zm77.9 121.9-4.6-14.2-4.6 14.2H92.4l12 8.7-4.6 14.2 12.1-8.8 12 8.8-4.6-14.2 12-8.7z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiTkFlagIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiTkFlagIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

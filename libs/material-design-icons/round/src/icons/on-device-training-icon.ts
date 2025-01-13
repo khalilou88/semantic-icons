@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -23,19 +20,22 @@ import {
       d="M15.33 15.27c.36.36.99.26 1.21-.2.29-.63.46-1.33.46-2.07s-.17-1.44-.46-2.07a.748.748 0 0 0-1.21-.2.75.75 0 0 0-.15.84c.2.44.31.92.31 1.43s-.11.99-.31 1.43c-.12.29-.07.62.15.84zm-6.66 0a.75.75 0 0 0 .15-.84c-.21-.44-.32-.92-.32-1.43 0-1.93 1.57-3.5 3.5-3.5v.69c0 .22.25.33.42.19l1.62-1.44c.11-.1.11-.27 0-.37l-1.62-1.44c-.17-.15-.42-.04-.42.18V8c-2.76 0-5 2.24-5 5 0 .74.17 1.44.46 2.07.22.47.84.57 1.21.2z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiOnDeviceTrainingIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiOnDeviceTrainingIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
 }

@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -26,17 +23,16 @@ import {
       d="M372.5 446.18c-32.5 0-60.13-9-82.24-26.89-44.42-35.79-49.4-94.08-49.62-96.54a15.27 15.27 0 0130.45-2.36c.11.86 4.55 48.54 38.79 76 20.26 16.18 47.34 22.6 80.71 18.85a15.2 15.2 0 0116.91 13.18 14.92 14.92 0 01-13.44 16.5 187 187 0 01-21.56 1.26zM398.18 48.79C385.5 40.54 340.54 16 256 16c-88.74 0-133.81 27.11-143.78 34a11.59 11.59 0 00-1.84 1.4.36.36 0 01-.22.1 14.87 14.87 0 00-5.09 11.15 15.06 15.06 0 0015.31 14.85 15.56 15.56 0 008.88-2.79c.43-.32 39.22-28.82 126.77-28.82S382.58 74.29 383 74.5a15.25 15.25 0 009.21 3 15.06 15.06 0 0015.29-14.89 14.9 14.9 0 00-9.32-13.82z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiFingerPrintIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiFingerPrintIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -22,20 +19,25 @@ import {
       d="M21.9852 13.2357c-.0506-.0587-.1329-.1058-.2258-.1441-.0959-.0396-.2151-.0746-.3508-.1035-.2719-.0579-.6185-.093-.9967-.0876-.7541.0108-1.6508.183-2.3341.6748-.1118.0805-.1949.1945-.1751.3147.0225.1362.1551.1917.2864.1917l.0241-.003c.375-.0465.9652-.1198 1.5-.134.2706-.0072.5225.0009.7232.0339.1003.0164.1845.0386.2506.0663.0667.028.1084.0591.1318.0896l.001.0013c.0211.0266.0396.072.0489.1434.0092.0704.0085.1579-.0018.2604-.0204.2049-.0773.456-.1527.723-.1173.4156-.2758.8577-.4014 1.2081-.0355.0991-.0684.1909-.097.2727-.0253.0645-.0344.13-.0204.1901.0147.063.0538.1145.1113.143.1108.0549.2469.0095.3548-.0833.6431-.5509 1.0488-1.3947 1.2591-2.1349.1055-.3712.1632-.7208.1764-1.0006.0065-.1398.0021-.2647-.0141-.3675-.0155-.099-.0442-.1922-.0977-.2545Z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiAwsIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiAwsIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'none');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('none');
 }

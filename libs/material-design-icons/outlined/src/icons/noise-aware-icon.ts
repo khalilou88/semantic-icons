@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -21,19 +18,22 @@ import {
       d="m3.6 6.58 1.58 1.26c.35-.57.77-1.1 1.24-1.57L4.85 5.02c-.47.47-.88 1-1.25 1.56zm5.86-2.16-.87-1.81c-.63.23-1.24.52-1.8.87l.87 1.81c.56-.36 1.16-.65 1.8-.87zM4.49 9.26l-1.96-.45c-.21.63-.36 1.28-.44 1.95l1.96.45a7.9 7.9 0 0 1 .44-1.95zM20.4 6.58a9.4 9.4 0 0 0-1.25-1.56l-1.58 1.26c.48.47.89.99 1.24 1.57l1.59-1.27zM4.04 12.79l-1.96.45c.08.67.23 1.33.44 1.95l1.97-.45c-.22-.62-.38-1.27-.45-1.95zm13.17-9.31c-.57-.35-1.17-.64-1.8-.87l-.87 1.81c.64.22 1.24.51 1.8.87l.87-1.81zM13 4.07V2.05c-.33-.03-.66-.05-1-.05s-.67.02-1 .05v2.02c.33-.04.66-.07 1-.07s.67.03 1 .07zm-2 15.86v2.02c.33.03.66.05 1 .05s.67-.02 1-.05v-2.02c-.33.04-.66.07-1 .07s-.67-.03-1-.07zm8.51-5.19 1.97.45c.21-.63.36-1.28.44-1.95l-1.96-.45c-.07.68-.23 1.33-.45 1.95zm.45-3.53 1.96-.45a9.69 9.69 0 0 0-.44-1.95l-1.97.45c.22.62.38 1.27.45 1.95zm-2.38 6.52 1.58 1.26c.47-.48.88-1 1.25-1.56l-1.58-1.26a9.4 9.4 0 0 1-1.25 1.56zM6.79 20.52c.57.35 1.17.64 1.8.87l.87-1.81c-.64-.22-1.24-.51-1.8-.87l-.87 1.81zm7.75-.94.87 1.81c.63-.23 1.24-.52 1.8-.87l-.87-1.81c-.56.36-1.16.65-1.8.87zM3.6 17.42a9.4 9.4 0 0 0 1.25 1.56l1.58-1.26a7.87 7.87 0 0 1-1.24-1.57L3.6 17.42z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiNoiseAwareIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiNoiseAwareIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
 }

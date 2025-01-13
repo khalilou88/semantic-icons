@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -41,17 +38,16 @@ import {
       d="M253 108.7s2 3.2-2.2 10.7c-19.9 35.7-39.7 36.5-43.5 39.5-4.2 3.4-6 3.2-6 3.2.4-3 .6-15.6.8-16.8 3-16.6 28.3-16.4 48-33.5 3-2.7 2.8-3.2 2.8-3.2zm-66.6 76.8s4.5 12.7 5.1 25.6c1.1 20.4 20.7 21 34.1 21v-11.4c-10 0-18.9-1.4-26.1-16.5a130.8 130.8 0 0 0-13.1-18.7m-.6 165s7.2-9 15.6-29.6a27 27 0 0 1 24.2-17.1v-16c-21.6 0-32 8-33 19.9-2.4 24-6.8 42.7-6.8 42.7zm79.2-165s-4.6 12.7-5.2 25.6c-1.1 20.5-20.7 21-34.1 21v-11.3c10.1 0 18.9-1.5 26.2-16.5 3.8-6.7 8.2-13 13-18.8zm.5 165s-7.1-8.9-15.6-29.6a27 27 0 0 0-24.2-17v-16c21.6 0 32 8 33.1 19.8a351 351 0 0 0 6.7 42.8"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiNcFlagIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiNcFlagIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }

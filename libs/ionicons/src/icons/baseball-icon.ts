@@ -1,11 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -20,17 +17,16 @@ import {
       d="M301.49 56.2A14 14 0 01287.5 70h-.25l-16.81-.3c.05 1.31.1 2.62.17 3.93a178.83 178.83 0 003.44 26.31l16.29-4.74a14 14 0 017.81 26.8l-16.27 4.73a178.06 178.06 0 0013.33 27.69l13.84-9.78a14 14 0 1116.16 22.87l-13.86 9.79q5.25 6.33 11.12 12.19c3.9 3.91 8 7.6 12.2 11.1l9.78-13.84A14 14 0 11367.32 203l-9.76 13.8a178.83 178.83 0 0027.68 13.33l4.76-16.28a14 14 0 0126.89 7.81l-4.73 16.26a177.72 177.72 0 0030.95 3.65l-.16-9a14 14 0 0113.75-14.24h.25a14.67 14.67 0 012.59.25 208 208 0 00-158-163.51c-.06.4-.04.76-.05 1.13zM208.44 457.55a16 16 0 0116.28-15.71l16.76.29a178.49 178.49 0 00-3.62-29.95l-16.26 4.72a14 14 0 11-7.81-26.9l16.21-4.7a177.92 177.92 0 00-13.33-27.68l-13.8 9.76a14 14 0 11-16.16-22.87l13.84-9.78c-3.5-4.22-7.19-8.3-11.1-12.2s-8-7.62-12.19-11.12l-9.79 13.86a14 14 0 11-22.87-16.16l9.78-13.84a177.16 177.16 0 00-27.69-13.33L122 298.21a14 14 0 11-26.9-7.81l4.73-16.29a177.32 177.32 0 00-26.31-3.44c-.89-.05-1.79-.08-2.68-.12l.16 10.59a16 16 0 01-15.71 16.28H55a16 16 0 01-3.94-.51 208 208 0 00157.65 163.87 15.72 15.72 0 01-.27-3.23z"
     />
   `,
+  host: {
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBaseballIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiBaseballIcon {
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'viewBox', '0 0 512 512');
-  }
+  readonly viewBox = input<string>('0 0 512 512');
 }
