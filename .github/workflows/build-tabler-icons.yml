@@ -28,5 +28,5 @@ jobs:
         shell: bash
 
       - name: Build tabler-icons
-        run: npx nx run tabler-icons:build:production
+        run: npx nx run tabler-icons:build:production --skip-nx-cache
         shell: bash
