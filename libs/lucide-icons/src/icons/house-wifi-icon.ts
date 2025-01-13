@@ -6,19 +6,16 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-rat-icon]',
+  selector: 'svg[si-house-wifi-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M13 22H4a2 2 0 0 1 0-4h12" />
-    <svg:path d="M13.236 18a3 3 0 0 0-2.2-5" />
-    <svg:path d="M16 9h.01" />
+    <svg:path d="M9.5 13.866a4 4 0 0 1 5 .01" />
+    <svg:path d="M12 17h.01" />
     <svg:path
-      d="M16.82 3.94a3 3 0 1 1 3.237 4.868l1.815 2.587a1.5 1.5 0 0 1-1.5 2.1l-2.872-.453a3 3 0 0 0-3.5 3"
+      d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
     />
-    <svg:path
-      d="M17 4.988a3 3 0 1 0-5.2 2.052A7 7 0 0 0 4 14.015 4 4 0 0 0 8 18"
-    />
+    <svg:path d="M7 10.754a8 8 0 0 1 10 0" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -35,7 +32,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiRatIcon {
+export class SiHouseWifiIcon {
   readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
