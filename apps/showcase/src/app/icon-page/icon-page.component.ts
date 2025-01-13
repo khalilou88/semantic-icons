@@ -7,7 +7,7 @@ import {
 // import { SvgBalloonIcon } from '@semantic-icons/bootstrap-icons';
 // import { SvgFrFlagIcon } from '@semantic-icons/circle-flags';
 // import { SvgMaFlagIcon } from '@semantic-icons/flag-icons/square';
-import { SiBellIcon } from '@semantic-icons/flowbite-icons/solid';
+// import { SiBellIcon } from '@semantic-icons/flowbite-icons/solid';
 import { SiBirdIcon } from '@semantic-icons/lucide-icons';
 
 // import { SvgTrophy1Icon } from '@semantic-icons/lineicons';
@@ -17,7 +17,7 @@ import { SiBirdIcon } from '@semantic-icons/lucide-icons';
   standalone: true,
   imports: [
     SiBirdIcon,
-    SiBellIcon,
+    // SiBellIcon,
     // SvgMaFlagIcon,
     // SvgBalloonIcon,
     // SvgTrophy1Icon,
@@ -26,11 +26,10 @@ import { SiBirdIcon } from '@semantic-icons/lucide-icons';
   template: `
     <div class="m-10">
       <svg class="size-6 text-blue-500" si-bird-icon></svg>
-      <svg class="size-6 text-blue-500" si-bell-icon></svg>
     </div>
 
     <!--
-
+    <svg class="size-6 text-blue-500" si-bell-icon></svg>
     <svg-ma-flag-icon class="size-36" />
     <svg-balloon-icon class="text-blue-500 size-6" />
     <svg-trophy-1-icon class="text-blue-500 size-6" />
