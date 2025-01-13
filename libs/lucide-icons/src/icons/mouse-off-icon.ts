@@ -31,19 +31,19 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiMouseOffIcon {
-  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
-  readonly width = input('24');
+  readonly width = input<string | number>('24');
 
-  readonly height = input('24');
+  readonly height = input<string | number>('24');
 
-  readonly viewBox = input('0 0 24 24');
+  readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input('none');
+  readonly fill = input<string>('none');
 
-  readonly stroke = input('currentColor');
+  readonly stroke = input<string>('currentColor');
 
-  readonly strokeWidth = input<string>('2', {
+  readonly strokeWidth = input<string | number>('2', {
     alias: 'stroke-width',
   });
 
