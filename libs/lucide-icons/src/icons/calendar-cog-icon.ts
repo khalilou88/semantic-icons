@@ -26,21 +26,13 @@ import {
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
-
     '[attr.width]': 'width()',
-
     '[attr.height]': 'height()',
-
     '[attr.viewBox]': 'viewBox()',
-
     '[attr.fill]': 'fill()',
-
     '[attr.stroke]': 'stroke()',
-
     '[attr.stroke-width]': 'strokeWidth()',
-
     '[attr.stroke-linecap]': 'strokeLinecap()',
-
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
   styles: ``,
