@@ -1,8 +1,11 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
   ViewEncapsulation,
-  input,
+  inject,
 } from '@angular/core';
 
 @Component({
@@ -15,25 +18,20 @@ import {
       d="M14 7a1 1 0 0 1 .832 .445l1.702 2.555h5.466a1 1 0 0 1 .833 1.554l-3.1 4.66a4 4 0 0 1 -3.333 1.786h-14.4a1 1 0 0 1 -.936 -1.351l1.5 -4a1 1 0 0 1 .936 -.649h1.756l.9 -3h-.156a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 1 -1zm-6.657 5h1.887c.383 0 .762 -.074 1.12 -.219l3.557 -1.418q .186 -.075 .377 -.135l-.82 -1.228h-5.22z"
     />
   `,
-  host: {
-    '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.fill]': 'fill()',
-  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiSpeedboatIcon {
-  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
+export class SiSpeedboatIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
 
-  readonly width = input<string | number>('24');
-
-  readonly height = input<string | number>('24');
-
-  readonly viewBox = input<string>('0 0 24 24');
-
-  readonly fill = input<string>('currentColor');
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'width', '24');
+    this.render.setAttribute(svg, 'height', '24');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+    this.render.setAttribute(svg, 'fill', 'currentColor');
+  }
 }

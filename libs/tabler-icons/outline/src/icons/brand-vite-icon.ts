@@ -1,8 +1,11 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
   ViewEncapsulation,
-  input,
+  inject,
 } from '@angular/core';
 
 @Component({
@@ -14,43 +17,24 @@ import {
     <svg:path d="M10 4.5l6 -1.5l-2 6.5l2 -.5l-4 7v-5l-3 1z" />
     <svg:path d="M15 6.5l7 -1.5l-10 17l-10 -17l7.741 1.5" />
   `,
-  host: {
-    '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.fill]': 'fill()',
-    '[attr.stroke]': 'stroke()',
-    '[attr.stroke-width]': 'strokeWidth()',
-    '[attr.stroke-linecap]': 'strokeLinecap()',
-    '[attr.stroke-linejoin]': 'strokeLinejoin()',
-  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBrandViteIcon {
-  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
+export class SiBrandViteIcon implements OnInit {
+  private readonly elementRef = inject(ElementRef);
+  private readonly render = inject(Renderer2);
 
-  readonly width = input<string | number>('24');
-
-  readonly height = input<string | number>('24');
-
-  readonly viewBox = input<string>('0 0 24 24');
-
-  readonly fill = input<string>('none');
-
-  readonly stroke = input<string>('currentColor');
-
-  readonly strokeWidth = input<string | number>('2', {
-    alias: 'stroke-width',
-  });
-
-  readonly strokeLinecap = input<string>('round', {
-    alias: 'stroke-linecap',
-  });
-
-  readonly strokeLinejoin = input<string>('round', {
-    alias: 'stroke-linejoin',
-  });
+  ngOnInit(): void {
+    const svg = this.elementRef.nativeElement;
+    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
+    this.render.setAttribute(svg, 'width', '24');
+    this.render.setAttribute(svg, 'height', '24');
+    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
+    this.render.setAttribute(svg, 'fill', 'none');
+    this.render.setAttribute(svg, 'stroke', 'currentColor');
+    this.render.setAttribute(svg, 'stroke-width', '2');
+    this.render.setAttribute(svg, 'stroke-linecap', 'round');
+    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
+  }
 }
