@@ -84,9 +84,6 @@
       "@semantic-icons/simple-icons": ["libs/simple-icons/src/index.ts"],
       "@semantic-icons/tabler-icons/filled": [
         "libs/tabler-icons/filled/src/index.ts"
-      ],
-      "@semantic-icons/tabler-icons/outline": [
-        "libs/tabler-icons/outline/src/index.ts"
       ]
     }
   },
