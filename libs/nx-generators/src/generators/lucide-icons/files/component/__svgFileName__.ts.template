@@ -45,30 +45,30 @@ import {
 })
 export class <%= svgClassName %> {
 
-  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
 
   <% if(width) { -%>
-    readonly width = input('<%= width %>');
+    readonly width = input<string | number>('<%= width %>');
   <% } -%>
 
   <% if(height) { -%>
-      readonly height = input('<%= height %>');
+      readonly height = input<string | number>('<%= height %>');
   <% } -%>
 
   <% if(viewBox) { -%>
-    readonly viewBox = input('<%= viewBox %>');
+    readonly viewBox = input<string>('<%= viewBox %>');
   <% } -%>
 
   <% if(fill) { -%>
-    readonly fill = input('<%= fill %>');
+    readonly fill = input<string>('<%= fill %>');
   <% } -%>
 
   <% if(stroke) { -%>
-    readonly stroke = input('<%= stroke %>');
+    readonly stroke = input<string>('<%= stroke %>');
   <% } -%>
 
   <% if(strokeWidth) { -%>
-    readonly strokeWidth = input<string>('<%= strokeWidth %>', {
+    readonly strokeWidth = input<string | number>('<%= strokeWidth %>', {
       alias: 'stroke-width',
     });
   <% } -%>
