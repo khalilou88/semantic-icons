@@ -69,20 +69,20 @@ export class <%= svgClassName %> {
 
   <% if(strokeWidth) { -%>
     readonly strokeWidth = input<string>('<%= strokeWidth %>', {
-    alias: 'stroke-width',
-  });
+      alias: 'stroke-width',
+    });
   <% } -%>
 
   <% if(strokeLinecap) { -%>
     readonly strokeLinecap = input<string>('<%= strokeLinecap %>', {
-    alias: 'stroke-linecap',
-  });
+      alias: 'stroke-linecap',
+    });
   <% } -%>
 
   <% if(strokeLinejoin) { -%>
     readonly strokeLinejoin = input<string>('<%= strokeLinejoin %>', {
-    alias: 'stroke-linejoin',
-  });
+      alias: 'stroke-linejoin',
+    });
   <% } -%>
 
 }
