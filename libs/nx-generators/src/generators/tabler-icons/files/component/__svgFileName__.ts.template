@@ -68,10 +68,10 @@ export class <%= svgClassName %> implements OnInit {
     const svg = this.elementRef.nativeElement;
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
     <% if(width) { -%>
-      this.render.setAttribute(svg, 'width', this.width());
+      this.render.setAttribute(svg, 'width', this.width().toString());
     <% } -%>
     <% if(height) { -%>
-      this.render.setAttribute(svg, 'height', this.height());
+      this.render.setAttribute(svg, 'height', this.height().toString());
     <% } -%>
     <% if(viewBox) { -%>
       this.render.setAttribute(svg, 'viewBox', this.viewBox());
@@ -83,7 +83,7 @@ export class <%= svgClassName %> implements OnInit {
       this.render.setAttribute(svg, 'stroke', this.stroke());
     <% } -%>
     <% if(strokeWidth) { -%>
-      this.render.setAttribute(svg, 'stroke-width', this.strokeWidth());
+      this.render.setAttribute(svg, 'stroke-width', this.strokeWidth().toString());
     <% } -%>
     <% if(strokeLinecap) { -%>
       this.render.setAttribute(svg, 'stroke-linecap', this.strokeLinecap());
