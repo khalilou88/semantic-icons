@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -23,32 +24,72 @@ export class <%= svgClassName %> implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
+
+  <% if(width) { -%>
+    readonly width = input<string | number>('<%= width %>');
+  <% } -%>
+
+  <% if(height) { -%>
+      readonly height = input<string | number>('<%= height %>');
+  <% } -%>
+
+  <% if(viewBox) { -%>
+    readonly viewBox = input<string>('<%= viewBox %>');
+  <% } -%>
+
+  <% if(fill) { -%>
+    readonly fill = input<string>('<%= fill %>');
+  <% } -%>
+
+  <% if(stroke) { -%>
+    readonly stroke = input<string>('<%= stroke %>');
+  <% } -%>
+
+  <% if(strokeWidth) { -%>
+    readonly strokeWidth = input<string | number>('<%= strokeWidth %>', {
+      alias: 'stroke-width',
+    });
+  <% } -%>
+
+  <% if(strokeLinecap) { -%>
+    readonly strokeLinecap = input<string>('<%= strokeLinecap %>', {
+      alias: 'stroke-linecap',
+    });
+  <% } -%>
+
+  <% if(strokeLinejoin) { -%>
+    readonly strokeLinejoin = input<string>('<%= strokeLinejoin %>', {
+      alias: 'stroke-linejoin',
+    });
+  <% } -%>
+
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
     <% if(width) { -%>
-      this.render.setAttribute(svg, 'width', '<%= width %>');
+      this.render.setAttribute(svg, 'width', this.width());
     <% } -%>
     <% if(height) { -%>
-      this.render.setAttribute(svg, 'height', '<%= height %>');
+      this.render.setAttribute(svg, 'height', this.height());
     <% } -%>
     <% if(viewBox) { -%>
-      this.render.setAttribute(svg, 'viewBox', '<%= viewBox %>');
+      this.render.setAttribute(svg, 'viewBox', this.viewBox());
     <% } -%>
     <% if(fill) { -%>
-      this.render.setAttribute(svg, 'fill', '<%= fill %>');
+      this.render.setAttribute(svg, 'fill', this.fill());
     <% } -%>
     <% if(stroke) { -%>
-      this.render.setAttribute(svg, 'stroke', '<%= stroke %>');
+      this.render.setAttribute(svg, 'stroke', this.stroke());
     <% } -%>
     <% if(strokeWidth) { -%>
-      this.render.setAttribute(svg, 'stroke-width', '<%= strokeWidth %>');
+      this.render.setAttribute(svg, 'stroke-width', this.strokeWidth());
     <% } -%>
     <% if(strokeLinecap) { -%>
-      this.render.setAttribute(svg, 'stroke-linecap', '<%= strokeLinecap %>');
+      this.render.setAttribute(svg, 'stroke-linecap', this.strokeLinecap());
     <% } -%>
     <% if(strokeLinejoin) { -%>
-      this.render.setAttribute(svg, 'stroke-linejoin', '<%= strokeLinejoin %>');
+      this.render.setAttribute(svg, 'stroke-linejoin', this.strokeLinejoin());
     <% } -%>
   }
 }
