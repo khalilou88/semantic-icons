@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewEncapsulation,
   inject,
+  input,
 } from '@angular/core';
 
 @Component({
@@ -28,16 +29,40 @@ export class SiFileXIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
+  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
+
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('none');
+
+  readonly stroke = input<string>('currentColor');
+
+  readonly strokeWidth = input<string | number>('2', {
+    alias: 'stroke-width',
+  });
+
+  readonly strokeLinecap = input<string>('round', {
+    alias: 'stroke-linecap',
+  });
+
+  readonly strokeLinejoin = input<string>('round', {
+    alias: 'stroke-linejoin',
+  });
+
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'none');
-    this.render.setAttribute(svg, 'stroke', 'currentColor');
-    this.render.setAttribute(svg, 'stroke-width', '2');
-    this.render.setAttribute(svg, 'stroke-linecap', 'round');
-    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
+    this.render.setAttribute(svg, 'width', this.width());
+    this.render.setAttribute(svg, 'height', this.height());
+    this.render.setAttribute(svg, 'viewBox', this.viewBox());
+    this.render.setAttribute(svg, 'fill', this.fill());
+    this.render.setAttribute(svg, 'stroke', this.stroke());
+    this.render.setAttribute(svg, 'stroke-width', this.strokeWidth());
+    this.render.setAttribute(svg, 'stroke-linecap', this.strokeLinecap());
+    this.render.setAttribute(svg, 'stroke-linejoin', this.strokeLinejoin());
   }
 }
