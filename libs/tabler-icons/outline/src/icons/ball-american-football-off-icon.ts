@@ -59,12 +59,16 @@ export class SiBallAmericanFootballOffIcon implements OnInit {
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', this.width());
-    this.render.setAttribute(svg, 'height', this.height());
+    this.render.setAttribute(svg, 'width', this.width().toString());
+    this.render.setAttribute(svg, 'height', this.height().toString());
     this.render.setAttribute(svg, 'viewBox', this.viewBox());
     this.render.setAttribute(svg, 'fill', this.fill());
     this.render.setAttribute(svg, 'stroke', this.stroke());
-    this.render.setAttribute(svg, 'stroke-width', this.strokeWidth());
+    this.render.setAttribute(
+      svg,
+      'stroke-width',
+      this.strokeWidth().toString(),
+    );
     this.render.setAttribute(svg, 'stroke-linecap', this.strokeLinecap());
     this.render.setAttribute(svg, 'stroke-linejoin', this.strokeLinejoin());
   }

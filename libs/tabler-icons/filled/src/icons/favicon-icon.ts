@@ -41,8 +41,8 @@ export class SiFaviconIcon implements OnInit {
   ngOnInit(): void {
     const svg = this.elementRef.nativeElement;
     this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', this.width());
-    this.render.setAttribute(svg, 'height', this.height());
+    this.render.setAttribute(svg, 'width', this.width().toString());
+    this.render.setAttribute(svg, 'height', this.height().toString());
     this.render.setAttribute(svg, 'viewBox', this.viewBox());
     this.render.setAttribute(svg, 'fill', this.fill());
   }
