@@ -1,6 +1,6 @@
 {
   "name": "@semantic-icons/nx-generators",
-  "version": "0.35.0",
+  "version": "0.36.0",
   "dependencies": {
     "@nx/devkit": "^20.1.2",
     "tslib": "^2.3.0",
