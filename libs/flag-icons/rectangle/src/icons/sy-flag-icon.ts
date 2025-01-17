@@ -10,12 +10,12 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path fill="#000001" d="M0 0h640v480H0Z" />
+    <svg:path d="M0 0h640v480H0Z" />
     <svg:path fill="#fff" d="M0 0h640v320H0Z" />
-    <svg:path fill="#ce1126" d="M0 0h640v160H0Z" />
+    <svg:path fill="#007a3d" d="M0 0h640v160H0Z" />
     <svg:path
-      fill="#007a3d"
-      d="m161 300 39-120 39 120-102-74.2h126M401 300l39-120 39 120-102-74.2h126"
+      fill="#ce1126"
+      d="m101 300 39-120 39 120-102-74.2h126M461 300l39-120 39 120-102-74.2h126M281 300l39-120 39 120-102.1-74.2h126.2"
     />
   `,
   host: {

@@ -15,7 +15,7 @@ import {
         <svg:path d="M0 0h200v608h8v284l-8 8H0z" />
       </svg:clipPath>
     </svg:defs>
-    <svg:path fill="#ce1720" stroke-width="2.07364" d="M0 0h640v480H0Z" />
+    <svg:path fill="#ce1720" d="M0 0h640v480H0Z" />
     <svg:g
       fill="#fff"
       clip-path="url(#by-a)"
@@ -36,7 +36,7 @@ import {
         d="M-8 408H8v14h7v8h8v14h7v12h-7v14h-8v8H8v14H-8Zm216 0v84h-16v-14h-7v-8h-8v-14h-7v-12h7v-14h8v-8h7v-14ZM62 459h8v-18h-8zm76 0v-18h-8v18zm-42-59h8v-18h-8zm0 100v18h8v-18Zm-50-75h14v-11h10v-10h5v-10h6v-14h8v-14h4v-13h14v13h4v14h8v14h6v10h5v10h10v11h14v50h-14v11h-10v10h-5v10h-6v14h-8v14h-4v13H93v-13h-4v-14h-8v-14h-6v-10h-5v-10H60v-11H46Zm50 9v-15h-8v-10h-8v25h8v9h5v14h-5v9h-8v25h8v-10h8v-15h8v15h8v10h8v-25h-8v-9h-5v-14h5v-9h8v-25h-8v10h-8v15z"
       />
     </svg:g>
-    <svg:path fill="#007c30" stroke-width="2.00749" d="M110 320h530v160H110Z" />
+    <svg:path fill="#007c30" d="M110 320h530v160H110Z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
