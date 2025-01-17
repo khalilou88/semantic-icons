@@ -3,6 +3,7 @@ import {
   Component,
   ViewEncapsulation,
   input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -47,7 +48,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiUsMoFlagIcon {
-  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('512');
 

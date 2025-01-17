@@ -3,6 +3,7 @@ import {
   Component,
   ViewEncapsulation,
   input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -141,7 +142,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiBrFlagIcon {
-  readonly xmlns = input<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly viewBox = input<string>('0 0 512 512');
 }
