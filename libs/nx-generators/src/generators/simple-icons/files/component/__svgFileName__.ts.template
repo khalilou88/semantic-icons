@@ -47,7 +47,7 @@ import {
 })
 export class <%= svgClassName %> {
 
-  private readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   <% if(width) { -%>
     readonly width = input<string | number>('<%= width %>');
