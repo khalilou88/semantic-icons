@@ -2,6 +2,12 @@
 
 A collection of free and open source icons ready for use in your angular projects.
 
+### Features
+
+- Easy integration with Angular projects
+- Customizable icon styling (size, color, etc.)
+- Tree-shakeable for optimal bundle size
+
 ### Angular libraries
 
 [`@semantic-icons/heroicons`](libs/heroicons)\
