@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-nexon-icon]',
+  selector: 'svg[si-ultralytics-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:title>NEXON</svg:title>
+    <svg:title>Ultralytics</svg:title>
     <svg:path
-      d="M10.714 15.358V0L0 5.697v15.358L13.29 24 24 18.303zm-9.495-1.219 7.291 1.568-7.291 3.832zm11.895 8.578L2.35 20.327l7.454-3.926 10.846 2.406z"
+      d="m12.736 7.341-.002 2.897c.012 3.953-3.188 7.177-7.098 7.171-1.553-.003-2.967-.48-4.112-1.313 2.056 3.725 5.999 6.24 10.48 6.245 6.511-.003 11.891-5.343 11.992-11.91l-.002-.027c.006-.151 0-2.951.006-3.075-.01-3.116-2.538-5.677-5.63-5.67-3.105-.006-5.645 2.54-5.634 5.683zM5.629 4.573C2.525 4.573 0 7.118 0 10.246s2.525 5.673 5.63 5.673c3.103 0 5.629-2.545 5.629-5.673s-2.526-5.673-5.63-5.673"
     />
   `,
   host: {
@@ -26,10 +26,10 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiNexonIcon {
+export class SiUltralyticsIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#000000');
+  readonly fill = input<string>('#111F68');
 }

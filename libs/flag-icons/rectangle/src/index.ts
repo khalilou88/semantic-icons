@@ -10,6 +10,7 @@ export * from './icons/aq-flag-icon';
 export * from './icons/ar-flag-icon';
 export * from './icons/arab-flag-icon';
 export * from './icons/as-flag-icon';
+export * from './icons/asean-flag-icon';
 export * from './icons/at-flag-icon';
 export * from './icons/au-flag-icon';
 export * from './icons/aw-flag-icon';
