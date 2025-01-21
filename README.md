@@ -5,8 +5,10 @@ A collection of free and open source icons ready for use in your angular project
 ### Features
 
 - Easy integration with Angular projects
-- Customizable icon styling (size, color, etc.)
+- No extra components or services required
 - Tree-shakeable for optimal bundle size
+- Easy to customize with CSS or inputs (size, color, etc.)
+- Accessible by default
 
 ### Angular libraries
 
