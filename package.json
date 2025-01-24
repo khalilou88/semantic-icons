@@ -35,7 +35,7 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.18.0",
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "@material-design-icons/svg": "0.14.13",
+    "@material-design-icons/svg": "0.14.14",
     "@nx/angular": "20.3.3",
     "@nx/devkit": "20.3.3",
     "@nx/eslint": "20.3.3",
