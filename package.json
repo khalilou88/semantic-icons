@@ -65,7 +65,7 @@
     "circle-flags": "1.0.1",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-playwright": "^2.1.0",
+    "eslint-plugin-playwright": "^2.2.0",
     "feather-icons": "4.29.2",
     "flag-icons": "7.3.2",
     "flowbite-icons": "1.3.0",
