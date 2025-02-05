@@ -11,7 +11,13 @@ export default async function runExecutor(
   logger.info('Copy License');
   const src = path.join(workspaceRoot, 'LICENSE');
 
-  const dest = path.join(workspaceRoot, 'dist', 'libs', context.projectName);
+  const dest = path.join(
+    workspaceRoot,
+    'dist',
+    'libs',
+    context.projectName,
+    'LICENSE',
+  );
 
   let success = true;
   try {
