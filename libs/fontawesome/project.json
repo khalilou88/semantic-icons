@@ -29,5 +29,6 @@
     "lint": {
       "executor": "@nx/eslint:lint"
     }
-  }
+  },
+  "implicitDependencies": ["nx-generators"]
 }
