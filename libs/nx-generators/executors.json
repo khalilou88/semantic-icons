@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "executors": {
+    "copy-license": {
+      "implementation": "./src/executors/copy-license/executor",
+      "schema": "./src/executors/copy-license/schema.json",
+      "description": "copy-license executor"
+    }
+  }
+}
