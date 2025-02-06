@@ -18,7 +18,7 @@
     "@angular/platform-browser": "19.1.4",
     "@angular/platform-browser-dynamic": "19.1.4",
     "@angular/router": "19.1.4",
-    "@semantic-components/utils": "0.22.0",
+    "@semantic-components/utils": "0.24.0",
     "clsx": "^2.1.1",
     "rxjs": "~7.8.1",
     "tailwind-merge": "^2.6.0",
