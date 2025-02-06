@@ -33,6 +33,7 @@ import {
     '[attr.stroke-width]': 'strokeWidth()',
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
+    'data-slot': 'icon',
   },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
