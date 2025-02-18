@@ -3201,6 +3201,7 @@ export * from './icons/xrp-icon';
 export * from './icons/xsplit-icon';
 export * from './icons/xstate-icon';
 export * from './icons/xubuntu-icon';
+export * from './icons/xyflow-icon';
 export * from './icons/yabai-icon';
 export * from './icons/yale-icon';
 export * from './icons/yamahacorporation-icon';
