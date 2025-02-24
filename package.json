@@ -23,7 +23,7 @@
     "clsx": "^2.1.1",
     "rxjs": "~7.8.1",
     "tailwind": "^4.0.0",
-    "tailwind-merge": "^3.0.1",
+    "tailwind-merge": "^3.0.2",
     "zone.js": "0.15.0"
   },
   "devDependencies": {
