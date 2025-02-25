@@ -35,7 +35,7 @@
     "@angular/language-service": "19.1.5",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@eslint/js": "^9.20.0",
+    "@eslint/js": "^9.21.0",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@material-design-icons/svg": "0.14.15",
     "@nx/angular": "20.4.6",
