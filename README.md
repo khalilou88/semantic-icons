@@ -15,15 +15,15 @@ A collection of free and open-source icons, ready for seamless integration into 
 
 Semantic Icons provides a variety of icon sets to suit different design needs:
 
-- 📌 **@semantic-icons/heroicons** – Tailwind’s Heroicons, perfect for modern UIs.
-- 📌 **@semantic-icons/tabler-icons** – Clean, lightweight, and highly customizable icons.
-- 📌 **@semantic-icons/lucide-icons** – A beautiful open-source collection inspired by Feather Icons.
-- 📌 **@semantic-icons/bootstrap-icons** – The official Bootstrap icon set, great for Bootstrap-based projects.
-- 📌 **@semantic-icons/flowbite-icons** – Icons designed specifically for the Flowbite UI framework.
-- 📌 **@semantic-icons/lineicons** – Simple and elegant line icons.
-- 📌 **@semantic-icons/flag-icons** – A rich collection of country flags for international projects.
-- 📌 **@semantic-icons/circle-flags** – Circular flag icons, ideal for language or region selection.
-- 📌 **@semantic-icons/simple-icons** – Thousands of brand and social media icons.
+- 📌 [**@semantic-icons/heroicons**](libs/heroicons) – Tailwind’s Heroicons, perfect for modern UIs.
+- 📌 [**@semantic-icons/tabler-icons**](libs/tabler-icons) – Clean, lightweight, and highly customizable icons.
+- 📌 [**@semantic-icons/lucide-icons**](libs/lucide-icons) – A beautiful open-source collection inspired by Feather Icons.
+- 📌 [**@semantic-icons/bootstrap-icons**](libs/bootstrap-icons) – The official Bootstrap icon set, great for Bootstrap-based projects.
+- 📌 [**@semantic-icons/flowbite-icons**](libs/flowbite-icons) – Icons designed specifically for the Flowbite UI framework.
+- 📌 [**@semantic-icons/lineicons**](libs/lineicons) – Simple and elegant line icons.
+- 📌 [**@semantic-icons/flag-icons**](libs/flag-icons) – A rich collection of country flags for international projects.
+- 📌 [**@semantic-icons/circle-flags**](libs/circle-flags) – Circular flag icons, ideal for language or region selection.
+- 📌 [**@semantic-icons/simple-icons**](libs/simple-icons) – Thousands of brand and social media icons.
 
 ## **Why Choose Semantic Icons?**
 
