@@ -1,5 +1,7 @@
 # **Semantic Icons**
 
+<img src="./logo.svg">
+
 A collection of free and open-source icons, ready for seamless integration into your Angular projects.
 
 ## **Features**
