@@ -1,1 +1,1 @@
-export * from './lib/animated-icons/animated-icons.component';
+export * from './icons/alarm-clock-icon';

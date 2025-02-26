@@ -22,19 +22,21 @@ module.exports = [
   {
     files: ['**/*.ts'],
     rules: {
+      '@angular-eslint/no-input-rename': ['warn'],
+      '@angular-eslint/component-class-suffix': 'off',
       '@angular-eslint/directive-selector': [
-        'error',
+        'warn',
         {
           type: 'attribute',
-          prefix: 'lib',
+          prefix: 'si',
           style: 'camelCase',
         },
       ],
       '@angular-eslint/component-selector': [
-        'error',
+        'warn',
         {
           type: 'element',
-          prefix: 'lib',
+          prefix: 'si',
           style: 'kebab-case',
         },
       ],
@@ -44,5 +46,11 @@ module.exports = [
     files: ['**/*.html'],
     // Override or add rules here
     rules: {},
+  },
+  {
+    files: ['**/*.ts'],
+    rules: {
+      '@angular-eslint/prefer-standalone': 'off',
+    },
   },
 ];
