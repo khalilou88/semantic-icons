@@ -21,7 +21,7 @@
     "@semantic-components/utils": "^0.26.0",
     "@tailwindcss/postcss": "^4.0.9",
     "clsx": "^2.1.1",
-    "rxjs": "~7.8.1",
+    "rxjs": "~7.8.2",
     "tailwind": "^4.0.0",
     "tailwind-merge": "^3.0.2",
     "zone.js": "0.15.0"
