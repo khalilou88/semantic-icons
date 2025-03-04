@@ -3052,6 +3052,7 @@ export * from './icons/victronenergy-icon';
 export * from './icons/vim-icon';
 export * from './icons/vimeo-icon';
 export * from './icons/vimeolivestream-icon';
+export * from './icons/vinted-icon';
 export * from './icons/virgin-icon';
 export * from './icons/virginatlantic-icon';
 export * from './icons/virginmedia-icon';
