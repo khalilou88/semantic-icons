@@ -9,24 +9,25 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-cash-icon]',
+  selector: 'svg[si-cash-banknote-move-icon]',
   standalone: true,
   imports: [],
   template: `
     <svg:path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <svg:path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
     <svg:path
-      d="M7 15h-3a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v3"
+      d="M12 18h-7a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4.5"
     />
-    <svg:path
-      d="M7 9m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
-    />
-    <svg:path d="M12 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+    <svg:path d="M18 12h.01" />
+    <svg:path d="M6 12h.01" />
+    <svg:path d="M16 19h6" />
+    <svg:path d="M19 16l3 3l-3 3" />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCashIcon implements OnInit {
+export class SiCashBanknoteMoveIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
