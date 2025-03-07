@@ -91,7 +91,7 @@
     "remixicon": "4.6.0",
     "simple-git": "^3.27.0",
     "simple-icons": "14.9.0",
-    "tailwindcss": "^4.0.8",
+    "tailwindcss": "^4.0.11",
     "tmp": "^0.2.3",
     "ts-jest": "^29.2.6",
     "ts-node": "10.9.2",
