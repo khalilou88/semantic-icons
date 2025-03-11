@@ -62,7 +62,7 @@
     "@types/tmp": "^0.2.6",
     "@typescript-eslint/utils": "^8.26.0",
     "angular-eslint": "19.2.0",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "bootstrap-icons": "1.11.3",
     "circle-flags": "1.0.1",
     "eslint": "^9.21.0",
