@@ -31,5 +31,5 @@ export class SiAndroidIcon {
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#34A853');
+  readonly fill = input<string>('#3DDC84');
 }
