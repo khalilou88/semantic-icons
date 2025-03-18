@@ -7,16 +7,16 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-newspaper-icon]',
+  selector: 'svg[si-clock-fading-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M15 18h-5" />
-    <svg:path d="M18 14h-8" />
-    <svg:path
-      d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"
-    />
-    <svg:rect x="10" y="6" width="8" height="4" rx="1" />
+    <svg:path d="M12 2a10 10 0 0 1 7.38 16.75" />
+    <svg:path d="M12 6v6l4 2" />
+    <svg:path d="M2.5 8.875a10 10 0 0 0-.5 3" />
+    <svg:path d="M2.83 16a10 10 0 0 0 2.43 3.4" />
+    <svg:path d="M4.636 5.235a10 10 0 0 1 .891-.857" />
+    <svg:path d="M8.644 21.42a10 10 0 0 0 7.631-.38" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -34,7 +34,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiNewspaperIcon {
+export class SiClockFadingIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');

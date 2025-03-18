@@ -7,16 +7,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-newspaper-icon]',
+  selector: 'svg[si-saudi-riyal-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M15 18h-5" />
-    <svg:path d="M18 14h-8" />
-    <svg:path
-      d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"
-    />
-    <svg:rect x="10" y="6" width="8" height="4" rx="1" />
+    <svg:path d="m20 19.5-5.5 1.2" />
+    <svg:path d="M14.5 4v11.22a1 1 0 0 0 1.242.97L20 15.2" />
+    <svg:path d="m2.978 19.351 5.549-1.363A2 2 0 0 0 10 16V2" />
+    <svg:path d="M20 10 4 13.5" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -34,7 +32,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiNewspaperIcon {
+export class SiSaudiRiyalIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
