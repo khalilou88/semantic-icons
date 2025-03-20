@@ -7,13 +7,15 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-filter-x-icon]',
+  selector: 'svg[si-funnel-plus-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M13.013 3H2l8 9.46V19l4 2v-8.54l.9-1.055" />
-    <svg:path d="m22 3-5 5" />
-    <svg:path d="m17 3 5 5" />
+    <svg:path
+      d="M13.354 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341l1.218-1.348"
+    />
+    <svg:path d="M16 6h6" />
+    <svg:path d="M19 3v6" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -31,7 +33,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiFilterXIcon {
+export class SiFunnelPlusIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
