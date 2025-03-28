@@ -7,17 +7,17 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-battery-icon]',
+  selector: 'svg[si-cheese-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M7 13v-2h7v2H7Z" />
     <svg:path
-      fill-rule="evenodd"
-      d="M2 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8Zm4 1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H6Z"
-      clip-rule="evenodd"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="m4 12 6.4267-4.65924c.6372.89667 1.8922 1.10897 2.7888.4718.8967-.63718 1.3493-1.69135.4681-2.80084C13.6373 4.95345 14.9106 4 15 4c.0894 0 5 1 5 8M4 12h16M4 12v8h16v-8M8 15h.01M12 17h.01M16 15h.01"
     />
-    <svg:path d="M22 14v-4a1 1 0 0 0-1-1h-1v6h1a1 1 0 0 0 1-1Z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -30,7 +30,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBatteryIcon {
+export class SiCheeseIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
@@ -39,5 +39,5 @@ export class SiBatteryIcon {
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('currentColor');
+  readonly fill = input<string>('none');
 }

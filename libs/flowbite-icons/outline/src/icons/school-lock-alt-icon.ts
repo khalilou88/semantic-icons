@@ -7,17 +7,17 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-battery-icon]',
+  selector: 'svg[si-school-lock-alt-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M7 13v-2h7v2H7Z" />
     <svg:path
-      fill-rule="evenodd"
-      d="M2 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8Zm4 1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H6Z"
-      clip-rule="evenodd"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="m7.35709 11 5.00001-6 3.3333 4m-8.33331 2h-3v8h7.00001m-4.00001-8H3.3571l3-4h4.3374l-3.33741 4Zm8.33131-2-1.6687-2h4.3374l1.5 2m-8.3237 5.8976c-1.0239-.4146-1.5178-1.5806-1.1032-2.6044.4146-1.0239 1.5806-1.5178 2.6044-1.1032M16.3571 15v-2.5c0-.8284.6716-1.5 1.5-1.5s1.5.6716 1.5 1.5V15m-4 0h5c.5523 0 1 .4477 1 1v2c0 .5523-.4477 1-1 1h-5c-.5523 0-1-.4477-1-1v-2c0-.5523.4477-1 1-1Z"
     />
-    <svg:path d="M22 14v-4a1 1 0 0 0-1-1h-1v6h1a1 1 0 0 0 1-1Z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -30,7 +30,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBatteryIcon {
+export class SiSchoolLockAltIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
@@ -39,5 +39,5 @@ export class SiBatteryIcon {
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('currentColor');
+  readonly fill = input<string>('none');
 }

@@ -7,17 +7,17 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-battery-icon]',
+  selector: 'svg[si-fish-alt-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M7 13v-2h7v2H7Z" />
     <svg:path
-      fill-rule="evenodd"
-      d="M2 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8Zm4 1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H6Z"
-      clip-rule="evenodd"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M6 12c0 1.6 3.35786 4 7.5 4 4.1421 0 6.9231-3.2 7.5-4-.5769-.8-3.3579-4-7.5-4C9.35786 8 6 10.4 6 12Zm0 0L3 9m3 3-3 3m12.9866-3.3723h.01m-1.9995-3.61229c-1.7265 3.30199-1.7113 5.02539-.0015 7.96929m-4.6104-.7956L7.7 17.4c-.49443.6592-.02401 1.6.80004 1.6H10c1 0 2.7576-3.0256 2.7576-3.0256M9 5l3.056 3.09696"
     />
-    <svg:path d="M22 14v-4a1 1 0 0 0-1-1h-1v6h1a1 1 0 0 0 1-1Z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -30,7 +30,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBatteryIcon {
+export class SiFishAltIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
@@ -39,5 +39,5 @@ export class SiBatteryIcon {
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('currentColor');
+  readonly fill = input<string>('none');
 }
