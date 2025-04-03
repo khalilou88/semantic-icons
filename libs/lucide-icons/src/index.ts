@@ -130,6 +130,8 @@ export * from './icons/ban-icon';
 export * from './icons/banana-icon';
 export * from './icons/bandage-icon';
 export * from './icons/banknote-arrow-down-icon';
+export * from './icons/banknote-arrow-up-icon';
+export * from './icons/banknote-x-icon';
 export * from './icons/banknote-icon';
 export * from './icons/barcode-icon';
 export * from './icons/baseline-icon';

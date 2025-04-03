@@ -16,7 +16,7 @@ import {
     <svg:path
       d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"
     />
-    <svg:rect x="10" y="6" width="8" height="4" rx="1" />
+    <svg:rect width="8" height="4" x="10" y="6" rx="1" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
