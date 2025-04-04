@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "19.2.1",
     "@angular/router": "19.2.1",
     "@semantic-components/utils": "^0.29.0",
-    "@tailwindcss/postcss": "^4.1.0",
+    "@tailwindcss/postcss": "^4.1.2",
     "clsx": "^2.1.1",
     "rxjs": "~7.8.2",
     "tailwind": "^4.0.0",
