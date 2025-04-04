@@ -1282,6 +1282,7 @@ export * from './icons/speaker-icon';
 export * from './icons/speech-icon';
 export * from './icons/spell-check-2-icon';
 export * from './icons/spell-check-icon';
+export * from './icons/spline-pointer-icon';
 export * from './icons/spline-icon';
 export * from './icons/split-icon';
 export * from './icons/spray-can-icon';
