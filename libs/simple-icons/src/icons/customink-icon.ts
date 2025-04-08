@@ -31,5 +31,5 @@ export class SiCustominkIcon {
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#4051B5');
+  readonly fill = input<string>('#FA3C00');
 }
