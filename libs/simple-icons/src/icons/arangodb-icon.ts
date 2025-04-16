@@ -31,5 +31,5 @@ export class SiArangodbIcon {
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#DDE072');
+  readonly fill = input<string>('#DDDF72');
 }
