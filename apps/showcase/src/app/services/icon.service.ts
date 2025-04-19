@@ -6,13 +6,20 @@ import { map } from 'rxjs/operators';
 import { Icon } from '@semantic-icons/nx-generators';
 import { BehaviorSubject, Observable } from 'rxjs';
 
+export type LibraryIdType =
+  | 'heroicons'
+  | 'feather'
+  | 'material'
+  | 'bootstrap'
+  | 'fontawesome';
+
 @Injectable({
   providedIn: 'root',
 })
 export class IconService {
   private readonly iconsSubject = new BehaviorSubject<Icon[]>([]);
   public icons$ = this.iconsSubject.asObservable();
-  private currentLibrary = 'heroicons';
+  private currentLibrary: LibraryIdType = 'heroicons';
 
   // This would normally come from an API, but we'll mock it for this example
   private readonly iconLibraries: { [key: string]: Icon[] } = {
@@ -95,14 +102,20 @@ export class IconService {
     this.loadIcons();
   }
 
-  setCurrentLibrary(libraryId: string): void {
+  setCurrentLibrary(libraryId: LibraryIdType): void {
     this.currentLibrary = libraryId;
     this.loadIcons();
   }
 
   private loadIcons(): void {
-    // In a real app, this would be an HTTP request
-    const icons = this.iconLibraries[this.currentLibrary] || [];
+    let icons: Icon[] = [];
+
+    if (this.currentLibrary == 'heroicons') {
+      console.log('Loading heroicons');
+    } else {
+      icons = this.iconLibraries[this.currentLibrary] || [];
+    }
+
     this.iconsSubject.next(icons);
   }
 

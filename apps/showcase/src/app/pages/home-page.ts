@@ -7,7 +7,7 @@ import {
 import { IconDisplay } from '../components/icon-display';
 import { LibrarySelector } from '../components/library-selector';
 import { SearchBar } from '../components/search-bar';
-import { IconService } from '../services/icon.service';
+import { IconService, LibraryIdType } from '../services/icon.service';
 
 @Component({
   selector: 'app-home-page',
@@ -52,7 +52,7 @@ import { IconService } from '../services/icon.service';
 })
 export default class HomePage {
   title = 'SVG Icon Library Showcase';
-  selectedLibrary = 'heroicons';
+  selectedLibrary: LibraryIdType = 'heroicons';
   searchQuery = '';
   availableLibraries = [
     { id: 'heroicons', name: 'Heroicons' },
@@ -65,8 +65,8 @@ export default class HomePage {
   constructor(public iconService: IconService) {}
 
   onLibraryChange(libraryId: string): void {
-    this.selectedLibrary = libraryId;
-    this.iconService.setCurrentLibrary(libraryId);
+    this.selectedLibrary = libraryId as LibraryIdType;
+    this.iconService.setCurrentLibrary(libraryId as LibraryIdType);
   }
 
   onSearch(query: string): void {
