@@ -3,14 +3,8 @@ import { Injectable } from '@angular/core';
 
 import { map } from 'rxjs/operators';
 
+import { Icon } from '@semantic-icons/nx-generators';
 import { BehaviorSubject, Observable } from 'rxjs';
-
-export interface Icon {
-  id: string;
-  name: string;
-  svgContent: string;
-  tags: string[];
-}
 
 @Injectable({
   providedIn: 'root',

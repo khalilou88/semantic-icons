@@ -9,14 +9,9 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 
+import { Icon } from '../../types';
 import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { HeroiconsGeneratorSchema } from './schema';
-
-interface HeroIcon {
-  size: 16 | 20 | 24;
-  type: 'solid' | 'outline';
-  name: string;
-}
 
 export async function heroiconsGenerator(
   tree: Tree,
@@ -96,7 +91,7 @@ export async function heroiconsGenerator(
   await formatFiles(tree);
 }
 
-const icons: HeroIcon[] = [];
+const icons: Icon[] = [];
 
 function generateIconsComponents(
   tree: Tree,
@@ -132,6 +127,9 @@ function generateIconsComponents(
       name: name,
       size: iconSize,
       type: iconType,
+      id: `heroicons-${iconSize}-${iconType}-${name}`,
+      svgContent: svgFileContent,
+      tags: [],
     });
 
     const svgAttributes = getSvgAttributes(svgFileContent);

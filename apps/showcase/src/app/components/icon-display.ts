@@ -8,9 +8,10 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
+import { Icon } from '@semantic-icons/nx-generators';
 import { Observable } from 'rxjs';
 
-import { Icon, IconService } from '../services/icon.service';
+import { IconService } from '../services/icon.service';
 
 @Component({
   selector: 'app-icon-display',
