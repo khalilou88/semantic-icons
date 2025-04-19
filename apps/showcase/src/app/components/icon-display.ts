@@ -44,6 +44,9 @@ import { IconService } from '../services/icon.service';
                 class="h-12 w-12 flex items-center justify-center"
                 [innerHTML]="icon.svgContent"
               ></div>
+
+              {{ icon.svgContent }}
+
               <div class="mt-2 text-xs text-center text-gray-700">
                 {{ icon.name }}
               </div>

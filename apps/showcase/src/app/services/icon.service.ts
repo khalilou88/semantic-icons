@@ -111,12 +111,13 @@ export class IconService {
     let icons: Icon[] = [];
 
     if (this.currentLibrary == 'heroicons') {
-      console.log('Loading heroicons');
+      this.http.get('heroicons.json').subscribe((response) => {
+        this.iconsSubject.next(response as Icon[]);
+      });
     } else {
       icons = this.iconLibraries[this.currentLibrary] || [];
+      this.iconsSubject.next(icons);
     }
-
-    this.iconsSubject.next(icons);
   }
 
   searchIcons(query: string): Observable<Icon[]> {
