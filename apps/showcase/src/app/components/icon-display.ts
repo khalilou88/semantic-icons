@@ -77,7 +77,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
               <div class="flex items-center justify-center py-4">
                 <div
                   class="h-24 w-24"
-                  [innerHTML]="selectedIcon.svgContent"
+                  [innerHTML]="selectedIcon.svgContent | safeHtml"
                 ></div>
               </div>
 
@@ -100,38 +100,22 @@ import { SafeHtmlPipe } from './safe-html.pipe';
 
               <div>
                 <h4 class="text-sm font-medium text-gray-700">SVG Code</h4>
-                <div class="mt-1 relative">
-                  <pre
-                    class="bg-gray-50 rounded-md p-3 text-xs overflow-x-auto"
-                    >{{ selectedIcon.svgContent }}</pre
-                  >
-                  <button
-                    class="absolute top-2 right-2 p-1 bg-white rounded-md shadow-sm border border-gray-300 hover:bg-gray-50"
-                    (click)="copyToClipboard(selectedIcon.svgContent)"
-                  >
-                    <svg
-                      class="h-4 w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                <sc-code-highlighter
+                  [code]="selectedIcon.svgContent"
+                  language="angular-html"
+                />
               </div>
 
               @if (selectedIcon.componentContent) {
-                <sc-code-highlighter
-                  [code]="selectedIcon.componentContent"
-                  language="angular-ts"
-                />
+                <div>
+                  <h4 class="text-sm font-medium text-gray-700">
+                    Component Code
+                  </h4>
+                  <sc-code-highlighter
+                    [code]="selectedIcon.componentContent"
+                    language="angular-ts"
+                  />
+                </div>
               }
             </div>
           </div>
