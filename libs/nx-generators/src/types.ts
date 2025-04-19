@@ -6,4 +6,5 @@ export interface Icon {
 
   size?: 16 | 20 | 24;
   type?: 'solid' | 'outline';
+  componentContent?: string;
 }

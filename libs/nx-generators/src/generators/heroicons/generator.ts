@@ -123,15 +123,6 @@ function generateIconsComponents(
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
-    icons.push({
-      name: name,
-      size: iconSize,
-      type: iconType,
-      id: `heroicons-${iconSize}-${iconType}-${name}`,
-      svgContent: svgFileContent,
-      tags: [],
-    });
-
     const svgAttributes = getSvgAttributes(svgFileContent);
 
     const width = svgAttributes.width;
@@ -164,6 +155,19 @@ function generateIconsComponents(
       path.join(iconsDestinationPath, 'icons'),
       o,
     );
+
+    icons.push({
+      name: name,
+      size: iconSize,
+      type: iconType,
+      id: `heroicons-${iconSize}-${iconType}-${name}`,
+      svgContent: svgFileContent,
+      tags: [],
+      componentContent: tree.read(
+        path.join(iconsDestinationPath, 'icons', `${svgFileName}.ts`),
+        'utf-8',
+      ),
+    });
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
