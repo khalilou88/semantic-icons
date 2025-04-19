@@ -12,10 +12,11 @@ import { Icon } from '@semantic-icons/nx-generators';
 import { Observable } from 'rxjs';
 
 import { IconService } from '../services/icon.service';
+import { SafeHtmlPipe } from './safe-html.pipe';
 
 @Component({
   selector: 'app-icon-display',
-  imports: [CommonModule],
+  imports: [CommonModule, SafeHtmlPipe],
   template: `
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <!-- Icon Grid -->
@@ -42,7 +43,7 @@ import { IconService } from '../services/icon.service';
             >
               <div
                 class="h-12 w-12 flex items-center justify-center"
-                [innerHTML]="icon.svgContent"
+                [innerHTML]="icon.svgContent | safeHtml"
               ></div>
 
               <div class="mt-2 text-xs text-center text-gray-700">
