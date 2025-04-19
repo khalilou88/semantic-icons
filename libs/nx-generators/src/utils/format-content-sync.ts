@@ -1,5 +1,5 @@
 import * as synchronizedPrettier from '@prettier/sync';
 
 export function formatContentSync(fileContent: string): string {
-  return synchronizedPrettier.format(fileContent, { parser: 'angular' });
+  return synchronizedPrettier.format(fileContent, { parser: 'typescript' });
 }
