@@ -13,6 +13,7 @@ import {
 
 import {
   ScCodeHighlighter,
+  ScSheet,
   ScSheetConfig,
   ScSheetManager,
 } from '@semantic-components/ui';
@@ -24,7 +25,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
 
 @Component({
   selector: 'app-icon-display',
-  imports: [CommonModule, SafeHtmlPipe, ScCodeHighlighter],
+  imports: [CommonModule, SafeHtmlPipe, ScCodeHighlighter, ScSheet],
   template: `
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <!-- Icon Grid -->
@@ -64,7 +65,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
 
       <ng-template #sheet>
         <!-- Icon Details -->
-        <div class="bg-white">
+        <div sc-sheet>
           <div class="px-4 py-5 sm:p-6">
             <h3 class="text-lg font-medium text-gray-900 mb-4">Icon Details</h3>
 
