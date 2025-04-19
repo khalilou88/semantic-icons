@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@semantic-icons/animated-icons": ["libs/animated-icons/src/index.ts"],
       "@semantic-icons/bootstrap-icons": ["libs/bootstrap-icons/src/index.ts"],
       "@semantic-icons/circle-flags": ["libs/circle-flags/src/index.ts"],
       "@semantic-icons/circle-flags/language": [
