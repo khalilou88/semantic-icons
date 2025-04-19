@@ -64,7 +64,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
 
       <ng-template #sheet>
         <!-- Icon Details -->
-        <div class="">
+        <div class="bg-white">
           <div class="px-4 py-5 sm:p-6">
             <h3 class="text-lg font-medium text-gray-900 mb-4">Icon Details</h3>
 
