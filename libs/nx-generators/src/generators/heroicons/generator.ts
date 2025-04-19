@@ -11,7 +11,7 @@ import * as path from 'path';
 
 import { Icon } from '../../types';
 import { getSvgAttributes, getSvgTagContent } from '../../utils';
-import { formatFileSync } from '../../utils/format-file';
+import { formatContentSync } from '../../utils/format-content-sync';
 import { HeroiconsGeneratorSchema } from './schema';
 
 export async function heroiconsGenerator(
@@ -157,8 +157,11 @@ function generateIconsComponents(
       o,
     );
 
-    const formattedContent = formatFileSync(
-      path.join(iconsDestinationPath, 'icons', `${svgFileName}.ts`),
+    const formattedContent = formatContentSync(
+      tree.read(
+        path.join(iconsDestinationPath, 'icons', `${svgFileName}.ts`),
+        'utf-8',
+      ),
     );
 
     icons.push({
