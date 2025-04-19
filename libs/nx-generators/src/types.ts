@@ -4,6 +4,6 @@ export interface Icon {
   svgContent: string;
   tags: string[];
 
-  size: 16 | 20 | 24;
-  type: 'solid' | 'outline';
+  size?: 16 | 20 | 24;
+  type?: 'solid' | 'outline';
 }
