@@ -1,9 +1,5 @@
 import { Route } from '@angular/router';
 
-import HomePage from './home-page';
-import { IconPageComponent } from './icon-page/icon-page.component';
+import HomePage from './pages/home-page';
 
-export const appRoutes: Route[] = [
-  { path: 'icon', component: IconPageComponent },
-  { path: 'home', component: HomePage },
-];
+export const appRoutes: Route[] = [{ path: '', component: HomePage }];
