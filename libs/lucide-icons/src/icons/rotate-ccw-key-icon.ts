@@ -7,24 +7,15 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-cpu-icon]',
+  selector: 'svg[si-rotate-ccw-key-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M12 20v2" />
-    <svg:path d="M12 2v2" />
-    <svg:path d="M17 20v2" />
-    <svg:path d="M17 2v2" />
-    <svg:path d="M2 12h2" />
-    <svg:path d="M2 17h2" />
-    <svg:path d="M2 7h2" />
-    <svg:path d="M20 12h2" />
-    <svg:path d="M20 17h2" />
-    <svg:path d="M20 7h2" />
-    <svg:path d="M7 20v2" />
-    <svg:path d="M7 2v2" />
-    <svg:rect x="4" y="4" width="16" height="16" rx="2" />
-    <svg:rect x="8" y="8" width="8" height="8" rx="1" />
+    <svg:path d="m14.5 9.5 1 1" />
+    <svg:path d="m15.5 8.5-4 4" />
+    <svg:path d="M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-6.74 2.74L3 8" />
+    <svg:path d="M3 3v5h5" />
+    <svg:circle cx="10" cy="14" r="2" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -42,7 +33,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCpuIcon {
+export class SiRotateCcwKeyIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');

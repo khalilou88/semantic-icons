@@ -7,24 +7,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-cpu-icon]',
+  selector: 'svg[si-decimals-arrow-left-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M12 20v2" />
-    <svg:path d="M12 2v2" />
-    <svg:path d="M17 20v2" />
-    <svg:path d="M17 2v2" />
-    <svg:path d="M2 12h2" />
-    <svg:path d="M2 17h2" />
-    <svg:path d="M2 7h2" />
-    <svg:path d="M20 12h2" />
-    <svg:path d="M20 17h2" />
-    <svg:path d="M20 7h2" />
-    <svg:path d="M7 20v2" />
-    <svg:path d="M7 2v2" />
-    <svg:rect x="4" y="4" width="16" height="16" rx="2" />
-    <svg:rect x="8" y="8" width="8" height="8" rx="1" />
+    <svg:path d="m13 21-3-3 3-3" />
+    <svg:path d="M20 18H10" />
+    <svg:path d="M3 11h.01" />
+    <svg:rect x="6" y="3" width="5" height="8" rx="2.5" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -42,7 +32,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCpuIcon {
+export class SiDecimalsArrowLeftIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');

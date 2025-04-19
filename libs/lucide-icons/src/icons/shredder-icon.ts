@@ -7,24 +7,17 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-cpu-icon]',
+  selector: 'svg[si-shredder-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M12 20v2" />
-    <svg:path d="M12 2v2" />
-    <svg:path d="M17 20v2" />
-    <svg:path d="M17 2v2" />
-    <svg:path d="M2 12h2" />
-    <svg:path d="M2 17h2" />
-    <svg:path d="M2 7h2" />
-    <svg:path d="M20 12h2" />
-    <svg:path d="M20 17h2" />
-    <svg:path d="M20 7h2" />
-    <svg:path d="M7 20v2" />
-    <svg:path d="M7 2v2" />
-    <svg:rect x="4" y="4" width="16" height="16" rx="2" />
-    <svg:rect x="8" y="8" width="8" height="8" rx="1" />
+    <svg:path d="M10 22v-5" />
+    <svg:path d="M14 19v-2" />
+    <svg:path d="M14 2v4a2 2 0 0 0 2 2h4" />
+    <svg:path d="M18 20v-3" />
+    <svg:path d="M2 13h20" />
+    <svg:path d="M20 13V7l-5-5H6a2 2 0 0 0-2 2v9" />
+    <svg:path d="M6 20v-3" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -42,7 +35,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCpuIcon {
+export class SiShredderIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');

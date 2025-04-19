@@ -11,21 +11,21 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M5 3a2 2 0 0 0-2 2" />
-    <svg:path d="M19 3a2 2 0 0 1 2 2" />
-    <svg:path d="M21 19a2 2 0 0 1-2 2" />
-    <svg:path d="M5 21a2 2 0 0 1-2-2" />
-    <svg:path d="M9 3h1" />
-    <svg:path d="M9 21h1" />
-    <svg:path d="M14 3h1" />
     <svg:path d="M14 21h1" />
-    <svg:path d="M3 9v1" />
+    <svg:path d="M14 3h1" />
+    <svg:path d="M19 3a2 2 0 0 1 2 2" />
+    <svg:path d="M21 14v1" />
+    <svg:path d="M21 19a2 2 0 0 1-2 2" />
     <svg:path d="M21 9v1" />
     <svg:path d="M3 14v1" />
-    <svg:path d="M21 14v1" />
-    <svg:line x1="7" x2="15" y1="8" y2="8" />
-    <svg:line x1="7" x2="17" y1="12" y2="12" />
-    <svg:line x1="7" x2="13" y1="16" y2="16" />
+    <svg:path d="M3 9v1" />
+    <svg:path d="M5 21a2 2 0 0 1-2-2" />
+    <svg:path d="M5 3a2 2 0 0 0-2 2" />
+    <svg:path d="M7 12h10" />
+    <svg:path d="M7 16h6" />
+    <svg:path d="M7 8h8" />
+    <svg:path d="M9 21h1" />
+    <svg:path d="M9 3h1" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

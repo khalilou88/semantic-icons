@@ -7,24 +7,16 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-cpu-icon]',
+  selector: 'svg[si-squares-exclude-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M12 20v2" />
-    <svg:path d="M12 2v2" />
-    <svg:path d="M17 20v2" />
-    <svg:path d="M17 2v2" />
-    <svg:path d="M2 12h2" />
-    <svg:path d="M2 17h2" />
-    <svg:path d="M2 7h2" />
-    <svg:path d="M20 12h2" />
-    <svg:path d="M20 17h2" />
-    <svg:path d="M20 7h2" />
-    <svg:path d="M7 20v2" />
-    <svg:path d="M7 2v2" />
-    <svg:rect x="4" y="4" width="16" height="16" rx="2" />
-    <svg:rect x="8" y="8" width="8" height="8" rx="1" />
+    <svg:path
+      d="M16 12v2a2 2 0 0 1-2 2H9a1 1 0 0 0-1 1v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h0"
+    />
+    <svg:path
+      d="M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1h-5a2 2 0 0 0-2 2v2"
+    />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -42,7 +34,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCpuIcon {
+export class SiSquaresExcludeIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');

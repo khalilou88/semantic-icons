@@ -11,9 +11,13 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M11 13h6l3 7H8l3-7Z" />
-    <svg:path d="M14 13V8a2 2 0 0 0-2-2H8" />
-    <svg:path d="M4 9h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4v6Z" />
+    <svg:path
+      d="M19.929 18.629A1 1 0 0 1 19 20H9a1 1 0 0 1-.928-1.371l2-5A1 1 0 0 1 11 13h6a1 1 0 0 1 .928.629z"
+    />
+    <svg:path
+      d="M6 3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"
+    />
+    <svg:path d="M8 6h4a2 2 0 0 1 2 2v5" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
