@@ -5,10 +5,17 @@ import {
   Input,
   OnChanges,
   SimpleChanges,
+  TemplateRef,
   ViewEncapsulation,
+  inject,
+  viewChild,
 } from '@angular/core';
 
-import { ScCodeHighlighter } from '@semantic-components/ui';
+import {
+  ScCodeHighlighter,
+  ScSheetConfig,
+  ScSheetManager,
+} from '@semantic-components/ui';
 import { Icon } from '@semantic-icons/nx-generators';
 import { Observable } from 'rxjs';
 
@@ -55,7 +62,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
         </div>
       </div>
 
-      <ng-template>
+      <ng-template #sheet>
         <!-- Icon Details -->
         <div class="bg-white shadow overflow-hidden rounded-lg">
           <div class="px-4 py-5 sm:p-6">
@@ -136,14 +143,23 @@ import { SafeHtmlPipe } from './safe-html.pipe';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconDisplay implements OnChanges {
+  private readonly scSheetManager = inject(ScSheetManager);
+
+  private readonly sheetRef = viewChild.required<TemplateRef<unknown>>('sheet');
+
   @Input() library = '';
   @Input() searchQuery = '';
 
   icons$: Observable<Icon[]>;
   selectedIcon: Icon | null = null;
 
+  private readonly config = new ScSheetConfig();
+
   constructor(private readonly iconService: IconService) {
     this.icons$ = this.iconService.searchIcons('');
+
+    this.config.side = 'right';
+    this.config.width = '300';
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -155,6 +171,8 @@ export class IconDisplay implements OnChanges {
 
   selectIcon(icon: Icon): void {
     this.selectedIcon = icon;
+
+    this.openSheet();
   }
 
   copyToClipboard(text: string): void {
@@ -166,5 +184,9 @@ export class IconDisplay implements OnChanges {
         console.error('Could not copy text: ', err);
       },
     );
+  }
+
+  private openSheet() {
+    this.scSheetManager.open(this.sheetRef(), this.config);
   }
 }
