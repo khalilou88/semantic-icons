@@ -23,6 +23,7 @@
     "@semantic-components/utils": "^0.32.0",
     "@tailwindcss/postcss": "^4.1.4",
     "clsx": "^2.1.1",
+    "shiki": "^3.2.2",
     "rxjs": "~7.8.2",
     "tailwind": "^4.0.0",
     "tailwind-merge": "^3.2.0",
