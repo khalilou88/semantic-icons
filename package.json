@@ -23,8 +23,8 @@
     "@semantic-components/utils": "^0.32.0",
     "@tailwindcss/postcss": "^4.1.4",
     "clsx": "^2.1.1",
-    "shiki": "^3.2.2",
     "rxjs": "~7.8.2",
+    "shiki": "^3.2.2",
     "tailwind": "^4.0.0",
     "tailwind-merge": "^3.2.0",
     "zone.js": "0.15.0"
@@ -53,6 +53,7 @@
     "@nx/workspace": "20.8.0",
     "@playwright/test": "^1.52.0",
     "@prettier/plugin-xml": "^3.4.1",
+    "@prettier/sync": "^0.5.5",
     "@schematics/angular": "^19.2.8",
     "@swc-node/register": "~1.10.10",
     "@swc/cli": "0.7.3",
