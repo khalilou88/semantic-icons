@@ -6,7 +6,8 @@
     "tslib": "^2.3.0",
     "html-entities": "^2.5.2",
     "simple-git": "^3.27.0",
-    "tmp": "^0.2.3"
+    "tmp": "^0.2.3",
+    "@prettier/sync": "^0.5.5"
   },
   "type": "commonjs",
   "main": "./src/index.js",
