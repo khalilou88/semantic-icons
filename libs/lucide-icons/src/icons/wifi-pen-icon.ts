@@ -7,15 +7,16 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-book-key-icon]',
+  selector: 'svg[si-wifi-pen-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="m19 3 1 1" />
-    <svg:path d="m20 2-4.5 4.5" />
-    <svg:path d="M20 7.898V21a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
-    <svg:path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2h7.844" />
-    <svg:circle cx="14" cy="8" r="2" />
+    <svg:path d="M2 8.82a15 15 0 0 1 20 0" />
+    <svg:path
+      d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
+    />
+    <svg:path d="M5 12.859a10 10 0 0 1 10.5-2.222" />
+    <svg:path d="M8.5 16.429a5 5 0 0 1 3-1.406" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -33,7 +34,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBookKeyIcon {
+export class SiWifiPenIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');

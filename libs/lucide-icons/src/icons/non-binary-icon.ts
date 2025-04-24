@@ -12,8 +12,8 @@ import {
   imports: [],
   template: `
     <svg:path d="M12 2v10" />
-    <svg:path d="m9 4 6 4" />
-    <svg:path d="m9 8 6-4" />
+    <svg:path d="m8.5 4 7 4" />
+    <svg:path d="m8.5 8 7-4" />
     <svg:circle cx="12" cy="17" r="5" />
   `,
   host: {

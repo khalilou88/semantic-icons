@@ -7,15 +7,17 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-book-key-icon]',
+  selector: 'svg[si-ruler-dimension-line-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="m19 3 1 1" />
-    <svg:path d="m20 2-4.5 4.5" />
-    <svg:path d="M20 7.898V21a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
-    <svg:path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2h7.844" />
-    <svg:circle cx="14" cy="8" r="2" />
+    <svg:path d="M12 15v-3.014" />
+    <svg:path d="M16 15v-3.014" />
+    <svg:path d="M20 6H4" />
+    <svg:path d="M20 8V4" />
+    <svg:path d="M4 8V4" />
+    <svg:path d="M8 15v-3.014" />
+    <svg:rect x="3" y="12" width="18" height="7" rx="1" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -33,7 +35,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBookKeyIcon {
+export class SiRulerDimensionLineIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
