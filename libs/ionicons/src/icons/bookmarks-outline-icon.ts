@@ -12,18 +12,18 @@ import {
   imports: [],
   template: `
     <svg:path
-      d="M128 80V64a48.14 48.14 0 0148-48h224a48.14 48.14 0 0148 48v368l-80-64"
+      d="M128 80V64a48.14 48.14 0 0 1 48-48h224a48.14 48.14 0 0 1 48 48v368l-80-64"
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
-      d="M320 96H112a48.14 48.14 0 00-48 48v352l152-128 152 128V144a48.14 48.14 0 00-48-48z"
+      d="M320 96H112a48.14 48.14 0 0 0-48 48v352l152-128 152 128V144a48.14 48.14 0 0 0-48-48Z"
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

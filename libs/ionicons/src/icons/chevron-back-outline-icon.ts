@@ -12,12 +12,12 @@ import {
   imports: [],
   template: `
     <svg:path
+      d="M328 112 184 256l144 144"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="48"
-      d="M328 112L184 256l144 144"
+      stroke-width="48px"
     />
   `,
   host: {

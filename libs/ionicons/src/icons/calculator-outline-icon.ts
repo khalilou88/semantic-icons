@@ -12,25 +12,25 @@ import {
   imports: [],
   template: `
     <svg:rect
-      x="112"
-      y="48"
       width="288"
       height="416"
+      x="112"
+      y="48"
       rx="32"
       ry="32"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M160.01 112H352v64H160.01z"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
-      d="M160.01 112H352v64H160.01z"
+      stroke-width="32px"
     />
     <svg:circle cx="168" cy="248" r="24" />
     <svg:circle cx="256" cy="248" r="24" />
@@ -39,7 +39,7 @@ import {
     <svg:circle cx="256" cy="328" r="24" />
     <svg:circle cx="168" cy="408" r="24" />
     <svg:circle cx="256" cy="408" r="24" />
-    <svg:rect x="320" y="304" width="48" height="128" rx="24" ry="24" />
+    <svg:rect width="48" height="128" x="320" y="304" rx="24" ry="24" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

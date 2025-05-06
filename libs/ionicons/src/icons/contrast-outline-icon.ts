@@ -18,9 +18,9 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
-    <svg:path d="M256 464c-114.88 0-208-93.12-208-208S141.12 48 256 48z" />
+    <svg:path d="M256 464c-114.88 0-208-93.12-208-208S141.12 48 256 48Z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

@@ -12,10 +12,10 @@ import {
   imports: [],
   template: `
     <svg:rect
-      x="128"
-      y="16"
       width="256"
       height="480"
+      x="128"
+      y="16"
       rx="48"
       ry="48"
       transform="rotate(-90 256 256)"
@@ -23,15 +23,15 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
-      d="M16 336v-24a8 8 0 018-8h0a16 16 0 0016-16v-64a16 16 0 00-16-16h0a8 8 0 01-8-8v-24"
+      d="M16 336v-24a8 8 0 0 1 8-8h0a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16h0a8 8 0 0 1-8-8v-24"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

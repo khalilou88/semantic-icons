@@ -12,22 +12,22 @@ import {
   imports: [],
   template: `
     <svg:path
+      d="M196 220h64v172"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="40"
-      d="M196 220h64v172"
+      stroke-width="40px"
     />
     <svg:path
+      d="M187 396h138"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-miterlimit="10"
-      stroke-width="40"
-      d="M187 396h138"
+      stroke-width="40px"
     />
-    <svg:path d="M256 160a32 32 0 1132-32 32 32 0 01-32 32z" />
+    <svg:path d="M256 160a32 32 0 1 1 32-32 32 32 0 0 1-32 32" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

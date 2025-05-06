@@ -18,7 +18,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="344"
@@ -27,7 +27,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="168"
@@ -36,7 +36,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

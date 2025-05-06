@@ -12,19 +12,19 @@ import {
   imports: [],
   template: `
     <svg:path
+      d="M224 184h128M224 256h128M224 327h128"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
-      d="M224 184h128M224 256h128M224 327h128"
+      stroke-width="32px"
     />
     <svg:path
-      d="M448 258c0-106-86-192-192-192S64 152 64 258s86 192 192 192 192-86 192-192z"
+      d="M448 258c0-106-86-192-192-192S64 152 64 258s86 192 192 192 192-86 192-192Z"
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="168"
@@ -34,7 +34,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="168"
@@ -44,7 +44,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="168"
@@ -54,7 +54,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

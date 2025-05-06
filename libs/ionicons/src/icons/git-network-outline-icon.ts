@@ -19,7 +19,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="256"
@@ -29,15 +29,15 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M256 256v112"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
-      d="M256 256v112"
+      stroke-width="32px"
     />
     <svg:circle
       cx="384"
@@ -47,7 +47,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
       d="M128 144c0 74.67 68.92 112 128 112M384 144c0 74.67-68.92 112-128 112"
@@ -55,7 +55,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

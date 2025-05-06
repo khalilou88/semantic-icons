@@ -19,15 +19,15 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M216 352v128M272 416H160M432 112V32h-80M335.28 128.72 432 32"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
-      d="M216 352v128M272 416H160M432 112V32h-80M335.28 128.72L432 32"
+      stroke-width="32px"
     />
   `,
   host: {

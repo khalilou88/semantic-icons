@@ -12,10 +12,10 @@ import {
   imports: [],
   template: `
     <svg:rect
-      x="-24.43"
-      y="167.88"
       width="560.87"
       height="176.25"
+      x="-24.43"
+      y="167.88"
       rx="88.12"
       ry="88.12"
       transform="rotate(-45 256 256.002)"
@@ -23,13 +23,13 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:rect
-      x="169.41"
-      y="156.59"
       width="176"
       height="196"
+      x="169.41"
+      y="156.59"
       rx="32"
       ry="32"
       transform="rotate(45 257.409 254.582)"
@@ -37,7 +37,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle cx="256" cy="208" r="16" />
     <svg:circle cx="304" cy="256" r="16" />

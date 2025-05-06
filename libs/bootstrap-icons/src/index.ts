@@ -230,6 +230,7 @@ export * from './icons/binoculars-fill-icon';
 export * from './icons/binoculars-icon';
 export * from './icons/blockquote-left-icon';
 export * from './icons/blockquote-right-icon';
+export * from './icons/bluesky-icon';
 export * from './icons/bluetooth-icon';
 export * from './icons/body-text-icon';
 export * from './icons/book-fill-icon';

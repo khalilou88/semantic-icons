@@ -17,7 +17,7 @@ import {
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="32"
-      d="M201.14 64L256 32l54.86 32"
+      d="M201.14 64 256 32l54.86 32"
     />
     <svg:path
       fill="none"
@@ -33,7 +33,7 @@ import {
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="32"
-      d="M310.86 448L256 480l-54.86-32"
+      d="M310.86 448 256 480l-54.86-32"
     />
     <svg:path
       fill="none"
@@ -57,7 +57,7 @@ import {
       stroke-linecap="round"
       stroke-miterlimit="10"
       stroke-width="32"
-      d="M64 144l67.29 40"
+      d="m64 144 67.29 40"
     />
     <svg:path
       fill="none"
@@ -73,7 +73,7 @@ import {
       stroke-linecap="round"
       stroke-miterlimit="10"
       stroke-width="32"
-      d="M448 368l-67.29-40"
+      d="m448 368-67.29-40"
     />
     <svg:path
       fill="none"
@@ -81,7 +81,7 @@ import {
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="32"
-      d="M117.15 400L64 368v-63.51"
+      d="M117.15 400 64 368v-63.51"
     />
     <svg:path
       fill="none"
@@ -89,7 +89,7 @@ import {
       stroke-linecap="round"
       stroke-miterlimit="10"
       stroke-width="32"
-      d="M64 368l66.64-40"
+      d="m64 368 66.64-40"
     />
     <svg:path
       fill="none"
@@ -97,7 +97,7 @@ import {
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="32"
-      d="M394.85 112.49L448 144v63.51"
+      d="M394.85 112.49 448 144v63.51"
     />
     <svg:path
       fill="none"
@@ -105,7 +105,7 @@ import {
       stroke-linecap="round"
       stroke-miterlimit="10"
       stroke-width="32"
-      d="M448 144l-67.29 40M256 320v-64l54.86-32M256 256l-54.86-32"
+      d="m448 144-67.29 40M256 320v-64l54.86-32M256 256l-54.86-32"
     />
   `,
   host: {

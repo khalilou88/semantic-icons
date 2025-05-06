@@ -12,26 +12,26 @@ import {
   imports: [],
   template: `
     <svg:path
-      d="M256 80a176 176 0 10176 176A176 176 0 00256 80z"
+      d="M256 80a176 176 0 1 0 176 176A176 176 0 0 0 256 80Z"
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
-      d="M232 160a72 72 0 1072 72 72 72 0 00-72-72z"
+      d="M232 160a72 72 0 1 0 72 72 72 72 0 0 0-72-72Z"
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M283.64 283.64 336 336"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-miterlimit="10"
-      stroke-width="32"
-      d="M283.64 283.64L336 336"
+      stroke-width="32px"
     />
   `,
   host: {

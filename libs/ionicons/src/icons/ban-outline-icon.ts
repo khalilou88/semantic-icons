@@ -25,7 +25,7 @@ import {
       stroke="currentColor"
       stroke-miterlimit="10"
       stroke-width="32"
-      d="M108.92 108.92l294.16 294.16"
+      d="m108.92 108.92 294.16 294.16"
     />
   `,
   host: {

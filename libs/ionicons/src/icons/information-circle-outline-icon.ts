@@ -12,29 +12,32 @@ import {
   imports: [],
   template: `
     <svg:path
-      d="M248 64C146.39 64 64 146.39 64 248s82.39 184 184 184 184-82.39 184-184S349.61 64 248 64z"
+      d="M248 64C146.39 64 64 146.39 64 248s82.39 184 184 184 184-82.39 184-184S349.61 64 248 64Z"
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M220 220h32v116"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
-      d="M220 220h32v116"
+      stroke-width="32px"
     />
     <svg:path
+      d="M208 340h88"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-miterlimit="10"
-      stroke-width="32"
-      d="M208 340h88"
+      stroke-width="32px"
     />
-    <svg:path d="M248 130a26 26 0 1026 26 26 26 0 00-26-26z" />
+    <svg:path
+      fill="currentColor"
+      d="M248 130a26 26 0 1 0 26 26 26 26 0 0 0-26-26"
+    />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

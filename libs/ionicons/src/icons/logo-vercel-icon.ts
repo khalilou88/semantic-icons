@@ -11,7 +11,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path fill-rule="evenodd" d="M256 48l240 416H16z" />
+    <svg:path fill-rule="evenodd" d="m256 48 240 416H16Z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

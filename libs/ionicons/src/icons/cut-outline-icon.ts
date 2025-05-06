@@ -19,7 +19,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="104"
@@ -29,23 +29,23 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
-      d="M157 175l-11 15 37 15s3.46-6.42 7-10z"
+      d="m157 175-11 15 37 15s3.46-6.42 7-10Z"
       fill="none"
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
-      d="M154.17 334.43L460 162c-2.5-6.7-28-12-64-4-29.12 6.47-121.16 29.05-159.16 56.05C205.85 236.06 227 272 192 298c-25.61 19-44.43 22.82-44.43 22.82zM344.47 278.24L295 306.67c14.23 6.74 65.54 33.27 117 36.33 14.92.89 30 .39 39-6z"
+      d="M154.17 334.43 460 162c-2.5-6.7-28-12-64-4-29.12 6.47-121.16 29.05-159.16 56.05C205.85 236.06 227 272 192 298c-25.61 19-44.43 22.82-44.43 22.82ZM344.47 278.24 295 306.67c14.23 6.74 65.54 33.27 117 36.33 14.92.89 30 .39 39-6Z"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="256"
@@ -54,7 +54,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

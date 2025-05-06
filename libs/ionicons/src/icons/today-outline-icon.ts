@@ -12,42 +12,42 @@ import {
   imports: [],
   template: `
     <svg:rect
+      width="416"
+      height="384"
+      x="48"
+      y="80"
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
       stroke-width="32"
-      x="48"
-      y="80"
-      width="416"
-      height="384"
       rx="48"
     />
     <svg:path
       fill="none"
       stroke="currentColor"
+      stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="32"
-      stroke-linecap="round"
       d="M128 48v32M384 48v32"
     />
     <svg:rect
-      fill="none"
-      stroke="currentColor"
-      stroke-linejoin="round"
-      stroke-width="32"
-      stroke-linecap="round"
-      x="112"
-      y="224"
       width="96"
       height="96"
+      x="112"
+      y="224"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="32"
       rx="13"
     />
     <svg:path
       fill="none"
       stroke="currentColor"
+      stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="32"
-      stroke-linecap="round"
       d="M464 160H48"
     />
   `,

@@ -17,7 +17,7 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-miterlimit="10"
-      stroke-width="40"
+      stroke-width="40px"
     />
     <svg:circle cx="248" cy="399.99" r="32" />
   `,

@@ -11,16 +11,16 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:rect x="80" y="16" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="208" y="16" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="336" y="16" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="80" y="144" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="208" y="144" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="336" y="144" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="80" y="272" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="208" y="272" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="208" y="400" width="96" height="96" rx="8" ry="8" />
-    <svg:rect x="336" y="272" width="96" height="96" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="80" y="16" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="208" y="16" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="336" y="16" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="80" y="144" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="208" y="144" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="336" y="144" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="80" y="272" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="208" y="272" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="208" y="400" rx="8" ry="8" />
+    <svg:rect width="96" height="96" x="336" y="272" rx="8" ry="8" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

@@ -15,12 +15,12 @@ import {
     <svg:circle cx="346" cy="256" r="26" />
     <svg:circle cx="166" cy="256" r="26" />
     <svg:path
+      d="M160 368 32 256l128-112M352 368l128-112-128-112"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
-      d="M160 368L32 256l128-112M352 368l128-112-128-112"
+      stroke-width="32px"
     />
   `,
   host: {

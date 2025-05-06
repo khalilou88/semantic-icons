@@ -12,19 +12,19 @@ import {
   imports: [],
   template: `
     <svg:circle
+      cx="256"
+      cy="256"
+      r="200"
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
       stroke-width="48"
-      cx="256"
-      cy="256"
-      r="200"
     />
     <svg:path
       stroke="currentColor"
       stroke-miterlimit="10"
       stroke-width="48"
-      d="M114.58 114.58l282.84 282.84"
+      d="m114.58 114.58 282.84 282.84"
     />
   `,
   host: {

@@ -18,19 +18,19 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:rect
-      x="16"
-      y="128"
       width="480"
       height="256"
+      x="16"
+      y="128"
       rx="128"
       ry="128"
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

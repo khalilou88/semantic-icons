@@ -27,7 +27,7 @@ import {
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="32"
-      d="M448 160V64h-96M324 188L448 64"
+      d="M448 160V64h-96M324 188 448 64"
     />
   `,
   host: {

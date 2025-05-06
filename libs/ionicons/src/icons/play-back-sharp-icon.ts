@@ -11,7 +11,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M496 400L256 256l240-144v288zM256 400L16 256l240-144v288z" />
+    <svg:path d="M496 400 256 256l240-144zM256 400 16 256l240-144z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

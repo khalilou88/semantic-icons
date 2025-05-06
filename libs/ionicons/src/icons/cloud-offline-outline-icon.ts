@@ -17,15 +17,15 @@ import {
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M448 448 64 64"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-miterlimit="10"
-      stroke-width="32"
-      d="M448 448L64 64"
+      stroke-width="32px"
     />
   `,
   host: {

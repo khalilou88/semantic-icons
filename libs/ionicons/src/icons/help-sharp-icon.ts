@@ -17,9 +17,9 @@ import {
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="40"
+      stroke-width="40px"
     />
-    <svg:rect x="220" y="368" width="56" height="56" rx="3.5" ry="3.5" />
+    <svg:rect width="56" height="56" x="220" y="368" rx="3.5" ry="3.5" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

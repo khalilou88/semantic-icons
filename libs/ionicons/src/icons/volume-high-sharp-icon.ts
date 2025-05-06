@@ -17,9 +17,9 @@ import {
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
-    <svg:path d="M125.65 176.1H32v159.8h93.65L256 440V72L125.65 176.1z" />
+    <svg:path d="M125.65 176.1H32v159.8h93.65L256 440V72z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

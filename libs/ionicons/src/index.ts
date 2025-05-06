@@ -806,6 +806,7 @@ export * from './icons/logo-stackoverflow-icon';
 export * from './icons/logo-steam-icon';
 export * from './icons/logo-stencil-icon';
 export * from './icons/logo-tableau-icon';
+export * from './icons/logo-threads-icon';
 export * from './icons/logo-tiktok-icon';
 export * from './icons/logo-trapeze-icon';
 export * from './icons/logo-tumblr-icon';

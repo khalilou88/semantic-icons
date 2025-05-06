@@ -18,7 +18,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="256"
@@ -27,7 +27,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle cx="256" cy="256" r="32" />
   `,

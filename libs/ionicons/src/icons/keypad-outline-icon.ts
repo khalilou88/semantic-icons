@@ -18,7 +18,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="256"
@@ -27,14 +27,14 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
-      d="M288 192a32 32 0 11-32-32 32 32 0 0132 32z"
+      d="M288 192a32 32 0 1 1-32-32 32 32 0 0 1 32 32Z"
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="256"
@@ -43,7 +43,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="384"
@@ -52,7 +52,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="384"
@@ -61,7 +61,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="384"
@@ -70,7 +70,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="128"
@@ -79,7 +79,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="128"
@@ -88,7 +88,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:circle
       cx="128"
@@ -97,7 +97,7 @@ import {
       fill="none"
       stroke="currentColor"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

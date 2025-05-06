@@ -12,7 +12,7 @@ import {
   imports: [],
   template: `
     <svg:path
-      d="M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z"
+      d="M64 384h384v-42.67H64Zm0-106.67h384v-42.66H64ZM64 128v42.67h384V128Z"
     />
   `,
   host: {

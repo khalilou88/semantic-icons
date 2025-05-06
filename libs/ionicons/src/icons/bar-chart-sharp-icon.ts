@@ -11,9 +11,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M496 496H16V16h32v448h448v32z" />
+    <svg:path d="M496 496H16V16h32v448h448z" />
     <svg:path
-      d="M192 432H80V208h112zM336 432H224V160h112zM479.64 432h-112V96h112z"
+      d="M192 432H80V208h112ZM336 432H224V160h112ZM479.64 432h-112V96h112Z"
     />
   `,
   host: {

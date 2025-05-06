@@ -11,52 +11,52 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:rect x="336" y="336" width="80" height="80" rx="8" ry="8" />
-    <svg:rect x="272" y="272" width="64" height="64" rx="8" ry="8" />
-    <svg:rect x="416" y="416" width="64" height="64" rx="8" ry="8" />
-    <svg:rect x="432" y="272" width="48" height="48" rx="8" ry="8" />
-    <svg:rect x="272" y="432" width="48" height="48" rx="8" ry="8" />
-    <svg:rect x="336" y="96" width="80" height="80" rx="8" ry="8" />
+    <svg:rect width="80" height="80" x="336" y="336" rx="8" ry="8" />
+    <svg:rect width="64" height="64" x="272" y="272" rx="8" ry="8" />
+    <svg:rect width="64" height="64" x="416" y="416" rx="8" ry="8" />
+    <svg:rect width="48" height="48" x="432" y="272" rx="8" ry="8" />
+    <svg:rect width="48" height="48" x="272" y="432" rx="8" ry="8" />
+    <svg:rect width="80" height="80" x="336" y="96" rx="8" ry="8" />
     <svg:rect
+      width="176"
+      height="176"
       x="288"
       y="48"
-      width="176"
-      height="176"
       rx="16"
       ry="16"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
-    <svg:rect x="96" y="96" width="80" height="80" rx="8" ry="8" />
+    <svg:rect width="80" height="80" x="96" y="96" rx="8" ry="8" />
     <svg:rect
+      width="176"
+      height="176"
       x="48"
       y="48"
-      width="176"
-      height="176"
       rx="16"
       ry="16"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
-    <svg:rect x="96" y="336" width="80" height="80" rx="8" ry="8" />
+    <svg:rect width="80" height="80" x="96" y="336" rx="8" ry="8" />
     <svg:rect
+      width="176"
+      height="176"
       x="48"
       y="288"
-      width="176"
-      height="176"
       rx="16"
       ry="16"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

@@ -12,20 +12,20 @@ import {
   imports: [],
   template: `
     <svg:path
+      d="M352 144h112v112"
       fill="none"
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="32"
-      d="M352 144h112v112"
+      stroke-width="32px"
     />
     <svg:path
+      d="m48 368 144-144 96 96 160-160"
       fill="none"
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="32"
-      d="M48 368l144-144 96 96 160-160"
+      stroke-width="32px"
     />
   `,
   host: {

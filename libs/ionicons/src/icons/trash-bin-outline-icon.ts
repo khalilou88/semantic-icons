@@ -12,33 +12,33 @@ import {
   imports: [],
   template: `
     <svg:path
-      d="M432 144l-28.67 275.74A32 32 0 01371.55 448H140.46a32 32 0 01-31.78-28.26L80 144"
+      d="m432 144-28.67 275.74A32 32 0 0 1 371.55 448H140.46a32 32 0 0 1-31.78-28.26L80 144"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:rect
-      x="32"
-      y="64"
       width="448"
       height="80"
+      x="32"
+      y="64"
       rx="16"
       ry="16"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M312 240 200 352M312 352 200 240"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
-      d="M312 240L200 352M312 352L200 240"
+      stroke-width="32px"
     />
   `,
   host: {

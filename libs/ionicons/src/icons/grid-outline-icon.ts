@@ -12,56 +12,56 @@ import {
   imports: [],
   template: `
     <svg:rect
+      width="176"
+      height="176"
       x="48"
       y="48"
-      width="176"
-      height="176"
       rx="20"
       ry="20"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:rect
+      width="176"
+      height="176"
       x="288"
       y="48"
-      width="176"
-      height="176"
       rx="20"
       ry="20"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:rect
+      width="176"
+      height="176"
       x="48"
       y="288"
-      width="176"
-      height="176"
       rx="20"
       ry="20"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:rect
-      x="288"
-      y="288"
       width="176"
       height="176"
+      x="288"
+      y="288"
       rx="20"
       ry="20"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="32"
+      stroke-width="32px"
     />
   `,
   host: {

@@ -18,7 +18,7 @@ import {
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="10"
+      stroke-width="10px"
     />
     <svg:circle
       cx="346"
@@ -27,7 +27,7 @@ import {
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="10"
+      stroke-width="10px"
     />
     <svg:circle
       cx="166"
@@ -36,15 +36,15 @@ import {
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="10"
+      stroke-width="10px"
     />
     <svg:path
+      d="M160 368 32 256l128-112M352 368l128-112-128-112"
       fill="none"
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="42"
-      d="M160 368L32 256l128-112M352 368l128-112-128-112"
+      stroke-width="42px"
     />
   `,
   host: {

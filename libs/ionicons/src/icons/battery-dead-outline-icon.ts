@@ -12,25 +12,25 @@ import {
   imports: [],
   template: `
     <svg:rect
-      x="31"
-      y="144"
       width="400"
       height="224"
+      x="31"
+      y="144"
       rx="45.7"
       ry="45.7"
       fill="none"
       stroke="currentColor"
       stroke-linecap="square"
       stroke-miterlimit="10"
-      stroke-width="32"
+      stroke-width="32px"
     />
     <svg:path
+      d="M479 218.67v74.66"
       fill="none"
       stroke="currentColor"
       stroke-linecap="round"
       stroke-miterlimit="10"
-      stroke-width="32"
-      d="M479 218.67v74.66"
+      stroke-width="32px"
     />
   `,
   host: {
