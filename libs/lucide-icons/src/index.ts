@@ -1038,6 +1038,7 @@ export * from './icons/paint-roller-icon';
 export * from './icons/paintbrush-vertical-icon';
 export * from './icons/paintbrush-icon';
 export * from './icons/palette-icon';
+export * from './icons/panda-icon';
 export * from './icons/panel-bottom-close-icon';
 export * from './icons/panel-bottom-dashed-icon';
 export * from './icons/panel-bottom-open-icon';
