@@ -19,7 +19,7 @@
     "@angular/platform-browser": "19.2.7",
     "@angular/platform-browser-dynamic": "19.2.7",
     "@angular/router": "19.2.7",
-    "@semantic-components/ui": "^0.43.0",
+    "@semantic-components/ui": "^0.48.0",
     "@semantic-components/utils": "^0.37.0",
     "@tailwindcss/postcss": "^4.1.5",
     "clsx": "^2.1.1",
