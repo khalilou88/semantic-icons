@@ -2,7 +2,7 @@
   "name": "@semantic-icons/nx-generators",
   "version": "0.43.0",
   "dependencies": {
-    "@nx/devkit": "^20.1.2",
+    "@nx/devkit": ">=20.1.2",
     "tslib": "^2.3.0",
     "html-entities": "^2.5.2",
     "simple-git": "^3.27.0",
