@@ -20,9 +20,8 @@
     "projectsRelationship": "independent",
     "releaseTagPattern": "release/{projectName}/{version}",
     "version": {
-      "generatorOptions": {
-        "packageRoot": "{projectRoot}"
-      }
+      "preserveLocalDependencyProtocols": false,
+      "manifestRootsToUpdate": ["{projectRoot}"]
     }
   },
   "targetDefaults": {
