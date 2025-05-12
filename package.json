@@ -21,7 +21,7 @@
     "@angular/router": "19.2.7",
     "@semantic-components/ui": "^0.48.0",
     "@semantic-components/utils": "^0.37.0",
-    "@tailwindcss/postcss": "^4.1.5",
+    "@tailwindcss/postcss": "^4.1.6",
     "clsx": "^2.1.1",
     "rxjs": "~7.8.2",
     "shiki": "^3.4.0",
