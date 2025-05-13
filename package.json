@@ -21,7 +21,7 @@
     "@angular/router": "19.2.10",
     "@js-temporal/polyfill": ">=0.4.4",
     "@semantic-components/ui": "^0.49.0",
-    "@semantic-components/utils": "^0.37.0",
+    "@semantic-components/utils": "^0.38.0",
     "@semantic-icons/lucide-icons": "^0.44.0",
     "@tailwindcss/postcss": "^4.1.6",
     "@tiptap/core": "^2.10.3",
