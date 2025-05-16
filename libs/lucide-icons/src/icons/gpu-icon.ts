@@ -7,13 +7,15 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-phone-icon]',
+  selector: 'svg[si-gpu-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path
-      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-    />
+    <svg:path d="M2 21V3" />
+    <svg:path d="M2 5h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2.26" />
+    <svg:path d="M7 17v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3" />
+    <svg:circle cx="16" cy="11" r="2" />
+    <svg:circle cx="8" cy="11" r="2" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -31,7 +33,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiPhoneIcon {
+export class SiGpuIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');
