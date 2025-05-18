@@ -11,10 +11,10 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:polyline points="15 3 21 3 21 9" />
-    <svg:polyline points="9 21 3 21 3 15" />
-    <svg:line x1="21" x2="14" y1="3" y2="10" />
-    <svg:line x1="3" x2="10" y1="21" y2="14" />
+    <svg:path d="M15 3h6v6" />
+    <svg:path d="m21 3-7 7" />
+    <svg:path d="m3 21 7-7" />
+    <svg:path d="M9 21H3v-6" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

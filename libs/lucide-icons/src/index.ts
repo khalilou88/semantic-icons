@@ -1335,6 +1335,7 @@ export * from './icons/square-dashed-bottom-code-icon';
 export * from './icons/square-dashed-bottom-icon';
 export * from './icons/square-dashed-kanban-icon';
 export * from './icons/square-dashed-mouse-pointer-icon';
+export * from './icons/square-dashed-top-solid-icon';
 export * from './icons/square-dashed-icon';
 export * from './icons/square-divide-icon';
 export * from './icons/square-dot-icon';

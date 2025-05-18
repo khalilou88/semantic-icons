@@ -7,19 +7,19 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-university-icon]',
+  selector: 'svg[si-square-dashed-top-solid-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M14 21v-3a2 2 0 0 0-4 0v3" />
-    <svg:path d="M18 12h.01" />
-    <svg:path d="M18 16h.01" />
-    <svg:path
-      d="M22 7a1 1 0 0 0-1-1h-2a2 2 0 0 1-1.143-.359L13.143 2.36a2 2 0 0 0-2.286-.001L6.143 5.64A2 2 0 0 1 5 6H3a1 1 0 0 0-1 1v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z"
-    />
-    <svg:path d="M6 12h.01" />
-    <svg:path d="M6 16h.01" />
-    <svg:circle cx="12" cy="10" r="2" />
+    <svg:path d="M14 21h1" />
+    <svg:path d="M21 14v1" />
+    <svg:path d="M21 19a2 2 0 0 1-2 2" />
+    <svg:path d="M21 9v1" />
+    <svg:path d="M3 14v1" />
+    <svg:path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+    <svg:path d="M3 9v1" />
+    <svg:path d="M5 21a2 2 0 0 1-2-2" />
+    <svg:path d="M9 21h1" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
@@ -37,7 +37,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiUniversityIcon {
+export class SiSquareDashedTopSolidIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly width = input<string | number>('24');

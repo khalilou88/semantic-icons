@@ -11,8 +11,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:polyline points="9 17 4 12 9 7" />
     <svg:path d="M20 18v-2a4 4 0 0 0-4-4H4" />
+    <svg:path d="m9 17-5-5 5-5" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',

@@ -11,7 +11,7 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:polyline points="10 9 15 4 20 9" />
+    <svg:path d="m10 9 5-5 5 5" />
     <svg:path d="M4 20h7a4 4 0 0 0 4-4V4" />
   `,
   host: {

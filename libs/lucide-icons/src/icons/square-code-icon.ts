@@ -11,9 +11,9 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M10 9.5 8 12l2 2.5" />
-    <svg:path d="m14 9.5 2 2.5-2 2.5" />
-    <svg:rect width="18" height="18" x="3" y="3" rx="2" />
+    <svg:path d="m10 9-3 3 3 3" />
+    <svg:path d="m14 15 3-3-3-3" />
+    <svg:rect x="3" y="3" width="18" height="18" rx="2" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns()',
