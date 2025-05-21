@@ -9,20 +9,23 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-book-icon]',
+  selector: 'svg[si-filter-2-spark-icon]',
   standalone: true,
   imports: [],
   template: `
     <svg:path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <svg:path d="M4 6h16" />
+    <svg:path d="M6 12h9.5" />
+    <svg:path d="M9 18h2.5" />
     <svg:path
-      d="M21.5 5.134a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -7.5 -.266v-15.174a10 10 0 0 1 8.5 .708m-10.5 -.707l.001 15.174a8 8 0 0 0 -7.234 .117l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -13.068a1 1 0 0 1 .5 -.866a10 10 0 0 1 8.5 -.707"
+      d="M19 21.5c.205 -.849 .641 -1.625 1.258 -2.242c.617 -.617 1.393 -1.053 2.242 -1.258c-.849 -.205 -1.625 -.641 -2.242 -1.258c-.617 -.617 -1.053 -1.393 -1.258 -2.242c-.205 .849 -.641 1.625 -1.258 2.242c-.617 .617 -1.393 1.053 -2.242 1.258c.849 .205 1.625 .641 2.242 1.258c.617 .617 1.053 1.393 1.258 2.242z"
     />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBookIcon implements OnInit {
+export class SiFilter2SparkIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
@@ -32,6 +35,10 @@ export class SiBookIcon implements OnInit {
     this.render.setAttribute(svg, 'width', '24');
     this.render.setAttribute(svg, 'height', '24');
     this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'currentColor');
+    this.render.setAttribute(svg, 'fill', 'none');
+    this.render.setAttribute(svg, 'stroke', 'currentColor');
+    this.render.setAttribute(svg, 'stroke-width', '2');
+    this.render.setAttribute(svg, 'stroke-linecap', 'round');
+    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
   }
 }

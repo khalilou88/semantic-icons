@@ -9,20 +9,20 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-book-icon]',
+  selector: 'svg[si-ease-in-control-point-icon]',
   standalone: true,
   imports: [],
   template: `
     <svg:path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <svg:path
-      d="M21.5 5.134a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -7.5 -.266v-15.174a10 10 0 0 1 8.5 .708m-10.5 -.707l.001 15.174a8 8 0 0 0 -7.234 .117l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -13.068a1 1 0 0 1 .5 -.866a10 10 0 0 1 8.5 -.707"
+      d="M19 16a3 3 0 1 1 -2.829 4h-1.171a1 1 0 0 1 0 -2h1.17a3 3 0 0 1 2.83 -2m2.53 -13.848a1 1 0 0 1 .318 1.378l-.286 .445l-.173 .264a73 73 0 0 1 -1.26 1.839a70 70 0 0 1 -4.376 5.58c-2.795 3.195 -5.544 5.638 -8.171 7.04c-1.593 .848 -3.123 1.302 -4.582 1.302a1 1 0 0 1 0 -2c1.097 0 2.317 -.361 3.64 -1.068c2.373 -1.265 4.958 -3.562 7.607 -6.59a68 68 0 0 0 4.25 -5.42a69 69 0 0 0 1.003 -1.456l.455 -.69q .133 -.204 .196 -.306a1 1 0 0 1 1.378 -.318m-9.529 15.848a1 1 0 0 1 0 2h-2a1 1 0 0 1 0 -2z"
     />
   `,
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBookIcon implements OnInit {
+export class SiEaseInControlPointIcon implements OnInit {
   private readonly elementRef = inject(ElementRef);
   private readonly render = inject(Renderer2);
 
