@@ -30,3 +30,5 @@ jobs:
       - name: Build tabler-icons
         run: npx nx run tabler-icons:build:production --skip-nx-cache
         shell: bash
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
