@@ -1,11 +1,9 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -21,20 +19,26 @@ import {
       d="M19 9c.513 0 .936 .463 .993 1.06l.007 .14v7.2c0 1.917 -1.249 3.484 -2.824 3.594l-.176 .006h-10c-1.598 0 -2.904 -1.499 -2.995 -3.388l-.005 -.212v-7.2c0 -.663 .448 -1.2 1 -1.2h14zm-5 2h-4l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h4l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z"
     />
   `,
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiArchiveIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiArchiveIcon {
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'currentColor');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('currentColor');
 }

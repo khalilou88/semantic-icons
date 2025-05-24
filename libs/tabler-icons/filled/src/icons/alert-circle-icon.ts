@@ -1,11 +1,9 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -18,20 +16,26 @@ import {
       d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z"
     />
   `,
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiAlertCircleIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiAlertCircleIcon {
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'currentColor');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('currentColor');
 }

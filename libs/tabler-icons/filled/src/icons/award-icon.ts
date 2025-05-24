@@ -1,11 +1,9 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -24,20 +22,26 @@ import {
       d="M12 2l.24 .004a7 7 0 0 1 6.76 6.996l-.003 .193l-.007 .192l-.018 .245l-.026 .242l-.024 .178a6.985 6.985 0 0 1 -.317 1.268l-.116 .308l-.153 .348a7.001 7.001 0 0 1 -12.688 -.028l-.13 -.297l-.052 -.133l-.08 -.217l-.095 -.294a6.96 6.96 0 0 1 -.093 -.344l-.06 -.271l-.049 -.271l-.02 -.139l-.039 -.323l-.024 -.365l-.006 -.292a7 7 0 0 1 6.76 -6.996l.24 -.004z"
     />
   `,
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiAwardIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiAwardIcon {
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'currentColor');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('currentColor');
 }

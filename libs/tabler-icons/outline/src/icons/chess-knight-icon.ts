@@ -1,11 +1,9 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -21,24 +19,44 @@ import {
       d="M9 3l1 3l-3.491 2.148a1 1 0 0 0 .524 1.852h2.967l-2.073 6h7.961l.112 -5c0 -3 -1.09 -5.983 -4 -7c-1.94 -.678 -2.94 -1.011 -3 -1z"
     />
   `,
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiChessKnightIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiChessKnightIcon {
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'none');
-    this.render.setAttribute(svg, 'stroke', 'currentColor');
-    this.render.setAttribute(svg, 'stroke-width', '2');
-    this.render.setAttribute(svg, 'stroke-linecap', 'round');
-    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('none');
+
+  readonly stroke = input<string>('currentColor');
+
+  readonly strokeWidth = input<string | number>('2', {
+    alias: 'stroke-width',
+  });
+
+  readonly strokeLinecap = input<string>('round', {
+    alias: 'stroke-linecap',
+  });
+
+  readonly strokeLinejoin = input<string>('round', {
+    alias: 'stroke-linejoin',
+  });
 }

@@ -1,11 +1,9 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -21,24 +19,44 @@ import {
       d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z"
     />
   `,
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiShieldStarIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiShieldStarIcon {
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'none');
-    this.render.setAttribute(svg, 'stroke', 'currentColor');
-    this.render.setAttribute(svg, 'stroke-width', '2');
-    this.render.setAttribute(svg, 'stroke-linecap', 'round');
-    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('none');
+
+  readonly stroke = input<string>('currentColor');
+
+  readonly strokeWidth = input<string | number>('2', {
+    alias: 'stroke-width',
+  });
+
+  readonly strokeLinecap = input<string>('round', {
+    alias: 'stroke-linecap',
+  });
+
+  readonly strokeLinejoin = input<string>('round', {
+    alias: 'stroke-linejoin',
+  });
 }

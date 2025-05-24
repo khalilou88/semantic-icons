@@ -1,11 +1,9 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
   ViewEncapsulation,
-  inject,
+  input,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -18,24 +16,44 @@ import {
       d="M5.897 20.188c1.67 .752 3.896 .812 6.103 .812s4.434 -.059 6.104 -.812c.868 -.392 1.614 -.982 2.133 -1.856c.514 -.865 .763 -1.94 .763 -3.234c0 -2.577 -.983 -5.315 -2.557 -7.416c-1.57 -2.094 -3.833 -3.682 -6.443 -3.682s-4.873 1.588 -6.443 3.682c-1.574 2.101 -2.557 4.84 -2.557 7.416c0 1.295 .249 2.369 .763 3.234c.519 .874 1.265 1.464 2.134 1.856"
     />
   `,
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
+  },
   styles: ``,
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBlobIcon implements OnInit {
-  private readonly elementRef = inject(ElementRef);
-  private readonly render = inject(Renderer2);
+export class SiBlobIcon {
+  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
-  ngOnInit(): void {
-    const svg = this.elementRef.nativeElement;
-    this.render.setAttribute(svg, 'xmlns', 'http://www.w3.org/2000/svg');
-    this.render.setAttribute(svg, 'width', '24');
-    this.render.setAttribute(svg, 'height', '24');
-    this.render.setAttribute(svg, 'viewBox', '0 0 24 24');
-    this.render.setAttribute(svg, 'fill', 'none');
-    this.render.setAttribute(svg, 'stroke', 'currentColor');
-    this.render.setAttribute(svg, 'stroke-width', '2');
-    this.render.setAttribute(svg, 'stroke-linecap', 'round');
-    this.render.setAttribute(svg, 'stroke-linejoin', 'round');
-  }
+  readonly width = input<string | number>('24');
+
+  readonly height = input<string | number>('24');
+
+  readonly viewBox = input<string>('0 0 24 24');
+
+  readonly fill = input<string>('none');
+
+  readonly stroke = input<string>('currentColor');
+
+  readonly strokeWidth = input<string | number>('2', {
+    alias: 'stroke-width',
+  });
+
+  readonly strokeLinecap = input<string>('round', {
+    alias: 'stroke-linecap',
+  });
+
+  readonly strokeLinejoin = input<string>('round', {
+    alias: 'stroke-linejoin',
+  });
 }
