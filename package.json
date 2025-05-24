@@ -26,7 +26,6 @@
     "@tailwindcss/postcss": "^4.1.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "embla-carousel": "^8.5.1",
     "rxjs": "~7.8.2",
     "shiki": "^3.4.2",
     "tailwind": "^4.0.0",
