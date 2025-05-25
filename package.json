@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "19.2.13",
     "@angular/router": "19.2.13",
     "@js-temporal/polyfill": "^0.5.1",
+    "@semantic-components/code-highlighter": "^0.0.1",
     "@semantic-components/ui": "^0.52.0",
     "@semantic-components/utils": "^0.41.0",
     "@semantic-icons/lucide-icons": "^0.45.0",

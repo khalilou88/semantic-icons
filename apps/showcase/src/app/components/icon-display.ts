@@ -11,8 +11,8 @@ import {
   viewChild,
 } from '@angular/core';
 
+import { ScCodeHighlighter } from '@semantic-components/code-highlighter';
 import {
-  ScCodeHighlighter,
   ScSheet,
   ScSheetClose,
   ScSheetConfig,
