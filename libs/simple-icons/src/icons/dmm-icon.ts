@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-crunchyroll-icon]',
+  selector: 'svg[si-dmm-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:title>Crunchyroll</svg:title>
+    <svg:title>DMM</svg:title>
     <svg:path
-      d="M2.909 13.436C2.914 7.61 7.642 2.893 13.468 2.898c5.576.005 10.137 4.339 10.51 9.819q.021-.351.022-.706C24.007 5.385 18.64.006 12.012 0S.007 5.36 0 11.988 5.36 23.994 11.988 24q.412 0 .815-.027c-5.526-.338-9.9-4.928-9.894-10.538Zm16.284.155a4.1 4.1 0 0 1-4.095-4.103 4.1 4.1 0 0 1 2.712-3.855 8.95 8.95 0 0 0-4.187-1.037 9.007 9.007 0 1 0 8.997 9.016q-.001-.847-.15-1.651a4.1 4.1 0 0 1-3.278 1.63Z"
+      d="M9.525.46H0v23.08h11.545C17.284 23.54 24 20.916 24 12S16.026.46 9.525.46zm.646 15.073V8.34c1.746 0 4.4.079 4.4 3.582 0 3.58-2.553 3.611-4.4 3.611z"
     />
   `,
   host: {
@@ -26,10 +26,10 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCrunchyrollIcon {
+export class SiDmmIcon {
   protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#FF5E00');
+  readonly fill = input<string>('#000000');
 }
