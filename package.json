@@ -24,7 +24,7 @@
     "@semantic-components/ui": "^0.54.0",
     "@semantic-components/utils": "^0.43.0",
     "@semantic-icons/lucide-icons": "^0.46.0",
-    "@tailwindcss/postcss": "^4.1.7",
+    "@tailwindcss/postcss": "^4.1.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "rxjs": "~7.8.2",
