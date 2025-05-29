@@ -17,7 +17,7 @@ import {
     <svg:path d="M7 21h10v-1H7v1zM7 3v1h10V3H7z" opacity=".3" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -27,7 +27,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiAodIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

@@ -15,7 +15,7 @@ import {
     <svg:path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -31,7 +31,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiSquareRoundCornerIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

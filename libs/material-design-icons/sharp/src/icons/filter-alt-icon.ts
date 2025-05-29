@@ -14,7 +14,7 @@ import {
     <svg:path d="M3 4c2.01 2.59 7 9 7 9v7h4v-7s4.98-6.41 7-9H3z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -24,7 +24,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiFilterAltIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

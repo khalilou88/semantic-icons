@@ -15,7 +15,7 @@ import {
     <svg:path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></svg:path>
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -30,7 +30,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiCropIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

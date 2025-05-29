@@ -15,7 +15,7 @@ import {
     <svg:rect x="1" y="5" width="15" height="14" rx="2" ry="2"></svg:rect>
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -30,7 +30,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiVideoIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

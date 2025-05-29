@@ -14,7 +14,7 @@ import {
     <svg:path d="m19 18 2 1V1H7v2h12v15zM17 5H3v18l7-3 7 3V5z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -24,7 +24,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiBookmarksIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

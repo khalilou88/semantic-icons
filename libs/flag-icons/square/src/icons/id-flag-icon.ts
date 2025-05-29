@@ -15,7 +15,7 @@ import {
     <svg:path fill="#fff" d="M0 256h512v256H0Z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -23,7 +23,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiIdFlagIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 512 512');
 }

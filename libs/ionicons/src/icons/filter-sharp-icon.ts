@@ -14,7 +14,7 @@ import {
     <svg:path d="M16 120h480v48H16zM96 232h320v48H96zM192 344h128v48H192z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -22,7 +22,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiFilterSharpIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 512 512');
 }

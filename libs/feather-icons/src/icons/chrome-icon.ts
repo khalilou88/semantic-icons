@@ -18,7 +18,7 @@ import {
     <svg:line x1="10.88" y1="21.94" x2="15.46" y2="14"></svg:line>
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -33,7 +33,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiChromeIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

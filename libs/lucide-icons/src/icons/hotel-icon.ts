@@ -23,7 +23,7 @@ import {
     <svg:rect x="4" y="2" width="16" height="20" rx="2" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -39,7 +39,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiHotelIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

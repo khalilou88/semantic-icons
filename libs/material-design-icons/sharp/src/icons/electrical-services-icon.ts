@@ -15,7 +15,7 @@ import {
     <svg:path d="M5 11h7V4H4v2h6v3H3v8h6v-2H5zm13 6h3v2h-3z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -25,7 +25,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiElectricalServicesIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

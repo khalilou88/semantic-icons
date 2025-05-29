@@ -17,7 +17,7 @@ import {
     <svg:path d="M2.99 6.09V16h9.91zM6.55 4l12 12H21V4z" opacity=".3" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -27,7 +27,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiDesktopAccessDisabledIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

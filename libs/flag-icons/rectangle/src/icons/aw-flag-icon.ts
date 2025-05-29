@@ -202,7 +202,7 @@ import {
     <svg:path fill="#9cc" d="m139.7 234.7 3 3zm5.9 0 3 3zm-3 6 3 2.9z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -210,7 +210,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiAwFlagIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 640 480');
 }

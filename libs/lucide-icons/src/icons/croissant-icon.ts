@@ -24,7 +24,7 @@ import {
     <svg:path d="M18 16c1.55 0 4-.24 4 2 0 2-2.17 2.5-4 2.5" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -40,7 +40,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiCroissantIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

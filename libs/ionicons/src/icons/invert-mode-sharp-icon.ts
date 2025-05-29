@@ -17,7 +17,7 @@ import {
     <svg:path d="M336 256a80 80 0 0 0-80-80v160a80 80 0 0 0 80-80" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -25,7 +25,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiInvertModeSharpIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 512 512');
 }

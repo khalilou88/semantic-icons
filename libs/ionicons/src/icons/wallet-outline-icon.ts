@@ -33,7 +33,7 @@ import {
     <svg:path d="M368 320a32 32 0 1 1 32-32 32 32 0 0 1-32 32" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -41,7 +41,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiWalletOutlineIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 512 512');
 }

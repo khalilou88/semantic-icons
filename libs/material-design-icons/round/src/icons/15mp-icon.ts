@@ -17,7 +17,7 @@ import {
     <svg:path d="M15 14h1.5v1.5H15z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -27,7 +27,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Si15mpIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

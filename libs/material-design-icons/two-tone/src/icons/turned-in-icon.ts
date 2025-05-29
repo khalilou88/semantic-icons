@@ -17,7 +17,7 @@ import {
     <svg:path d="m7 17.97 4.21-1.81.79-.34.79.34L17 17.97V5H7z" opacity=".3" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -27,7 +27,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiTurnedInIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

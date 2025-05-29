@@ -372,7 +372,7 @@ import {
     </svg:g>
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -380,7 +380,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiDoFlagIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 640 480');
 }

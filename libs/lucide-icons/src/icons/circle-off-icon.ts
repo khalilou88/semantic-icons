@@ -16,7 +16,7 @@ import {
     <svg:path d="M19.08 19.08A10 10 0 1 1 4.92 4.92" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -32,7 +32,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiCircleOffIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

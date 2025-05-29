@@ -21,7 +21,7 @@ import {
     <svg:line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></svg:line>
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -36,7 +36,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiLoaderIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

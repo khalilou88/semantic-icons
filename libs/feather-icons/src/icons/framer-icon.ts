@@ -14,7 +14,7 @@ import {
     <svg:path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"></svg:path>
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -29,7 +29,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiFramerIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

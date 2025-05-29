@@ -15,7 +15,7 @@ import {
     <svg:path d="M48 80v432l168-124 168 124V80z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -23,7 +23,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiBookmarksSharpIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 512 512');
 }

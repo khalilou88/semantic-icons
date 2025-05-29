@@ -19,7 +19,7 @@ import {
     <svg:path d="M7 18a6 6 0 0 0 3.84-10.61" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -35,7 +35,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiBirdIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

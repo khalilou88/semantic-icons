@@ -30,7 +30,7 @@ import {
     <svg:path fill="#C8102E" d="M0 104v48h256v-48zM104 0v256h48V0z" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -38,7 +38,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiTvFlagIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 512 512');
 }

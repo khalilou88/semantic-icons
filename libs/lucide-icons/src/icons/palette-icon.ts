@@ -20,7 +20,7 @@ import {
     <svg:circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -36,7 +36,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiPaletteIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

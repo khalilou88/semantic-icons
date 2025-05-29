@@ -36,7 +36,7 @@ import {
     <svg:ellipse cx="400" cy="328" rx="16" ry="24" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.viewBox]': 'viewBox()',
   },
   styles: ``,
@@ -44,7 +44,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiDiceOutlineIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 512 512');
 }

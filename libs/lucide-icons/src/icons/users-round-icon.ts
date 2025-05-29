@@ -16,7 +16,7 @@ import {
     <svg:path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -32,7 +32,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiUsersRoundIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

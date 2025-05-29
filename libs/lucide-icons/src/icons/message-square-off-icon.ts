@@ -16,7 +16,7 @@ import {
     <svg:path d="M3.6 3.6c-.4.3-.6.8-.6 1.4v16l4-4h10" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -32,7 +32,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiMessageSquareOffIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

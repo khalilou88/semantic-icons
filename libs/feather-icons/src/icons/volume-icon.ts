@@ -14,7 +14,7 @@ import {
     <svg:polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></svg:polygon>
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -29,7 +29,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiVolumeIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
 

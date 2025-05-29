@@ -17,7 +17,7 @@ import {
     <svg:path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
   `,
   host: {
-    '[attr.xmlns]': 'xmlns()',
+    '[attr.xmlns]': 'xmlns',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
@@ -28,7 +28,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiFilePersonIcon {
-  protected readonly xmlns = signal<string>('http://www.w3.org/2000/svg');
+  protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('16');
 
