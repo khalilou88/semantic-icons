@@ -3,7 +3,6 @@ import {
   Component,
   ViewEncapsulation,
   input,
-  signal,
 } from '@angular/core';
 
 @Component({
