@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-hilton-hotels--and--resorts-icon]',
+  selector: 'svg[si-hilton-hotels-and-resorts-icon]',
   standalone: true,
   imports: [],
   template: `
