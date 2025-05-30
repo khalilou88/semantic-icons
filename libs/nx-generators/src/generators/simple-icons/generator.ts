@@ -98,7 +98,7 @@ function generateIconsComponents(
 
     const svgFileName = `${f2(names(name).fileName)}-icon`;
     const svgClassName = `Si${capitalizeAfterDigit(names(name).className)}Icon`;
-    const svgSelector = `si-${f(names(name).fileName)}-icon`;
+    const svgSelector = f(`si-${names(name).fileName}-icon`);
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
