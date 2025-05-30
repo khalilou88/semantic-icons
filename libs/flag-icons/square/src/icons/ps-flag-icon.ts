@@ -10,19 +10,10 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:defs>
-      <svg:clipPath id="ps-a">
-        <svg:path fill-opacity=".7" d="M237.1 0h493.5v493.5H237.1z" />
-      </svg:clipPath>
-    </svg:defs>
-    <svg:g clip-path="url(#ps-a)" transform="translate(-246)scale(1.0375)">
-      <svg:g fill-rule="evenodd" stroke-width="1pt">
-        <svg:path fill="#000001" d="M0 0h987v164.5H0z" />
-        <svg:path fill="#fff" d="M0 164.5h987V329H0z" />
-        <svg:path fill="#090" d="M0 329h987v164.5H0z" />
-        <svg:path fill="red" d="m0 493.5 493.5-246.8L0 0z" />
-      </svg:g>
-    </svg:g>
+    <svg:path fill="#009639" d="M0 0h512v512H0z" />
+    <svg:path fill="#fff" d="M0 0h512v341.3H0z" />
+    <svg:path d="M0 0h512v170.7H0z" />
+    <svg:path fill="#ed2e38" d="m0 0 341.3 256L0 512Z" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
