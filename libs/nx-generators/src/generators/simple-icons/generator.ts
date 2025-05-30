@@ -25,6 +25,14 @@ function capitalizeAfterDigit(str: string) {
   });
 }
 
+function f(s: string) {
+  return s.replace(/--/g, '-');
+}
+
+function f2(s: string) {
+  return s.replace(/--/g, '-').replace(/^-/g, '');
+}
+
 function getSvgTitle(svgContent: string) {
   const regex = /<title>(.*?)<\/title>/;
 
@@ -88,9 +96,9 @@ function generateIconsComponents(
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
-    const svgFileName = `${names(name).fileName}-icon`;
+    const svgFileName = `${f2(names(name).fileName)}-icon`;
     const svgClassName = `Si${capitalizeAfterDigit(names(name).className)}Icon`;
-    const svgSelector = `si-${names(name).fileName}-icon`;
+    const svgSelector = `si-${f(names(name).fileName)}-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
