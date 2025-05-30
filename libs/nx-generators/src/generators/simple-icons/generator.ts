@@ -89,11 +89,21 @@ function generateIconsComponents(
 
     //Colors
     const title = getSvgTitle(svgFileContent);
+    const simpleIconsPackageJsonPath = path.join(
+      workspaceRoot,
+      'node_modules',
+      'simple-icons',
+      'package.json',
+    );
+    const packageJson = JSON.parse(
+      fs.readFileSync(simpleIconsPackageJsonPath, 'utf-8'),
+    ) as { version: string };
+    const [major] = packageJson.version.split('.');
     const simpleIconsJsonPath = path.join(
       workspaceRoot,
       'node_modules',
       'simple-icons',
-      '_data',
+      Number(major) >= 15 ? 'data' : '_data',
       'simple-icons.json',
     );
     const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
