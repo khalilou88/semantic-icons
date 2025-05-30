@@ -29,6 +29,9 @@ jobs:
 
       - run: npx nx generate @semantic-icons/nx-generators:simple-icons
 
+      - name: Build simple-icons
+        run: npx nx build simple-icons
+
       - name: Setup Git
         run: |
           git config user.name "${{ github.actor }}"
