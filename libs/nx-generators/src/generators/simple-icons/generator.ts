@@ -71,6 +71,7 @@ function generateIconsComponents(
     const title3 = title2
       .replace(/\./g, 'dot')
       .replace(/&/g, 'and')
+      .replace(/'/g, '-')
       .normalize('NFD')
       .replace(/\p{Diacritic}/gu, '')
       .toLowerCase();
