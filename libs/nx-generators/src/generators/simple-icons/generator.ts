@@ -69,9 +69,9 @@ function generateIconsComponents(
     const title = getSvgTitle(svgFileContent);
     const decodedTitle = decode(title);
     const title3 = decodedTitle
-      .replace(/\./g, 'Dot')
-      .replace(/&/g, 'And')
-      .replace(/\+/g, 'Plus')
+      .replace(/\./g, 'Dot ')
+      .replace(/&/g, 'And ')
+      .replace(/\+/g, 'Plus ')
       .replace(/::/g, ' ')
       .replace(/:/g, ' ')
       .replace(/'/g, ' ')
