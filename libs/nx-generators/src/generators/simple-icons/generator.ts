@@ -67,7 +67,9 @@ function generateIconsComponents(
     );
 
     const title = getSvgTitle(svgFileContent);
-    const name = path.parse(title).name;
+    const title2 = decode(title);
+    const title3 = title2.toLowerCase();
+    const name = path.parse(title3).name;
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
@@ -109,7 +111,7 @@ function generateIconsComponents(
     );
     const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
     const simpleIcon = simpleIconsJson.find(
-      (icon: SimpleIcon) => icon.title === decode(title),
+      (icon: SimpleIcon) => icon.title === title2,
     );
 
     if (!simpleIcon) {
