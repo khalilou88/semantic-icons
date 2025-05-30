@@ -78,7 +78,7 @@
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-playwright": "^2.2.0",
     "feather-icons": "4.29.2",
-    "flag-icons": "7.3.2",
+    "flag-icons": "7.5.0",
     "flowbite-icons": "1.5.0",
     "heroicons": "2.2.0",
     "html-entities": "^2.6.0",
