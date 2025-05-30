@@ -68,7 +68,10 @@ function generateIconsComponents(
 
     const title = getSvgTitle(svgFileContent);
     const title2 = decode(title);
-    const title3 = title2.toLowerCase();
+    const title3 = title2
+      .replace(/\./g, '-dot')
+      .replace(/&/g, '-and')
+      .toLowerCase();
     const name = path.parse(title3).name;
 
     const svgTagContent = getSvgTagContent(svgFileContent);
