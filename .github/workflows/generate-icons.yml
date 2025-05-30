@@ -27,20 +27,10 @@ jobs:
       - name: Build nx-generators
         run: npx nx build nx-generators
 
-      - run: npx nx generate @semantic-icons/nx-generators:heroicons
-      - run: npx nx generate @semantic-icons/nx-generators:tabler-icons
-      - run: npx nx generate @semantic-icons/nx-generators:flowbite-icons
-      - run: npx nx generate @semantic-icons/nx-generators:flag-icons
-      - run: npx nx generate @semantic-icons/nx-generators:lucide-icons
-      - run: npx nx generate @semantic-icons/nx-generators:circle-flags
-      - run: npx nx generate @semantic-icons/nx-generators:bootstrap-icons
-      - run: npx nx generate @semantic-icons/nx-generators:lineicons
       - run: npx nx generate @semantic-icons/nx-generators:simple-icons
-      - run: npx nx generate @semantic-icons/nx-generators:ionicons
-      - run: npx nx generate @semantic-icons/nx-generators:remixicon
-      - run: npx nx generate @semantic-icons/nx-generators:feather-icons
-      - run: npx nx generate @semantic-icons/nx-generators:material-design-icons
-      - run: npx nx generate @semantic-icons/nx-generators:fontawesome
+
+      - name: Build simple-icons
+        run: npx nx build simple-icons
 
       - name: Setup Git
         run: |
