@@ -19,12 +19,6 @@ interface SimpleIcon {
   hex: string;
 }
 
-function capitalizeAfterDigit(str: string) {
-  return str.replace(/(\d)([a-z])/g, (match, digit, letter) => {
-    return digit + letter.toUpperCase();
-  });
-}
-
 function getSvgTitle(svgContent: string) {
   const regex = /<title>(.*?)<\/title>/;
 
@@ -75,9 +69,9 @@ function generateIconsComponents(
     const title = getSvgTitle(svgFileContent);
     const decodedTitle = decode(title);
     const title3 = decodedTitle
-      .replace(/\./g, ' dot')
-      .replace(/&/g, ' and')
-      .replace(/\+/g, ' plus')
+      .replace(/\./g, 'Dot')
+      .replace(/&/g, 'And')
+      .replace(/\+/g, 'Plus')
       .replace(/::/g, ' ')
       .replace(/:/g, ' ')
       .replace(/'/g, ' ')
@@ -88,7 +82,7 @@ function generateIconsComponents(
     const svgTagContent = getSvgTagContent(svgFileContent);
 
     const svgFileName = `${names(name).fileName}-icon`;
-    const svgClassName = `Si${capitalizeAfterDigit(names(name).className)}Icon`;
+    const svgClassName = `Si${names(name).className}Icon`;
     const svgSelector = `si-${names(name).fileName}-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
