@@ -72,6 +72,7 @@ function generateIconsComponents(
       .replace(/\./g, 'Dot')
       .replace(/&/g, 'And')
       .replace(/\+/g, 'Plus')
+      .replace(/:/g, '')
       .replace(/'/g, '-')
       .normalize('NFD')
       .replace(/\p{Diacritic}/gu, '')
