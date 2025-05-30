@@ -61,12 +61,22 @@ function generateIconsComponents(
 
   const exports = [];
   tree.children(iconsSourcePath).forEach((fileName) => {
-    const name = path.parse(fileName).name;
-
     const svgFileContent = tree.read(
       path.join(iconsSourcePath, fileName),
       'utf-8',
     );
+
+    const title = getSvgTitle(svgFileContent);
+    const title2 = decode(title);
+    const title3 = title2
+      .replace(/\./g, 'Dot')
+      .replace(/&/g, 'And')
+      .replace(/\+/g, 'Plus')
+      .replace(/'/g, '-')
+      .normalize('NFD')
+      .replace(/\p{Diacritic}/gu, '')
+      .toLowerCase();
+    const name = path.parse(title3).name;
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
@@ -88,7 +98,7 @@ function generateIconsComponents(
     const strokeLinejoin = svgAttributes.strokeLinejoin;
 
     //Colors
-    const title = getSvgTitle(svgFileContent);
+
     const simpleIconsPackageJsonPath = path.join(
       workspaceRoot,
       'node_modules',
@@ -108,7 +118,7 @@ function generateIconsComponents(
     );
     const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
     const simpleIcon = simpleIconsJson.find(
-      (icon: SimpleIcon) => icon.title === decode(title),
+      (icon: SimpleIcon) => icon.title === title2,
     );
 
     if (!simpleIcon) {
