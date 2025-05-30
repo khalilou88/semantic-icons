@@ -61,12 +61,13 @@ function generateIconsComponents(
 
   const exports = [];
   tree.children(iconsSourcePath).forEach((fileName) => {
-    const name = path.parse(fileName).name;
-
     const svgFileContent = tree.read(
       path.join(iconsSourcePath, fileName),
       'utf-8',
     );
+
+    const title = getSvgTitle(svgFileContent);
+    const name = path.parse(title).name;
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
@@ -88,7 +89,7 @@ function generateIconsComponents(
     const strokeLinejoin = svgAttributes.strokeLinejoin;
 
     //Colors
-    const title = getSvgTitle(svgFileContent);
+
     const simpleIconsPackageJsonPath = path.join(
       workspaceRoot,
       'node_modules',
