@@ -19,6 +19,12 @@ interface SimpleIcon {
   hex: string;
 }
 
+function capitalizeAfterDigit(str: string) {
+  return str.replace(/(\d)([a-z])/g, (match, digit, letter) => {
+    return digit + letter.toUpperCase();
+  });
+}
+
 function getSvgTitle(svgContent: string) {
   const regex = /<title>(.*?)<\/title>/;
 
@@ -83,7 +89,7 @@ function generateIconsComponents(
     const svgTagContent = getSvgTagContent(svgFileContent);
 
     const svgFileName = `${names(name).fileName}-icon`;
-    const svgClassName = `Si${names(name).className}Icon`;
+    const svgClassName = `Si${capitalizeAfterDigit(names(name).className)}Icon`;
     const svgSelector = `si-${names(name).fileName}-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
