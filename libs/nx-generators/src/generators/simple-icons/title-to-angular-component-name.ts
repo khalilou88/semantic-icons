@@ -43,6 +43,8 @@ export function titleToAngularComponentName(text: string) {
       )
       // Remove remaining special characters and replace with spaces
       .replace(/[^a-zA-Z0-9\s]/g, ' ')
+      // Handle number-letter combinations by adding space between them
+      .replace(/(\d)([a-zA-Z])/g, '$1 $2')
       // Split by spaces and filter out empty strings
       .split(/\s+/)
       .filter((word) => word.length > 0)
