@@ -13,24 +13,11 @@ import * as path from 'path';
 
 import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { SimpleIconsGeneratorSchema } from './schema';
+import { titleToAngularComponentName } from './title-To-Angular-Component-Name';
 
 interface SimpleIcon {
   title: string;
   hex: string;
-}
-
-function capitalizeAfterDigit(str: string) {
-  return str.replace(/(\d)([a-z])/g, (match, digit, letter) => {
-    return digit + letter.toUpperCase();
-  });
-}
-
-function f(s: string) {
-  return s.replace(/--/g, '-');
-}
-
-function f2(s: string) {
-  return s.replace(/--/g, '-').replace(/^-/g, '');
 }
 
 function getSvgTitle(svgContent: string) {
@@ -81,24 +68,14 @@ function generateIconsComponents(
     );
 
     const title = getSvgTitle(svgFileContent);
-    const title2 = decode(title);
-    const title3 = title2
-      .replace(/\./g, ' dot ')
-      .replace(/&/g, ' and ')
-      .replace(/\+/g, ' plus ')
-      .replace(/::/g, ' ')
-      .replace(/:/g, ' ')
-      .replace(/'/g, ' ')
-      .normalize('NFD')
-      .replace(/\p{Diacritic}/gu, '')
-      .toLowerCase();
-    const name = path.parse(title3).name;
+    const decodedTitle = decode(title);
+    const angularComponentName = titleToAngularComponentName(decodedTitle);
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
-    const svgFileName = `${f2(names(name).fileName)}-icon`;
-    const svgClassName = `Si${capitalizeAfterDigit(names(name).className)}Icon`;
-    const svgSelector = f(`si-${names(name).fileName}-icon`);
+    const svgFileName = names(angularComponentName).fileName;
+    const svgClassName = `Si${names(angularComponentName).className}`;
+    const svgSelector = `si-${names(angularComponentName).fileName}`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
@@ -134,7 +111,7 @@ function generateIconsComponents(
     );
     const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
     const simpleIcon = simpleIconsJson.find(
-      (icon: SimpleIcon) => icon.title === title2,
+      (icon: SimpleIcon) => icon.title === decodedTitle,
     );
 
     if (!simpleIcon) {
