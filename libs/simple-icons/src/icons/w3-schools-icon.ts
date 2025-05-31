@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-w3schools-icon]',
+  selector: 'svg[si-w3-schools-icon]',
   standalone: true,
   imports: [],
   template: `
@@ -25,7 +25,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiW3schoolsIcon {
+export class SiW3SchoolsIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 24 24');

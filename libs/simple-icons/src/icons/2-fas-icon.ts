@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-2fas-icon]',
+  selector: 'svg[si-2-fas-icon]',
   standalone: true,
   imports: [],
   template: `
@@ -25,7 +25,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Si2fasIcon {
+export class Si2FasIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 24 24');

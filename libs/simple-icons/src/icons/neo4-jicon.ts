@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-neo4j-icon]',
+  selector: 'svg[si-neo4-jicon]',
   standalone: true,
   imports: [],
   template: `
@@ -25,7 +25,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiNeo4jIcon {
+export class SiNeo4JIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 24 24');

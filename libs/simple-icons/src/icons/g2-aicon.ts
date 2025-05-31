@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-g2a-icon]',
+  selector: 'svg[si-g2-aicon]',
   standalone: true,
   imports: [],
   template: `
@@ -25,7 +25,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiG2aIcon {
+export class SiG2AIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 24 24');

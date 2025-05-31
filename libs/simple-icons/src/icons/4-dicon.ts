@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-4d-icon]',
+  selector: 'svg[si-4-dicon]',
   standalone: true,
   imports: [],
   template: `
@@ -25,7 +25,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Si4dIcon {
+export class Si4DIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 24 24');
