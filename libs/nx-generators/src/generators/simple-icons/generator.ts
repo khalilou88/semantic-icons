@@ -13,7 +13,7 @@ import * as path from 'path';
 
 import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { SimpleIconsGeneratorSchema } from './schema';
-import { titleToAngularComponentName } from './title-To-Angular-Component-Name';
+import { titleToAngularComponentName } from './title-to-angular-component-name';
 
 interface SimpleIcon {
   title: string;
