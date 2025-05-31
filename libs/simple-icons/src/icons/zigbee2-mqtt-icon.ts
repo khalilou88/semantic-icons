@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-zigbee2-mqtt-icon]',
+  selector: 'svg[si-zigbee-2-mqtt-icon]',
   standalone: true,
   imports: [],
   template: `

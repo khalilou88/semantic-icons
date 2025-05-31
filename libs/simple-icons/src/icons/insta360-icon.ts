@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-insta360-icon]',
+  selector: 'svg[si-insta-360-icon]',
   standalone: true,
   imports: [],
   template: `
