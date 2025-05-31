@@ -20,6 +20,10 @@ interface SimpleIcon {
   hex: string;
 }
 
+function f(str: string): string {
+  return str.replace(/([a-zA-Z])(\d)/g, '$1 $2');
+}
+
 function getSvgTitle(svgContent: string) {
   const regex = /<title>(.*?)<\/title>/;
 
@@ -75,7 +79,7 @@ function generateIconsComponents(
 
     const svgFileName = names(angularComponentName).fileName;
     const svgClassName = `Si${names(angularComponentName).className}`;
-    const svgSelector = `si-${names(angularComponentName).fileName}`;
+    const svgSelector = `si-${names(f(angularComponentName)).fileName}`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
