@@ -99,7 +99,7 @@
     "prettier-plugin-organize-attributes": "^1.0.0",
     "remixicon": "4.6.0",
     "simple-git": "^3.27.0",
-    "simple-icons": "^14.15.0",
+    "simple-icons": "^15.0.0",
     "tailwindcss": "^4.1.8",
     "tmp": "^0.2.3",
     "ts-jest": "^29.3.4",
