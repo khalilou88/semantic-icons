@@ -6,13 +6,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-netflix-icon]',
+  selector: 'svg[si-voelkner-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:title>Netflix</svg:title>
+    <svg:title>voelkner</svg:title>
     <svg:path
-      d="m5.398 0 8.348 23.602c2.346.059 4.856.398 4.856.398L10.113 0H5.398zm8.489 0v9.172l4.715 13.33V0h-4.715zM5.398 1.5V24c1.873-.225 2.81-.312 4.715-.398V14.83L5.398 1.5z"
+      d="M19.4 3.502C18.093 8.84 15.018 16.05 11.964 16.05S5.841 8.827 4.552 3.502H0c.229 1.007 1.121 4.707 2.597 8.122 2.543 5.89 5.695 8.876 9.367 8.876s6.828-2.991 9.385-8.893C22.806 8.247 23.737 4.592 24 3.5h-4.6z"
     />
   `,
   host: {
@@ -25,10 +25,10 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiNetflixIcon {
+export class SiVoelknerIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#E50914');
+  readonly fill = input<string>('#94C125');
 }
