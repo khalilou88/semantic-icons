@@ -163,7 +163,7 @@ function generateIconsComponents(
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
 
-  updateJson(tree, iconsLibPath, (packageJson) => {
+  updateJson(tree, path.join(iconsLibPath, 'package.json'), (packageJson) => {
     packageJson.description = `Icons generated based on simple-icons v${packageVersion}`;
     return packageJson;
   });
