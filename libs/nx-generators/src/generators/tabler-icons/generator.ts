@@ -113,6 +113,7 @@ function generateIconsComponents(
     workspaceRoot,
     'node_modules',
     '@tabler',
+    'icons',
     'package.json',
   );
   const packageJson = JSON.parse(
