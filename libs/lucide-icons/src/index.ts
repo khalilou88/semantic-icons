@@ -277,6 +277,7 @@ export * from './icons/car-front-icon';
 export * from './icons/car-taxi-front-icon';
 export * from './icons/car-icon';
 export * from './icons/caravan-icon';
+export * from './icons/card-sim-icon';
 export * from './icons/carrot-icon';
 export * from './icons/case-lower-icon';
 export * from './icons/case-sensitive-icon';
