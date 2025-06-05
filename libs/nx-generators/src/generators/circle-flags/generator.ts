@@ -3,6 +3,7 @@ import {
   formatFiles,
   generateFiles,
   names,
+  updateJson,
   workspaceRoot,
 } from '@nx/devkit';
 import * as fs from 'fs';
@@ -22,7 +23,12 @@ export async function circleFlagsGenerator(
   const iconsSourcePath = 'node_modules/circle-flags/flags';
   const iconsDestinationPath = path.join(iconsLibPath, 'src');
 
-  generateIconsComponents(tree, iconsSourcePath, iconsDestinationPath);
+  generateIconsComponents(
+    tree,
+    iconsLibPath,
+    iconsSourcePath,
+    iconsDestinationPath,
+  );
 
   //2
   const otherIconsSourcePath = 'node_modules/circle-flags/flags/other';
@@ -30,6 +36,7 @@ export async function circleFlagsGenerator(
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     otherIconsSourcePath,
     otherIconsDestinationPath,
   );
@@ -44,6 +51,7 @@ export async function circleFlagsGenerator(
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     languagesIconsSourcePath,
     languagesIconsDestinationPath,
   );
@@ -53,6 +61,7 @@ export async function circleFlagsGenerator(
 
 function generateIconsComponents(
   tree: Tree,
+  iconsLibPath: string,
   iconsSourcePath: string,
   iconsDestinationPath: string,
 ) {
@@ -118,6 +127,22 @@ function generateIconsComponents(
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
+
+  const circleFlagsIconsPackageJsonPath = path.join(
+    workspaceRoot,
+    'node_modules',
+    'circle-flags',
+    'package.json',
+  );
+  const packageJson = JSON.parse(
+    fs.readFileSync(circleFlagsIconsPackageJsonPath, 'utf-8'),
+  ) as { version: string; description: string };
+  const packageVersion = packageJson.version;
+
+  updateJson(tree, path.join(iconsLibPath, 'package.json'), (packageJson) => {
+    packageJson.description = `Icons generated based on circle-flags v${packageVersion}`;
+    return packageJson;
+  });
 }
 
 export default circleFlagsGenerator;

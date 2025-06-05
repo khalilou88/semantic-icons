@@ -3,6 +3,7 @@ import {
   formatFiles,
   generateFiles,
   names,
+  updateJson,
   workspaceRoot,
 } from '@nx/devkit';
 import * as fs from 'fs';
@@ -16,32 +17,26 @@ export async function tablerIconsGenerator(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   options: TablerIconsGeneratorSchema,
 ) {
-  const iconsDestinationPath = 'libs/tabler-icons';
+  const iconsLibPath = 'libs/tabler-icons';
 
   //1
   const filledIconsSourcePath = 'node_modules/@tabler/icons/icons/filled';
-  const filledIconsDestinationPath = path.join(
-    iconsDestinationPath,
-    'filled',
-    'src',
-  );
+  const filledIconsDestinationPath = path.join(iconsLibPath, 'filled', 'src');
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     filledIconsSourcePath,
     filledIconsDestinationPath,
   );
 
   //2
   const outlineIconsSourcePath = 'node_modules/@tabler/icons/icons/outline';
-  const outlineIconsDestinationPath = path.join(
-    iconsDestinationPath,
-    'outline',
-    'src',
-  );
+  const outlineIconsDestinationPath = path.join(iconsLibPath, 'outline', 'src');
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     outlineIconsSourcePath,
     outlineIconsDestinationPath,
   );
@@ -51,6 +46,7 @@ export async function tablerIconsGenerator(
 
 function generateIconsComponents(
   tree: Tree,
+  iconsLibPath: string,
   iconsSourcePath: string,
   iconsDestinationPath: string,
 ) {
@@ -112,6 +108,22 @@ function generateIconsComponents(
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
+
+  const tablerIconsPackageJsonPath = path.join(
+    workspaceRoot,
+    'node_modules',
+    'tabler-icons',
+    'package.json',
+  );
+  const packageJson = JSON.parse(
+    fs.readFileSync(tablerIconsPackageJsonPath, 'utf-8'),
+  ) as { version: string; description: string };
+  const packageVersion = packageJson.version;
+
+  updateJson(tree, path.join(iconsLibPath, 'package.json'), (packageJson) => {
+    packageJson.description = `Icons generated based on tabler-icons v${packageVersion}`;
+    return packageJson;
+  });
 }
 
 export default tablerIconsGenerator;

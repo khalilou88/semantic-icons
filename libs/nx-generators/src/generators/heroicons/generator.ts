@@ -3,6 +3,7 @@ import {
   formatFiles,
   generateFiles,
   names,
+  updateJson,
   workspaceRoot,
   writeJsonFile,
 } from '@nx/devkit';
@@ -19,12 +20,12 @@ export async function heroiconsGenerator(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   options: HeroiconsGeneratorSchema,
 ) {
-  const iconsDestinationPath = 'libs/heroicons';
+  const iconsLibPath = 'libs/heroicons';
 
   //1
   const solid16IconsSourcePath = 'node_modules/heroicons/16/solid';
   const solid16IconsDestinationPath = path.join(
-    iconsDestinationPath,
+    iconsLibPath,
     '16',
     'solid',
     'src',
@@ -32,6 +33,7 @@ export async function heroiconsGenerator(
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     solid16IconsSourcePath,
     solid16IconsDestinationPath,
     16,
@@ -41,7 +43,7 @@ export async function heroiconsGenerator(
   //2
   const solid20IconsSourcePath = 'node_modules/heroicons/20/solid';
   const solid20IconsDestinationPath = path.join(
-    iconsDestinationPath,
+    iconsLibPath,
     '20',
     'solid',
     'src',
@@ -49,6 +51,7 @@ export async function heroiconsGenerator(
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     solid20IconsSourcePath,
     solid20IconsDestinationPath,
     20,
@@ -58,7 +61,7 @@ export async function heroiconsGenerator(
   //3
   const outline24IconsSourcePath = 'node_modules/heroicons/24/outline';
   const outline24IconsDestinationPath = path.join(
-    iconsDestinationPath,
+    iconsLibPath,
     '24',
     'outline',
     'src',
@@ -66,6 +69,7 @@ export async function heroiconsGenerator(
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     outline24IconsSourcePath,
     outline24IconsDestinationPath,
     24,
@@ -75,7 +79,7 @@ export async function heroiconsGenerator(
   //4
   const solid24IconsSourcePath = 'node_modules/heroicons/24/solid';
   const solid24IconsDestinationPath = path.join(
-    iconsDestinationPath,
+    iconsLibPath,
     '24',
     'solid',
     'src',
@@ -83,6 +87,7 @@ export async function heroiconsGenerator(
 
   generateIconsComponents(
     tree,
+    iconsLibPath,
     solid24IconsSourcePath,
     solid24IconsDestinationPath,
     24,
@@ -96,6 +101,7 @@ const icons: Icon[] = [];
 
 function generateIconsComponents(
   tree: Tree,
+  iconsLibPath: string,
   iconsSourcePath: string,
   iconsDestinationPath: string,
   iconSize: 16 | 20 | 24,
@@ -176,6 +182,22 @@ function generateIconsComponents(
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
+
+  const heroIconsPackageJsonPath = path.join(
+    workspaceRoot,
+    'node_modules',
+    'heroicons',
+    'package.json',
+  );
+  const packageJson = JSON.parse(
+    fs.readFileSync(heroIconsPackageJsonPath, 'utf-8'),
+  ) as { version: string; description: string };
+  const packageVersion = packageJson.version;
+
+  updateJson(tree, path.join(iconsLibPath, 'package.json'), (packageJson) => {
+    packageJson.description = `Icons generated based on heroicons v${packageVersion}`;
+    return packageJson;
+  });
 
   writeJsonFile(
     path.join(workspaceRoot, 'apps', 'showcase', 'public', 'heroicons.json'),

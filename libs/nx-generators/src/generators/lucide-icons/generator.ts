@@ -3,6 +3,7 @@ import {
   formatFiles,
   generateFiles,
   names,
+  updateJson,
   workspaceRoot,
 } from '@nx/devkit';
 import * as fs from 'fs';
@@ -21,13 +22,19 @@ export async function lucideIconsGenerator(
   const iconsSourcePath = 'node_modules/lucide-static/icons';
   const iconsDestinationPath = path.join(iconsLibPath, 'src');
 
-  generateIconsComponents(tree, iconsSourcePath, iconsDestinationPath);
+  generateIconsComponents(
+    tree,
+    iconsLibPath,
+    iconsSourcePath,
+    iconsDestinationPath,
+  );
 
   await formatFiles(tree);
 }
 
 function generateIconsComponents(
   tree: Tree,
+  iconsLibPath: string,
   iconsSourcePath: string,
   iconsDestinationPath: string,
 ) {
@@ -89,6 +96,22 @@ function generateIconsComponents(
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
+
+  const lucideIconsPackageJsonPath = path.join(
+    workspaceRoot,
+    'node_modules',
+    'lucide-icons',
+    'package.json',
+  );
+  const packageJson = JSON.parse(
+    fs.readFileSync(lucideIconsPackageJsonPath, 'utf-8'),
+  ) as { version: string; description: string };
+  const packageVersion = packageJson.version;
+
+  updateJson(tree, path.join(iconsLibPath, 'package.json'), (packageJson) => {
+    packageJson.description = `Icons generated based on lucide-icons v${packageVersion}`;
+    return packageJson;
+  });
 }
 
 export default lucideIconsGenerator;
