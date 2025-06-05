@@ -4,6 +4,7 @@ import {
   generateFiles,
   names,
   readJsonFile,
+  updateJson,
   workspaceRoot,
   writeJsonFile,
 } from '@nx/devkit';
@@ -48,13 +49,19 @@ export async function simpleIconsGenerator(
   const iconsSourcePath = 'node_modules/simple-icons/icons';
   const iconsDestinationPath = path.join(iconsLibPath, 'src');
 
-  generateIconsComponents(tree, iconsSourcePath, iconsDestinationPath);
+  generateIconsComponents(
+    tree,
+    iconsLibPath,
+    iconsSourcePath,
+    iconsDestinationPath,
+  );
 
   await formatFiles(tree);
 }
 
 function generateIconsComponents(
   tree: Tree,
+  iconsLibPath: string,
   iconsSourcePath: string,
   iconsDestinationPath: string,
 ) {
@@ -63,6 +70,26 @@ function generateIconsComponents(
     recursive: true,
     force: true,
   });
+
+  const simpleIconsPackageJsonPath = path.join(
+    workspaceRoot,
+    'node_modules',
+    'simple-icons',
+    'package.json',
+  );
+  const packageJson = JSON.parse(
+    fs.readFileSync(simpleIconsPackageJsonPath, 'utf-8'),
+  ) as { version: string; description: string };
+  const packageVersion = packageJson.version;
+  const [major] = packageVersion.split('.');
+  const simpleIconsJsonPath = path.join(
+    workspaceRoot,
+    'node_modules',
+    'simple-icons',
+    Number(major) >= 15 ? 'data' : '_data',
+    'simple-icons.json',
+  );
+  const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
 
   const exports = [];
   tree.children(iconsSourcePath).forEach((fileName) => {
@@ -96,24 +123,6 @@ function generateIconsComponents(
 
     //Colors
 
-    const simpleIconsPackageJsonPath = path.join(
-      workspaceRoot,
-      'node_modules',
-      'simple-icons',
-      'package.json',
-    );
-    const packageJson = JSON.parse(
-      fs.readFileSync(simpleIconsPackageJsonPath, 'utf-8'),
-    ) as { version: string };
-    const [major] = packageJson.version.split('.');
-    const simpleIconsJsonPath = path.join(
-      workspaceRoot,
-      'node_modules',
-      'simple-icons',
-      Number(major) >= 15 ? 'data' : '_data',
-      'simple-icons.json',
-    );
-    const simpleIconsJson: SimpleIcon[] = readJsonFile(simpleIconsJsonPath);
     const simpleIcon = simpleIconsJson.find(
       (icon: SimpleIcon) => icon.title === decodedTitle,
     );
@@ -153,6 +162,11 @@ function generateIconsComponents(
   });
 
   tree.write(path.join(iconsDestinationPath, 'index.ts'), exports.join('\r\n'));
+
+  updateJson(tree, iconsLibPath, (packageJson) => {
+    packageJson.description = `Icons generated based on simple-icons v${packageVersion}`;
+    return packageJson;
+  });
 
   writeJsonFile(
     path.join(
