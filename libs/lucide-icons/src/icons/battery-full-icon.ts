@@ -10,11 +10,11 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
-    <svg:line x1="22" x2="22" y1="11" y2="13" />
-    <svg:line x1="6" x2="6" y1="11" y2="13" />
-    <svg:line x1="10" x2="10" y1="11" y2="13" />
-    <svg:line x1="14" x2="14" y1="11" y2="13" />
+    <svg:path d="M10 10v4" />
+    <svg:path d="M14 10v4" />
+    <svg:path d="M22 14v-4" />
+    <svg:path d="M6 10v4" />
+    <svg:rect x="2" y="6" width="16" height="12" rx="2" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',

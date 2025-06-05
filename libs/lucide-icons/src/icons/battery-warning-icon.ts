@@ -12,9 +12,9 @@ import {
   template: `
     <svg:path d="M10 17h.01" />
     <svg:path d="M10 7v6" />
-    <svg:path d="M14 7h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" />
-    <svg:path d="M22 11v2" />
-    <svg:path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+    <svg:path d="M14 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2" />
+    <svg:path d="M22 14v-4" />
+    <svg:path d="M6 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',

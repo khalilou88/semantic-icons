@@ -6,14 +6,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-battery-charging-icon]',
+  selector: 'svg[si-grid-3x2-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="m11 7-3 5h4l-3 5" />
-    <svg:path d="M14.856 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935" />
-    <svg:path d="M22 14v-4" />
-    <svg:path d="M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936" />
+    <svg:path d="M15 3v18" />
+    <svg:path d="M3 12h18" />
+    <svg:path d="M9 3v18" />
+    <svg:rect x="3" y="3" width="18" height="18" rx="2" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -31,7 +31,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBatteryChargingIcon {
+export class SiGrid3x2Icon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
