@@ -2,15 +2,7 @@
   "name": "@semantic-icons/simple-icons",
   "version": "0.49.0",
   "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": "Khalil LAGRIDA",
-  "license": "MIT",
-  "peerDependencies": {
-    "@angular/core": ">=17.1.0"
-  },
-  "sideEffects": false,
+  "description": "Icons generated based on simple-icons v15.0.0",
   "keywords": [
     "simple-icons",
     "angular",
@@ -22,5 +14,13 @@
     "url": "https://github.com/khalilou88/semantic-icons",
     "directory": "libs/simple-icons"
   },
-  "description": "Icons generated based on simple-icons v15.0.0"
+  "license": "MIT",
+  "author": "Khalil LAGRIDA",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/core": ">=17.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

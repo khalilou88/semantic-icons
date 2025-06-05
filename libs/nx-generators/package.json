@@ -1,26 +1,26 @@
 {
   "name": "@semantic-icons/nx-generators",
   "version": "0.49.0",
-  "dependencies": {
-    "@nx/devkit": ">=20.1.2",
-    "tslib": "^2.3.0",
-    "html-entities": "^2.5.2",
-    "simple-git": "^3.27.0",
-    "tmp": "^0.2.3",
-    "@prettier/sync": "^0.5.5"
-  },
-  "type": "commonjs",
-  "main": "./src/index.js",
-  "typings": "./src/index.d.ts",
   "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "generators": "./generators.json",
-  "executors": "./executors.json",
   "repository": {
     "type": "git",
     "url": "https://github.com/khalilou88/semantic-icons",
     "directory": "libs/nx-generators"
-  }
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "dependencies": {
+    "@nx/devkit": ">=20.1.2",
+    "@prettier/sync": "^0.5.5",
+    "html-entities": "^2.5.2",
+    "simple-git": "^3.27.0",
+    "tmp": "^0.2.3",
+    "tslib": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "executors": "./executors.json",
+  "generators": "./generators.json"
 }

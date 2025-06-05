@@ -4,7 +4,8 @@
   "plugins": [
     "@prettier/plugin-xml",
     "@trivago/prettier-plugin-sort-imports",
-    "prettier-plugin-organize-attributes"
+    "prettier-plugin-organize-attributes",
+    "prettier-plugin-packagejson"
   ],
   "importOrderParserPlugins": ["typescript", "decorators-legacy"],
   "importOrder": [
