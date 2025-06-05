@@ -112,7 +112,7 @@ function generateIconsComponents(
   const tablerIconsPackageJsonPath = path.join(
     workspaceRoot,
     'node_modules',
-    'tabler-icons',
+    '@tabler',
     'package.json',
   );
   const packageJson = JSON.parse(

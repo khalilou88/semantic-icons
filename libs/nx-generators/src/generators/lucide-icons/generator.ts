@@ -100,7 +100,7 @@ function generateIconsComponents(
   const lucideIconsPackageJsonPath = path.join(
     workspaceRoot,
     'node_modules',
-    'lucide-icons',
+    'lucide-static',
     'package.json',
   );
   const packageJson = JSON.parse(
