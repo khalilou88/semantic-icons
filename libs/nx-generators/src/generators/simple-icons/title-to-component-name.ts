@@ -13,7 +13,7 @@ export function titleToComponentName(text: string): string {
     GitHub: 'Github',
   };
 
-  // Map of common special characters to their word equivalents, used for general parsing.
+  // Map of common special characters to their word equivalents for general parsing.
   const CHAR_TO_WORD_MAP: Readonly<Record<string, string>> = {
     '.': 'Dot',
     '@': 'At',
@@ -41,22 +41,21 @@ export function titleToComponentName(text: string): string {
     ',': 'Comma',
     '/': 'Slash',
     '\\': 'Backslash',
-    // '$': 'Dollar',
     // '-': 'Dash',
-    // '_': 'Underscore',
+    // _: 'Underscore',
   };
 
   // Create a regex for special characters from CHAR_TO_WORD_MAP for general parsing.
   const specialCharRegex = new RegExp(
     `[${Object.keys(CHAR_TO_WORD_MAP)
-      .map((char) => `\\${char}`) // Escape special regex characters
+      .map((char) => `\\${char}`)
       .join('')}]`,
     'g',
   );
 
   let processedText = text;
 
-  // 1. Apply specific text standardizations.
+  // 0. Apply specific text standardizations.
   // This loop iterates through the TEXT_STANDARDIZATION_MAP and applies each replacement.
   // IMPORTANT: Order matters here if one key is a substring of another.
   // For 'GithubAction', it's crucial to replace that *before* 'gitHub' or other general casing rules.
@@ -72,40 +71,56 @@ export function titleToComponentName(text: string): string {
     );
   }
 
-  // 2. Insert spaces before uppercase letters that are not at the start of a word,
-  // to handle cases like "GithubAction" -> "Github Action" if not caught by TEXT_STANDARDIZATION_MAP.
-  // This helps break apart concatenated PascalCase words.
-  // Ex: "MyComponentName" -> "My Component Name"
-  // Ex: "FRGTool" -> "FRG Tool" (if FRG wasn't explicitly handled earlier)
-  processedText = processedText.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
+  // 0. Replace defined special characters with their word equivalents, padded with spaces.
+  processedText = processedText.replace(
+    specialCharRegex,
+    (char) => ` ${CHAR_TO_WORD_MAP[char]} `,
+  );
 
-  // 3. General text processing pipeline
-  processedText = processedText
-    // Replace defined special characters with their word equivalents, padded with spaces.
-    .replace(specialCharRegex, (char) => ` ${CHAR_TO_WORD_MAP[char]} `)
-    // Normalize multiple spaces to a single space.
-    .replace(/\s+/g, ' ')
-    // Remove any remaining characters that are not alphanumeric or spaces.
-    .replace(/[^a-zA-Z0-9\s]/g, ' ')
-    // Handle number-letter combinations by adding a space between them.
-    .replace(/(\d)([a-zA-Z])/g, '$1 $2')
-    // Trim leading/trailing spaces.
-    .trim();
+  // --- Generic Text Processing Pipeline ---
 
-  // Split the processed text into words, filter out empty strings, and convert to PascalCase.
-  // The goal here is primarily to ensure the first letter is capitalized,
-  // as many transformations already align with desired casing.
+  // 1. Insert space before uppercase letters that are followed by lowercase letters,
+  // AND are preceded by a lowercase letter or a digit.
+  // This handles:
+  // - "githubAction" -> "github Action"
+  // - "myComponentName" -> "my Component Name"
+  // - "v10Api" -> "v10 Api"
+  processedText = processedText.replace(/([a-z0-9])([A-Z][a-z])/g, '$1 $2');
+
+  // 2. Insert space before sequences of uppercase letters that are followed by a lowercase letter,
+  // AND are preceded by a *different* uppercase letter.
+  // This specifically targets the "AaAAAAaaaaaAAAA" type pattern.
+  // It ensures "AaAAAA" becomes "Aa AAAA" but leaves "AAAA" (an acronym) intact.
+  // (A)(AAAA) = $1 AAAA
+  // (AA)(AAa) = $1 AAa (split if first group is capital and next is capital then small)
+  processedText = processedText.replace(/([A-Z]+)([A-Z][a-z])/g, '$1 $2');
+
+  // 4. Normalize multiple spaces to a single space.
+  processedText = processedText.replace(/\s+/g, ' ');
+
+  // 5. Remove any remaining characters that are not alphanumeric or spaces.
+  processedText = processedText.replace(/[^a-zA-Z0-9\s]/g, ' ');
+
+  // 6. Handle letter-number combinations by adding a space between them.
+  // This is important for "v10" -> "v 10" or "API3" -> "API 3".
+  processedText = processedText.replace(/([a-zA-Z])(\d)/g, '$1 $2');
+  processedText = processedText.replace(/(\d)([a-zA-Z])/g, '$1 $2');
+
+  // 7. Trim leading/trailing spaces.
+  processedText = processedText.trim();
+
+  // --- Final PascalCase Conversion and Acronym Preservation ---
   const words = processedText
     .split(/\s+/)
     .filter((word) => word.length > 0)
     .map((word) => {
-      // If the word is an acronym (like "FRG" or "CSS"), keep its original casing.
-      // A simple heuristic: if it's all uppercase, assume it's an acronym.
-      // This is crucial for "FRG" to remain "FRG".
-      if (word === word.toUpperCase() && word.length > 1) {
-        // Check length > 1 to avoid single letters like 'A' becoming 'A' and breaking 'An'
+      // Preserve the casing of all-uppercase words (acronyms like "FRG", "CSS", "AAAA").
+      // This is the key for "FRG" to remain "FRG", and "AAAA" to remain "AAAA".
+      if (word.length > 1 && word === word.toUpperCase()) {
         return word;
       }
+      // Convert other words to PascalCase (first letter capitalized, rest lowercase).
+      // This will handle "Aa" to "Aa", and "aaaaa" to "Aaaaa".
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     });
 
