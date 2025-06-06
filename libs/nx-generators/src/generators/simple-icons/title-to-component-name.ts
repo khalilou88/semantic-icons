@@ -1,4 +1,4 @@
-export function titleToAngularComponentName(text: string) {
+export function titleToComponentName(text: string) {
   if (!text || typeof text !== 'string') {
     throw new Error('Input must be a non-empty string');
   }

@@ -14,7 +14,7 @@ import * as path from 'path';
 
 import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { SimpleIconsGeneratorSchema } from './schema';
-import { titleToAngularComponentName } from './title-to-angular-component-name';
+import { titleToComponentName } from './title-to-component-name';
 
 interface SimpleIcon {
   title: string;
@@ -100,7 +100,7 @@ function generateIconsComponents(
 
     const title = getSvgTitle(svgFileContent);
     const decodedTitle = decode(title);
-    const angularComponentName = titleToAngularComponentName(decodedTitle);
+    const angularComponentName = titleToComponentName(decodedTitle);
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
