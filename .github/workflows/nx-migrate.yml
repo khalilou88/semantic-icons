@@ -83,6 +83,7 @@ jobs:
         env:
           NX_VERBOSE_LOGGING: 'true'
           GITHUB_ACTIONS: 'true'
+          NODE_OPTIONS: --max_old_space_size=8192
 
       - name: Push changes
         if: steps.nx-workspace-outdated.outputs.outdated == 'true' && steps.e2e.outcome == 'success'
