@@ -6,13 +6,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-opnsense-icon]',
+  selector: 'svg[si-tuxedo-computers-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:title>OPNsense</svg:title>
+    <svg:title>TUXEDO Computers</svg:title>
     <svg:path
-      d="M5.25 0v5.25h13.5v13.5H24V7.5L16.5 0Zm13.5 18.75H5.25V5.25H0V16.5L7.5 24h11.25Z"
+      d="m13.958 11.13 4.597 7.444h-3.509l-2.94-4.921-4.333 6.365L24 19.968c-.074.725-.144 1.45-.215 2.174-12.391.052-7.537.105-19.928.105l7.192-10.223-4.06-6.666h3.497l2.386 4.096 3.49-5.515C5.202 3.887 11.17 3.987 0 3.963L.223 1.8c12.392-.015 7.498-.046 19.889-.046z"
     />
   `,
   host: {
@@ -25,10 +25,10 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiOpnsenseIcon {
+export class SiTuxedoComputersIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#E44A20');
+  readonly fill = input<string>('#000000');
 }
