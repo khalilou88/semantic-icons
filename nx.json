@@ -16,7 +16,7 @@
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
   "release": {
-    "projects": ["libs/*"],
+    "projects": ["!@semantic-icons/source", "libs/*"],
     "projectsRelationship": "independent",
     "releaseTagPattern": "release/{projectName}/{version}",
     "version": {
