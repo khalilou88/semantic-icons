@@ -28,7 +28,7 @@ module.exports = [
         'warn',
         {
           type: 'attribute',
-          prefix: 'sc',
+          prefix: 'si',
           style: 'camelCase',
         },
       ],
@@ -36,7 +36,7 @@ module.exports = [
         'warn',
         {
           type: 'element',
-          prefix: 'sc',
+          prefix: 'si',
           style: 'kebab-case',
         },
       ],

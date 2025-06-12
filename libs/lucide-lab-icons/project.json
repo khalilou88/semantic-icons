@@ -2,7 +2,7 @@
   "name": "lucide-lab-icons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/lucide-lab-icons/src",
-  "prefix": "sc",
+  "prefix": "si",
   "projectType": "library",
   "tags": [],
   "targets": {
