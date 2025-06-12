@@ -32,6 +32,7 @@ jobs:
       - run: npx nx generate @semantic-icons/nx-generators:flowbite-icons
       - run: npx nx generate @semantic-icons/nx-generators:flag-icons
       - run: npx nx generate @semantic-icons/nx-generators:lucide-icons
+      - run: npx nx generate @semantic-icons/nx-generators:lucide-lab-icons
       - run: npx nx generate @semantic-icons/nx-generators:circle-flags
       - run: npx nx generate @semantic-icons/nx-generators:bootstrap-icons
       - run: npx nx generate @semantic-icons/nx-generators:lineicons

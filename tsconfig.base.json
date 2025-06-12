@@ -61,6 +61,9 @@
       "@semantic-icons/ionicons": ["libs/ionicons/src/index.ts"],
       "@semantic-icons/lineicons": ["libs/lineicons/src/index.ts"],
       "@semantic-icons/lucide-icons": ["libs/lucide-icons/src/index.ts"],
+      "@semantic-icons/lucide-lab-icons": [
+        "libs/lucide-lab-icons/src/index.ts"
+      ],
       "@semantic-icons/material-design-icons": [
         "libs/material-design-icons/src/index.ts"
       ],

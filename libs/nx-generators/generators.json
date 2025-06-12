@@ -25,6 +25,11 @@
       "schema": "./src/generators/lucide-icons/schema.json",
       "description": "lucide-icons generator"
     },
+    "lucide-lab-icons": {
+      "factory": "./src/generators/lucide-lab-icons/generator",
+      "schema": "./src/generators/lucide-lab-icons/schema.json",
+      "description": "lucide-lab-icons generator"
+    },
     "circle-flags": {
       "factory": "./src/generators/circle-flags/generator",
       "schema": "./src/generators/circle-flags/schema.json",
