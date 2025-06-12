@@ -20,7 +20,6 @@
     "projectsRelationship": "independent",
     "releaseTagPattern": "release/{projectName}/{version}",
     "version": {
-      "preVersionCommand": "npx nx run-many -t build",
       "preserveLocalDependencyProtocols": false,
       "manifestRootsToUpdate": ["{projectRoot}"]
     }
