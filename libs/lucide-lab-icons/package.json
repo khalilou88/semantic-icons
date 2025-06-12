@@ -1,10 +1,26 @@
 {
   "name": "@semantic-icons/lucide-lab-icons",
   "version": "0.0.1",
+  "private": false,
   "description": "Icons generated based on lucide-lab-icons v0.1.2",
+  "keywords": [
+    "lucide-lab",
+    "angular",
+    "icons",
+    "svg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khalilou88/semantic-icons",
+    "directory": "libs/lucide-lab-icons"
+  },
+  "license": "MIT",
+  "author": "Khalil LAGRIDA",
   "sideEffects": false,
   "peerDependencies": {
-    "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
+    "@angular/core": ">=17.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
