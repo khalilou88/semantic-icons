@@ -1,6 +1,7 @@
 {
   "name": "@semantic-icons/lucide-lab-icons",
   "version": "0.0.1",
+  "description": "Icons generated based on lucide-lab-icons v0.1.2",
   "sideEffects": false,
   "peerDependencies": {
     "@angular/common": "^19.2.0",
