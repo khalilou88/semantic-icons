@@ -10,8 +10,8 @@ import {
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M20 7h-9" />
     <svg:path d="M14 17H5" />
+    <svg:path d="M19 7h-9" />
     <svg:circle cx="17" cy="17" r="3" />
     <svg:circle cx="7" cy="7" r="3" />
   `,

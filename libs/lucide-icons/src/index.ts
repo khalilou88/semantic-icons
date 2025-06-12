@@ -182,6 +182,7 @@ export * from './icons/bolt-icon';
 export * from './icons/bomb-icon';
 export * from './icons/bone-icon';
 export * from './icons/book-a-icon';
+export * from './icons/book-alert-icon';
 export * from './icons/book-audio-icon';
 export * from './icons/book-check-icon';
 export * from './icons/book-copy-icon';

@@ -6,16 +6,15 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-trophy-icon]',
+  selector: 'svg[si-book-alert-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978" />
-    <svg:path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978" />
-    <svg:path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
-    <svg:path d="M4 22h16" />
-    <svg:path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
-    <svg:path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+    <svg:path d="M12 13h.01" />
+    <svg:path d="M12 6v3" />
+    <svg:path
+      d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
+    />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -33,7 +32,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiTrophyIcon {
+export class SiBookAlertIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
