@@ -158,7 +158,9 @@ export class IconDisplay implements OnChanges {
 
   private readonly config = new ScSheetConfig();
 
-  constructor(private readonly iconService: IconService) {
+  private readonly iconService = inject(IconService);
+
+  constructor() {
     this.icons$ = this.iconService.searchIcons('');
 
     this.config.side = 'right';
