@@ -44,30 +44,29 @@ import { SafeHtmlPipe } from './safe-html.pipe';
             Available Icons
           </h3>
 
-          <div
-            class="text-gray-500 text-center py-8"
-            *ngIf="(icons$ | async)?.length === 0"
-          >
-            No icons found matching your search criteria.
-          </div>
+          @if ((icons$ | async)?.length === 0) {
+            <div class="text-gray-500 text-center py-8">
+              No icons found matching your search criteria.
+            </div>
+          }
 
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            <button
-              class="p-3 border rounded-md cursor-pointer hover:bg-gray-50 flex flex-col items-center transition-colors"
-              *ngFor="let icon of icons$ | async"
-              [class.bg-indigo-50]="selectedIcon?.id === icon.id"
-              [class.border-indigo-500]="selectedIcon?.id === icon.id"
-              (click)="selectIcon(icon)"
-            >
-              <div
-                class="h-12 w-12 flex items-center justify-center"
-                [innerHTML]="icon.svgContent | safeHtml"
-              ></div>
-
-              <div class="mt-2 text-xs text-center text-gray-700">
-                {{ icon.name }}
-              </div>
-            </button>
+            @for (icon of icons$ | async; track icon) {
+              <button
+                class="p-3 border rounded-md cursor-pointer hover:bg-gray-50 flex flex-col items-center transition-colors"
+                [class.bg-indigo-50]="selectedIcon?.id === icon.id"
+                [class.border-indigo-500]="selectedIcon?.id === icon.id"
+                (click)="selectIcon(icon)"
+              >
+                <div
+                  class="h-12 w-12 flex items-center justify-center"
+                  [innerHTML]="icon.svgContent | safeHtml"
+                ></div>
+                <div class="mt-2 text-xs text-center text-gray-700">
+                  {{ icon.name }}
+                </div>
+              </button>
+            }
           </div>
         </div>
       </div>
@@ -86,55 +85,56 @@ import { SafeHtmlPipe } from './safe-html.pipe';
                 Icon Details
               </h3>
 
-              <div class="text-gray-500 text-center py-8" *ngIf="!selectedIcon">
-                Select an icon to view details
-              </div>
-
-              <div class="space-y-4" *ngIf="selectedIcon">
-                <div class="flex items-center justify-center py-4">
-                  <div
-                    class="h-24 w-24"
-                    [innerHTML]="selectedIcon.svgContent | safeHtml"
-                  ></div>
+              @if (!selectedIcon) {
+                <div class="text-gray-500 text-center py-8">
+                  Select an icon to view details
                 </div>
+              }
 
-                <div>
-                  <h4 class="text-sm font-medium text-gray-700">Name</h4>
-                  <p class="mt-1 text-gray-900">{{ selectedIcon.name }}</p>
-                </div>
-
-                <div>
-                  <h4 class="text-sm font-medium text-gray-700">Tags</h4>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    <span
-                      class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800"
-                      *ngFor="let tag of selectedIcon.tags"
-                    >
-                      {{ tag }}
-                    </span>
+              @if (selectedIcon) {
+                <div class="space-y-4">
+                  <div class="flex items-center justify-center py-4">
+                    <div
+                      class="h-24 w-24"
+                      [innerHTML]="selectedIcon.svgContent | safeHtml"
+                    ></div>
                   </div>
-                </div>
-
-                <div>
-                  <h4 class="text-sm font-medium text-gray-700">SVG Code</h4>
-                  <sc-code-highlighter
-                    [code]="selectedIcon.svgContent"
-                    language="angular-html"
-                  />
-                </div>
-
-                @if (selectedIcon.componentContent) {
                   <div>
-                    <h4 class="text-sm font-medium text-gray-700">
-                      Component Code
-                    </h4>
+                    <h4 class="text-sm font-medium text-gray-700">Name</h4>
+                    <p class="mt-1 text-gray-900">{{ selectedIcon.name }}</p>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-medium text-gray-700">Tags</h4>
+                    <div class="mt-1 flex flex-wrap gap-2">
+                      @for (tag of selectedIcon.tags; track tag) {
+                        <span
+                          class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800"
+                        >
+                          {{ tag }}
+                        </span>
+                      }
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-medium text-gray-700">SVG Code</h4>
                     <sc-code-highlighter
-                      [code]="selectedIcon.componentContent"
-                      language="angular-ts"
+                      [code]="selectedIcon.svgContent"
+                      language="angular-html"
                     />
                   </div>
-                }
-              </div>
+                  @if (selectedIcon.componentContent) {
+                    <div>
+                      <h4 class="text-sm font-medium text-gray-700">
+                        Component Code
+                      </h4>
+                      <sc-code-highlighter
+                        [code]="selectedIcon.componentContent"
+                        language="angular-ts"
+                      />
+                    </div>
+                  }
+                </div>
+              }
             </div>
           </div>
         </div>
