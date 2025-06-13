@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -10,7 +9,7 @@ import {
 
 @Component({
   selector: 'app-library-selector',
-  imports: [CommonModule],
+  imports: [],
   template: `
     <div class="mb-6">
       <label
@@ -25,9 +24,11 @@ import {
         [value]="selectedLibrary"
         (change)="onLibrarySelect($event)"
       >
-        <option *ngFor="let lib of libraries" [value]="lib.id">
-          {{ lib.name }}
-        </option>
+        @for (lib of libraries; track lib) {
+          <option [value]="lib.id">
+            {{ lib.name }}
+          </option>
+        }
       </select>
     </div>
   `,

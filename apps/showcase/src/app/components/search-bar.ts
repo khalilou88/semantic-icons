@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -14,7 +13,7 @@ import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-search-bar',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule],
   template: `
     <div class="mb-6">
       <label
@@ -32,26 +31,27 @@ import { Subject } from 'rxjs';
           type="text"
           placeholder="Search by name or tag..."
         />
-        <button
-          class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-500"
-          *ngIf="searchText"
-          (click)="clearSearch()"
-        >
-          <svg
-            class="h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        @if (searchText) {
+          <button
+            class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-500"
+            (click)="clearSearch()"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
+            <svg
+              class="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        }
       </div>
     </div>
   `,

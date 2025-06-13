@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ViewEncapsulation,
+  inject,
 } from '@angular/core';
 
 import { IconDisplay } from '../components/icon-display';
@@ -62,7 +63,7 @@ export default class HomePage {
     { id: 'fontawesome', name: 'Font Awesome' },
   ];
 
-  constructor(public iconService: IconService) {}
+  public iconService = inject(IconService);
 
   onLibraryChange(libraryId: string): void {
     this.selectedLibrary = libraryId as LibraryIdType;
