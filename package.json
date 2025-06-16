@@ -113,7 +113,7 @@
     "tw-animate-css": "^1.3.4",
     "typescript": "5.8.3",
     "typescript-eslint": "^8.33.1",
-    "verdaccio": "^6.0.5"
+    "verdaccio": "^6.1.3"
   },
   "nx": {
     "includedScripts": []
