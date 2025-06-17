@@ -1155,6 +1155,7 @@ export * from './icons/receipt-russian-ruble-icon';
 export * from './icons/receipt-swiss-franc-icon';
 export * from './icons/receipt-text-icon';
 export * from './icons/receipt-icon';
+export * from './icons/rectangle-circle-icon';
 export * from './icons/rectangle-ellipsis-icon';
 export * from './icons/rectangle-goggles-icon';
 export * from './icons/rectangle-horizontal-icon';
