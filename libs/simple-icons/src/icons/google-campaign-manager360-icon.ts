@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-google-campaign-manager360-icon]',
+  selector: 'svg[si-google-campaign-manager-360-icon]',
   standalone: true,
   imports: [],
   template: `
