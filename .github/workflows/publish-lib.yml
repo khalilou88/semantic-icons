@@ -7,6 +7,7 @@ on:
         type: choice
         description: t option
         options:
+          - lucide-icons
           - lucide-lab-icons
   # schedule:
   #   - cron: '0 4 * * *'
