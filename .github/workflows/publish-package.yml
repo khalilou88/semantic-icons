@@ -1,4 +1,4 @@
-name: Publish a library
+name: Publish a package
 
 on:
   workflow_dispatch:
@@ -17,8 +17,8 @@ on:
       - v*.*.*
 
 jobs:
-  publish-lib:
-    name: Publish a library
+  publish-package:
+    name: Publish a package
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -69,7 +69,7 @@ jobs:
       - name: Commit changes
         run: |
           git add .
-          [[ $(git status --porcelain) ]] && git commit -m "build: publish packages" || echo "nothing to commit"
+          [[ $(git status --porcelain) ]] && git commit -m "build: publish package ${{ github.event.inputs.t_option }}" || echo "nothing to commit"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
