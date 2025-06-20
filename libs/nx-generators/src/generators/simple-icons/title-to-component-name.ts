@@ -115,9 +115,9 @@ export function titleToComponentName(text: string): string {
     .map((word) => {
       // Preserve the casing of all-uppercase words (acronyms like "FRG", "CSS", "AAAA").
       // This is the key for "FRG" to remain "FRG", and "AAAA" to remain "AAAA".
-      if (word.length > 1 && word === word.toUpperCase()) {
-        return word;
-      }
+      // if (word.length > 1 && word === word.toUpperCase()) {
+      //   return word;
+      // }
       // Convert other words to PascalCase (first letter capitalized, rest lowercase).
       // This will handle "Aa" to "Aa", and "aaaaa" to "Aaaaa".
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
