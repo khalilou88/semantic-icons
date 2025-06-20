@@ -6,15 +6,19 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-badge-help-icon]',
+  selector: 'svg[si-drone-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path
-      d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
-    />
-    <svg:path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-    <svg:line x1="12" x2="12.01" y1="17" y2="17" />
+    <svg:path d="M10 10 7 7" />
+    <svg:path d="m10 14-3 3" />
+    <svg:path d="m14 10 3-3" />
+    <svg:path d="m14 14 3 3" />
+    <svg:path d="M14.205 4.139a4 4 0 1 1 5.439 5.863" />
+    <svg:path d="M19.637 14a4 4 0 1 1-5.432 5.868" />
+    <svg:path d="M4.367 10a4 4 0 1 1 5.438-5.862" />
+    <svg:path d="M9.795 19.862a4 4 0 1 1-5.429-5.873" />
+    <svg:rect x="10" y="8" width="4" height="8" rx="1" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -32,7 +36,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBadgeHelpIcon {
+export class SiDroneIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');

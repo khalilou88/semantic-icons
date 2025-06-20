@@ -6,13 +6,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-circle-help-icon]',
+  selector: 'svg[si-file-question-mark-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:circle cx="12" cy="12" r="10" />
-    <svg:path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
     <svg:path d="M12 17h.01" />
+    <svg:path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+    <svg:path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -30,7 +30,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiCircleHelpIcon {
+export class SiFileQuestionMarkIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
