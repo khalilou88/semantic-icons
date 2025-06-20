@@ -14,7 +14,7 @@ import * as path from 'path';
 
 import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { SimpleIconsGeneratorSchema } from './schema';
-import { titleToComponentName } from './title-to-component-name';
+import { addSpaces, titleToComponentName } from './title-to-component-name';
 
 interface SimpleIcon {
   title: string;
@@ -102,7 +102,7 @@ function generateIconsComponents(
 
     const svgFileName = `${names(angularComponentName).fileName}-icon`;
     const svgClassName = `Si${names(angularComponentName).className}Icon`;
-    const svgSelector = `si-${names(angularComponentName).fileName}-icon`;
+    const svgSelector = `si-${names(addSpaces(angularComponentName)).fileName}-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 

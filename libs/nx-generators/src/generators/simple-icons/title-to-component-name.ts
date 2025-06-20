@@ -1,3 +1,7 @@
+export function addSpaces(str: string): string {
+  return str.replace(/([a-zA-Z])(\d)/g, '$1 $2');
+}
+
 export function titleToComponentName(text: string): string {
   if (typeof text !== 'string' || text.trim() === '') {
     throw new Error('Input must be a non-empty string');
