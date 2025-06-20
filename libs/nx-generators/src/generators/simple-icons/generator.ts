@@ -100,7 +100,7 @@ function generateIconsComponents(
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
-    const svgFileName = `names(angularComponentName).fileName-icon`;
+    const svgFileName = `${names(angularComponentName).fileName}-icon`;
     const svgClassName = `Si${names(angularComponentName).className}Icon`;
     const svgSelector = `si-${names(angularComponentName).fileName}-icon`;
 
