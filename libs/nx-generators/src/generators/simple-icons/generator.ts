@@ -14,15 +14,11 @@ import * as path from 'path';
 
 import { getSvgAttributes, getSvgTagContent } from '../../utils';
 import { SimpleIconsGeneratorSchema } from './schema';
-import { titleToComponentName } from './title-to-component-name';
+import { addSpaces, titleToComponentName } from './title-to-component-name';
 
 interface SimpleIcon {
   title: string;
   hex: string;
-}
-
-function f(str: string): string {
-  return str.replace(/([a-zA-Z])(\d)/g, '$1 $2');
 }
 
 function getSvgTitle(svgContent: string) {
@@ -104,9 +100,9 @@ function generateIconsComponents(
 
     const svgTagContent = getSvgTagContent(svgFileContent);
 
-    const svgFileName = names(angularComponentName).fileName;
-    const svgClassName = `Si${names(angularComponentName).className}`;
-    const svgSelector = `si-${names(f(angularComponentName)).fileName}`;
+    const svgFileName = `${names(angularComponentName).fileName}-icon`;
+    const svgClassName = `Si${names(angularComponentName).className}Icon`;
+    const svgSelector = `si-${names(addSpaces(angularComponentName)).fileName}-icon`;
 
     exports.push(`export * from './icons/${svgFileName}';`);
 
