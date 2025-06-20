@@ -9,6 +9,7 @@ on:
         options:
           - lucide-icons
           - lucide-lab-icons
+          - simple-icons
   # schedule:
   #   - cron: '0 4 * * *'
 
