@@ -123,6 +123,5 @@ export function titleToComponentName(text: string): string {
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     });
 
-  // Join the words and append "Icon".
-  return words.join('') + 'Icon';
+  return words.join('');
 }
