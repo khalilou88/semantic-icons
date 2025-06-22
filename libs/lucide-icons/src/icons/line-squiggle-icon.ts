@@ -6,14 +6,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-blocks-icon]',
+  selector: 'svg[si-line-squiggle-icon]',
   standalone: true,
   imports: [],
   template: `
     <svg:path
-      d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"
+      d="M7 3.5c5-2 7 2.5 3 4C1.5 10 2 15 5 16c5 2 9-10 14-7s.5 13.5-4 12c-5-2.5.5-11 6-2"
     />
-    <svg:rect x="14" y="2" width="8" height="8" rx="1" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -31,7 +30,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBlocksIcon {
+export class SiLineSquiggleIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');

@@ -6,14 +6,16 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-blocks-icon]',
+  selector: 'svg[si-spool-icon]',
   standalone: true,
   imports: [],
   template: `
     <svg:path
-      d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"
+      d="M17 13.44 4.442 17.082A2 2 0 0 0 4.982 21H19a2 2 0 0 0 .558-3.921l-1.115-.32A2 2 0 0 1 17 14.837V7.66"
     />
-    <svg:rect x="14" y="2" width="8" height="8" rx="1" />
+    <svg:path
+      d="m7 10.56 12.558-3.642A2 2 0 0 0 19.018 3H5a2 2 0 0 0-.558 3.921l1.115.32A2 2 0 0 1 7 9.163v7.178"
+    />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -31,7 +33,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBlocksIcon {
+export class SiSpoolIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');

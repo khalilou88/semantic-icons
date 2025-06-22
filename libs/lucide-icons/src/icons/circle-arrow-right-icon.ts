@@ -11,8 +11,8 @@ import {
   imports: [],
   template: `
     <svg:circle cx="12" cy="12" r="10" />
-    <svg:path d="M8 12h8" />
     <svg:path d="m12 16 4-4-4-4" />
+    <svg:path d="M8 12h8" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',

@@ -6,14 +6,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-blocks-icon]',
+  selector: 'svg[si-georgian-lari-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path
-      d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"
-    />
-    <svg:rect x="14" y="2" width="8" height="8" rx="1" />
+    <svg:path d="M11.5 21a7.5 7.5 0 1 1 7.35-9" />
+    <svg:path d="M13 12V3" />
+    <svg:path d="M4 21h16" />
+    <svg:path d="M9 12V3" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -31,7 +31,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiBlocksIcon {
+export class SiGeorgianLariIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');
