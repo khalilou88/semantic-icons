@@ -39,6 +39,12 @@ jobs:
         run: npx nx release version minor
         shell: bash
 
+      - name: Build projects
+        run: npx nx run-many --target=build
+        shell: bash
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+
       - name: Publish packages
         run: npx nx release publish
         shell: bash
