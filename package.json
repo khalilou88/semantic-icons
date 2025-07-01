@@ -73,7 +73,7 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^24.0.7",
     "@types/tmp": "^0.2.6",
-    "@typescript-eslint/utils": "^8.35.0",
+    "@typescript-eslint/utils": "^8.35.1",
     "angular-eslint": "20.0.0",
     "autoprefixer": "^10.4.21",
     "bootstrap-icons": "1.13.1",
