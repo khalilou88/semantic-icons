@@ -6,12 +6,18 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-clock-4-icon]',
+  selector: 'svg[si-vector-square-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M12 6v6l4 2" />
-    <svg:circle cx="12" cy="12" r="10" />
+    <svg:path d="M19.5 7a24 24 0 0 1 0 10" />
+    <svg:path d="M4.5 7a24 24 0 0 0 0 10" />
+    <svg:path d="M7 19.5a24 24 0 0 0 10 0" />
+    <svg:path d="M7 4.5a24 24 0 0 1 10 0" />
+    <svg:rect x="17" y="17" width="5" height="5" rx="1" />
+    <svg:rect x="17" y="2" width="5" height="5" rx="1" />
+    <svg:rect x="2" y="17" width="5" height="5" rx="1" />
+    <svg:rect x="2" y="2" width="5" height="5" rx="1" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -29,7 +35,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiClock4Icon {
+export class SiVectorSquareIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');

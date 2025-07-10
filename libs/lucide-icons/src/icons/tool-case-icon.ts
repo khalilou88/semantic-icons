@@ -6,12 +6,20 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-clock-4-icon]',
+  selector: 'svg[si-tool-case-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M12 6v6l4 2" />
-    <svg:circle cx="12" cy="12" r="10" />
+    <svg:path d="M10 15h4" />
+    <svg:path
+      d="m14.817 10.995-.971-1.45 1.034-1.232a2 2 0 0 0-2.025-3.238l-1.82.364L9.91 3.885a2 2 0 0 0-3.625.748L6.141 6.55l-1.725.426a2 2 0 0 0-.19 3.756l.657.27"
+    />
+    <svg:path
+      d="m18.822 10.995 2.26-5.38a1 1 0 0 0-.557-1.318L16.954 2.9a1 1 0 0 0-1.281.533l-.924 2.122"
+    />
+    <svg:path
+      d="M4 12.006A1 1 0 0 1 4.994 11H19a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"
+    />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -29,7 +37,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiClock4Icon {
+export class SiToolCaseIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');

@@ -6,12 +6,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'svg[si-clock-4-icon]',
+  selector: 'svg[si-bottle-wine-icon]',
   standalone: true,
   imports: [],
   template: `
-    <svg:path d="M12 6v6l4 2" />
-    <svg:circle cx="12" cy="12" r="10" />
+    <svg:path
+      d="M10 3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a6 6 0 0 0 1.2 3.6l.6.8A6 6 0 0 1 17 13v8a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-8a6 6 0 0 1 1.2-3.6l.6-.8A6 6 0 0 0 10 5z"
+    />
+    <svg:path d="M17 13h-4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h4" />
   `,
   host: {
     '[attr.xmlns]': 'xmlns',
@@ -29,7 +31,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SiClock4Icon {
+export class SiBottleWineIcon {
   protected readonly xmlns = 'http://www.w3.org/2000/svg';
 
   readonly width = input<string | number>('24');

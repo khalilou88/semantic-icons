@@ -30,5 +30,5 @@ export class SiPolarsIcon {
 
   readonly viewBox = input<string>('0 0 24 24');
 
-  readonly fill = input<string>('#CD792C');
+  readonly fill = input<string>('#0075FF');
 }

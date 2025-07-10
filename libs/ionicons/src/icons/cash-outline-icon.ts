@@ -17,7 +17,7 @@ import {
       y="80"
       rx="16"
       ry="16"
-      transform="rotate(180 256 208)"
+      transform="matrix(-1 0 0 -1 512 416)"
       fill="none"
       stroke="currentColor"
       stroke-linejoin="round"
