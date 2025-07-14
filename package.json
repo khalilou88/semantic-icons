@@ -25,7 +25,7 @@
     "@js-temporal/polyfill": "^0.5.1",
     "@semantic-components/code-highlighter": "^0.1.0",
     "@semantic-components/ui": "^0.54.0",
-    "@semantic-components/utils": "^0.43.0",
+    "@semantic-components/utils": "^0.45.0",
     "@semantic-icons/lucide-icons": "^0.54.0",
     "@tailwindcss/postcss": "^4.1.11",
     "class-variance-authority": "^0.7.1",
